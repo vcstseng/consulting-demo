@@ -1,0 +1,270 @@
+{
+  "zh_desktop": [
+    {
+      "emptySections": 0,
+      "h1": "從企業問題，看見解題全貌。",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh"
+    },
+    {
+      "emptySections": 0,
+      "h1": "銷售",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-sales"
+    },
+    {
+      "emptySections": 3,
+      "h1": "行銷",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-marketing"
+    },
+    {
+      "emptySections": 3,
+      "h1": "財務",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-finance"
+    },
+    {
+      "emptySections": 3,
+      "h1": "人資",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-hr"
+    },
+    {
+      "emptySections": 3,
+      "h1": "採購",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-procurement"
+    },
+    {
+      "emptySections": 3,
+      "h1": "營運",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-operations"
+    },
+    {
+      "emptySections": 3,
+      "h1": "客服",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-customer-service"
+    },
+    {
+      "emptySections": 3,
+      "h1": "供應鏈",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-supply-chain"
+    },
+    {
+      "emptySections": 3,
+      "h1": "法務／合規",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-legal"
+    },
+    {
+      "emptySections": 3,
+      "h1": "管理",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-management"
+    },
+    {
+      "emptySections": 0,
+      "h1": "業務時間有限，到底該先找誰？",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=detail&domain=business-sales&kind=problem&id=S02"
+    },
+    {
+      "emptySections": 0,
+      "h1": "10x",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=detail&domain=business-sales&kind=startup&id=upstream-10109"
+    },
+    {
+      "emptySections": 0,
+      "h1": "客戶適配判讀",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=detail&domain=business-sales&kind=capability&id=idea-sales-fit"
+    },
+    {
+      "emptySections": 0,
+      "h1": "潛在客戶優先排序",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=detail&domain=business-sales&kind=capability&id=idea-sales-priority"
+    },
+    {
+      "emptySections": 0,
+      "h1": "訪談重點與承諾整理",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=detail&domain=business-sales&kind=capability&id=idea-sales-discovery"
+    },
+    {
+      "emptySections": 0,
+      "h1": "報價毛利與折扣試算",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=detail&domain=business-sales&kind=capability&id=idea-sales-margin"
+    },
+    {
+      "emptySections": 0,
+      "h1": "商機停滯調查員",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=detail&domain=business-sales&kind=capability&id=idea-sales-risk"
+    },
+    {
+      "emptySections": 0,
+      "h1": "每週商機檢討流程",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=detail&domain=business-sales&kind=capability&id=idea-sales-review"
+    },
+    {
+      "emptySections": 0,
+      "h1": "從探索，到一份有依據的方案。",
+      "lang": "zh-Hant",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=showcase"
+    }
+  ],
+  "en_mobile": [
+    {
+      "h1": "From business problemsto possible solutions.",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en"
+    },
+    {
+      "h1": "Sales",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-sales"
+    },
+    {
+      "h1": "Marketing",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-marketing"
+    },
+    {
+      "h1": "Finance",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-finance"
+    },
+    {
+      "h1": "Human resources",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-hr"
+    },
+    {
+      "h1": "Procurement",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-procurement"
+    },
+    {
+      "h1": "Operations",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-operations"
+    },
+    {
+      "h1": "Customer service",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-customer-service"
+    },
+    {
+      "h1": "Supply chain",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-supply-chain"
+    },
+    {
+      "h1": "Legal / compliance",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-legal"
+    },
+    {
+      "h1": "Management",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-management"
+    },
+    {
+      "h1": "Sales time is limited. Which accounts should we go after first?",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&kind=problem&id=S02"
+    },
+    {
+      "h1": "10x",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&kind=startup&id=upstream-10109"
+    },
+    {
+      "h1": "Customer fit assessment",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&kind=capability&id=idea-sales-fit"
+    },
+    {
+      "h1": "Prospect priority calculator",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&kind=capability&id=idea-sales-priority"
+    },
+    {
+      "h1": "Discovery notes and commitments",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&kind=capability&id=idea-sales-discovery"
+    },
+    {
+      "h1": "Quote margin and discount simulator",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&kind=capability&id=idea-sales-margin"
+    },
+    {
+      "h1": "Deal stall investigator",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&kind=capability&id=idea-sales-risk"
+    },
+    {
+      "h1": "Weekly pipeline review",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&kind=capability&id=idea-sales-review"
+    },
+    {
+      "h1": "From exploration to a reasoned proposal.",
+      "lang": "en",
+      "overflow": false,
+      "url": "http://127.0.0.1:4176/?lang=en&view=showcase"
+    }
+  ],
+  "console_errors": [],
+  "cross_module_navigation_verified": true,
+  "language_context_preserved": true,
+  "return_focus_verified": "idea-sales-risk"
+}

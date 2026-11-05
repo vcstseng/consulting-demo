@@ -1,0 +1,11 @@
+import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import {validate} from '../src/engine.js';
+const web=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const data=JSON.parse(await readFile(path.resolve(web,'../data/samples/round-one.json'),'utf8'));
+validate(data);
+for(const folder of ['','src','data'])await mkdir(path.join(web,'dist',folder),{recursive:true});
+for(const file of ['index.html','src/app.js','src/styles.css','src/engine.js'])await copyFile(path.join(web,file),path.join(web,'dist',file));
+await writeFile(path.join(web,'dist/data/catalog.json'),JSON.stringify(data)+'\n');
+console.log('Built round-one shell: 10 domains, 1 problem, 1 startup, 6 capabilities.');

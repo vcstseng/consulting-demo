@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.1-reference-registry",
+  "recorded_at": "2026-11-05",
+  "status": "round_one_selected_samples",
+  "modules": [
+    {
+      "id": "99-problems",
+      "role": "problem_starting_point",
+      "repository": "https://github.com/vcstseng/99-problems",
+      "website": "https://vcstseng.github.io/99-problems/",
+      "local_path": null,
+      "version": {
+        "commit": "95dd4ffb7ee669465b8700ef313fa4761ade7358"
+      },
+      "note": "本輪僅接入 S02 雙語欄位，非全量匯入。"
+    },
+    {
+      "id": "startup-radar",
+      "role": "external_solution_reference",
+      "repository": "https://github.com/vcstseng/startup-radar",
+      "website": "https://vcstseng.github.io/startup-radar/",
+      "local_path": "D:/startup-radar",
+      "version": {
+        "commit": "fe001851befcec4ad8ae12d127a8e477804bee37"
+      },
+      "note": "本輪僅接入 upstream-10109，保留摘要及原文。"
+    },
+    {
+      "id": "capability-store",
+      "role": "capability_details",
+      "repository": "https://github.com/vcstseng/capability-store",
+      "website": "https://vcstseng.github.io/capability-store/",
+      "local_path": "D:/capability-store",
+      "version": {
+        "tag": "capability-store-prototype-v1",
+        "commit": "26b3d0c8d1d43ce7509770b82f8fa635b2873a11"
+      },
+      "note": "本輪僅接入銷售六個能力，原凍結版不變。"
+    }
+  ]
+}

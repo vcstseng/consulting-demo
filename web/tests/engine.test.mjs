@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {readRoute,routeUrl,routeKey,domainItems,detailItem,validate} from '../src/engine.js';
+const data=JSON.parse(await readFile(new URL('../../data/samples/round-one.json',import.meta.url),'utf8'));
+test('shell has ten domains and only the declared selected samples',()=>{validate(data);assert.equal(data.problems.length,1);assert.equal(data.startups.length,1);assert.equal(data.capabilities.length,6);assert.equal(data.problems[0].id,'S02');assert.equal(data.startups[0].id,'upstream-10109');});
+test('unconnected domains stay empty, without claiming there is no source content',()=>{const x=domainItems(data,'business-finance');assert.deepEqual(x,{problems:[],startups:[],capabilities:[]});assert.equal(domainItems(data,'business-sales').capabilities.length,6);});
+test('detail identities remain scoped to their real domain and module',()=>{for(const [kind,key] of [['problem','problems'],['startup','startups'],['capability','capabilities']])for(const x of data[key]){const r={lang:'en',view:'detail',domain:x.domain,kind,id:x.id};assert.equal(detailItem(data,readRoute(routeUrl(r))).id,x.id);assert.equal(detailItem(data,{...r,domain:'business-hr'}),undefined);}assert.equal(detailItem(data,{kind:'invalid'}),null);});
+test('language changes keep selected detail and context; scroll keys are shared across languages',()=>{const r={lang:'zh',view:'detail',domain:'business-sales',kind:'problem',id:'S02'};const en=readRoute(routeUrl({...r,lang:'en'}));assert.equal(en.id,'S02');assert.equal(en.domain,r.domain);assert.equal(routeKey(r),routeKey(en));assert.equal(readRoute('?lang=invalid').lang,'zh');});
+test('sample provenance and concept limits remain explicit',()=>{assert.match(data.problems[0].source.commit,/^[a-f0-9]{40}$/);assert.equal(data.startups[0].evidence.text,'AI Sales Teams for Dental Practices');assert.equal(data.startups[0].original_url.zh.includes('view=company'),true);for(const c of data.capabilities){assert.equal(c.status,'concept_only');assert.equal(c.implementation,null);assert.equal(c.detail.example.status,'illustrative_not_executed');for(const id of c.detail.related_ids)assert.ok(data.capabilities.some(x=>x.id===id));}});
+test('duplicate records and unsupported execution claims fail the build',()=>{const bad=structuredClone(data);bad.problems.push(bad.problems[0]);assert.throws(()=>validate(bad));const execution=structuredClone(data);execution.matching_status='implemented';assert.throws(()=>validate(execution));});
+
+test('missing bilingual content is rejected before publication',()=>{const bad=structuredClone(data);delete bad.capabilities[0].detail.example.output.en;assert.throws(()=>validate(bad));});
