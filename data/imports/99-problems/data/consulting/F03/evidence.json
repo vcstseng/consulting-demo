@@ -1,0 +1,139 @@
+{
+  "case": "F03",
+  "synthetic": true,
+  "real_user_approval": false,
+  "implementation_authorized": false,
+  "source_sha256": "99a35ba5f895e766505000d6f69c739134e2fc06e06729cf6172377df3c34d42",
+  "document_sha256": "aec264fa678281d9b6efbfcbcb60f739bede31f6a89c3ee5e708259f8027ecfe",
+  "evidence": {
+    "status": "investigated",
+    "failure_reasons": [],
+    "evidence": [
+      {
+        "tool": "cost_variance_csv",
+        "source_sha256": "99a35ba5f895e766505000d6f69c739134e2fc06e06729cf6172377df3c34d42",
+        "source": "work_round2.csv",
+        "method": "sequential price then usage bridge; actual-volume weighting; no causal inference",
+        "values": {
+          "baseline": "166000.0",
+          "actual": "225300.0",
+          "volume": "22000.0",
+          "material_price": "-6000",
+          "material_usage": "-2700.0",
+          "labor_rate": "4000.0",
+          "labor_efficiency": "42000.0",
+          "overhead": "0"
+        }
+      }
+    ],
+    "claims": [
+      {
+        "metric": "baseline",
+        "value": "166000.0",
+        "evidence_ref": "99a35ba5f895e766505000d6f69c739134e2fc06e06729cf6172377df3c34d42",
+        "basis": "calculation"
+      },
+      {
+        "metric": "actual",
+        "value": "225300.0",
+        "evidence_ref": "99a35ba5f895e766505000d6f69c739134e2fc06e06729cf6172377df3c34d42",
+        "basis": "calculation"
+      },
+      {
+        "metric": "volume",
+        "value": "22000.0",
+        "evidence_ref": "99a35ba5f895e766505000d6f69c739134e2fc06e06729cf6172377df3c34d42",
+        "basis": "calculation"
+      },
+      {
+        "metric": "material_price",
+        "value": "-6000",
+        "evidence_ref": "99a35ba5f895e766505000d6f69c739134e2fc06e06729cf6172377df3c34d42",
+        "basis": "calculation"
+      },
+      {
+        "metric": "material_usage",
+        "value": "-2700.0",
+        "evidence_ref": "99a35ba5f895e766505000d6f69c739134e2fc06e06729cf6172377df3c34d42",
+        "basis": "calculation"
+      },
+      {
+        "metric": "labor_rate",
+        "value": "4000.0",
+        "evidence_ref": "99a35ba5f895e766505000d6f69c739134e2fc06e06729cf6172377df3c34d42",
+        "basis": "calculation"
+      },
+      {
+        "metric": "labor_efficiency",
+        "value": "42000.0",
+        "evidence_ref": "99a35ba5f895e766505000d6f69c739134e2fc06e06729cf6172377df3c34d42",
+        "basis": "calculation"
+      },
+      {
+        "metric": "overhead",
+        "value": "0",
+        "evidence_ref": "99a35ba5f895e766505000d6f69c739134e2fc06e06729cf6172377df3c34d42",
+        "basis": "calculation"
+      }
+    ],
+    "limitations": [
+      "合成資料，僅供展示。",
+      "差異分解是會計歸因，不代表已證明因果。",
+      "材料耗用變動需配合良率、報廢或規格紀錄判讀。",
+      "價格與用量交互影響依固定順序分配；更換順序會改變個別貢獻。"
+    ]
+  },
+  "domain_verification": {
+    "passed": true,
+    "failure_reasons": [],
+    "checks": [
+      "source_hash",
+      "claim_coverage",
+      "independent_recalculation",
+      "evidence_values"
+    ]
+  },
+  "planning_assumptions": {
+    "classification": "planning_assumption_not_forecast",
+    "currency": "synthetic_TWD",
+    "workstream_hours": {
+      "finance_data": 24,
+      "manufacturing_quality": 40,
+      "review_handoff": 16
+    },
+    "hourly_rate": "1500",
+    "total_hours": 80,
+    "indicative_cost": "120000",
+    "recovery_fractions": [
+      "0",
+      "0.25",
+      "0.5"
+    ],
+    "annualized": false,
+    "cash_saving_confirmed": false,
+    "period_duration_known": false
+  },
+  "benefit_scenarios": [
+    {
+      "recovery_fraction": "0",
+      "attribution_reduction": "0.0"
+    },
+    {
+      "recovery_fraction": "0.25",
+      "attribution_reduction": "10500.000"
+    },
+    {
+      "recovery_fraction": "0.5",
+      "attribution_reduction": "21000.00"
+    }
+  ],
+  "open_decisions": [
+    "source_period_and_definitions",
+    "root_cause_confirmation",
+    "named_owners",
+    "full_budget",
+    "sample_and_measurement_window",
+    "pilot_thresholds_and_quality_limits",
+    "stop_and_recovery_channel"
+  ]
+}

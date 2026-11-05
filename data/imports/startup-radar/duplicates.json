@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "startup-radar-d2af24ed6a509b85-4085",
+  "build_id": "a19de05fb54eef6839fa7fab709ad2addf63252b4202d54419c198845a718cfc",
+  "rule": "exact_nonempty_name_website_evidence",
+  "source_record_count": 4085,
+  "display_record_count": 4000,
+  "groups": {
+    "upstream-15929": [
+      "upstream-15929",
+      "upstream-20861"
+    ],
+    "upstream-16435": [
+      "upstream-16435",
+      "upstream-21237"
+    ],
+    "upstream-16437": [
+      "upstream-16437",
+      "upstream-21289"
+    ],
+    "upstream-16486": [
+      "upstream-16486",
+      "upstream-21234"
+    ],
+    "upstream-16535": [
+      "upstream-16535",
+      "upstream-21288"
+    ],
+    "upstream-16560": [
+      "upstream-16560",
+      "upstream-21233"
+    ],
+    "upstream-17036": [
+      "upstream-17036",
+      "upstream-21298"
+    ],
+    "upstream-17157": [
+      "upstream-17157",
+      "upstream-17875"
+    ],
+    "upstream-17203": [
+      "upstream-17203",
+      "upstream-18008"
+    ],
+    "upstream-17238": [
+      "upstream-17238",
+      "upstream-17907"
+    ],
+    "upstream-17302": [
+      "upstream-17302",
+      "upstream-17923"
+    ],
+    "upstream-17319": [
+      "upstream-17319",
+      "upstream-17940"
+    ],
+    "upstream-17478": [
+      "upstream-17478",
+      "upstream-17960"
+    ],
+    "upstream-17490": [
+      "upstream-17490",
+      "upstream-17972"
+    ],
+    "upstream-17498": [
+      "upstream-17498",
+      "upstream-17980"
+    ],
+    "upstream-17592": [
+      "upstream-17592",
+      "upstream-17844"
+    ],
+    "upstream-17600": [
+      "upstream-17600",
+      "upstream-17944"
+    ],
+    "upstream-17609": [
+      "upstream-17609",
+      "upstream-17953"
+    ],
+    "upstream-17613": [
+      "upstream-17613",
+      "upstream-17957"
+    ],
+    "upstream-17615": [
+      "upstream-17615",
+      "upstream-17959"
+    ],
+    "upstream-18055": [
+      "upstream-18055",
+      "upstream-20210"
+    ],
+    "upstream-18058": [
+      "upstream-18058",
+      "upstream-20213"
+    ],
+    "upstream-18070": [
+      "upstream-18070",
+      "upstream-20225"
+    ],
+    "upstream-18098": [
+      "upstream-18098",
+      "upstream-20094"
+    ],
+    "upstream-18137": [
+      "upstream-18137",
+      "upstream-20047"
+    ],
+    "upstream-18188": [
+      "upstream-18188",
+      "upstream-19969"
+    ],
+    "upstream-18203": [
+      "upstream-18203",
+      "upstream-20195"
+    ],
+    "upstream-18211": [
+      "upstream-18211",
+      "upstream-19871"
+    ],
+    "upstream-18213": [
+      "upstream-18213",
+      "upstream-19873"
+    ],
+    "upstream-18214": [
+      "upstream-18214",
+      "upstream-19874"
+    ],
+    "upstream-18218": [
+      "upstream-18218",
+      "upstream-19878"
+    ],
+    "upstream-18219": [
+      "upstream-18219",
+      "upstream-19879"
+    ],
+    "upstream-18226": [
+      "upstream-18226",
+      "upstream-19886"
+    ],
+    "upstream-18231": [
+      "upstream-18231",
+      "upstream-19891"
+    ],
+    "upstream-18233": [
+      "upstream-18233",
+      "upstream-19893"
+    ],
+    "upstream-18234": [
+      "upstream-18234",
+      "upstream-19894"
+    ],
+    "upstream-18242": [
+      "upstream-18242",
+      "upstream-20155"
+    ],
+    "upstream-18250": [
+      "upstream-18250",
+      "upstream-20245"
+    ],
+    "upstream-18255": [
+      "upstream-18255",
+      "upstream-20250"
+    ],
+    "upstream-18260": [
+      "upstream-18260",
+      "upstream-20255"
+    ],
+    "upstream-18261": [
+      "upstream-18261",
+      "upstream-20256"
+    ],
+    "upstream-18271": [
+      "upstream-18271",
+      "upstream-20266"
+    ],
+    "upstream-18272": [
+      "upstream-18272",
+      "upstream-20267",
+      "upstream-21301"
+    ],
+    "upstream-18289": [
+      "upstream-18289",
+      "upstream-19910"
+    ],
+    "upstream-18302": [
+      "upstream-18302",
+      "upstream-19923"
+    ],
+    "upstream-18307": [
+      "upstream-18307",
+      "upstream-19928"
+    ],
+    "upstream-18309": [
+      "upstream-18309",
+      "upstream-19930"
+    ],
+    "upstream-18310": [
+      "upstream-18310",
+      "upstream-19931"
+    ],
+    "upstream-18315": [
+      "upstream-18315",
+      "upstream-19936"
+    ],
+    "upstream-18316": [
+      "upstream-18316",
+      "upstream-19937"
+    ],
+    "upstream-18321": [
+      "upstream-18321",
+      "upstream-19942"
+    ],
+    "upstream-18332": [
+      "upstream-18332",
+      "upstream-19997"
+    ],
+    "upstream-18335": [
+      "upstream-18335",
+      "upstream-20000"
+    ],
+    "upstream-18339": [
+      "upstream-18339",
+      "upstream-20004"
+    ],
+    "upstream-18349": [
+      "upstream-18349",
+      "upstream-20014"
+    ],
+    "upstream-18368": [
+      "upstream-18368",
+      "upstream-20159"
+    ],
+    "upstream-18373": [
+      "upstream-18373",
+      "upstream-20164"
+    ],
+    "upstream-18378": [
+      "upstream-18378",
+      "upstream-20169"
+    ],
+    "upstream-18383": [
+      "upstream-18383",
+      "upstream-20174"
+    ],
+    "upstream-18396": [
+      "upstream-18396",
+      "upstream-20187"
+    ],
+    "upstream-18398": [
+      "upstream-18398",
+      "upstream-20189"
+    ],
+    "upstream-18400": [
+      "upstream-18400",
+      "upstream-20191"
+    ],
+    "upstream-18418": [
+      "upstream-18418",
+      "upstream-20128"
+    ],
+    "upstream-18424": [
+      "upstream-18424",
+      "upstream-20134"
+    ],
+    "upstream-18428": [
+      "upstream-18428",
+      "upstream-20138"
+    ],
+    "upstream-18442": [
+      "upstream-18442",
+      "upstream-20152"
+    ],
+    "upstream-18573": [
+      "upstream-18573",
+      "upstream-18924"
+    ],
+    "upstream-18577": [
+      "upstream-18577",
+      "upstream-18928"
+    ],
+    "upstream-18581": [
+      "upstream-18581",
+      "upstream-18932"
+    ],
+    "upstream-18646": [
+      "upstream-18646",
+      "upstream-18864"
+    ],
+    "upstream-18664": [
+      "upstream-18664",
+      "upstream-18843"
+    ],
+    "upstream-18667": [
+      "upstream-18667",
+      "upstream-18846"
+    ],
+    "upstream-18676": [
+      "upstream-18676",
+      "upstream-18855"
+    ],
+    "upstream-18681": [
+      "upstream-18681",
+      "upstream-18860"
+    ],
+    "upstream-18836": [
+      "upstream-18836",
+      "upstream-18867"
+    ],
+    "upstream-18839": [
+      "upstream-18839",
+      "upstream-18870"
+    ],
+    "upstream-20390": [
+      "upstream-20390",
+      "upstream-21305"
+    ],
+    "upstream-20514": [
+      "upstream-20514",
+      "upstream-21218"
+    ],
+    "upstream-20658": [
+      "upstream-20658",
+      "upstream-21276"
+    ],
+    "upstream-20666": [
+      "upstream-20666",
+      "upstream-21284"
+    ],
+    "upstream-20793": [
+      "upstream-20793",
+      "upstream-20904"
+    ],
+    "upstream-20796": [
+      "upstream-20796",
+      "upstream-20907"
+    ],
+    "upstream-20808": [
+      "upstream-20808",
+      "upstream-20919"
+    ],
+    "upstream-20820": [
+      "upstream-20820",
+      "upstream-21155"
+    ]
+  }
+}

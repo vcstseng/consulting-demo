@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.0-concept-detail",
+  "details": {
+    "idea-sales-fit": {
+      "scenario": {
+        "zh": "新名單進來，但團隊不確定是否符合產品適用條件。",
+        "en": "New prospects arrive, but product fit is unclear."
+      },
+      "steps": [
+        {
+          "zh": "逐項列出產品必要條件",
+          "en": "List required product conditions"
+        },
+        {
+          "zh": "對照需求，分開符合、衝突與未知",
+          "en": "Separate supported fit, conflicts and unknowns"
+        },
+        {
+          "zh": "把未知改寫為追問事項",
+          "en": "Turn unknowns into questions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構客戶甲需要私有部署；產品僅支援雲端；使用人數未提供。",
+          "en": "Fictional prospect A requires private hosting; the product is cloud-only; user count is missing."
+        },
+        "output": {
+          "zh": "衝突：部署要求不符。未知：使用人數。追問：是否可接受雲端？由業務決定是否繼續。",
+          "en": "Conflict: hosting requirements differ. Unknown: user count. Ask whether cloud hosting is acceptable; sales decides whether to proceed."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取經授權的客戶簡介與產品條件；不取得無關個資。",
+        "en": "Read only authorized prospect profiles and product constraints; exclude unrelated personal data."
+      },
+      "stop": {
+        "zh": "產品條件版本不明或需求互相矛盾時，停止結論並請業務補確認。",
+        "en": "With unclear product versions or conflicting needs, withhold a conclusion and ask sales to clarify."
+      },
+      "related_ids": [
+        "idea-sales-priority",
+        "idea-sales-discovery"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-23f72a5f9f7bc9",
+          "name": "Lead Research Assistant",
+          "reason": {
+            "zh": "潛在客戶研究與聯繫策略指引",
+            "en": "Prospect research and outreach guidance"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/lead-research-assistant/",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅作客戶研究方法的閱讀線索；不是此構想的已驗證實作。",
+            "en": "A reading lead for prospect research methods only; not a verified implementation of this concept."
+          }
+        }
+      ]
+    },
+    "idea-sales-priority": {
+      "scenario": {
+        "zh": "待聯絡名單很多，需要按明確規則安排順序。",
+        "en": "A large prospect list needs a transparent outreach order."
+      },
+      "steps": [
+        {
+          "zh": "確認主管核准的評分項目與權重",
+          "en": "Confirm approved criteria and weights"
+        },
+        {
+          "zh": "按相同尺度計算並標記缺值",
+          "en": "Apply one scale and flag missing values"
+        },
+        {
+          "zh": "呈現分數明細與策略例外",
+          "en": "Show breakdowns and strategic exceptions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例規則：適配度 60%、需求急迫性 40%，皆為 0–5 分。甲為 4、2；乙為 3、5。",
+          "en": "Example rule: fit 60%, urgency 40%, both scored 0–5. A scores 4 and 2; B scores 3 and 5."
+        },
+        "output": {
+          "zh": "甲：4×0.6＋2×0.4＝3.2；乙：3×0.6＋5×0.4＝3.8。乙先列出；主管仍可核准策略例外。此分數不是成交機率。",
+          "en": "A: 4×0.6 + 2×0.4 = 3.2; B: 3×0.6 + 5×0.4 = 3.8. List B first; a manager may approve an exception. Scores are not win probabilities."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取本次名單；不自行搜尋個資、不發送聯繫訊息。",
+        "en": "Read only the supplied list; do not gather personal data or send messages."
+      },
+      "stop": {
+        "zh": "未核准權重、尺度不一致或關鍵缺值時，不產生正式排序。",
+        "en": "Do not finalize ranking with unapproved weights, inconsistent scales or missing required values."
+      },
+      "related_ids": [
+        "idea-sales-fit",
+        "idea-sales-review"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-23f72a5f9f7bc9",
+          "name": "Lead Research Assistant",
+          "reason": {
+            "zh": "潛在客戶研究與聯繫策略指引",
+            "en": "Prospect research and outreach guidance"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/lead-research-assistant/",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅作客戶研究方法的閱讀線索；不是此構想的已驗證實作。",
+            "en": "A reading lead for prospect research methods only; not a verified implementation of this concept."
+          }
+        }
+      ]
+    },
+    "idea-sales-discovery": {
+      "scenario": {
+        "zh": "訪談之後，要分清楚客戶需求與業務自己的推測。",
+        "en": "After discovery, distinguish customer statements from seller assumptions."
+      },
+      "steps": [
+        {
+          "zh": "標記發言者與可回查片段",
+          "en": "Identify speakers and traceable excerpts"
+        },
+        {
+          "zh": "分列需求、假設與明確承諾",
+          "en": "Separate needs, assumptions and explicit commitments"
+        },
+        {
+          "zh": "確認後交付追問與紀錄草稿",
+          "en": "Submit follow-up questions and a record draft for confirmation"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構客戶：「下季可能試用，先給我安全文件。」業務筆記：「應該六月簽約。」",
+          "en": "Fictional customer: “We may trial next quarter; send security documents first.” Seller note: “Probably signs in June.”"
+        },
+        "output": {
+          "zh": "客戶需求：安全文件。可能意向：下季試用。業務推測：六月簽約，非客戶承諾。追問：試用核准人是誰？",
+          "en": "Stated need: security documents. Tentative intent: trial next quarter. Seller assumption: June signing, not a customer commitment. Ask who approves the trial."
+        }
+      },
+      "permissions": {
+        "zh": "僅使用獲准的會議與郵件；摘要經業務確認才可寫回 CRM。",
+        "en": "Use authorized meetings and emails only; sales must confirm before CRM updates."
+      },
+      "stop": {
+        "zh": "發言者或承諾歸屬不明時標為待確認，不自行認定。",
+        "en": "Flag unclear speakers or commitment ownership instead of assigning responsibility."
+      },
+      "related_ids": [
+        "idea-sales-fit",
+        "idea-sales-risk"
+      ],
+      "references": []
+    },
+    "idea-sales-margin": {
+      "scenario": {
+        "zh": "報價前比較不同折扣與收款條件。",
+        "en": "Compare discount and collection terms before issuing a quote."
+      },
+      "steps": [
+        {
+          "zh": "確認成本口徑、幣別與未含項目",
+          "en": "Confirm cost basis, currency and exclusions"
+        },
+        {
+          "zh": "按同一公式計算各情境",
+          "en": "Calculate scenarios with the same formulas"
+        },
+        {
+          "zh": "分開呈現毛利與收款時間",
+          "en": "Present margin separately from collection timing"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例：單價 100、單位成本 60、數量 10；情境 A 無折扣、30 天帳期；B 打九折、60 天帳期。不含稅、運費與融資成本。",
+          "en": "Example: unit price 100, unit cost 60, quantity 10. A: no discount, net 30; B: 10% discount, net 60. Tax, shipping and financing excluded."
+        },
+        "output": {
+          "zh": "A：收入 1,000、成本 600、毛利 400、毛利率 40%。B：收入 900、毛利 300、毛利率約 33.3%，約定收款晚 30 天；不代表實際回款日。",
+          "en": "A: revenue 1,000, cost 600, gross profit 400, margin 40%. B: revenue 900, gross profit 300, margin about 33.3%, contracted collection 30 days later; actual payment remains unknown."
+        }
+      },
+      "permissions": {
+        "zh": "成本與價格限授權人員讀取；不自動寄送報價或修改價格。",
+        "en": "Restrict cost and pricing access; do not send quotes or change prices automatically."
+      },
+      "stop": {
+        "zh": "成本缺漏、幣別混用或毛利率分母為零時，停止比較並標示原因。",
+        "en": "Stop comparison for missing costs, mixed currencies or a zero margin denominator."
+      },
+      "related_ids": [
+        "idea-sales-discovery",
+        "idea-sales-review"
+      ],
+      "references": []
+    },
+    "idea-sales-risk": {
+      "scenario": {
+        "zh": "商機卡住，需要找出待確認原因，而不是直接判定流失。",
+        "en": "A stalled deal needs investigation without assuming it is lost."
+      },
+      "steps": [
+        {
+          "zh": "在授權範圍讀取進度與互動時間線",
+          "en": "Read authorized progress and interaction timelines"
+        },
+        {
+          "zh": "逐項連接風險假設與原始紀錄",
+          "en": "Link each risk hypothesis to records"
+        },
+        {
+          "zh": "整理追問與行動草案，交業務確認",
+          "en": "Draft questions and actions for sales review"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構紀錄：3/2 客戶說待資安審查；3/9 業務寄出文件；3/16 尚無回覆。CRM 的決策人欄位空白。",
+          "en": "Fictional records: Mar 2, customer awaits security review; Mar 9, sales sends documents; Mar 16, no reply. Decision-maker field is empty."
+        },
+        "output": {
+          "zh": "待確認：文件是否收妥、審查負責人與時程。依據：上述紀錄。草案：由業務詢問審查狀態。無回覆不足以判定流失。",
+          "en": "Confirm receipt, review owner and timing, citing the records above. Draft action: sales asks about review progress. No reply alone does not establish loss."
+        }
+      },
+      "permissions": {
+        "zh": "僅讀取指定商機；不跨團隊查閱、不寄信、不更改商機階段。",
+        "en": "Read assigned deals only; no cross-team access, emails or stage changes."
+      },
+      "stop": {
+        "zh": "沒有讀取權限、紀錄相互矛盾或找不到原文依據時，交回業務，不輸出確定原因。",
+        "en": "Hand back to sales on denied access, contradictory records or missing evidence; do not assert a definitive cause."
+      },
+      "related_ids": [
+        "idea-sales-discovery",
+        "idea-sales-review"
+      ],
+      "references": []
+    },
+    "idea-sales-review": {
+      "scenario": {
+        "zh": "每週需要把數字異動、風險與待辦放在同一份檢討紀錄。",
+        "en": "Weekly reviews need figures, risks and actions in one record."
+      },
+      "steps": [
+        {
+          "zh": "收集同一截止時間的快照並核對口徑",
+          "en": "Collect snapshots at one cutoff and reconcile definitions"
+        },
+        {
+          "zh": "比較異動並整理待確認風險",
+          "en": "Compare changes and list unconfirmed risks"
+        },
+        {
+          "zh": "開會核准決策、指派負責人與期限",
+          "en": "Approve decisions in a meeting and assign owners and dates"
+        },
+        {
+          "zh": "下週核對完成狀態並保留變更紀錄",
+          "en": "Check completion next week and retain a change log"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構快照：商機甲金額由 10 萬改為 8 萬；上週待辦為確認資安審查，狀態仍未確認。金額不代表預期營收。",
+          "en": "Fictional snapshot: deal A changes from 100,000 to 80,000; last week’s security-review follow-up is still unconfirmed. Deal values are not expected revenue."
+        },
+        "output": {
+          "zh": "議程：確認減少 2 萬的依據、追蹤審查狀態。示範會後紀錄：業務甲負責確認，期限為下次檢討前；主管確認後才調整資源。",
+          "en": "Agenda: establish the reason for the 20,000 decrease and check review status. Illustrative meeting record: seller A follows up before the next review; resource changes require manager confirmation."
+        }
+      },
+      "permissions": {
+        "zh": "只彙整獲准商機；會後紀錄由主持人確認，對外承諾由業務負責。",
+        "en": "Aggregate authorized deals only; the chair confirms minutes and sales owns external commitments."
+      },
+      "stop": {
+        "zh": "快照截止時間不同或金額無法核對時，先列差異，不發布確定總數或預測。",
+        "en": "With mismatched cutoffs or unreconciled amounts, list discrepancies and withhold definitive totals or forecasts."
+      },
+      "related_ids": [
+        "idea-sales-risk",
+        "idea-sales-margin"
+      ],
+      "references": []
+    }
+  }
+}

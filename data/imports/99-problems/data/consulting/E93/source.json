@@ -1,0 +1,94 @@
+{
+  "claim_id": "launch-readiness",
+  "sources": [
+    {
+      "id": "primary-1",
+      "parents": [],
+      "position": "support"
+    },
+    {
+      "id": "summary-1",
+      "parents": [
+        "primary-1"
+      ]
+    },
+    {
+      "id": "repost-1",
+      "parents": [
+        "summary-1"
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "id": "report-01",
+      "source_ids": [
+        "repost-1"
+      ],
+      "model_family": "same-family"
+    },
+    {
+      "id": "report-02",
+      "source_ids": [
+        "repost-1"
+      ],
+      "model_family": "same-family"
+    },
+    {
+      "id": "report-03",
+      "source_ids": [
+        "repost-1"
+      ],
+      "model_family": "same-family"
+    },
+    {
+      "id": "report-04",
+      "source_ids": [
+        "repost-1"
+      ],
+      "model_family": "same-family"
+    },
+    {
+      "id": "report-05",
+      "source_ids": [
+        "repost-1"
+      ],
+      "model_family": "same-family"
+    },
+    {
+      "id": "report-06",
+      "source_ids": [
+        "repost-1"
+      ],
+      "model_family": "same-family"
+    },
+    {
+      "id": "report-07",
+      "source_ids": [
+        "repost-1"
+      ],
+      "model_family": "same-family"
+    },
+    {
+      "id": "report-08",
+      "source_ids": [
+        "repost-1"
+      ],
+      "model_family": "same-family"
+    },
+    {
+      "id": "report-09",
+      "source_ids": [
+        "repost-1"
+      ],
+      "model_family": "same-family"
+    },
+    {
+      "id": "report-10",
+      "source_ids": [
+        "repost-1"
+      ],
+      "model_family": "same-family"
+    }
+  ]
+}

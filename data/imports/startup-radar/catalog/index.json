@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "startup-radar-d2af24ed6a509b85-4085",
+  "build_id": "a19de05fb54eef6839fa7fab709ad2addf63252b4202d54419c198845a718cfc",
+  "taxonomy_version": "catalog-1.0.1",
+  "record_count": 4085,
+  "files": {
+    "taxonomy": "taxonomy.json",
+    "summary": "summary.json",
+    "records": "records.json",
+    "facets": "facets.json",
+    "cross_tabs": "cross-tabs.json"
+  },
+  "detail_loading": "Use record.detail_file, then records_by_id[record.id].",
+  "count_unit_zh": "未去重名錄紀錄；分類可重疊。",
+  "release_status": "local_review_dataset"
+}

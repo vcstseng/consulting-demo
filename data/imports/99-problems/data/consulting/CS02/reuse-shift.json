@@ -1,0 +1,425 @@
+{
+  "id": "cs02-similar-context-reuse-20261027",
+  "synthetic": true,
+  "blind": false,
+  "formal_Problem_X_used": false,
+  "engine_changed": false,
+  "external_model_calls": 0,
+  "real_user_approval": false,
+  "operational_action_performed": false,
+  "direct_reuse": {
+    "passed": 2,
+    "total": 2
+  },
+  "boundary_expectations": {
+    "met": 2,
+    "total": 2
+  },
+  "frozen_implementation_unchanged": true,
+  "prior_failure": "A previous reuse probe failed because tool and verifier used different comparison dates. The host now explicitly supplies that context; the original failure was retained.",
+  "limits": [
+    "Same-author synthetic diagnostic, not blind evaluation.",
+    "Two successful conditions are boundary variants within one scenario, not independent transfer trials.",
+    "Correct escalation and stopping are not solved problems.",
+    "Not full seven-gate validation, real human approval, historical-policy lookup or staffing optimization.",
+    "Prior full regression: 280 passed; this round ran only the new probe."
+  ],
+  "conditions": {
+    "deadline_instant": {
+      "as_of": "2026-10-27T00:05:00+08:00",
+      "expected_status": "delivered",
+      "actual_status": "delivered",
+      "expectation_met": true,
+      "attempts": 1,
+      "management": {
+        "expectation_met": true,
+        "accepted": true,
+        "real_user_approval": false
+      },
+      "expected_rows": [
+        {
+          "ticket_id": "SHIFT-critical",
+          "status": "suggested",
+          "priority": "P0",
+          "queue": "incident",
+          "assignee": "i-qualified",
+          "response_due_at": "2026-10-26T16:05:00+00:00",
+          "overdue": false,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "SHIFT-vip",
+          "status": "suggested",
+          "priority": "P2",
+          "queue": "billing",
+          "assignee": "b-qualified",
+          "response_due_at": "2026-10-26T18:00:00+00:00",
+          "overdue": false,
+          "escalate": false,
+          "reason_codes": [
+            "policy_category_rule"
+          ]
+        }
+      ],
+      "tickets_and_staff": {
+        "tickets": [
+          {
+            "id": "SHIFT-critical",
+            "category": "not_in_catalog",
+            "risk_flags": [
+              "service_interruption",
+              "account_takeover"
+            ],
+            "received_at": "2026-10-26T23:50:00+08:00",
+            "customer_value": "standard"
+          },
+          {
+            "id": "SHIFT-vip",
+            "category": "subscription",
+            "risk_flags": [],
+            "received_at": "2026-10-26T16:00:00+00:00",
+            "customer_value": "VIP"
+          }
+        ],
+        "staff": [
+          {
+            "id": "i-unavailable",
+            "queue": "incident",
+            "skills": [
+              "identity",
+              "incident_review"
+            ],
+            "available": false
+          },
+          {
+            "id": "i-partial",
+            "queue": "incident",
+            "skills": [
+              "identity"
+            ],
+            "available": true
+          },
+          {
+            "id": "i-qualified",
+            "queue": "incident",
+            "skills": [
+              "identity",
+              "incident_review"
+            ],
+            "available": true
+          },
+          {
+            "id": "b-qualified",
+            "queue": "billing",
+            "skills": [
+              "subscription_support"
+            ],
+            "available": true
+          }
+        ]
+      }
+    },
+    "one_second_later": {
+      "as_of": "2026-10-26T16:05:01+00:00",
+      "expected_status": "delivered",
+      "actual_status": "delivered",
+      "expectation_met": true,
+      "attempts": 1,
+      "management": {
+        "expectation_met": true,
+        "accepted": true,
+        "real_user_approval": false
+      },
+      "expected_rows": [
+        {
+          "ticket_id": "SHIFT-critical",
+          "status": "suggested",
+          "priority": "P0",
+          "queue": "incident",
+          "assignee": "i-qualified",
+          "response_due_at": "2026-10-26T16:05:00+00:00",
+          "overdue": true,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "SHIFT-vip",
+          "status": "suggested",
+          "priority": "P2",
+          "queue": "billing",
+          "assignee": "b-qualified",
+          "response_due_at": "2026-10-26T18:00:00+00:00",
+          "overdue": false,
+          "escalate": false,
+          "reason_codes": [
+            "policy_category_rule"
+          ]
+        }
+      ],
+      "tickets_and_staff": {
+        "tickets": [
+          {
+            "id": "SHIFT-critical",
+            "category": "not_in_catalog",
+            "risk_flags": [
+              "service_interruption",
+              "account_takeover"
+            ],
+            "received_at": "2026-10-26T23:50:00+08:00",
+            "customer_value": "standard"
+          },
+          {
+            "id": "SHIFT-vip",
+            "category": "subscription",
+            "risk_flags": [],
+            "received_at": "2026-10-26T16:00:00+00:00",
+            "customer_value": "VIP"
+          }
+        ],
+        "staff": [
+          {
+            "id": "i-unavailable",
+            "queue": "incident",
+            "skills": [
+              "identity",
+              "incident_review"
+            ],
+            "available": false
+          },
+          {
+            "id": "i-partial",
+            "queue": "incident",
+            "skills": [
+              "identity"
+            ],
+            "available": true
+          },
+          {
+            "id": "i-qualified",
+            "queue": "incident",
+            "skills": [
+              "identity",
+              "incident_review"
+            ],
+            "available": true
+          },
+          {
+            "id": "b-qualified",
+            "queue": "billing",
+            "skills": [
+              "subscription_support"
+            ],
+            "available": true
+          }
+        ]
+      }
+    },
+    "qualified_staff_unavailable": {
+      "as_of": "2026-10-27T00:05:00+08:00",
+      "expected_status": "needs_human",
+      "actual_status": "needs_human",
+      "expectation_met": true,
+      "attempts": 1,
+      "management": {
+        "expectation_met": true,
+        "acceptance_rejected": true,
+        "stop_survives_reopen": true,
+        "real_user_approval": false
+      },
+      "expected_rows": [
+        {
+          "ticket_id": "SHIFT-critical",
+          "status": "needs_human",
+          "priority": "P0",
+          "queue": "incident",
+          "assignee": null,
+          "response_due_at": "2026-10-26T16:05:00+00:00",
+          "overdue": false,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule",
+            "no_qualified_available_staff"
+          ]
+        },
+        {
+          "ticket_id": "SHIFT-vip",
+          "status": "suggested",
+          "priority": "P2",
+          "queue": "billing",
+          "assignee": "b-qualified",
+          "response_due_at": "2026-10-26T18:00:00+00:00",
+          "overdue": false,
+          "escalate": false,
+          "reason_codes": [
+            "policy_category_rule"
+          ]
+        }
+      ],
+      "tickets_and_staff": {
+        "tickets": [
+          {
+            "id": "SHIFT-critical",
+            "category": "not_in_catalog",
+            "risk_flags": [
+              "service_interruption",
+              "account_takeover"
+            ],
+            "received_at": "2026-10-26T23:50:00+08:00",
+            "customer_value": "standard"
+          },
+          {
+            "id": "SHIFT-vip",
+            "category": "subscription",
+            "risk_flags": [],
+            "received_at": "2026-10-26T16:00:00+00:00",
+            "customer_value": "VIP"
+          }
+        ],
+        "staff": [
+          {
+            "id": "i-unavailable",
+            "queue": "incident",
+            "skills": [
+              "identity",
+              "incident_review"
+            ],
+            "available": false
+          },
+          {
+            "id": "i-partial",
+            "queue": "incident",
+            "skills": [
+              "identity"
+            ],
+            "available": true
+          },
+          {
+            "id": "i-qualified",
+            "queue": "incident",
+            "skills": [
+              "identity",
+              "incident_review"
+            ],
+            "available": false
+          },
+          {
+            "id": "b-qualified",
+            "queue": "billing",
+            "skills": [
+              "subscription_support"
+            ],
+            "available": true
+          }
+        ]
+      }
+    },
+    "policy_expiry_instant": {
+      "as_of": "2026-10-28T00:00:00+08:00",
+      "expected_status": "needs_evidence",
+      "actual_status": "needs_evidence",
+      "expectation_met": true,
+      "attempts": 1,
+      "management": {
+        "expectation_met": true,
+        "not_submittable": true
+      },
+      "expected_rows": null,
+      "tickets_and_staff": {
+        "tickets": [
+          {
+            "id": "SHIFT-critical",
+            "category": "not_in_catalog",
+            "risk_flags": [
+              "service_interruption",
+              "account_takeover"
+            ],
+            "received_at": "2026-10-26T23:50:00+08:00",
+            "customer_value": "standard"
+          },
+          {
+            "id": "SHIFT-vip",
+            "category": "subscription",
+            "risk_flags": [],
+            "received_at": "2026-10-26T16:00:00+00:00",
+            "customer_value": "VIP"
+          }
+        ],
+        "staff": [
+          {
+            "id": "i-unavailable",
+            "queue": "incident",
+            "skills": [
+              "identity",
+              "incident_review"
+            ],
+            "available": false
+          },
+          {
+            "id": "i-partial",
+            "queue": "incident",
+            "skills": [
+              "identity"
+            ],
+            "available": true
+          },
+          {
+            "id": "i-qualified",
+            "queue": "incident",
+            "skills": [
+              "identity",
+              "incident_review"
+            ],
+            "available": true
+          },
+          {
+            "id": "b-qualified",
+            "queue": "billing",
+            "skills": [
+              "subscription_support"
+            ],
+            "available": true
+          }
+        ]
+      }
+    }
+  },
+  "policy": {
+    "id": "midnight-shift-policy",
+    "version": 12,
+    "effective_from": "2026-10-27T00:00:00+08:00",
+    "effective_until": "2026-10-28T00:00:00+08:00",
+    "risk_priority": {
+      "account_takeover": "P0",
+      "service_interruption": "P1"
+    },
+    "sla_minutes": {
+      "P0": 15,
+      "P1": 45,
+      "P2": 120
+    },
+    "priority_queues": {
+      "P0": "incident",
+      "P1": "operations"
+    },
+    "category_queues": {
+      "subscription": "billing"
+    },
+    "queue_skills": {
+      "incident": [
+        "identity",
+        "incident_review"
+      ],
+      "operations": [
+        "service_support"
+      ],
+      "billing": [
+        "subscription_support"
+      ]
+    }
+  }
+}

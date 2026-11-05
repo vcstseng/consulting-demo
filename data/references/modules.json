@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1-reference-registry",
   "recorded_at": "2026-11-05",
-  "status": "round_one_selected_samples",
+  "status": "full_fixed_snapshot_integrated",
   "modules": [
     {
       "id": "99-problems",
@@ -12,7 +12,8 @@
       "version": {
         "commit": "95dd4ffb7ee669465b8700ef313fa4761ade7358"
       },
-      "note": "本輪僅接入 S02 雙語欄位，非全量匯入。"
+      "note": "完整 prototype 展示內容的固定快照；不自動同步，不修改原專案。",
+      "snapshot_path": "data/imports/99-problems"
     },
     {
       "id": "startup-radar",
@@ -23,7 +24,8 @@
       "version": {
         "commit": "fe001851befcec4ad8ae12d127a8e477804bee37"
       },
-      "note": "本輪僅接入 upstream-10109，保留摘要及原文。"
+      "note": "完整 prototype 展示內容的固定快照；不自動同步，不修改原專案。",
+      "snapshot_path": "data/imports/startup-radar"
     },
     {
       "id": "capability-store",
@@ -32,10 +34,11 @@
       "website": "https://vcstseng.github.io/capability-store/",
       "local_path": "D:/capability-store",
       "version": {
-        "tag": "capability-store-prototype-v1",
-        "commit": "26b3d0c8d1d43ce7509770b82f8fa635b2873a11"
+        "commit": "26b3d0c8d1d43ce7509770b82f8fa635b2873a11",
+        "tag": "capability-store-prototype-v1"
       },
-      "note": "本輪僅接入銷售六個能力，原凍結版不變。"
+      "note": "完整 prototype 展示內容的固定快照；不自動同步，不修改原專案。",
+      "snapshot_path": "data/imports/capability-store"
     }
   ]
 }

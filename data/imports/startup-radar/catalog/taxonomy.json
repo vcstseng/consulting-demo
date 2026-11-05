@@ -1,0 +1,437 @@
+{
+  "schema_version": "1.0",
+  "taxonomy_version": "catalog-1.0.1",
+  "dimensions": {
+    "industry_customer": {
+      "label_zh": "產業／客群",
+      "description_zh": "原始維度同時含產業與客群角色；大類名稱也保留這種混合，不把企業內部職務當成公司所屬產業。",
+      "categories": [
+        {
+          "id": "healthcare",
+          "label_zh": "醫療、照護與獸醫",
+          "kind": "domain"
+        },
+        {
+          "id": "life-sciences",
+          "label_zh": "生技、製藥與生命科學",
+          "kind": "domain"
+        },
+        {
+          "id": "finance-insurance",
+          "label_zh": "金融、保險與財務會計",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "retail-commerce",
+          "label_zh": "零售、電商與商品品牌",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "marketing-sales",
+          "label_zh": "行銷、銷售與客服團隊",
+          "kind": "role_or_domain"
+        },
+        {
+          "id": "media-creative",
+          "label_zh": "媒體、內容與創作者",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "software-it",
+          "label_zh": "軟體、IT 與資安",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "ai-data",
+          "label_zh": "AI、資料與模型開發",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "manufacturing",
+          "label_zh": "製造、工業與機器人",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "construction-property",
+          "label_zh": "營建、不動產與物業",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "logistics-supplychain",
+          "label_zh": "物流、供應鏈與貿易",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "mobility-auto",
+          "label_zh": "汽車、交通與車隊",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "aerospace",
+          "label_zh": "航太、航空與海事",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "energy-water",
+          "label_zh": "能源、水務與公用設施",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "agriculture-food",
+          "label_zh": "農業、食品與畜牧",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "travel-hospitality",
+          "label_zh": "餐飲、旅宿與旅遊",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "education",
+          "label_zh": "教育、學生與培訓",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "workforce",
+          "label_zh": "人資、招募與工作者",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "legal",
+          "label_zh": "法律、合規與智慧財產",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "public-defense",
+          "label_zh": "政府、公共安全與國防",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "consumer-household",
+          "label_zh": "個人、家庭與生活",
+          "kind": "audience"
+        },
+        {
+          "id": "wellness-sport",
+          "label_zh": "健康保健、運動與美容",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "research-technical",
+          "label_zh": "研究、工程與專業團隊",
+          "kind": "role"
+        },
+        {
+          "id": "business-general",
+          "label_zh": "一般企業與組織",
+          "kind": "general_audience"
+        },
+        {
+          "id": "sustainability",
+          "label_zh": "環境、永續與資源",
+          "kind": "domain_or_role"
+        },
+        {
+          "id": "__missing",
+          "label_zh": "原始資訊不足",
+          "description_zh": "該維度原本沒有 tags，維持未知。",
+          "kind": "status"
+        },
+        {
+          "id": "__other",
+          "label_zh": "其他已描述／待歸類",
+          "description_zh": "有細 tags，但目前大類規則未涵蓋；可能與已歸類大類同時出現。",
+          "kind": "status"
+        }
+      ]
+    },
+    "problem_workflow": {
+      "label_zh": "問題／工作環節",
+      "description_zh": "依已描述的工作歸類；同一工作可兼具資料處理與特定業務目的，不補原文未明說的流程。",
+      "categories": [
+        {
+          "id": "sales-marketing",
+          "label_zh": "獲客、行銷與銷售",
+          "kind": "task"
+        },
+        {
+          "id": "customer-service",
+          "label_zh": "客服、接待與客戶互動",
+          "kind": "task"
+        },
+        {
+          "id": "finance-accounting",
+          "label_zh": "財務、會計、稅務與收付款",
+          "kind": "task"
+        },
+        {
+          "id": "legal-compliance",
+          "label_zh": "法律、合約、合規與稽核",
+          "kind": "task"
+        },
+        {
+          "id": "risk-security",
+          "label_zh": "風險、安全、隱私與身分",
+          "kind": "task"
+        },
+        {
+          "id": "people-workforce",
+          "label_zh": "招募、人力與員工管理",
+          "kind": "task"
+        },
+        {
+          "id": "supplychain-procurement",
+          "label_zh": "採購、供應鏈、物流與庫存",
+          "kind": "task"
+        },
+        {
+          "id": "production-quality",
+          "label_zh": "生產、製程與品質",
+          "kind": "task"
+        },
+        {
+          "id": "facilities-maintenance",
+          "label_zh": "設施、設備、物業與維護",
+          "kind": "task"
+        },
+        {
+          "id": "healthcare-care",
+          "label_zh": "醫療、診斷、照護與健康支持",
+          "kind": "task"
+        },
+        {
+          "id": "research-discovery",
+          "label_zh": "研究、研發與探索",
+          "kind": "task"
+        },
+        {
+          "id": "software-development",
+          "label_zh": "軟體開發、測試與維運",
+          "kind": "task"
+        },
+        {
+          "id": "ai-lifecycle",
+          "label_zh": "AI 開發、部署、評估與治理",
+          "kind": "task"
+        },
+        {
+          "id": "education-training",
+          "label_zh": "教育、學習與技能培訓",
+          "kind": "task"
+        },
+        {
+          "id": "content-creative",
+          "label_zh": "內容、媒體與創意設計",
+          "kind": "task"
+        },
+        {
+          "id": "data-knowledge",
+          "label_zh": "資料、文件、知識與資訊處理",
+          "kind": "task"
+        },
+        {
+          "id": "operations-planning",
+          "label_zh": "營運、規劃、排程與協作",
+          "kind": "task"
+        },
+        {
+          "id": "personal-life",
+          "label_zh": "個人生活、陪伴與日常活動",
+          "kind": "task"
+        },
+        {
+          "id": "energy-environment",
+          "label_zh": "能源、環境、農業與永續管理",
+          "kind": "task"
+        },
+        {
+          "id": "matching-transactions",
+          "label_zh": "媒合、交易與經紀",
+          "kind": "task"
+        },
+        {
+          "id": "engineering-design",
+          "label_zh": "工程設計、模擬與硬體研發",
+          "kind": "task"
+        },
+        {
+          "id": "assessment-detection",
+          "label_zh": "評估、偵測、預測與量測",
+          "kind": "cross_domain_task"
+        },
+        {
+          "id": "__missing",
+          "label_zh": "原始資訊不足",
+          "description_zh": "該維度原本沒有 tags，維持未知。",
+          "kind": "status"
+        },
+        {
+          "id": "__other",
+          "label_zh": "其他已描述／待歸類",
+          "description_zh": "有細 tags，但目前大類規則未涵蓋；可能與已歸類大類同時出現。",
+          "kind": "status"
+        }
+      ]
+    },
+    "solution": {
+      "label_zh": "解法形式／技術",
+      "description_zh": "既有 tags 同時包含技術、能力與交付形式；以 kind 區分，不把平台、SaaS 或 agent 名稱當成已驗證能力。",
+      "categories": [
+        {
+          "id": "agents",
+          "label_zh": "AI agents 與數位工作者",
+          "kind": "form"
+        },
+        {
+          "id": "assistants",
+          "label_zh": "AI 助理、教練與角色工具",
+          "kind": "form"
+        },
+        {
+          "id": "voice-conversation",
+          "label_zh": "語音、對話與通訊",
+          "kind": "capability"
+        },
+        {
+          "id": "vision-imaging",
+          "label_zh": "電腦視覺與影像處理",
+          "kind": "technology_or_capability"
+        },
+        {
+          "id": "generation",
+          "label_zh": "生成、創作與編輯",
+          "kind": "capability"
+        },
+        {
+          "id": "language-search",
+          "label_zh": "語言模型、語意與搜尋",
+          "kind": "technology_or_capability"
+        },
+        {
+          "id": "ml-prediction",
+          "label_zh": "機器學習、預測與因果",
+          "kind": "technology_or_capability"
+        },
+        {
+          "id": "analysis-decision",
+          "label_zh": "分析、偵測與決策支援",
+          "kind": "capability"
+        },
+        {
+          "id": "automation-optimization",
+          "label_zh": "自動化、最佳化與流程編排",
+          "kind": "capability"
+        },
+        {
+          "id": "robotics",
+          "label_zh": "機器人、無人機與自主控制",
+          "kind": "technology"
+        },
+        {
+          "id": "hardware-sensing",
+          "label_zh": "硬體、感測與穿戴",
+          "kind": "technology_or_form"
+        },
+        {
+          "id": "simulation-twins",
+          "label_zh": "模擬與數位孿生",
+          "kind": "technology"
+        },
+        {
+          "id": "immersive-3d",
+          "label_zh": "3D、AR 與混合實境",
+          "kind": "technology"
+        },
+        {
+          "id": "models-compute",
+          "label_zh": "模型、運算與 AI 基礎設施",
+          "kind": "technology_or_infrastructure"
+        },
+        {
+          "id": "security-governance",
+          "label_zh": "安全、隱私與治理工具",
+          "kind": "capability_or_infrastructure"
+        },
+        {
+          "id": "data-tools",
+          "label_zh": "資料、知識與訓練資料工具",
+          "kind": "infrastructure_or_form"
+        },
+        {
+          "id": "developer-tools",
+          "label_zh": "API、開發、整合與低程式碼工具",
+          "kind": "form"
+        },
+        {
+          "id": "software-platforms",
+          "label_zh": "軟體、平台與應用",
+          "kind": "form"
+        },
+        {
+          "id": "marketplaces",
+          "label_zh": "市集與媒合",
+          "kind": "form_or_capability"
+        },
+        {
+          "id": "services",
+          "label_zh": "服務、顧問與經紀",
+          "kind": "form",
+          "description_zh": "含專業服務與資料、運算等服務形式；不直接判定公司本身是服務營運者。"
+        },
+        {
+          "id": "blockchain",
+          "label_zh": "區塊鏈與 Web3",
+          "kind": "technology"
+        },
+        {
+          "id": "generic-ai",
+          "label_zh": "概括 AI 標籤",
+          "kind": "unspecified",
+          "description_zh": "此細 tag 本身未明說方式；同筆紀錄可能另有具體 tags，不代表整筆都缺乏細節。"
+        },
+        {
+          "id": "personalization-behavior",
+          "label_zh": "個人化與行為方法",
+          "kind": "capability_or_method"
+        },
+        {
+          "id": "human-collaboration",
+          "label_zh": "人機協作與人工參與",
+          "kind": "form"
+        },
+        {
+          "id": "avatars-games",
+          "label_zh": "虛擬角色、遊戲與數位分身",
+          "kind": "form"
+        },
+        {
+          "id": "specialized-ai",
+          "label_zh": "多模態、空間與實體 AI",
+          "kind": "technology_family"
+        },
+        {
+          "id": "scientific-medical",
+          "label_zh": "生醫、科學與材料技術",
+          "kind": "technology_family"
+        },
+        {
+          "id": "energy-cooling",
+          "label_zh": "能源供電與冷卻",
+          "kind": "supporting_technology"
+        },
+        {
+          "id": "__missing",
+          "label_zh": "原始資訊不足",
+          "description_zh": "該維度原本沒有 tags，維持未知。",
+          "kind": "status"
+        },
+        {
+          "id": "__other",
+          "label_zh": "其他已描述／待歸類",
+          "description_zh": "有細 tags，但目前大類規則未涵蓋；可能與已歸類大類同時出現。",
+          "kind": "status"
+        }
+      ]
+    }
+  }
+}

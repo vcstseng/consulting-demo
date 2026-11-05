@@ -1,12 +1,11 @@
-# 中英文整合網站殼
+# 完整整合 prototype
 
-Node.js 22+，不需安裝依賴。npm test、npm run build、npm run dev。預覽 http://127.0.0.1:4176/。
+Node.js 22+、Python 3，無第三方依賴。npm test 先建置，再跑完整性測試；npm run dev 預覽 http://127.0.0.1:4176/。
 
-首頁：?lang=zh。領域：?lang=zh&view=domain&domain=business-sales。詳情：?lang=zh&view=detail&domain=business-sales&kind=problem&id=S02；kind 也可為 startup／capability。方案架構：?lang=zh&view=showcase。
+L1：?lang=zh。領域 L2：?lang=zh&view=domain&domain=business-finance&tab=problems。完整模組 L2：?lang=zh&view=library&tab=startups。
 
-網址保留 domain、kind、id、lang；返回以領域與頁型保留捲動，語言不造成重新選擇。所有詳情須同時符合 ID、模組與領域；未知連結顯示未提供，不回填別的資料。
+L3：view=detail；kind 為 problem／startup／capability／resource／trend／guide，id 保留原 ID。origin=library 或 domain 決定返回位置；guide 由 origin=showcase 返回既有方法頁。原先樣本連結與 domain hash 分頁可相容。
 
-build 讀取 data/samples/round-one.json，沒有網路同步、資料庫、matching 或執行端點。未來產品化可替換資料讀取層，不能把目前概念界線當成已實作權限。
+URL 保存語言、分頁、頁次、分類、startup 三維多選；detail 返回復原原條件與焦點。只有打開新創列表時才讀 startups.json，只有打開公司才讀所屬 detail batch；原文件與證據亦按需載入。英文新創介紹沿用原文節錄，原文與中文細 tags／notes 保留在詳情。
 
-
-UI v2：領域以 tab=problems／startups／capabilities 決定唯一可見分頁；網址、位置記錄、語言與返回均保留 tab。詳情由 kind 推導來源分頁；舊 hash 導覽可相容。
+build 讀 data/imports 固定來源，拒絕數量、版本雜湊、雙語或參照缺漏。GitHub workflow 先建置再測試；來源有變不會自動同步。樣本檔 data/samples 不再是建置輸入。

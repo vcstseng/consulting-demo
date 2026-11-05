@@ -1,0 +1,5013 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "startup-radar-d2af24ed6a509b85-4085",
+  "records_by_id": {
+    "upstream-00076": {
+      "id": "upstream-00076",
+      "name": "Bark",
+      "summary_zh": "分析兒童線上活動，向家長提醒霸凌等風險。",
+      "tags": {
+        "industry_customer": [
+          "家庭",
+          "家長"
+        ],
+        "problem_workflow": [
+          "兒童線上安全監測"
+        ],
+        "solution": [
+          "機器學習",
+          "警示工具"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Bark uses machine learning to detect and alert parents to issues their children are facing online, such as cyberbullying, sexting, and thoughts of suicide."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 76
+    },
+    "upstream-00411": {
+      "id": "upstream-00411",
+      "name": "ReelData AI",
+      "summary_zh": "為水產養殖提供體重分布、餵養、健康與成長分析。",
+      "tags": {
+        "industry_customer": [
+          "水產養殖"
+        ],
+        "problem_workflow": [
+          "餵養分析",
+          "健康分析",
+          "成長分析"
+        ],
+        "solution": [
+          "AI 分析"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI for aquaculture. Delivers real time weight distributions, feeding analysis, health analysis and growth analysis"
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 411
+    },
+    "upstream-00475": {
+      "id": "upstream-00475",
+      "name": "Suggestic",
+      "summary_zh": "以 AI 提供個人化營養與食物建議。",
+      "tags": {
+        "industry_customer": [
+          "健康"
+        ],
+        "problem_workflow": [
+          "飲食建議"
+        ],
+        "solution": [
+          "AI 推薦"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Outcome-driven personalized nutrition platform that uses AI to deliver precise food recommendations."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 475
+    },
+    "upstream-00789": {
+      "id": "upstream-00789",
+      "name": "Periphery",
+      "summary_zh": "為關鍵工業與企業物聯網提供嵌入式 AI 威脅管理。",
+      "tags": {
+        "industry_customer": [
+          "工業",
+          "企業",
+          "物聯網"
+        ],
+        "problem_workflow": [
+          "威脅管理"
+        ],
+        "solution": [
+          "嵌入式 AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Embedded AI threat management for critical industrial and enterprise IoT technologies."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 789
+    },
+    "upstream-00805": {
+      "id": "upstream-00805",
+      "name": "Meta-Flux",
+      "summary_zh": "以 AI 偵測診斷平台支援疾病預防與辨識。",
+      "tags": {
+        "industry_customer": [
+          "醫療"
+        ],
+        "problem_workflow": [
+          "疾病偵測",
+          "診斷支援"
+        ],
+        "solution": [
+          "AI 平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Meta-Flux is an AI-assisted detection diagnostics platform for disease prevention. Its Patterns and fluctuations seen in personalized medicine can identify diseases. Using Artificial Intelligence and designing computer software offers a service that ca..."
+      },
+      "notes": [
+        "介紹截斷，未明示疾病與診斷方式。"
+      ],
+      "source": "techstars",
+      "upstream_position": 805
+    },
+    "upstream-00963": {
+      "id": "upstream-00963",
+      "name": "Nabu",
+      "summary_zh": "以 AI agents 處理清關。",
+      "tags": {
+        "industry_customer": [
+          "物流",
+          "貿易"
+        ],
+        "problem_workflow": [
+          "清關"
+        ],
+        "solution": [
+          "AI agent"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI Agents for customs clearance"
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 963
+    },
+    "upstream-01025": {
+      "id": "upstream-01025",
+      "name": "GameplAI",
+      "summary_zh": "以機器學習及即時技術協助運動博弈業者建立下注機會。",
+      "tags": {
+        "industry_customer": [
+          "運動博弈",
+          "博弈業者"
+        ],
+        "problem_workflow": [
+          "投注機會建立"
+        ],
+        "solution": [
+          "機器學習",
+          "軟體平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "We are a software development platform that enables sports betting operators to offer fast, new betting opportunities through machine learning and real-time technology. With GameplAI every on field event becomes a market."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 1025
+    },
+    "upstream-01078": {
+      "id": "upstream-01078",
+      "name": "Wastetide",
+      "summary_zh": "以 AI 方案減少未分類廢棄物。",
+      "tags": {
+        "industry_customer": [
+          "廢棄物管理"
+        ],
+        "problem_workflow": [
+          "未分類廢棄物減量"
+        ],
+        "solution": [
+          "AI 方案"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI solution reducing the volume of unsorted waste"
+      },
+      "notes": [
+        "未明示辨識、分揀或其他方式。"
+      ],
+      "source": "techstars",
+      "upstream_position": 1078
+    },
+    "upstream-01172": {
+      "id": "upstream-01172",
+      "name": "Odaptos",
+      "summary_zh": "以 AI 平台進行易用性測試。",
+      "tags": {
+        "industry_customer": [
+          "使用者研究"
+        ],
+        "problem_workflow": [
+          "易用性測試"
+        ],
+        "solution": [
+          "AI 平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Odaptos is an artificial intelligence platform that allows users to perform usability testing."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 1172
+    },
+    "upstream-01423": {
+      "id": "upstream-01423",
+      "name": "Bundled",
+      "summary_zh": "以 AI 平台整合訂閱服務套組。",
+      "tags": {
+        "industry_customer": [
+          "訂閱服務"
+        ],
+        "problem_workflow": [
+          "訂閱整合"
+        ],
+        "solution": [
+          "AI 平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Building the AI-powered Costco of Subscriptions - Bundle your Subscriptions and Save"
+      },
+      "notes": [
+        "未明示節省機制。"
+      ],
+      "source": "techstars",
+      "upstream_position": 1423
+    },
+    "upstream-01514": {
+      "id": "upstream-01514",
+      "name": "Zmode",
+      "summary_zh": "為在地服務業整合網站、預約、提醒、客戶追蹤與支付。",
+      "tags": {
+        "industry_customer": [
+          "在地服務業"
+        ],
+        "problem_workflow": [
+          "預約",
+          "客戶追蹤",
+          "支付處理"
+        ],
+        "solution": [
+          "AI 營收系統"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Zmode is AI revenue infrastructure for local service businesses. We replace 5 disconnected \ntools with one revenue system -- website, booking, reminders, lead follow-up, and payments -- live in seconds."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 1514
+    },
+    "upstream-01553": {
+      "id": "upstream-01553",
+      "name": "The Secure AI Corporation",
+      "summary_zh": "為國防環境提供完全離線及邊緣裝置生成式 AI。",
+      "tags": {
+        "industry_customer": [
+          "國防"
+        ],
+        "problem_workflow": [
+          "離線 AI 運行"
+        ],
+        "solution": [
+          "生成式 AI",
+          "邊緣 AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Secure AI delivers mission-critical generative AI solutions for the $900B defense sector that operate completely offline and on edge devices. Our technology enables advanced AI capabilities for classified environments, maritime vessels, unmanned systems, and orbital platforms--bringing intelligence exactly where it's needed most."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 1553
+    },
+    "upstream-01617": {
+      "id": "upstream-01617",
+      "name": "Mindframe",
+      "summary_zh": "以對話式 AI 自動化心理照護初步接案並判定照護路徑。",
+      "tags": {
+        "industry_customer": [
+          "醫療",
+          "心理健康"
+        ],
+        "problem_workflow": [
+          "照護接案",
+          "照護路徑判定"
+        ],
+        "solution": [
+          "對話式 AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Getting patients to the right mental health care is slow and inconsistent. Mindframe automates intake and determines appropriate care pathways using conversational AI."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 1617
+    },
+    "upstream-01725": {
+      "id": "upstream-01725",
+      "name": "Trinzz",
+      "summary_zh": "為生醫及生命科學公司建立 3D-stacked biomedical AI 資料系統。",
+      "tags": {
+        "industry_customer": [
+          "生物科技",
+          "生命科學"
+        ],
+        "problem_workflow": [
+          "研究與探索支援"
+        ],
+        "solution": [
+          "AI 資料系統"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "For biomedical and life science companies, Trinzz is building the ultimate data stack, leveraging 3D-stacked biomedical AI to accelerate research and discovery."
+      },
+      "notes": [
+        "3D-stacked 的具體意義與技術未交代。"
+      ],
+      "source": "techstars",
+      "upstream_position": 1725
+    },
+    "upstream-01762": {
+      "id": "upstream-01762",
+      "name": "Asvin Tech",
+      "summary_zh": "為中低收入國家牙醫提供 AI 3D 方案。",
+      "tags": {
+        "industry_customer": [
+          "醫療",
+          "牙醫"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI",
+          "3D 技術"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Asvin Tech develops AI-powered, low-cost, and high-precision 3D solutions for dentists in low-to-middle-income countries"
+      },
+      "notes": [
+        "未交代掃描、設計或其他任務。"
+      ],
+      "source": "techstars",
+      "upstream_position": 1762
+    },
+    "upstream-01828": {
+      "id": "upstream-01828",
+      "name": "Cronwell",
+      "summary_zh": "為化工廠提供 AI 根因分析，以處理非預期停機。",
+      "tags": {
+        "industry_customer": [
+          "化工",
+          "製造"
+        ],
+        "problem_workflow": [
+          "故障診斷",
+          "非預期停機"
+        ],
+        "solution": [
+          "AI 分析",
+          "根因分析"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Cronwell prevents costly unplanned shutdowns in chemical plants with AI-driven root cause analysis, reducing diagnosis time from days to hours."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 1828
+    },
+    "upstream-01921": {
+      "id": "upstream-01921",
+      "name": "SANITAS",
+      "summary_zh": "為 BIPOC 與代表性不足族群提供 AI 心理健康服務。",
+      "tags": {
+        "industry_customer": [
+          "心理健康",
+          "BIPOC 族群",
+          "代表性不足族群"
+        ],
+        "problem_workflow": [
+          "心理健康支持"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "The first-of-its kind AI driven mental health for BIPOC and underrepresented populations."
+      },
+      "notes": [
+        "未明示服務形式。"
+      ],
+      "source": "techstars",
+      "upstream_position": 1921
+    },
+    "upstream-02014": {
+      "id": "upstream-02014",
+      "name": "BioGrip",
+      "summary_zh": "提供仿生 AI 義肢。",
+      "tags": {
+        "industry_customer": [
+          "醫療器材"
+        ],
+        "problem_workflow": [
+          "義肢輔具需求"
+        ],
+        "solution": [
+          "AI",
+          "仿生義肢"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Biogrip: Bionic-Ai powered artificial limbs"
+      },
+      "notes": [
+        "未說明控制或其他功能。"
+      ],
+      "source": "techstars",
+      "upstream_position": 2014
+    },
+    "upstream-02053": {
+      "id": "upstream-02053",
+      "name": "Birth Model",
+      "summary_zh": "串接醫院病歷，支援產房人力、理賠及臨床洞察。",
+      "tags": {
+        "industry_customer": [
+          "醫療",
+          "產房"
+        ],
+        "problem_workflow": [
+          "人力配置",
+          "理賠拒付管理"
+        ],
+        "solution": [
+          "AI 預測",
+          "病歷整合"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Birth Model is a predictive AI platform that embeds into hospital EHRs to provide real-time, actionable insights for labor and delivery units, helping to optimize staffing, reduce claim denials, and improve maternal outcomes."
+      },
+      "notes": [
+        "未明示各項功能與臨床成效。"
+      ],
+      "source": "techstars",
+      "upstream_position": 2053
+    },
+    "upstream-02124": {
+      "id": "upstream-02124",
+      "name": "Astronome AI",
+      "summary_zh": "為中小企業提供 AI 資訊管理。",
+      "tags": {
+        "industry_customer": [
+          "中小企業"
+        ],
+        "problem_workflow": [
+          "IT 管理"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Astronome AI is a company that provides streamlined IT management for SMEs, powered by AI."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 2124
+    },
+    "upstream-02126": {
+      "id": "upstream-02126",
+      "name": "Alpha Drive",
+      "summary_zh": "以雲端模擬測試及驗證 AI 演算法，從自主車輛切入。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發",
+          "汽車"
+        ],
+        "problem_workflow": [
+          "演算法測試",
+          "演算法驗證"
+        ],
+        "solution": [
+          "雲端模擬",
+          "平台服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Alpha Drive is a Platform-as-a-Service for testing and validating AI algorithms - starting with autonomous vehicles - through cloud based simulation."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 2126
+    },
+    "upstream-02424": {
+      "id": "upstream-02424",
+      "name": "Apsy",
+      "summary_zh": "透過對話式 AI 建立客製應用。",
+      "tags": {
+        "industry_customer": [
+          "軟體開發"
+        ],
+        "problem_workflow": [
+          "應用建置"
+        ],
+        "solution": [
+          "對話式 AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "The first conversational AI platform to build fully-custom apps just by conversation"
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 2424
+    },
+    "upstream-02626": {
+      "id": "upstream-02626",
+      "name": "UBI Meat Experts in Quality Assurance",
+      "summary_zh": "為肉品加工業者即時評級、監測及記錄品質。",
+      "tags": {
+        "industry_customer": [
+          "食品飲料",
+          "肉品加工業者"
+        ],
+        "problem_workflow": [
+          "肉品評級",
+          "品質監測",
+          "品質紀錄"
+        ],
+        "solution": [
+          "AI",
+          "機器學習"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "UBI's a meat grading and monitoring platform that leverages AI/ML helping meat processors to measure and document quality assurance in real-time."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 2626
+    },
+    "upstream-02821": {
+      "id": "upstream-02821",
+      "name": "Dev.f",
+      "summary_zh": "為拉丁裔美國人提供程式、資料科學、AI 及 UX 技能培訓與就業支援。",
+      "tags": {
+        "industry_customer": [
+          "教育",
+          "拉丁裔美國人"
+        ],
+        "problem_workflow": [
+          "技能培訓",
+          "就業支援"
+        ],
+        "solution": [
+          "群組課程"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Cohort-based educational program that trains Hispanic Americans in digital skills such as coding, data science, AI, and UX, and helps them secure a high-quality job."
+      },
+      "notes": [
+        "AI 是課程主題，未明示教學產品本身使用 AI。"
+      ],
+      "source": "techstars",
+      "upstream_position": 2821
+    },
+    "upstream-02829": {
+      "id": "upstream-02829",
+      "name": "Chuqlab",
+      "summary_zh": "以 AI 支援打擊犯罪。",
+      "tags": {
+        "industry_customer": [
+          "公共安全"
+        ],
+        "problem_workflow": [
+          "犯罪防範"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI powered crime fighting"
+      },
+      "notes": [
+        "未交代具體任務。"
+      ],
+      "source": "techstars",
+      "upstream_position": 2829
+    },
+    "upstream-03068": {
+      "id": "upstream-03068",
+      "name": "Valuables",
+      "summary_zh": "協助專業人員建立領域意見領袖定位。",
+      "tags": {
+        "industry_customer": [
+          "專業人員"
+        ],
+        "problem_workflow": [
+          "專業影響力建立"
+        ],
+        "solution": [
+          "AI",
+          "SaaS"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Valuables is an AI-powered SaaS platform that helps professionals become thought leaders in their field."
+      },
+      "notes": [
+        "未交代內容、社群或其他功能。"
+      ],
+      "source": "techstars",
+      "upstream_position": 3068
+    },
+    "upstream-03104": {
+      "id": "upstream-03104",
+      "name": "Monocle",
+      "summary_zh": "為電商業者提供 AI 數位營運長。",
+      "tags": {
+        "industry_customer": [
+          "零售",
+          "電商業者"
+        ],
+        "problem_workflow": [
+          "營運管理"
+        ],
+        "solution": [
+          "AI COO"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Monocle is an AI-powered digital COO for e-commerce merchants."
+      },
+      "notes": [
+        "未交代具體工作。"
+      ],
+      "source": "techstars",
+      "upstream_position": 3104
+    },
+    "upstream-03142": {
+      "id": "upstream-03142",
+      "name": "Approveit",
+      "summary_zh": "為財務主管處理供應商導入、發票及合規流程。",
+      "tags": {
+        "industry_customer": [
+          "財務會計",
+          "財務主管"
+        ],
+        "problem_workflow": [
+          "供應商導入",
+          "發票處理",
+          "合規管理"
+        ],
+        "solution": [
+          "AI 流程工具"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "For Financial Controllers / VPs of Finance who want to streamline vendor onboarding, invoice processing, and ensure compliance, Approveit  provides an AI-powered solution for efficient and compliant workflows."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 3142
+    },
+    "upstream-03459": {
+      "id": "upstream-03459",
+      "name": "Hash App",
+      "summary_zh": "協助美國散戶投資全球金融證券、投資組合與數位資產。",
+      "tags": {
+        "industry_customer": [
+          "金融",
+          "美國散戶投資者"
+        ],
+        "problem_workflow": [
+          "全球投資"
+        ],
+        "solution": [
+          "AI 投資應用"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "An AI-powered global investing app that lets US retail investors easily invest globally, especially in emerging markets financial securities, smart portfolios, and digital assets."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 3459
+    },
+    "upstream-03515": {
+      "id": "upstream-03515",
+      "name": "Pann",
+      "summary_zh": "以 AI 指引協助中小企業取得營運資金。",
+      "tags": {
+        "industry_customer": [
+          "金融",
+          "中小企業"
+        ],
+        "problem_workflow": [
+          "營運資金融通"
+        ],
+        "solution": [
+          "AI 指引"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Quick and easy working capital for SMBs through AI-assisted guidance"
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 3515
+    },
+    "upstream-03634": {
+      "id": "upstream-03634",
+      "name": "Magier AI",
+      "summary_zh": "以個資防火牆及客製遮蔽保護 LLM 資料。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發",
+          "資訊安全"
+        ],
+        "problem_workflow": [
+          "個資保護",
+          "資料遮蔽"
+        ],
+        "solution": [
+          "PII 防火牆"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Magier AI enhances data privacy for LLMs with a PII firewall, ensuring secure, real-time data protection and customizable redaction."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 3634
+    },
+    "upstream-04266": {
+      "id": "upstream-04266",
+      "name": "Savitude",
+      "summary_zh": "以電腦視覺與分析支援合身度及商品組合規劃。",
+      "tags": {
+        "industry_customer": [],
+        "problem_workflow": [
+          "合身度規劃",
+          "商品組合規劃"
+        ],
+        "solution": [
+          "電腦視覺",
+          "資料分析"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Computer Vision & Analytics Platform for Best Fit & Assortment Planning"
+      },
+      "notes": [
+        "未明示產業與商品種類。"
+      ],
+      "source": "techstars",
+      "upstream_position": 4266
+    },
+    "upstream-04653": {
+      "id": "upstream-04653",
+      "name": "Influunt Systems",
+      "summary_zh": "結合地理、氣候資料及機器學習分析用水風險。",
+      "tags": {
+        "industry_customer": [
+          "企業",
+          "環境組織"
+        ],
+        "problem_workflow": [
+          "水風險分析"
+        ],
+        "solution": [
+          "機器學習",
+          "地理資料",
+          "氣候資料"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Influunt provides water risk intelligence to businesses and environmental organizations using geospatial data, machine learning, and climate data"
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 4653
+    },
+    "upstream-04753": {
+      "id": "upstream-04753",
+      "name": "Forefront",
+      "summary_zh": "以 AI 招募助理協助雇主聘用 Z 世代人才。",
+      "tags": {
+        "industry_customer": [
+          "人力資源",
+          "雇主"
+        ],
+        "problem_workflow": [
+          "人才招募"
+        ],
+        "solution": [
+          "AI 助理"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Our human-like AI recruiting assistants like Toni and Lee help employers hire top Gen-Z talent."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 4753
+    },
+    "upstream-04860": {
+      "id": "upstream-04860",
+      "name": "DearFlow AI",
+      "summary_zh": "以 AI 軟體自動化知識工作者任務。",
+      "tags": {
+        "industry_customer": [
+          "知識工作者"
+        ],
+        "problem_workflow": [
+          "任務自動化"
+        ],
+        "solution": [
+          "AI 軟體"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "DearFlow is building Europe's #1 AI-powered knowledge worker task automation software."
+      },
+      "notes": [
+        "未交代具體任務。"
+      ],
+      "source": "techstars",
+      "upstream_position": 4860
+    },
+    "upstream-04945": {
+      "id": "upstream-04945",
+      "name": "CardioCube",
+      "summary_zh": "透過視訊連接醫療提供者，並以語音 AI 管理照護。",
+      "tags": {
+        "industry_customer": [
+          "醫療"
+        ],
+        "problem_workflow": [
+          "醫療視訊溝通",
+          "照護管理"
+        ],
+        "solution": [
+          "語音 AI",
+          "視訊工具"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Talk to healthcare providers by video and get care management powered by Voice AI."
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 4945
+    },
+    "upstream-04997": {
+      "id": "upstream-04997",
+      "name": "Binsight",
+      "summary_zh": "以深度學習及行為工具從消費者垃圾取得資料。",
+      "tags": {
+        "industry_customer": [],
+        "problem_workflow": [
+          "垃圾資料分析"
+        ],
+        "solution": [
+          "深度學習",
+          "行為工具"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Binsight turns consumers' garbage into golden data using cutting-edge deep learning technology combined with core behavioral tools."
+      },
+      "notes": [
+        "未交代資料用途與產品形式。"
+      ],
+      "source": "techstars",
+      "upstream_position": 4997
+    },
+    "upstream-05019": {
+      "id": "upstream-05019",
+      "name": "Barac",
+      "summary_zh": "不解密流量，利用中繼資料與 AI 偵測威脅。",
+      "tags": {
+        "industry_customer": [
+          "資訊安全"
+        ],
+        "problem_workflow": [
+          "加密流量威脅偵測"
+        ],
+        "solution": [
+          "AI",
+          "中繼資料分析"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Instant threat detection on Encrypted Traffic without decryption using Metadata & Artificial Intelligence"
+      },
+      "notes": [],
+      "source": "techstars",
+      "upstream_position": 5019
+    },
+    "upstream-05424": {
+      "id": "upstream-05424",
+      "name": "Hello Chair",
+      "summary_zh": "以機器學習推薦引擎支援廣告、商品及應用探索。",
+      "tags": {
+        "industry_customer": [
+          "行銷",
+          "軟體開發"
+        ],
+        "problem_workflow": [
+          "廣告定位",
+          "商品推薦",
+          "應用探索"
+        ],
+        "solution": [
+          "機器學習",
+          "推薦引擎"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Hello, Chair Inc. was founded in 2006 by Luke Iannini, Mike Jacobs and Kevin Corcoran to explore opportunities in applied machine learning and internet advertising. After receiving funding from Y-Combinator in 2007, we produced Adpinion, one of the first advertising networks to utilize user feedback to drive personalized targeting.\n\nOur core technology — the recommendation engine called SparseReduce — has since proved infinitely adaptable in such diverse problem domains as Amazon product recommendation, eBay auction discovery, image and language comprehension, and Twitter stream exploration.\n\nThe latest application of SparseReduce is Appsaurus, an app discovery platform which was released on the eve of 2010 to overwhelming critical acclaim.\n\nWe're backed by some pretty incredible investors: Harrison Metal, Mitch Kapor, Chris Sacca, Y-Combinator and David Parker to name a few. We're also proud to have Alexis Ohanian as an advisor."
+      },
+      "notes": [
+        "原文跨多項歷史產品，不代表全部仍在營運。"
+      ],
+      "source": "yc",
+      "upstream_position": 5424
+    },
+    "upstream-05916": {
+      "id": "upstream-05916",
+      "name": "Mashgin",
+      "summary_zh": "以電腦視覺提供自助結帳。",
+      "tags": {
+        "industry_customer": [
+          "零售"
+        ],
+        "problem_workflow": [
+          "結帳"
+        ],
+        "solution": [
+          "電腦視覺"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Self-Checkout using Computer Vision."
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 5916
+    },
+    "upstream-06546": {
+      "id": "upstream-06546",
+      "name": "Nuvocargo",
+      "summary_zh": "為北美整車貨運提供 AI 合作服務。",
+      "tags": {
+        "industry_customer": [
+          "物流",
+          "整車貨運"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Your AI partner for North America truckload freight"
+      },
+      "notes": [
+        "未交代具體任務。"
+      ],
+      "source": "yc",
+      "upstream_position": 6546
+    },
+    "upstream-06619": {
+      "id": "upstream-06619",
+      "name": "Observe.AI",
+      "summary_zh": "為客服中心提供 AI 平台。",
+      "tags": {
+        "industry_customer": [
+          "客服中心"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI 平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Contact center AI platform."
+      },
+      "notes": [
+        "未交代分析、培訓或應答功能。"
+      ],
+      "source": "yc",
+      "upstream_position": 6619
+    },
+    "upstream-06831": {
+      "id": "upstream-06831",
+      "name": "GoLinks",
+      "summary_zh": "提供 AI 支援的易記短連結。",
+      "tags": {
+        "industry_customer": [],
+        "problem_workflow": [
+          "短連結管理"
+        ],
+        "solution": [
+          "AI",
+          "短連結工具"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Intuitive, easy-to-remember short links - powered by AI."
+      },
+      "notes": [
+        "未交代 AI 功能。"
+      ],
+      "source": "yc",
+      "upstream_position": 6831
+    },
+    "upstream-06954": {
+      "id": "upstream-06954",
+      "name": "OutRival, Inc.",
+      "summary_zh": "為教育、保險與旅遊提供主動接觸型 AI agents。",
+      "tags": {
+        "industry_customer": [
+          "教育",
+          "保險",
+          "旅遊"
+        ],
+        "problem_workflow": [
+          "主動接觸"
+        ],
+        "solution": [
+          "AI agent"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Outbound AI Agents for Education, Insurance, and Travel"
+      },
+      "notes": [
+        "未明示電話或其他通訊方式。"
+      ],
+      "source": "yc",
+      "upstream_position": 6954
+    },
+    "upstream-07073": {
+      "id": "upstream-07073",
+      "name": "Arpeggio Bio",
+      "summary_zh": "以 AI 研發針對轉錄因子的藥物。",
+      "tags": {
+        "industry_customer": [
+          "製藥",
+          "生物科技"
+        ],
+        "problem_workflow": [
+          "藥物研發"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Arpeggio Bio develops drugs targeting transcription factors using AI…"
+      },
+      "notes": [
+        "介紹截斷。"
+      ],
+      "source": "yc",
+      "upstream_position": 7073
+    },
+    "upstream-07179": {
+      "id": "upstream-07179",
+      "name": "FitnessAI",
+      "summary_zh": "提供 AI 運動計畫及教練諮詢。",
+      "tags": {
+        "industry_customer": [
+          "運動"
+        ],
+        "problem_workflow": [
+          "運動計畫"
+        ],
+        "solution": [
+          "AI",
+          "教練服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "App offering AI powered workout plans with anytime access to coaches"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 7179
+    },
+    "upstream-07251": {
+      "id": "upstream-07251",
+      "name": "Medicare Vox (fka Fair Square)",
+      "summary_zh": "建立 AI 健康保險 agent。",
+      "tags": {
+        "industry_customer": [
+          "保險",
+          "醫療"
+        ],
+        "problem_workflow": [
+          "健康保險服務"
+        ],
+        "solution": [
+          "AI agent"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Building an AI Health Insurance Agent."
+      },
+      "notes": [
+        "舊名 Fair Square 已在名錄標示；未明示銷售或其他任務。"
+      ],
+      "source": "yc",
+      "upstream_position": 7251
+    },
+    "upstream-07254": {
+      "id": "upstream-07254",
+      "name": "Turing Labs Inc.",
+      "summary_zh": "以 AI 支援消費品牌產品研發。",
+      "tags": {
+        "industry_customer": [
+          "消費品牌"
+        ],
+        "problem_workflow": [
+          "產品研發"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI for R&D of consumer brands like P&G to develop better products"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 7254
+    },
+    "upstream-07304": {
+      "id": "upstream-07304",
+      "name": "SprintAI",
+      "summary_zh": "以 AI 平台最佳化庫存與訂單履行。",
+      "tags": {
+        "industry_customer": [
+          "供應鏈"
+        ],
+        "problem_workflow": [
+          "庫存管理",
+          "訂單履行"
+        ],
+        "solution": [
+          "AI 最佳化"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-led platform for inventory and fulfillment optimization"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 7304
+    },
+    "upstream-07395": {
+      "id": "upstream-07395",
+      "name": "Luminai",
+      "summary_zh": "為醫療體系營運提供 AI 平台。",
+      "tags": {
+        "industry_customer": [
+          "醫療"
+        ],
+        "problem_workflow": [
+          "營運管理"
+        ],
+        "solution": [
+          "AI 平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Luminai is the AI platform for Health System Operations."
+      },
+      "notes": [
+        "未交代具體營運流程。"
+      ],
+      "source": "yc",
+      "upstream_position": 7395
+    },
+    "upstream-07584": {
+      "id": "upstream-07584",
+      "name": "Abacum",
+      "summary_zh": "為財務團隊提供 AI 財務規劃分析平台。",
+      "tags": {
+        "industry_customer": [
+          "財務會計",
+          "財務團隊"
+        ],
+        "problem_workflow": [
+          "財務規劃",
+          "財務分析"
+        ],
+        "solution": [
+          "AI 平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "The AI-native FP&A platform that helps Finance teams drive business…"
+      },
+      "notes": [
+        "介紹截斷。"
+      ],
+      "source": "yc",
+      "upstream_position": 7584
+    },
+    "upstream-07597": {
+      "id": "upstream-07597",
+      "name": "Humaans",
+      "summary_zh": "提供 AI 人資資訊系統。",
+      "tags": {
+        "industry_customer": [
+          "人力資源"
+        ],
+        "problem_workflow": [
+          "人資資訊管理"
+        ],
+        "solution": [
+          "AI",
+          "HRIS"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-Powered HRIS for high performing teams"
+      },
+      "notes": [
+        "未交代具體模組。"
+      ],
+      "source": "yc",
+      "upstream_position": 7597
+    },
+    "upstream-07617": {
+      "id": "upstream-07617",
+      "name": "arnata",
+      "summary_zh": "為物流業提供 AI workers。",
+      "tags": {
+        "industry_customer": [
+          "物流"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI workforce"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI workers for the logistics industry. "
+      },
+      "notes": [
+        "未交代職位與工作。"
+      ],
+      "source": "yc",
+      "upstream_position": 7617
+    },
+    "upstream-07887": {
+      "id": "upstream-07887",
+      "name": "MindPortal",
+      "summary_zh": "以 AI 模型將思考轉成語言。",
+      "tags": {
+        "industry_customer": [],
+        "problem_workflow": [
+          "思考轉語言"
+        ],
+        "solution": [
+          "AI 模型"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Thought-to-Language AI Models"
+      },
+      "notes": [
+        "未交代輸入方式與應用。"
+      ],
+      "source": "yc",
+      "upstream_position": 7887
+    },
+    "upstream-08395": {
+      "id": "upstream-08395",
+      "name": "Dynamo AI",
+      "summary_zh": "提供以合規準備為定位的企業 AI。",
+      "tags": {
+        "industry_customer": [
+          "企業"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Compliant-Ready AI for the Enterprise"
+      },
+      "notes": [
+        "未說明是合規 AI 模型或合規管理工具。"
+      ],
+      "source": "yc",
+      "upstream_position": 8395
+    },
+    "upstream-08515": {
+      "id": "upstream-08515",
+      "name": "SpadeWorks",
+      "summary_zh": "以 AI agents 處理技工服務業者來電以支援營收。",
+      "tags": {
+        "industry_customer": [
+          "技工服務業"
+        ],
+        "problem_workflow": [
+          "電話作業"
+        ],
+        "solution": [
+          "AI agent"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI agents that turn every call into revenue for trade businesses"
+      },
+      "notes": [
+        "未明示預約、報價或其他任務。"
+      ],
+      "source": "yc",
+      "upstream_position": 8515
+    },
+    "upstream-08677": {
+      "id": "upstream-08677",
+      "name": "KorrAI",
+      "summary_zh": "為大型基礎設施提供可追溯 AI。",
+      "tags": {
+        "industry_customer": [
+          "基礎設施"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Traceable AI for billion-dollar infrastructure."
+      },
+      "notes": [
+        "未交代追溯機制與工作。"
+      ],
+      "source": "yc",
+      "upstream_position": 8677
+    },
+    "upstream-09050": {
+      "id": "upstream-09050",
+      "name": "Floworks",
+      "summary_zh": "提供 AI 銷售員工，涵蓋 SDR、RevOps 及 EA 定位。",
+      "tags": {
+        "industry_customer": [
+          "行銷",
+          "銷售團隊"
+        ],
+        "problem_workflow": [
+          "銷售開發",
+          "營收營運"
+        ],
+        "solution": [
+          "AI workforce"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Hire the best AI Sales employees | AI SDR | AI RevOps | AI EA"
+      },
+      "notes": [
+        "EA 的具體職務未交代，不另分類。"
+      ],
+      "source": "yc",
+      "upstream_position": 9050
+    },
+    "upstream-09073": {
+      "id": "upstream-09073",
+      "name": "Magicflow 𐂂",
+      "summary_zh": "提供生成式 AI 評估與策展平台。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "生成式 AI 評估",
+          "生成式 AI 策展"
+        ],
+        "solution": [
+          "評估平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "The Gen AI evaluation and curation platform"
+      },
+      "notes": [
+        "curation 的具體內容未說明。"
+      ],
+      "source": "yc",
+      "upstream_position": 9073
+    },
+    "upstream-09119": {
+      "id": "upstream-09119",
+      "name": "Rally Tax",
+      "summary_zh": "為美國使用者提供 AI 原生稅務平台。",
+      "tags": {
+        "industry_customer": [
+          "財務會計",
+          "美國使用者"
+        ],
+        "problem_workflow": [
+          "稅務作業"
+        ],
+        "solution": [
+          "AI 平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-native tax platform to save $1T+ for Americans"
+      },
+      "notes": [
+        "未交代報稅、規劃或其他任務。"
+      ],
+      "source": "yc",
+      "upstream_position": 9119
+    },
+    "upstream-09144": {
+      "id": "upstream-09144",
+      "name": "DAGWorks Inc.",
+      "summary_zh": "為 AI agents 與應用提供開源工具及服務。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "開源工具",
+          "開發服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Open source tools & services for reliable AI Agents & AI Applications"
+      },
+      "notes": [
+        "未交代具體功能。"
+      ],
+      "source": "yc",
+      "upstream_position": 9144
+    },
+    "upstream-09182": {
+      "id": "upstream-09182",
+      "name": "Metal",
+      "summary_zh": "為私募資本提供 AI context 平台。",
+      "tags": {
+        "industry_customer": [
+          "金融",
+          "私募資本"
+        ],
+        "problem_workflow": [
+          "上下文供給"
+        ],
+        "solution": [
+          "AI context 平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "The AI context platform for private capital. Everything your firm…"
+      },
+      "notes": [
+        "介紹截斷，未明示資料與工作。"
+      ],
+      "source": "yc",
+      "upstream_position": 9182
+    },
+    "upstream-09191": {
+      "id": "upstream-09191",
+      "name": "Type",
+      "summary_zh": "提供 AI 原生敘事工作室。",
+      "tags": {
+        "industry_customer": [
+          "媒體娛樂"
+        ],
+        "problem_workflow": [
+          "敘事創作"
+        ],
+        "solution": [
+          "AI 工作室"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-native storytelling studio."
+      },
+      "notes": [
+        "未交代媒材與功能。"
+      ],
+      "source": "yc",
+      "upstream_position": 9191
+    },
+    "upstream-09244": {
+      "id": "upstream-09244",
+      "name": "Diligent",
+      "summary_zh": "以 AI agents 處理金融科技風險及合規。",
+      "tags": {
+        "industry_customer": [
+          "金融",
+          "金融科技業者"
+        ],
+        "problem_workflow": [
+          "風險管理",
+          "合規管理"
+        ],
+        "solution": [
+          "AI agent"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI agents for fintech risk and compliance operations"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 9244
+    },
+    "upstream-09351": {
+      "id": "upstream-09351",
+      "name": "Inlet",
+      "summary_zh": "為法律專業人員提供 AI 工時紀錄。",
+      "tags": {
+        "industry_customer": [
+          "法律",
+          "法律專業人員"
+        ],
+        "problem_workflow": [
+          "工時追蹤"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI timekeeping for legal professionals."
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 9351
+    },
+    "upstream-09438": {
+      "id": "upstream-09438",
+      "name": "Lantern",
+      "summary_zh": "以 Postgres 向量資料庫擴充套件支援 AI 應用建置。",
+      "tags": {
+        "industry_customer": [
+          "軟體開發",
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "AI 應用建置",
+          "向量資料儲存"
+        ],
+        "solution": [
+          "向量資料庫擴充"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Postgres vector database extension to build AI applications"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 9438
+    },
+    "upstream-09604": {
+      "id": "upstream-09604",
+      "name": "Model ML",
+      "summary_zh": "為金融服務提供 AI。",
+      "tags": {
+        "industry_customer": [
+          "金融"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "The AI for Financial Services."
+      },
+      "notes": [
+        "未交代具體產品與任務。"
+      ],
+      "source": "yc",
+      "upstream_position": 9604
+    },
+    "upstream-09639": {
+      "id": "upstream-09639",
+      "name": "Basepilot",
+      "summary_zh": "以 AI agents 處理保險理賠。",
+      "tags": {
+        "industry_customer": [
+          "保險"
+        ],
+        "problem_workflow": [
+          "保險理賠"
+        ],
+        "solution": [
+          "AI agent"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI agents for insurance claims"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 9639
+    },
+    "upstream-09643": {
+      "id": "upstream-09643",
+      "name": "CommodityAI",
+      "summary_zh": "為大宗商品營運提供 AI 營運系統。",
+      "tags": {
+        "industry_customer": [
+          "大宗商品"
+        ],
+        "problem_workflow": [
+          "營運管理"
+        ],
+        "solution": [
+          "AI 營運軟體"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "The AI operating system for commodity operations"
+      },
+      "notes": [
+        "未交代具體流程。"
+      ],
+      "source": "yc",
+      "upstream_position": 9643
+    },
+    "upstream-09675": {
+      "id": "upstream-09675",
+      "name": "The Vibe Company",
+      "summary_zh": "以自有 AI agents 營運 AI 原生代理商。",
+      "tags": {
+        "industry_customer": [
+          "代理商"
+        ],
+        "problem_workflow": [
+          "代理商營運"
+        ],
+        "solution": [
+          "AI agent"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-native agency that scales like software, run on our own AI agents."
+      },
+      "notes": [
+        "未交代代理服務類型。"
+      ],
+      "source": "yc",
+      "upstream_position": 9675
+    },
+    "upstream-09850": {
+      "id": "upstream-09850",
+      "name": "Laminar",
+      "summary_zh": "協助理解 AI agent 故障原因並迭代修正。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "agent 除錯"
+        ],
+        "solution": [
+          "AI 除錯工具"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Understand why your AI agent breaks. Iterate fast to fix it."
+      },
+      "notes": [
+        "未說明工具是否本身使用 AI。"
+      ],
+      "source": "yc",
+      "upstream_position": 9850
+    },
+    "upstream-09856": {
+      "id": "upstream-09856",
+      "name": "Refactor",
+      "summary_zh": "在醫療、零售等產業部署 AI agents。",
+      "tags": {
+        "industry_customer": [
+          "醫療",
+          "零售",
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "agent 部署"
+        ],
+        "solution": [
+          "AI agent"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Deploying secure and reliable AI agents across healthcare, retail,…"
+      },
+      "notes": [
+        "介紹截斷。"
+      ],
+      "source": "yc",
+      "upstream_position": 9856
+    },
+    "upstream-09892": {
+      "id": "upstream-09892",
+      "name": "Quetzal",
+      "summary_zh": "以 LLM 支援軟體翻譯與國際化。",
+      "tags": {
+        "industry_customer": [
+          "軟體開發"
+        ],
+        "problem_workflow": [
+          "軟體翻譯",
+          "國際化"
+        ],
+        "solution": [
+          "LLM"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Simple, LLM-first translation and internationalization for software"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 9892
+    },
+    "upstream-09927": {
+      "id": "upstream-09927",
+      "name": "Patched",
+      "summary_zh": "為受監管營運提供 AI。",
+      "tags": {
+        "industry_customer": [
+          "受監管產業"
+        ],
+        "problem_workflow": [
+          "營運管理"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Reliable AI for Regulated Ops"
+      },
+      "notes": [
+        "未交代流程與技術。"
+      ],
+      "source": "yc",
+      "upstream_position": 9927
+    },
+    "upstream-09929": {
+      "id": "upstream-09929",
+      "name": "Affil.ai",
+      "summary_zh": "為金融公司提供 AI 聯盟行銷網路。",
+      "tags": {
+        "industry_customer": [
+          "金融",
+          "行銷"
+        ],
+        "problem_workflow": [
+          "聯盟行銷"
+        ],
+        "solution": [
+          "AI 網路"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI Affiliate Network For Financial Companies"
+      },
+      "notes": [
+        "未交代媒合與分潤機制。"
+      ],
+      "source": "yc",
+      "upstream_position": 9929
+    },
+    "upstream-09947": {
+      "id": "upstream-09947",
+      "name": "Galini",
+      "summary_zh": "為 AI 應用提供合規 guardrails 服務。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "AI 合規"
+        ],
+        "solution": [
+          "guardrails 服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Compliance guardrails-as-a-service for AI applications"
+      },
+      "notes": [
+        "未交代規範與機制。"
+      ],
+      "source": "yc",
+      "upstream_position": 9947
+    },
+    "upstream-09951": {
+      "id": "upstream-09951",
+      "name": "Symphony",
+      "summary_zh": "以語音 AI 模擬支援員工培訓。",
+      "tags": {
+        "industry_customer": [
+          "企業",
+          "員工"
+        ],
+        "problem_workflow": [
+          "員工培訓",
+          "情境練習"
+        ],
+        "solution": [
+          "語音 AI",
+          "模擬訓練"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Voice AI sims for next-gen employee training"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 9951
+    },
+    "upstream-09956": {
+      "id": "upstream-09956",
+      "name": "Moonset Health",
+      "summary_zh": "為長者急性期後照護提供 AI。",
+      "tags": {
+        "industry_customer": [
+          "長照",
+          "醫療"
+        ],
+        "problem_workflow": [
+          "急性期後照護"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI for Post-Acute Senior Care (Hospice, Home Health, Skilled Nursing…"
+      },
+      "notes": [
+        "介紹截斷，具體服務未交代。"
+      ],
+      "source": "yc",
+      "upstream_position": 9956
+    },
+    "upstream-09972": {
+      "id": "upstream-09972",
+      "name": "Cekura",
+      "summary_zh": "測試及觀測語音、聊天 AI agents。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "agent 測試",
+          "agent 監控"
+        ],
+        "solution": [
+          "測試監控工具"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Voice AI and Chat AI agents: Testing and Observability"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 9972
+    },
+    "upstream-09991": {
+      "id": "upstream-09991",
+      "name": "Beglaubigt.de",
+      "summary_zh": "為公司、創辦人與 AI agents 提供法律後勤。",
+      "tags": {
+        "industry_customer": [
+          "企業",
+          "創辦人",
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "法律後勤"
+        ],
+        "solution": [
+          "法律服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "The legal backoffice for every company. For founders and AI agents."
+      },
+      "notes": [
+        "未明示服務本身使用 AI。"
+      ],
+      "source": "yc",
+      "upstream_position": 9991
+    },
+    "upstream-10007": {
+      "id": "upstream-10007",
+      "name": "CollectWise",
+      "summary_zh": "以 AI 自動處理消費者債務催收。",
+      "tags": {
+        "industry_customer": [
+          "金融"
+        ],
+        "problem_workflow": [
+          "債務回收"
+        ],
+        "solution": [
+          "AI 自動化"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Automating consumer debt collection with AI"
+      },
+      "notes": [
+        "此處明示 consumer debt，可辨識為催收，不同於缺乏語境的 collections。"
+      ],
+      "source": "yc",
+      "upstream_position": 10007
+    },
+    "upstream-10051": {
+      "id": "upstream-10051",
+      "name": "Excellence Learning",
+      "summary_zh": "提供數學與科學 AI 家教。",
+      "tags": {
+        "industry_customer": [
+          "教育"
+        ],
+        "problem_workflow": [
+          "數學學習",
+          "科學學習"
+        ],
+        "solution": [
+          "AI 家教"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI tutor starting with maths and science"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 10051
+    },
+    "upstream-10062": {
+      "id": "upstream-10062",
+      "name": ".Wave",
+      "summary_zh": "為即時 AI 提供推論。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "即時推論"
+        ],
+        "solution": [
+          "推論服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Inference for real-time AI"
+      },
+      "notes": [
+        "未交代部署形式。"
+      ],
+      "source": "yc",
+      "upstream_position": 10062
+    },
+    "upstream-10069": {
+      "id": "upstream-10069",
+      "name": "Scout",
+      "summary_zh": "為 K-12 學校提供 AI 學生資訊系統。",
+      "tags": {
+        "industry_customer": [
+          "教育",
+          "K-12 學校"
+        ],
+        "problem_workflow": [
+          "學生資訊管理"
+        ],
+        "solution": [
+          "AI 資訊系統"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-powered student information system for K-12 schools"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 10069
+    },
+    "upstream-10079": {
+      "id": "upstream-10079",
+      "name": "Toothy AI",
+      "summary_zh": "為牙科診所提供保險驗證與帳單 AI。",
+      "tags": {
+        "industry_customer": [
+          "醫療",
+          "牙科診所"
+        ],
+        "problem_workflow": [
+          "保險資格驗證",
+          "帳單處理"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI for insurance verification & billing at dental clinics"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 10079
+    },
+    "upstream-10092": {
+      "id": "upstream-10092",
+      "name": "careCycle",
+      "summary_zh": "為 Medicare agencies 提供語音 AI 團隊。",
+      "tags": {
+        "industry_customer": [],
+        "problem_workflow": [],
+        "solution": [
+          "語音 AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Voice AI teams for medicare agencies."
+      },
+      "notes": [
+        "未交代 agencies 類型與工作，保留原文。"
+      ],
+      "source": "yc",
+      "upstream_position": 10092
+    },
+    "upstream-10103": {
+      "id": "upstream-10103",
+      "name": "Cifrato",
+      "summary_zh": "為會計師事務所提供 AI 會計師。",
+      "tags": {
+        "industry_customer": [
+          "財務會計",
+          "會計師事務所"
+        ],
+        "problem_workflow": [
+          "會計作業"
+        ],
+        "solution": [
+          "AI accountant"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI Accountant for Accounting Firms"
+      },
+      "notes": [
+        "未交代具體流程。"
+      ],
+      "source": "yc",
+      "upstream_position": 10103
+    },
+    "upstream-10223": {
+      "id": "upstream-10223",
+      "name": "Minerva",
+      "summary_zh": "提供 AI 原生金融機構。",
+      "tags": {
+        "industry_customer": [
+          "金融"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI 金融服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI native financial institution"
+      },
+      "notes": [
+        "未交代服務與產品。"
+      ],
+      "source": "yc",
+      "upstream_position": 10223
+    },
+    "upstream-10281": {
+      "id": "upstream-10281",
+      "name": "throxy",
+      "summary_zh": "以垂直 AI agents 與真人 SDR 處理企業主動開發。",
+      "tags": {
+        "industry_customer": [
+          "行銷",
+          "企業"
+        ],
+        "problem_workflow": [
+          "主動銷售開發"
+        ],
+        "solution": [
+          "AI agent",
+          "真人銷售服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Vertical AI agents running B2B outbound on autopilot, with human SDRs"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 10281
+    },
+    "upstream-10348": {
+      "id": "upstream-10348",
+      "name": "Fifth Door",
+      "summary_zh": "以 AI 建立及遊玩遊戲。",
+      "tags": {
+        "industry_customer": [
+          "媒體娛樂"
+        ],
+        "problem_workflow": [
+          "遊戲製作",
+          "遊戲娛樂"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Create and play games with AI"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 10348
+    },
+    "upstream-10363": {
+      "id": "upstream-10363",
+      "name": "AgentMail",
+      "summary_zh": "為 AI agents 提供郵件收件匣。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "agent 郵件接入"
+        ],
+        "solution": [
+          "郵件基礎設施"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Email Inboxes for AI Agents"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 10363
+    },
+    "upstream-10606": {
+      "id": "upstream-10606",
+      "name": "Darwin",
+      "summary_zh": "為 AI 基礎設施提供機器人技術員。",
+      "tags": {
+        "industry_customer": [
+          "AI 基礎設施"
+        ],
+        "problem_workflow": [
+          "技術員工作支援"
+        ],
+        "solution": [
+          "機器人"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Robot technicians for AI infrastructure"
+      },
+      "notes": [
+        "未明示維修或其他具體工作。"
+      ],
+      "source": "yc",
+      "upstream_position": 10606
+    },
+    "upstream-10626": {
+      "id": "upstream-10626",
+      "name": "Narrative",
+      "summary_zh": "提供 AI 影片編輯器。",
+      "tags": {
+        "industry_customer": [
+          "媒體娛樂"
+        ],
+        "problem_workflow": [
+          "影片剪輯"
+        ],
+        "solution": [
+          "AI 影片編輯器"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI Video Editor"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 10626
+    },
+    "upstream-10627": {
+      "id": "upstream-10627",
+      "name": "Relaw",
+      "summary_zh": "提供 AI 法律營運系統。",
+      "tags": {
+        "industry_customer": [
+          "法律"
+        ],
+        "problem_workflow": [
+          "法律營運"
+        ],
+        "solution": [
+          "AI 營運軟體"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI Legal OS"
+      },
+      "notes": [
+        "未交代模組。"
+      ],
+      "source": "yc",
+      "upstream_position": 10627
+    },
+    "upstream-10687": {
+      "id": "upstream-10687",
+      "name": "FullSeam",
+      "summary_zh": "為企業會計團隊提供 AI agents。",
+      "tags": {
+        "industry_customer": [
+          "財務會計",
+          "會計團隊"
+        ],
+        "problem_workflow": [
+          "會計作業"
+        ],
+        "solution": [
+          "AI agent"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI agents for corporate accounting teams"
+      },
+      "notes": [
+        "未交代記帳、審計或其他流程。"
+      ],
+      "source": "yc",
+      "upstream_position": 10687
+    },
+    "upstream-10693": {
+      "id": "upstream-10693",
+      "name": "Clara",
+      "summary_zh": "提供 AI 基層醫療醫師。",
+      "tags": {
+        "industry_customer": [
+          "醫療"
+        ],
+        "problem_workflow": [
+          "基層醫療"
+        ],
+        "solution": [
+          "AI doctor"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI primary care doctor"
+      },
+      "notes": [
+        "未交代服務範圍與產品形式。"
+      ],
+      "source": "yc",
+      "upstream_position": 10693
+    },
+    "upstream-10766": {
+      "id": "upstream-10766",
+      "name": "Rapidfolio",
+      "summary_zh": "為銀行與金融科技業者提供 AI 後勤。",
+      "tags": {
+        "industry_customer": [
+          "金融",
+          "銀行",
+          "金融科技業者"
+        ],
+        "problem_workflow": [
+          "行政作業"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-native back-office for banks and fintechs"
+      },
+      "notes": [
+        "未交代具體後勤任務。"
+      ],
+      "source": "yc",
+      "upstream_position": 10766
+    },
+    "upstream-10811": {
+      "id": "upstream-10811",
+      "name": "Oximy",
+      "summary_zh": "協助企業管理已使用的 AI。",
+      "tags": {
+        "industry_customer": [
+          "企業"
+        ],
+        "problem_workflow": [
+          "AI 管理"
+        ],
+        "solution": []
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Take command of the AI your company already runs on."
+      },
+      "notes": [
+        "未交代產品形式與功能。"
+      ],
+      "source": "yc",
+      "upstream_position": 10811
+    },
+    "upstream-10832": {
+      "id": "upstream-10832",
+      "name": "Remy AI",
+      "summary_zh": "以 AI 機器人自動處理倉庫精細操作。",
+      "tags": {
+        "industry_customer": [
+          "物流",
+          "倉儲"
+        ],
+        "problem_workflow": [
+          "倉儲操作自動化"
+        ],
+        "solution": [
+          "AI 機器人"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Automating dexterous tasks in warehouses with AI-powered robots"
+      },
+      "notes": [
+        "未交代搬運、揀選或其他任務。"
+      ],
+      "source": "yc",
+      "upstream_position": 10832
+    },
+    "upstream-10852": {
+      "id": "upstream-10852",
+      "name": "Canary",
+      "summary_zh": "以對抗式 AI 測試 AI 的弱點。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "AI 對抗測試"
+        ],
+        "solution": [
+          "對抗式 AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Adversarial AI that breaks your AI"
+      },
+      "notes": [
+        "未明示攻擊類型。"
+      ],
+      "source": "yc",
+      "upstream_position": 10852
+    },
+    "upstream-10853": {
+      "id": "upstream-10853",
+      "name": "Atlia",
+      "summary_zh": "以 AI 原生公司管理短期租賃物業。",
+      "tags": {
+        "industry_customer": [
+          "不動產",
+          "短租業者"
+        ],
+        "problem_workflow": [
+          "物業管理"
+        ],
+        "solution": [
+          "AI 管理服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "The AI-native property management company for short-term rentals"
+      },
+      "notes": [
+        "未明示 AI 使用方式。"
+      ],
+      "source": "yc",
+      "upstream_position": 10853
+    },
+    "upstream-10886": {
+      "id": "upstream-10886",
+      "name": "OpenVector",
+      "summary_zh": "以即時視覺 AI 讓攝影機成為自主工作者。",
+      "tags": {
+        "industry_customer": [],
+        "problem_workflow": [],
+        "solution": [
+          "即時視覺 AI",
+          "攝影機"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI that turns any camera to an autonomous worker with real-time vision"
+      },
+      "notes": [
+        "未交代自主執行的任務。"
+      ],
+      "source": "yc",
+      "upstream_position": 10886
+    },
+    "upstream-10927": {
+      "id": "upstream-10927",
+      "name": "Light Anchor",
+      "summary_zh": "為消費品牌提供 AI 成長代理服務。",
+      "tags": {
+        "industry_customer": [
+          "行銷",
+          "消費品牌"
+        ],
+        "problem_workflow": [
+          "成長行銷"
+        ],
+        "solution": [
+          "AI 代理服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-native growth agency for consumer brands"
+      },
+      "notes": [
+        "未交代投放、內容或其他工作。"
+      ],
+      "source": "yc",
+      "upstream_position": 10927
+    },
+    "upstream-10937": {
+      "id": "upstream-10937",
+      "name": "Wealor",
+      "summary_zh": "為財富管理者提供 AI 原生平台。",
+      "tags": {
+        "industry_customer": [
+          "金融",
+          "財富管理者"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI 平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-native platform for wealth managers"
+      },
+      "notes": [
+        "未交代分析、投資或其他功能。"
+      ],
+      "source": "yc",
+      "upstream_position": 10937
+    },
+    "upstream-10939": {
+      "id": "upstream-10939",
+      "name": "KelAI",
+      "summary_zh": "為基金與交易者提供自主 AI 量化引擎。",
+      "tags": {
+        "industry_customer": [
+          "金融",
+          "基金",
+          "交易者"
+        ],
+        "problem_workflow": [
+          "量化投資"
+        ],
+        "solution": [
+          "AI 引擎"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "The AI Quant: Autonomous Alpha Engine for Funds and Traders."
+      },
+      "notes": [
+        "未交代策略、執行方式與績效。"
+      ],
+      "source": "yc",
+      "upstream_position": 10939
+    },
+    "upstream-10942": {
+      "id": "upstream-10942",
+      "name": "Pavoot",
+      "summary_zh": "以 AI 管理實體活動。",
+      "tags": {
+        "industry_customer": [
+          "活動產業"
+        ],
+        "problem_workflow": [
+          "活動管理"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI Event Manager for in-person events"
+      },
+      "notes": [
+        "未交代具體流程。"
+      ],
+      "source": "yc",
+      "upstream_position": 10942
+    },
+    "upstream-10954": {
+      "id": "upstream-10954",
+      "name": "Arga Labs",
+      "summary_zh": "以真實環境沙盒測試與訓練 AI agents。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "agent 測試",
+          "agent 訓練"
+        ],
+        "solution": [
+          "沙盒環境"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Real-world sandboxes to test and train AI agents"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 10954
+    },
+    "upstream-11016": {
+      "id": "upstream-11016",
+      "name": "AquaShield",
+      "summary_zh": "以 AI 偵測建築漏水。",
+      "tags": {
+        "industry_customer": [
+          "建築"
+        ],
+        "problem_workflow": [
+          "漏水偵測"
+        ],
+        "solution": [
+          "AI 偵測"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI water leak detection for buildings"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 11016
+    },
+    "upstream-11047": {
+      "id": "upstream-11047",
+      "name": "Asendia AI",
+      "summary_zh": "為人才派遣機構提供 AI 招募員。",
+      "tags": {
+        "industry_customer": [
+          "人力資源",
+          "人才派遣機構"
+        ],
+        "problem_workflow": [
+          "人才招募"
+        ],
+        "solution": [
+          "AI recruiter"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI recruiters for staffing agencies"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 11047
+    },
+    "upstream-11070": {
+      "id": "upstream-11070",
+      "name": "rekursiv.ai",
+      "summary_zh": "擴展能以研究突破加速後續研究的 AI 科學家。",
+      "tags": {
+        "industry_customer": [
+          "科研"
+        ],
+        "problem_workflow": [
+          "科學研究"
+        ],
+        "solution": [
+          "AI 科學家"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Scale AI scientists whose own breakthroughs accelerate the next."
+      },
+      "notes": [
+        "未交代具體研究或產品機制。"
+      ],
+      "source": "yc",
+      "upstream_position": 11070
+    },
+    "upstream-11171": {
+      "id": "upstream-11171",
+      "name": "Elite",
+      "summary_zh": "提供醫療 AI。",
+      "tags": {
+        "industry_customer": [
+          "醫療"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Healthcare AI"
+      },
+      "notes": [
+        "原文只有 Healthcare AI，無法辨識工作。"
+      ],
+      "source": "yc",
+      "upstream_position": 11171
+    },
+    "upstream-11172": {
+      "id": "upstream-11172",
+      "name": "FlowManual",
+      "summary_zh": "為營建業後勤提供 AI。",
+      "tags": {
+        "industry_customer": [
+          "營建"
+        ],
+        "problem_workflow": [
+          "行政作業"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI for Construction's Back Office"
+      },
+      "notes": [
+        "未交代財務或其他細項。"
+      ],
+      "source": "yc",
+      "upstream_position": 11172
+    },
+    "upstream-11242": {
+      "id": "upstream-11242",
+      "name": "83 Sciences",
+      "summary_zh": "以未公開實驗資料支援 AI 材料探索。",
+      "tags": {
+        "industry_customer": [
+          "材料科學"
+        ],
+        "problem_workflow": [
+          "材料探索"
+        ],
+        "solution": [
+          "AI",
+          "實驗資料"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-native materials discovery powered by unpublished experimental data"
+      },
+      "notes": [
+        "未交代資料取得與模型機制。"
+      ],
+      "source": "yc",
+      "upstream_position": 11242
+    },
+    "upstream-11247": {
+      "id": "upstream-11247",
+      "name": "HyperProbe",
+      "summary_zh": "以 AI 工程師即時診斷並修復正式環境事故。",
+      "tags": {
+        "industry_customer": [
+          "軟體開發"
+        ],
+        "problem_workflow": [
+          "營運事故除錯",
+          "事故修復"
+        ],
+        "solution": [
+          "AI 工程師"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI engineer that debugs and fixes production incidents in realtime"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 11247
+    },
+    "upstream-11279": {
+      "id": "upstream-11279",
+      "name": "Billow AI Labs",
+      "summary_zh": "提供 AI 原生會計師事務所服務。",
+      "tags": {
+        "industry_customer": [
+          "財務會計"
+        ],
+        "problem_workflow": [
+          "會計服務"
+        ],
+        "solution": [
+          "AI 專業服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-native Accounting Firm that's killing Deloitte"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 11279
+    },
+    "upstream-11287": {
+      "id": "upstream-11287",
+      "name": "Neomatter",
+      "summary_zh": "為企業內部法律團隊提供 AI。",
+      "tags": {
+        "industry_customer": [
+          "法律",
+          "內部法律團隊"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI that works for in-house legal teams"
+      },
+      "notes": [
+        "未交代契約、研究或其他任務。"
+      ],
+      "source": "yc",
+      "upstream_position": 11287
+    },
+    "upstream-11332": {
+      "id": "upstream-11332",
+      "name": "Nodus Compute",
+      "summary_zh": "為 AI 工作負載提供智慧雲端。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "AI 工作負載運行"
+        ],
+        "solution": [
+          "雲端服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Intelligent Cloud for AI workloads"
+      },
+      "notes": [
+        "未明示雲端本身使用 AI。"
+      ],
+      "source": "yc",
+      "upstream_position": 11332
+    },
+    "upstream-11353": {
+      "id": "upstream-11353",
+      "name": "Praxis",
+      "summary_zh": "以 AI agents 處理律師事務所營運。",
+      "tags": {
+        "industry_customer": [
+          "法律",
+          "律師事務所"
+        ],
+        "problem_workflow": [
+          "營運管理"
+        ],
+        "solution": [
+          "AI agent"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI agents that run law firm operations."
+      },
+      "notes": [
+        "未明示接案、帳務或其他流程。"
+      ],
+      "source": "yc",
+      "upstream_position": 11353
+    },
+    "upstream-11403": {
+      "id": "upstream-11403",
+      "name": "Perit.AI",
+      "summary_zh": "為 AI 實驗室提供專家主導的資料及強化學習平台。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發",
+          "AI 實驗室"
+        ],
+        "problem_workflow": [
+          "資料準備",
+          "強化學習"
+        ],
+        "solution": [
+          "專家資料服務",
+          "強化學習平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Expert-led data and RL platform for AI labs"
+      },
+      "notes": [],
+      "source": "yc",
+      "upstream_position": 11403
+    },
+    "upstream-11511": {
+      "id": "upstream-11511",
+      "name": "AlphaLoops",
+      "summary_zh": "為投資管理者提供 AI 原生銷售團隊。",
+      "tags": {
+        "industry_customer": [
+          "金融",
+          "投資管理者"
+        ],
+        "problem_workflow": [
+          "銷售作業"
+        ],
+        "solution": [
+          "AI 銷售團隊"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "The first AI-native sales team for investment managers."
+      },
+      "notes": [
+        "未交代具體職務。",
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 11511
+    },
+    "upstream-11551": {
+      "id": "upstream-11551",
+      "name": "Audiomatic",
+      "summary_zh": "為遊戲及電影等沉浸體驗生成音樂與音效。",
+      "tags": {
+        "industry_customer": [
+          "媒體娛樂"
+        ],
+        "problem_workflow": [
+          "音樂製作",
+          "音效製作"
+        ],
+        "solution": [
+          "AI 音訊生成"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "AI-powered sound generation engine that creates bespoke audio tracks (music & sound effects) for immersive experiences like games and movies."
+      },
+      "notes": [
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 11551
+    },
+    "upstream-11582": {
+      "id": "upstream-11582",
+      "name": "blankspace",
+      "summary_zh": "以 AI 網路的變現層為定位。",
+      "tags": {
+        "industry_customer": [
+          "AI 產業"
+        ],
+        "problem_workflow": [
+          "變現"
+        ],
+        "solution": []
+      },
+      "evidence": {
+        "field": "location",
+        "text": "The missing monetisation layer for the AI web."
+      },
+      "notes": [
+        "未交代產品形式與機制。",
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 11582
+    },
+    "upstream-11621": {
+      "id": "upstream-11621",
+      "name": "CattleOS",
+      "summary_zh": "以 agentic AI 管理牛群。",
+      "tags": {
+        "industry_customer": [
+          "農業",
+          "畜牧業者"
+        ],
+        "problem_workflow": [
+          "牛群管理"
+        ],
+        "solution": [
+          "AI agent"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "Agentic AI for Cattle Management"
+      },
+      "notes": [
+        "未交代餵養、健康或其他流程。",
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 11621
+    },
+    "upstream-11645": {
+      "id": "upstream-11645",
+      "name": "Circular Route",
+      "summary_zh": "結合 AI、零工與物流平台支援企業循環營運。",
+      "tags": {
+        "industry_customer": [
+          "企業",
+          "物流"
+        ],
+        "problem_workflow": [
+          "循環營運",
+          "物流管理"
+        ],
+        "solution": [
+          "AI",
+          "零工服務",
+          "物流平台"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "Circular Route is a B2B logistics platform that leverages AI and the gig economy to enable organizations to launch and scale circular operations nationally to reduce their environmental impact and carbon footprint."
+      },
+      "notes": [
+        "未交代回收或其他具體作業。",
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 11645
+    },
+    "upstream-11727": {
+      "id": "upstream-11727",
+      "name": "Easyport",
+      "summary_zh": "提供 AI 貨運承攬方案。",
+      "tags": {
+        "industry_customer": [
+          "物流"
+        ],
+        "problem_workflow": [
+          "貨運承攬作業"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "Smarter Freight Forwarding Solutions, Powered by AI"
+      },
+      "notes": [
+        "未交代具體流程。",
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 11727
+    },
+    "upstream-11739": {
+      "id": "upstream-11739",
+      "name": "Enegma",
+      "summary_zh": "以 AI agents 自動處理尋源、供應商及合約決策。",
+      "tags": {
+        "industry_customer": [
+          "採購"
+        ],
+        "problem_workflow": [
+          "供應尋源",
+          "供應商決策",
+          "合約決策"
+        ],
+        "solution": [
+          "AI agent"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "Enegma is rearchitecting procurement for speed and scale with AI agents that operate 24/7 to automate sourcing, vendor, and contract decisions. No more emails, spreadsheets, or outdated ERPs; just intelligent, real-time procurement that runs itself."
+      },
+      "notes": [
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 11739
+    },
+    "upstream-11767": {
+      "id": "upstream-11767",
+      "name": "Fidari",
+      "summary_zh": "整合臨床及研究資料，提供居家癌症照護平台。",
+      "tags": {
+        "industry_customer": [
+          "醫療",
+          "癌症病人"
+        ],
+        "problem_workflow": [
+          "居家癌症照護"
+        ],
+        "solution": [
+          "AI",
+          "機器學習",
+          "資料整合"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "Fidari provides an integrated platform to enable comprehensive oncology care at home, covering the full patient journey from pre-diagnosis through survivorship. The patient will be welcomed and given personalized care powered by data collected from the clinics, research, and AI/machine learning."
+      },
+      "notes": [
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 11767
+    },
+    "upstream-11830": {
+      "id": "upstream-11830",
+      "name": "GoFIGR",
+      "summary_zh": "協助人資主管按任務與職位理解 AI 對人力的影響。",
+      "tags": {
+        "industry_customer": [
+          "人力資源",
+          "人資主管"
+        ],
+        "problem_workflow": [
+          "AI 人力影響分析"
+        ],
+        "solution": [
+          "人力分析平台"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "Workforce intelligence platform helping HR leaders understand AI's real impact - task by task, role by role. 1,600 users, 31 countries."
+      },
+      "notes": [
+        "未明示分析工具本身使用 AI。",
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 11830
+    },
+    "upstream-11910": {
+      "id": "upstream-11910",
+      "name": "Intriq",
+      "summary_zh": "結合私募股權策略，以 AI 協助企業轉型。",
+      "tags": {
+        "industry_customer": [
+          "企業"
+        ],
+        "problem_workflow": [
+          "企業轉型"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "Intriq – Transforming businesses with the power of AI through the use of private equity playbook strategies"
+      },
+      "notes": [
+        "未交代產品與交付方式。",
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 11910
+    },
+    "upstream-11941": {
+      "id": "upstream-11941",
+      "name": "Kenosha AI",
+      "summary_zh": "以 AI 處理臨床試驗行政。",
+      "tags": {
+        "industry_customer": [
+          "生命科學",
+          "醫療"
+        ],
+        "problem_workflow": [
+          "臨床試驗行政"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "Operational AI for Clinical Trial Administration"
+      },
+      "notes": [
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 11941
+    },
+    "upstream-12012": {
+      "id": "upstream-12012",
+      "name": "MANTA Machine Services",
+      "summary_zh": "提供面向實際環境的實體 AI 基礎設施。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "實體 AI 基礎設施"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "Physical AI Infrastructure built for the real world"
+      },
+      "notes": [
+        "未交代功能與應用場景。",
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 12012
+    },
+    "upstream-12014": {
+      "id": "upstream-12014",
+      "name": "Mapify",
+      "summary_zh": "以 AI 支援物流營運決策。",
+      "tags": {
+        "industry_customer": [
+          "物流"
+        ],
+        "problem_workflow": [
+          "營運決策"
+        ],
+        "solution": [
+          "AI 平台"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "AI-powered decision-making for logistics operations, boosting profitability and cutting downtime"
+      },
+      "notes": [
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 12014
+    },
+    "upstream-12081": {
+      "id": "upstream-12081",
+      "name": "Nihin Media K.K.",
+      "summary_zh": "以 MedGen Japan AI 助理提供可用於醫療實務的知識。",
+      "tags": {
+        "industry_customer": [
+          "醫療"
+        ],
+        "problem_workflow": [
+          "醫療知識取得"
+        ],
+        "solution": [
+          "AI 助理"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "Driving trust and efficiency in healthcare ecosystem with MedGen Japan - Trusted AI Assistant for Practice-Ready Medical Knowledge"
+      },
+      "notes": [
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 12081
+    },
+    "upstream-12149": {
+      "id": "upstream-12149",
+      "name": "Patient First.AI",
+      "summary_zh": "為教育機構提供 AI copilot。",
+      "tags": {
+        "industry_customer": [
+          "教育",
+          "教育機構"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI copilot"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "An AI Co Pilot for Educational Institutions"
+      },
+      "notes": [
+        "未交代教學或行政等任務。",
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 12149
+    },
+    "upstream-12159": {
+      "id": "upstream-12159",
+      "name": "Peccala",
+      "summary_zh": "為一般投資者提供 AI 加密資產交易策略。",
+      "tags": {
+        "industry_customer": [
+          "金融",
+          "投資者"
+        ],
+        "problem_workflow": [
+          "加密資產管理",
+          "交易策略"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "Peccala is a crypto asset manager offering AI-powered trading strategies to everyday investors."
+      },
+      "notes": [
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 12159
+    },
+    "upstream-12185": {
+      "id": "upstream-12185",
+      "name": "Plotch.ai",
+      "summary_zh": "建置、部署與監控企業 AI agent workforce。",
+      "tags": {
+        "industry_customer": [
+          "企業",
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "agent 建置",
+          "agent 部署",
+          "agent 監控"
+        ],
+        "solution": [
+          "AI agent 平台"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "Quickly build, deploy, and monitor a secure, collaborative AI agent workforce—purpose-built to streamline and scale enterprise workflows."
+      },
+      "notes": [
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 12185
+    },
+    "upstream-12514": {
+      "id": "upstream-12514",
+      "name": "Xailient",
+      "summary_zh": "提供電腦視覺。",
+      "tags": {
+        "industry_customer": [],
+        "problem_workflow": [],
+        "solution": [
+          "電腦視覺"
+        ]
+      },
+      "evidence": {
+        "field": "location",
+        "text": "World's smallest Computer Vision"
+      },
+      "notes": [
+        "原文只有 World's smallest Computer Vision，無法判定產品形式。",
+        "Antler 介紹從 location 讀取，原始欄位不修改。"
+      ],
+      "source": "antler",
+      "upstream_position": 12514
+    },
+    "upstream-12554": {
+      "id": "upstream-12554",
+      "name": "AA Audience",
+      "summary_zh": "分析線上與行動活動資料，為金融機構產出信用分數。",
+      "tags": {
+        "industry_customer": [
+          "金融",
+          "金融機構"
+        ],
+        "problem_workflow": [
+          "信用評分"
+        ],
+        "solution": [
+          "機器學習",
+          "資料分析"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Developer of a mobile application designed to generate customers for the finance industry via mobile devices. The company's application is designed to collect data from partners and analyzes it using machine learning models, enabling financial institutions such as banks credit card companies, and financial services companies to generate customers' credit scores based on online and mobile activities."
+      },
+      "notes": [],
+      "source": "500",
+      "upstream_position": 12554
+    },
+    "upstream-12574": {
+      "id": "upstream-12574",
+      "name": "Ailumia",
+      "summary_zh": "以 AI 顧問平台支援零售與電商流程。",
+      "tags": {
+        "industry_customer": [
+          "零售",
+          "電商"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI 顧問平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Operator and developer of an IT consulting platform. The company's platform is empowered by artificial intelligence technology to guide every aspect of their retail process, providing customers and sellers with solutions and resources for potential challenges in the e-commerce industry."
+      },
+      "notes": [
+        "未交代具體流程。"
+      ],
+      "source": "500",
+      "upstream_position": 12574
+    },
+    "upstream-12728": {
+      "id": "upstream-12728",
+      "name": "Original",
+      "summary_zh": "從照片預測身形與尺寸，提供服裝尺寸及合身資訊。",
+      "tags": {
+        "industry_customer": [
+          "時尚",
+          "消費者"
+        ],
+        "problem_workflow": [
+          "身形量測",
+          "尺寸推薦"
+        ],
+        "solution": [
+          "AI 影像分析"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Developer of a body measurement platform designed to analyze the whole body using artificial intelligence (AI) technology. The company's platform predicts a person's body shape and size under their clothing using photos taken by a user against any background, enabling users with not only size recommendations but also detailed fit information to understand exactly how a garment will fit and why it was recommended."
+      },
+      "notes": [],
+      "source": "500",
+      "upstream_position": 12728
+    },
+    "upstream-12751": {
+      "id": "upstream-12751",
+      "name": "Brightflag",
+      "summary_zh": "分析法律發票並管理案件、電子帳單與外部律師費用。",
+      "tags": {
+        "industry_customer": [
+          "企業",
+          "法律"
+        ],
+        "problem_workflow": [
+          "法律發票審查",
+          "法律費用管理",
+          "案件管理"
+        ],
+        "solution": [
+          "AI",
+          "語言分析"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Developer of an AI-based enterprise legal management platform designed to offer capabilities for matter management and e-billing reporting and analytics. The company's software leverages powerful language analysis technologies to analyze incoming legal invoices, uncover opportunities for reductions or alternative fee arrangements and give visibility on legal spending across the organization, enabling clients to manage and control outside counsel costs and centralize the invoice review for routing all the documents submitted to the correct approver."
+      },
+      "notes": [],
+      "source": "500",
+      "upstream_position": 12751
+    },
+    "upstream-13297": {
+      "id": "upstream-13297",
+      "name": "Iterable",
+      "summary_zh": "利用行為及情境資料決定客戶溝通時機。",
+      "tags": {
+        "industry_customer": [
+          "行銷",
+          "企業"
+        ],
+        "problem_workflow": [
+          "客戶互動",
+          "行銷活動管理"
+        ],
+        "solution": [
+          "AI",
+          "資料分析"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Developer of an artificial intelligence-powered customer communication platform intended to help organizations activate customers with joyful interactions at scale. The company's platform offers user engagement campaigns throughout the full lifecycle, using contextual and behavior-driven data, proprietary algorithms, and artificial intelligence (AI) to determine the time for customer engagement and conversion, enabling marketers to safely send campaigns without risking channel fatigue."
+      },
+      "notes": [],
+      "source": "500",
+      "upstream_position": 13297
+    },
+    "upstream-13336": {
+      "id": "upstream-13336",
+      "name": "KatalistAI",
+      "summary_zh": "提供生成式 AI 影片平台。",
+      "tags": {
+        "industry_customer": [
+          "媒體娛樂"
+        ],
+        "problem_workflow": [
+          "影片製作"
+        ],
+        "solution": [
+          "生成式 AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Katalist is a truly native generative AI video platform built for the future of video production."
+      },
+      "notes": [],
+      "source": "500",
+      "upstream_position": 13336
+    },
+    "upstream-13392": {
+      "id": "upstream-13392",
+      "name": "LeaseLock",
+      "summary_zh": "以物業資料最佳化租賃押金替代保障，整合線上租賃流程。",
+      "tags": {
+        "industry_customer": [
+          "不動產",
+          "住宅營運業者"
+        ],
+        "problem_workflow": [
+          "押金替代",
+          "租賃保障管理"
+        ],
+        "solution": [
+          "AI",
+          "金融科技軟體"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Developer of financial technology software designed to deposit replacement for real estate. The company's platform leverages artificial intelligence to optimize coverage based on property history, seamless integration within the native online leasing checkout results in industry-leading adoption rates, significant conversion lift, and drastically reduced deposit administration and risk, enabling apartment operators to reduce bad debt in a faster, simpler, more affordable rental transaction, and an improved resident experience while generating coverage for the property on every lease."
+      },
+      "notes": [
+        "未明示保障產品的具體形式。"
+      ],
+      "source": "500",
+      "upstream_position": 13392
+    },
+    "upstream-13471": {
+      "id": "upstream-13471",
+      "name": "Axamer",
+      "summary_zh": "為餐廳提供 AI employees。",
+      "tags": {
+        "industry_customer": [
+          "餐飲"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI workforce"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Ai employees for restaurants"
+      },
+      "notes": [
+        "未交代職位或工作。"
+      ],
+      "source": "500",
+      "upstream_position": 13471
+    },
+    "upstream-13666": {
+      "id": "upstream-13666",
+      "name": "Penfield.AI",
+      "summary_zh": "協助資安團隊標準化流程、分析瓶頸並自動化作業。",
+      "tags": {
+        "industry_customer": [
+          "資訊安全",
+          "資安團隊"
+        ],
+        "problem_workflow": [
+          "流程標準化",
+          "瓶頸分析",
+          "流程自動化"
+        ],
+        "solution": [
+          "AI 工具"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Developer of a cybersecurity platform designed to enhance security operations through process automation and performance optimization. The company's platform equips security teams with AI-powered tools for process standardization, bottleneck analysis and personalized automation, enabling clients to streamline workflows, optimize performance and elevate overall security posture."
+      },
+      "notes": [],
+      "source": "500",
+      "upstream_position": 13666
+    },
+    "upstream-13789": {
+      "id": "upstream-13789",
+      "name": "RareLee",
+      "summary_zh": "結合 AI 與專家服務，提供髮型、妝容及服裝風格建議。",
+      "tags": {
+        "industry_customer": [
+          "時尚",
+          "消費者"
+        ],
+        "problem_workflow": [
+          "個人風格建議"
+        ],
+        "solution": [
+          "AI",
+          "專家服務",
+          "生物特徵分析"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Developer of a personalized style consulting platform designed to help individuals discover and refine their unique fashion, hair and makeup identity. The company offers AI-assisted and expert-led style consulting services across hair, makeup and fashion, using biometric analysis and over a million categorized style profiles, enabling customers to gain tailored recommendations that enhance their appearance, boost confidence and align with their personal aesthetic"
+      },
+      "notes": [],
+      "source": "500",
+      "upstream_position": 13789
+    },
+    "upstream-13792": {
+      "id": "upstream-13792",
+      "name": "Raven Risk AI",
+      "summary_zh": "為企業信用提供 AI 方案。",
+      "tags": {
+        "industry_customer": [
+          "金融",
+          "企業信用"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI 方案"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-empowered solutions for Corporate Credit"
+      },
+      "notes": [
+        "未交代評分、風控或其他任務。"
+      ],
+      "source": "500",
+      "upstream_position": 13792
+    },
+    "upstream-14807": {
+      "id": "upstream-14807",
+      "name": "Tieout",
+      "summary_zh": "提供 AI 原生審計事務所服務。",
+      "tags": {
+        "industry_customer": [
+          "財務會計"
+        ],
+        "problem_workflow": [
+          "審計"
+        ],
+        "solution": [
+          "AI 審計服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI native audit firm."
+      },
+      "notes": [],
+      "source": "ef",
+      "upstream_position": 14807
+    },
+    "upstream-15015": {
+      "id": "upstream-15015",
+      "name": "quso.ai",
+      "summary_zh": "以 AI 支援影片內容製作。",
+      "tags": {
+        "industry_customer": [
+          "媒體娛樂"
+        ],
+        "problem_workflow": [
+          "影片製作"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI for streamlined video content creation."
+      },
+      "notes": [],
+      "source": "ef",
+      "upstream_position": 15015
+    },
+    "upstream-15068": {
+      "id": "upstream-15068",
+      "name": "Qritive",
+      "summary_zh": "以 AI 支援癌症診斷。",
+      "tags": {
+        "industry_customer": [
+          "醫療"
+        ],
+        "problem_workflow": [
+          "癌症診斷"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI for faster cancer diagnosis."
+      },
+      "notes": [],
+      "source": "ef",
+      "upstream_position": 15068
+    },
+    "upstream-15079": {
+      "id": "upstream-15079",
+      "name": "Freshflow",
+      "summary_zh": "為生鮮雜貨商預測需求。",
+      "tags": {
+        "industry_customer": [
+          "零售",
+          "生鮮雜貨商"
+        ],
+        "problem_workflow": [
+          "需求預測"
+        ],
+        "solution": [
+          "AI 預測"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI demand forecasting for grocers."
+      },
+      "notes": [],
+      "source": "ef",
+      "upstream_position": 15079
+    },
+    "upstream-15124": {
+      "id": "upstream-15124",
+      "name": "Moonsift",
+      "summary_zh": "以預測 AI 支援個人化網購。",
+      "tags": {
+        "industry_customer": [
+          "零售"
+        ],
+        "problem_workflow": [
+          "個人化購物"
+        ],
+        "solution": [
+          "AI 預測"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Predictive AI for personalized online shopping."
+      },
+      "notes": [
+        "未交代商品推薦或其他具體功能。"
+      ],
+      "source": "ef",
+      "upstream_position": 15124
+    },
+    "upstream-15205": {
+      "id": "upstream-15205",
+      "name": "Machine Medicine",
+      "summary_zh": "以 AI 與神經技術支援動作評估。",
+      "tags": {
+        "industry_customer": [],
+        "problem_workflow": [
+          "動作評估"
+        ],
+        "solution": [
+          "AI",
+          "神經技術"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Pioneering the future of motor assessment with AI and neurotechnology."
+      },
+      "notes": [
+        "未明示醫療或其他應用。"
+      ],
+      "source": "ef",
+      "upstream_position": 15205
+    },
+    "upstream-15209": {
+      "id": "upstream-15209",
+      "name": "Subconscious Compute",
+      "summary_zh": "為離線裝置提供邊緣 AI 模型。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "離線 AI 運行"
+        ],
+        "solution": [
+          "邊緣 AI 模型"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Edge-AI models for offline devices."
+      },
+      "notes": [],
+      "source": "ef",
+      "upstream_position": 15209
+    },
+    "upstream-15299": {
+      "id": "upstream-15299",
+      "name": "Medios Technologies",
+      "summary_zh": "以 AI 進行視網膜篩檢。",
+      "tags": {
+        "industry_customer": [
+          "醫療"
+        ],
+        "problem_workflow": [
+          "視網膜篩檢"
+        ],
+        "solution": [
+          "AI 篩檢"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI retinal screening for early eye care."
+      },
+      "notes": [],
+      "source": "ef",
+      "upstream_position": 15299
+    },
+    "upstream-15313": {
+      "id": "upstream-15313",
+      "name": "Observe",
+      "summary_zh": "以 AI 監控養魚場。",
+      "tags": {
+        "industry_customer": [
+          "水產養殖"
+        ],
+        "problem_workflow": [
+          "養殖監控"
+        ],
+        "solution": [
+          "AI 監控"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-driven monitoring for fish farms."
+      },
+      "notes": [
+        "未交代監控指標。"
+      ],
+      "source": "ef",
+      "upstream_position": 15313
+    },
+    "upstream-15317": {
+      "id": "upstream-15317",
+      "name": "Musiio",
+      "summary_zh": "協助創作者以 AI 探索音樂。",
+      "tags": {
+        "industry_customer": [
+          "媒體娛樂",
+          "創作者"
+        ],
+        "problem_workflow": [
+          "音樂搜尋"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI music discovery for creators."
+      },
+      "notes": [],
+      "source": "ef",
+      "upstream_position": 15317
+    },
+    "upstream-15398": {
+      "id": "upstream-15398",
+      "name": "Relatus",
+      "summary_zh": "提供企業知識互動、搜尋、生產力與協作平台。",
+      "tags": {
+        "industry_customer": [
+          "企業"
+        ],
+        "problem_workflow": [
+          "知識搜尋",
+          "協作"
+        ],
+        "solution": [
+          "生成式 AI",
+          "搜尋平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Gen AI Enterprise Knowledge Engagement, Network Intelligence, Productivity & Collaboration Platform Powered by AI Search Relevance"
+      },
+      "notes": [
+        "network intelligence 的具體意思未明，不另分類。"
+      ],
+      "source": "alchemist",
+      "upstream_position": 15398
+    },
+    "upstream-15425": {
+      "id": "upstream-15425",
+      "name": "Yaydoo, Inc",
+      "summary_zh": "以 AI SaaS 及企業支付工具自動化採購至付款流程。",
+      "tags": {
+        "industry_customer": [
+          "企業",
+          "採購"
+        ],
+        "problem_workflow": [
+          "採購作業",
+          "支付處理"
+        ],
+        "solution": [
+          "AI 自動化",
+          "SaaS",
+          "支付工具"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Procure-to-Pay Automation Platform that Streamlines Business Purchasing Using AI-Powered SaaS and B2B Payment Tools"
+      },
+      "notes": [],
+      "source": "alchemist",
+      "upstream_position": 15425
+    },
+    "upstream-15476": {
+      "id": "upstream-15476",
+      "name": "Command Line Inc.",
+      "summary_zh": "提供開源、跨平台 AI 終端機。",
+      "tags": {
+        "industry_customer": [
+          "軟體開發"
+        ],
+        "problem_workflow": [
+          "終端工作流程"
+        ],
+        "solution": [
+          "AI 終端機",
+          "開源工具"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-Powered, Open-source, Cross-platform Terminal for Seamless Workflows."
+      },
+      "notes": [],
+      "source": "alchemist",
+      "upstream_position": 15476
+    },
+    "upstream-15477": {
+      "id": "upstream-15477",
+      "name": "NachoNacho",
+      "summary_zh": "提供 SaaS、AI 與服務交易市集。",
+      "tags": {
+        "industry_customer": [
+          "企業",
+          "AI 使用者"
+        ],
+        "problem_workflow": [
+          "軟體與服務取得"
+        ],
+        "solution": [
+          "市集",
+          "金融科技"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Marketplace for SaaS/AI & Services, powered by Fintech"
+      },
+      "notes": [
+        "未明示市集本身使用 AI。"
+      ],
+      "source": "alchemist",
+      "upstream_position": 15477
+    },
+    "upstream-15489": {
+      "id": "upstream-15489",
+      "name": "Kara Technologies",
+      "summary_zh": "以 AI 數位人提供手語內容。",
+      "tags": {
+        "industry_customer": [
+          "手語使用者"
+        ],
+        "problem_workflow": [
+          "手語內容取得"
+        ],
+        "solution": [
+          "AI 數位人"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI Powered Digital Humans Deliver Sign Language Access Instantly and at Scale"
+      },
+      "notes": [
+        "未明示是否即時翻譯。"
+      ],
+      "source": "alchemist",
+      "upstream_position": 15489
+    },
+    "upstream-15574": {
+      "id": "upstream-15574",
+      "name": "HR Messenger",
+      "summary_zh": "以 AI 與候選人溝通，支援招募。",
+      "tags": {
+        "industry_customer": [
+          "人力資源"
+        ],
+        "problem_workflow": [
+          "候選人互動",
+          "人才招募"
+        ],
+        "solution": [
+          "AI 對話"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Streamline Hiring - We Capture your Candidates Everywhere, our Friendly AI Does the Talking and Reducing your Hiring Costs by 70%"
+      },
+      "notes": [],
+      "source": "alchemist",
+      "upstream_position": 15574
+    },
+    "upstream-15607": {
+      "id": "upstream-15607",
+      "name": "SalesRep.ai",
+      "summary_zh": "自動化電話、簡訊及郵件，協助企業培育及追蹤潛在客戶。",
+      "tags": {
+        "industry_customer": [
+          "企業",
+          "行銷"
+        ],
+        "problem_workflow": [
+          "潛在客戶培育",
+          "客戶追蹤"
+        ],
+        "solution": [
+          "AI 自動化"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "We help companies nurture and follow up with their leads more effectively through automation of calls, sms and emails and using AI to take the load of the people\n\n"
+      },
+      "notes": [],
+      "source": "alchemist",
+      "upstream_position": 15607
+    },
+    "upstream-16295": {
+      "id": "upstream-16295",
+      "name": "DeepEyeVision",
+      "summary_zh": "提供雲端 AI 診斷支援。",
+      "tags": {
+        "industry_customer": [
+          "醫療"
+        ],
+        "problem_workflow": [
+          "診斷支援"
+        ],
+        "solution": [
+          "雲端 AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "DeepEyeVision is a cloud-based AI diagnosis support solution."
+      },
+      "notes": [
+        "未明示疾病與診斷方式。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 16295
+    },
+    "upstream-16313": {
+      "id": "upstream-16313",
+      "name": "Deepen AI",
+      "summary_zh": "為機器人、駕駛輔助及自主駕駛提供多感測器 AI 工具。",
+      "tags": {
+        "industry_customer": [
+          "機器人",
+          "汽車"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "多感測器 AI",
+          "工具服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Deepan AI is a provider of multi-sensor AI, tools and services intended to focused on the robotics, driver assistance and autonomous driving space."
+      },
+      "notes": [
+        "描述使用 Deepan AI，與名錄 Deepen AI 拼寫不同，未確認關係。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 16313
+    },
+    "upstream-16397": {
+      "id": "upstream-16397",
+      "name": "betterdata",
+      "summary_zh": "將正式環境資料轉為可供共享的合成資料。",
+      "tags": {
+        "industry_customer": [
+          "企業",
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "合成資料製作",
+          "資料共享"
+        ],
+        "solution": [
+          "AI",
+          "合成資料"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Betterdata uses AI to transform your production data into privacy-preserving and highly realistic synthetic data. Share, access and build with data safely across teams, businesses, and international borders."
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 16397
+    },
+    "upstream-16516": {
+      "id": "upstream-16516",
+      "name": "Cogniac",
+      "summary_zh": "以深度學習平台自動化視覺任務。",
+      "tags": {
+        "industry_customer": [
+          "企業"
+        ],
+        "problem_workflow": [
+          "視覺任務自動化"
+        ],
+        "solution": [
+          "深度學習平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Cogniac is an enterprise platform that enables easy automation of any visual task using the latest in AI-based Deep Learning SW solutions."
+      },
+      "notes": [
+        "未明示具體視覺工作。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 16516
+    },
+    "upstream-16563": {
+      "id": "upstream-16563",
+      "name": "Qopius",
+      "summary_zh": "以跨平台電腦視覺自動化與最佳化零售執行。",
+      "tags": {
+        "industry_customer": [
+          "零售"
+        ],
+        "problem_workflow": [
+          "零售執行"
+        ],
+        "solution": [
+          "電腦視覺"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Automating and optimizing retail execution using cross-platform computer vision."
+      },
+      "notes": [
+        "未交代盤點、陳列或其他細項。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 16563
+    },
+    "upstream-16571": {
+      "id": "upstream-16571",
+      "name": "Koffie Labs",
+      "summary_zh": "為商用車隊提供 AI 保險。",
+      "tags": {
+        "industry_customer": [
+          "保險",
+          "商用車隊"
+        ],
+        "problem_workflow": [
+          "保險服務"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-driven insurance for commercial fleets."
+      },
+      "notes": [
+        "未交代核保、理賠或其他流程。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 16571
+    },
+    "upstream-16820": {
+      "id": "upstream-16820",
+      "name": "HeHealth",
+      "summary_zh": "提供男性性傳染病相關的匿名手機服務與社群。",
+      "tags": {
+        "industry_customer": [
+          "醫療",
+          "男性使用者"
+        ],
+        "problem_workflow": [
+          "健康問題支援",
+          "社群支持"
+        ],
+        "solution": [
+          "AI",
+          "手機平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "HeHealth is an AI driven, smartphone-centric anonymous solution and community that helps men with STDs (Sexually Transmitted Diseases) solve their penis problems."
+      },
+      "notes": [
+        "未交代檢測、診斷或治療功能。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 16820
+    },
+    "upstream-17387": {
+      "id": "upstream-17387",
+      "name": "Innoqua",
+      "summary_zh": "提供環境運輸與顧問服務，並從事 AI 系統開發及服務管理。",
+      "tags": {
+        "industry_customer": [
+          "環境運輸"
+        ],
+        "problem_workflow": [
+          "AI 系統開發",
+          "服務管理"
+        ],
+        "solution": [
+          "開發服務",
+          "顧問服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Innoqua is an environmental transportation and consulting company that specializes in AI system development and service management."
+      },
+      "notes": [
+        "原文服務範圍廣，具體任務不明。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 17387
+    },
+    "upstream-17621": {
+      "id": "upstream-17621",
+      "name": "Stokckmark",
+      "summary_zh": "以自然語言處理提供工作者 AI 軟體。",
+      "tags": {
+        "industry_customer": [
+          "工作者"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "自然語言處理",
+          "AI 軟體"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Stokckmark is a natural language processing company that provides AI-powered software for workers."
+      },
+      "notes": [
+        "未交代具體功能。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 17621
+    },
+    "upstream-17835": {
+      "id": "upstream-17835",
+      "name": "BitQuark",
+      "summary_zh": "以 AI 最佳化生產線、製造、倉儲及物流營運。",
+      "tags": {
+        "industry_customer": [
+          "製造",
+          "倉儲",
+          "物流"
+        ],
+        "problem_workflow": [
+          "營運最佳化"
+        ],
+        "solution": [
+          "AI 系統"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "BitQuark develops AI systems to optimize operations in production lines, manufacturing, warehouses, and logistics."
+      },
+      "notes": [
+        "未交代細部工作。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 17835
+    },
+    "upstream-18070": {
+      "id": "upstream-18070",
+      "name": "Singularity.AI",
+      "summary_zh": "以 AI 協作平台從影像及資料擷取洞察，支援醫療創新。",
+      "tags": {
+        "industry_customer": [
+          "醫療"
+        ],
+        "problem_workflow": [
+          "影像資料分析",
+          "協作"
+        ],
+        "solution": [
+          "AI 分析",
+          "協作平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "We build an interactive, secure and open collaboration platform that seamlessly applies AI and the latest technologies to extract insights from images and data to accelerate and democratize medical innovation."
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 18070
+    },
+    "upstream-18335": {
+      "id": "upstream-18335",
+      "name": "YOURIKA",
+      "summary_zh": "提供用於學習的對話式 AI SaaS。",
+      "tags": {
+        "industry_customer": [
+          "教育"
+        ],
+        "problem_workflow": [
+          "學習支持"
+        ],
+        "solution": [
+          "對話式 AI",
+          "SaaS"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "YOURIKA is a conversational AI SaaS platfrom for learning"
+      },
+      "notes": [
+        "未交代科目與使用者。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 18335
+    },
+    "upstream-18698": {
+      "id": "upstream-18698",
+      "name": "bitgrit",
+      "summary_zh": null,
+      "tags": {
+        "industry_customer": [],
+        "problem_workflow": [],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Democratic AI"
+      },
+      "notes": [
+        "原文只有 Democratic AI，不足以產出具體摘要。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 18698
+    },
+    "upstream-18932": {
+      "id": "upstream-18932",
+      "name": "Scentmatic",
+      "summary_zh": "以 AI 用語言描述氣味與風味，並用於顧客體驗。",
+      "tags": {
+        "industry_customer": [],
+        "problem_workflow": [
+          "氣味描述",
+          "風味描述"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI system which can verbalize scent and flavor. Also, create customer experience based on our AI system."
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 18932
+    },
+    "upstream-18983": {
+      "id": "upstream-18983",
+      "name": "Narrative",
+      "summary_zh": "為合規、風控及防詐團隊提供 AI。",
+      "tags": {
+        "industry_customer": [
+          "合規團隊",
+          "風控團隊",
+          "防詐團隊"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Next generation AI for compliance, risk and fraud teams."
+      },
+      "notes": [
+        "未交代具體工作。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 18983
+    },
+    "upstream-18994": {
+      "id": "upstream-18994",
+      "name": "Syn2core",
+      "summary_zh": "以智慧眼鏡 AI copilot 協助汽車組裝。",
+      "tags": {
+        "industry_customer": [
+          "汽車",
+          "組裝團隊"
+        ],
+        "problem_workflow": [
+          "組裝工作支援"
+        ],
+        "solution": [
+          "AI copilot",
+          "智慧眼鏡"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Syn2core develops an AI co-pilot on smart glasses to minimize human errors in automotive assembly today and to enable humanoids with process intelligence in the future."
+      },
+      "notes": [
+        "人形機器人流程情報是原文未來目標，不當作已具備功能。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 18994
+    },
+    "upstream-19013": {
+      "id": "upstream-19013",
+      "name": "Easework AI",
+      "summary_zh": "為採購與供應鏈提供情報及流程自動化工具組。",
+      "tags": {
+        "industry_customer": [
+          "採購",
+          "供應鏈"
+        ],
+        "problem_workflow": [
+          "流程自動化",
+          "採購情報"
+        ],
+        "solution": [
+          "AI 工具組"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI powered holistic intelligence and workflow automation suite for Procurement & Supply Chain (P2P, S2C)"
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 19013
+    },
+    "upstream-19083": {
+      "id": "upstream-19083",
+      "name": "Shyld AI",
+      "summary_zh": "以軟硬體平台自動化醫療紀錄、帳單及 UV-C 消毒。",
+      "tags": {
+        "industry_customer": [
+          "醫療",
+          "醫院"
+        ],
+        "problem_workflow": [
+          "臨床紀錄",
+          "帳單處理",
+          "消毒"
+        ],
+        "solution": [
+          "AI",
+          "環境資訊擷取",
+          "UV-C 硬體"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Shyld automates tasks and streamline processes at hospitals using Shyld's proprietary hardware and software platform.  This includes automating medical documentation and billing by capturing clinical ambient intelligence as well as disinfection by combining AI with a targeted UV-C beaming."
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 19083
+    },
+    "upstream-19235": {
+      "id": "upstream-19235",
+      "name": "Atolla Tech",
+      "summary_zh": "以感測器與機器學習即時偵測及辨識昆蟲。",
+      "tags": {
+        "industry_customer": [
+          "感測技術"
+        ],
+        "problem_workflow": [
+          "昆蟲偵測",
+          "昆蟲辨識"
+        ],
+        "solution": [
+          "感測器",
+          "機器學習"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Atolla Tech develops sensor systems and machine learning providing real-time insect detection and identification"
+      },
+      "notes": [
+        "未明示農業或其他客群。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 19235
+    },
+    "upstream-19324": {
+      "id": "upstream-19324",
+      "name": "Reactiv",
+      "summary_zh": "以 AI 平台建立 iOS 與 Android 購物應用。",
+      "tags": {
+        "industry_customer": [
+          "零售",
+          "軟體開發"
+        ],
+        "problem_workflow": [
+          "購物應用建置"
+        ],
+        "solution": [
+          "AI 應用平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Reactiv is an AI-powered mobile app platform that builds you an iOS and Android shopping app."
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 19324
+    },
+    "upstream-19338": {
+      "id": "upstream-19338",
+      "name": "Panax",
+      "summary_zh": "以 AI 管理現金流、資金及流動性。",
+      "tags": {
+        "industry_customer": [
+          "財務會計",
+          "財務團隊"
+        ],
+        "problem_workflow": [
+          "現金管理",
+          "現金流管理",
+          "流動性管理"
+        ],
+        "solution": [
+          "AI"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-driven cash management for lean finance teams. Streamline treasury operations, control cash flow, generate strategic insights, optimize liquidity"
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 19338
+    },
+    "upstream-19343": {
+      "id": "upstream-19343",
+      "name": "Avantos",
+      "summary_zh": "提供 AI SaaS 客戶導入與後續服務平台。",
+      "tags": {
+        "industry_customer": [
+          "企業"
+        ],
+        "problem_workflow": [
+          "客戶導入",
+          "客戶服務"
+        ],
+        "solution": [
+          "AI",
+          "SaaS"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Avantos delivers an AI-driven SaaS platform for Onboarding and Servicing, with flexible data models to tailor seamless user journeys."
+      },
+      "notes": [
+        "未明示使用產業與後續服務內容。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 19343
+    },
+    "upstream-19347": {
+      "id": "upstream-19347",
+      "name": "Outfox Health",
+      "summary_zh": "為健康計畫及自籌保險雇主提供福利、醫療提供者及費用指引。",
+      "tags": {
+        "industry_customer": [
+          "醫療",
+          "雇主",
+          "照護導航人員"
+        ],
+        "problem_workflow": [
+          "照護導航",
+          "福利資訊取得",
+          "費用資訊取得"
+        ],
+        "solution": [
+          "AI 個人化指引"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Outfox Health is an enterprise AI platform that helps health plans & self-funded employers recapture $238 billion lost from poor care navigation by giving their members & care navigators instant, personalized guidance on benefits, providers, and costs."
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 19347
+    },
+    "upstream-19503": {
+      "id": "upstream-19503",
+      "name": "Edgematrix",
+      "summary_zh": "提供即時影片處理的邊緣 AI 技術與平台服務。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "即時影片處理"
+        ],
+        "solution": [
+          "邊緣 AI",
+          "平台服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Edgematrix develops fundamental technology of edge AI for processing real-time video data and provides it as a platform service."
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 19503
+    },
+    "upstream-19648": {
+      "id": "upstream-19648",
+      "name": "HA-PPY Co., Ltd",
+      "summary_zh": "以手機照片預測口腔環境狀態。",
+      "tags": {
+        "industry_customer": [
+          "醫療"
+        ],
+        "problem_workflow": [
+          "口腔狀態評估"
+        ],
+        "solution": [
+          "AI 影像處理"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI image processing that predicts an oral environment just by taking a picture with a smartphone / スマホで写真を撮るだけで口腔環境状態を予測するAI画像処理"
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 19648
+    },
+    "upstream-19731": {
+      "id": "upstream-19731",
+      "name": "Retrieva, Inc.",
+      "summary_zh": "提供自然語言處理與機器學習軟體方案。",
+      "tags": {
+        "industry_customer": [],
+        "problem_workflow": [],
+        "solution": [
+          "自然語言處理",
+          "機器學習"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Providing software solutions using natural language processing and machine learning at high quality and low cost / 自然言語処理及び機械学習を用いたソフトウェアソリューションを高品質・低コストで提供"
+      },
+      "notes": [
+        "未交代具體用途。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 19731
+    },
+    "upstream-20000": {
+      "id": "upstream-20000",
+      "name": "YOURIKA",
+      "summary_zh": "提供用於學習的對話式 AI SaaS。",
+      "tags": {
+        "industry_customer": [
+          "教育"
+        ],
+        "problem_workflow": [
+          "學習支持"
+        ],
+        "solution": [
+          "對話式 AI",
+          "SaaS"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "YOURIKA is a conversational AI SaaS platfrom for learning"
+      },
+      "notes": [
+        "與本輪另一筆 YOURIKA 同名同描述，保留各自 ID，未去重。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 20000
+    },
+    "upstream-20335": {
+      "id": "upstream-20335",
+      "name": "CognitivEdge AI",
+      "summary_zh": "以生成式 AI 與 DataOps 支援營運預測、績效及供應鏈最佳化。",
+      "tags": {
+        "industry_customer": [
+          "企業",
+          "工業"
+        ],
+        "problem_workflow": [
+          "營運問題預測",
+          "績效管理",
+          "供應鏈最佳化"
+        ],
+        "solution": [
+          "生成式 AI",
+          "DataOps"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "CognitivEdge AI is a DataOps, and Distributed Enterprise Generative AI company, that rapidly solves Operational dysfunction prediction. Optimal performance management. Supply chain optimization and Industrial sustainability requirements."
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 20335
+    },
+    "upstream-20374": {
+      "id": "upstream-20374",
+      "name": "Voxel",
+      "summary_zh": "利用既有攝影機提供即時工業安全及營運洞察。",
+      "tags": {
+        "industry_customer": [
+          "工業"
+        ],
+        "problem_workflow": [
+          "作業安全",
+          "營運分析"
+        ],
+        "solution": [
+          "AI",
+          "攝影機分析"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Voxel uses AI and existing cameras to deliver real-time industrial safety and operational insights."
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 20374
+    },
+    "upstream-20449": {
+      "id": "upstream-20449",
+      "name": "Facilis AI",
+      "summary_zh": "協助無資料科學訓練的製造與企業人員分析資料及控制流程。",
+      "tags": {
+        "industry_customer": [
+          "製造",
+          "企業人員"
+        ],
+        "problem_workflow": [
+          "製造分析",
+          "流程控制"
+        ],
+        "solution": [
+          "AI 分析平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "We're on a mission to trivialize manufacturing analytics and process control. \nWe are offering a turn-key AI-based analytics platform to help manufacturing and business personnel with no data science and engineering training turn raw data and domain knowledge into actionable insights with extendable"
+      },
+      "notes": [
+        "介紹截斷。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 20449
+    },
+    "upstream-20470": {
+      "id": "upstream-20470",
+      "name": "NovaceneAI",
+      "summary_zh": "協助組織將資料與 AI 及機器學習結合。",
+      "tags": {
+        "industry_customer": [
+          "企業"
+        ],
+        "problem_workflow": [
+          "資料與 AI 整合"
+        ],
+        "solution": [
+          "AI",
+          "機器學習"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "NovaceneAI helps organizations couple their data with AI and machine learning to optimize business objectives."
+      },
+      "notes": [
+        "未交代具體目標與產品功能。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 20470
+    },
+    "upstream-20581": {
+      "id": "upstream-20581",
+      "name": "Huski.ai",
+      "summary_zh": "為商標與品牌專業人員提供 AI 方案。",
+      "tags": {
+        "industry_customer": [
+          "商標專業人員",
+          "品牌專業人員"
+        ],
+        "problem_workflow": [],
+        "solution": [
+          "AI 方案"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "AI-powered solutions for trademark and brand professionals."
+      },
+      "notes": [
+        "未交代檢索、申請或其他工作。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 20581
+    },
+    "upstream-20774": {
+      "id": "upstream-20774",
+      "name": "Tokyo Artisan Intelligence",
+      "summary_zh": "提供 AI 委外開發服務。",
+      "tags": {
+        "industry_customer": [
+          "AI 開發"
+        ],
+        "problem_workflow": [
+          "AI 開發委外"
+        ],
+        "solution": [
+          "開發服務"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Tokyo Artisan Intelligence is an AI outsourced development company."
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 20774
+    },
+    "upstream-20904": {
+      "id": "upstream-20904",
+      "name": "Kisui Tech",
+      "summary_zh": "以不需人類操作的機器，協助中小型家庭農場因應人力不足。",
+      "tags": {
+        "industry_customer": [
+          "農業",
+          "家庭農場"
+        ],
+        "problem_workflow": [
+          "農務自動化"
+        ],
+        "solution": [
+          "AI",
+          "機器人"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "Creating AI robotic services that empower small-medium-sized family farmers to manage larger farms with fewer people in order to overcome the labor shortage and aging society by providing machines that can do work without needing a human operator."
+      },
+      "notes": [
+        "未交代具體農務。"
+      ],
+      "source": "plugandplay",
+      "upstream_position": 20904
+    },
+    "upstream-21246": {
+      "id": "upstream-21246",
+      "name": "Sorano",
+      "summary_zh": "以 AI 平台進行天氣預報與分析。",
+      "tags": {
+        "industry_customer": [
+          "氣象"
+        ],
+        "problem_workflow": [
+          "天氣預測",
+          "天氣分析"
+        ],
+        "solution": [
+          "AI 平台"
+        ]
+      },
+      "evidence": {
+        "field": "description",
+        "text": "SoranoAI is an IT Internet firm offering a platform for AI based weather forecasting and analysis."
+      },
+      "notes": [],
+      "source": "plugandplay",
+      "upstream_position": 21246
+    }
+  }
+}

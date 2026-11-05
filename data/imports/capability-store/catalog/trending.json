@@ -1,0 +1,287 @@
+{
+  "schema_version": "0.1-prototype",
+  "source_url": "https://github.com/trending?since=weekly",
+  "observed_at": "2026-11-04T12:25:24.002345+00:00",
+  "http_date": "Wed, 04 Nov 2026 12:25:22 GMT",
+  "period": "weekly",
+  "language_filter": null,
+  "raw_file": "data/raw/snapshots/trending-weekly-20261104T122524Z/page.html",
+  "raw_sha256": "101375a6bc8fe75bc43dbd0992f3da9d7ac681dfbf4133a90e053cfde011992a",
+  "repository_count": 15,
+  "note": {
+    "zh": "GitHub 本週榜單的觀察快照；保留原始順序，不是推薦排名、採用率或能力驗證。不強制對應工作。",
+    "en": "Observed snapshot of GitHub weekly Trending, in source order; not recommendations, adoption evidence or capability validation. No forced work mapping."
+  },
+  "repositories": [
+    {
+      "id": "trending-thedotmack--claude-mem",
+      "repository": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "rank_in_snapshot": 1,
+      "summary": {
+        "zh": "保存、壓縮 Agent 工作階段內容，並在後續工作階段提供相關情境。",
+        "en": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
+      },
+      "weekly_stars": 7995,
+      "weekly_stars_display": "7,995 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 1
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-nutlope--hallmark",
+      "repository": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "rank_in_snapshot": 2,
+      "summary": {
+        "zh": "供程式開發 Agent 使用的介面設計 Skill。",
+        "en": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex."
+      },
+      "weekly_stars": 8765,
+      "weekly_stars_display": "8,765 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 2
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-pingdotgg--t3code",
+      "repository": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "rank_in_snapshot": 3,
+      "summary": {
+        "zh": null,
+        "en": null
+      },
+      "weekly_stars": 12542,
+      "weekly_stars_display": "12,542 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 3
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-pbakaus--impeccable",
+      "repository": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "rank_in_snapshot": 4,
+      "summary": {
+        "zh": "提供設計詞彙、修整、批評與介面審查方向，供程式開發 Agent 使用。",
+        "en": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships."
+      },
+      "weekly_stars": 11405,
+      "weekly_stars_display": "11,405 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 4
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-obra--superpowers",
+      "repository": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "rank_in_snapshot": 5,
+      "summary": {
+        "zh": "結合 Agent Skills 的軟體開發框架與工作方法。",
+        "en": "An agentic skills framework & software development methodology that works."
+      },
+      "weekly_stars": 5994,
+      "weekly_stars_display": "5,994 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 5
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-anthropics--skills",
+      "repository": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "rank_in_snapshot": 6,
+      "summary": {
+        "zh": "Agent Skills 的公開資源庫，屬於集合。",
+        "en": "Public repository for Agent Skills"
+      },
+      "weekly_stars": 2969,
+      "weekly_stars_display": "2,969 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 6
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-max-sixty--worktrunk",
+      "repository": "max-sixty/worktrunk",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "rank_in_snapshot": 7,
+      "summary": {
+        "zh": "用於 Git worktree 管理的命令列工具，面向平行 AI Agent 工作流程。",
+        "en": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows"
+      },
+      "weekly_stars": 749,
+      "weekly_stars_display": "749 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 7
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-jakubkrehel--skills",
+      "repository": "jakubkrehel/skills",
+      "url": "https://github.com/jakubkrehel/skills",
+      "rank_in_snapshot": 8,
+      "summary": {
+        "zh": "協助建立介面的 Agent Skills 集合。",
+        "en": "A collection of agent skills that help you build great interfaces."
+      },
+      "weekly_stars": 1761,
+      "weekly_stars_display": "1,761 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 8
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-jetbrains--thinkrail",
+      "repository": "JetBrains/thinkrail",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "rank_in_snapshot": 9,
+      "summary": {
+        "zh": "結合 pi 的輕量 IDE，依開發工作方式調整。",
+        "en": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need"
+      },
+      "weekly_stars": 3898,
+      "weekly_stars_display": "3,898 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 9
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-ghostty-org--ghostty",
+      "repository": "ghostty-org/ghostty",
+      "url": "https://github.com/ghostty-org/ghostty",
+      "rank_in_snapshot": 10,
+      "summary": {
+        "zh": "使用原生介面與 GPU 加速的跨平台終端模擬器。",
+        "en": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration."
+      },
+      "weekly_stars": 771,
+      "weekly_stars_display": "771 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 10
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-multica-ai--andrej-karpathy-skills",
+      "repository": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "rank_in_snapshot": 11,
+      "summary": {
+        "zh": "以單一 CLAUDE.md 檔案整理 LLM 寫程式常見問題的行為指引。",
+        "en": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls."
+      },
+      "weekly_stars": 3921,
+      "weekly_stars_display": "3,921 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 11
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-hyprwm--hyprland",
+      "repository": "hyprwm/Hyprland",
+      "url": "https://github.com/hyprwm/Hyprland",
+      "rank_in_snapshot": 12,
+      "summary": {
+        "zh": "可自訂的動態平鋪式 Wayland compositor，屬於桌面環境軟體。",
+        "en": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks."
+      },
+      "weekly_stars": 1232,
+      "weekly_stars_display": "1,232 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 12
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-agricidaniel--claude-seo",
+      "repository": "AgriciDaniel/claude-seo",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "rank_in_snapshot": 13,
+      "summary": {
+        "zh": "Claude Code 的 SEO Skill 集合，涵蓋技術 SEO、網站結構、在地與電商等方向。",
+        "en": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data."
+      },
+      "weekly_stars": 3751,
+      "weekly_stars_display": "3,751 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 13
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-calesthio--openmontage",
+      "repository": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "rank_in_snapshot": 14,
+      "summary": {
+        "zh": "結合製作流程、工具與 Skill／知識檔案的 Agent 影片製作系統。",
+        "en": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio."
+      },
+      "weekly_stars": 3490,
+      "weekly_stars_display": "3,490 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 14
+      },
+      "review_status": "trending_listing_only_not_tested"
+    },
+    {
+      "id": "trending-leonxlnx--taste-skill",
+      "repository": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "rank_in_snapshot": 15,
+      "summary": {
+        "zh": "供程式開發 Agent 使用的視覺設計 Skills，強調藝術方向、參考圖與瀏覽器檢查。",
+        "en": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages"
+      },
+      "weekly_stars": 5972,
+      "weekly_stars_display": "5,972 stars this week",
+      "evidence": {
+        "source_url": "https://github.com/trending?since=weekly",
+        "snapshot": "data/raw/snapshots/trending-weekly-20261104T122524Z/extracted.json",
+        "rank": 15
+      },
+      "review_status": "trending_listing_only_not_tested"
+    }
+  ]
+}

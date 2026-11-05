@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CS02 · 客訴一進來，哪一件最急、該分給誰、要不要立刻升級？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a href="../../practice/index.html" data-solving-practice>解題實踐</a> <a href="../../roadmap/index.html" data-future-roadmap>研究路線圖</a> <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=business&category=Customer%20Service">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">CS02</span>
+        <span class="meta-pill">客服</span>
+      </div>
+      <h1>客訴一進來，哪一件最急、該分給誰、要不要立刻升級？</h1>
+      <p class="problem-summary">客服案件大量湧入時，企業難以從自然語言內容快速辨識真正的問題、急迫性與潛在風險，導致高影響的法律、安全、消費爭議或重大客戶案件可能被一般分流規則延誤</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>客服案件大量湧入時，企業難以從自然語言內容快速辨識真正的問題、急迫性與潛在風險，導致高影響的法律、安全、消費爭議或重大客戶案件可能被一般分流規則延誤</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">客訴一進來時，需要同時看文字內容、客戶與產品情境、SLA、風險類型、目前 Queue 和可用客服技能。只看關鍵字，很容易錯過法律、安全或重大客戶的弱訊號。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Ticket/對話文字、客戶與產品情境、歷史案件、SLA、風險類型、Queue與Agent Skills</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>Ticketing/CCaaS、CRM、KB、WFM</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>一般Intent Classification與Routing已有成熟SaaS；LLM的增量在於理解複雜語境與弱風險訊號，辨識法律威脅、安全問題、消費爭議或其他需要特殊Escalation的內容，再與SLA及Routing規則結合。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">先理解案件真正的 Intent、急迫性與風險，再把 SLA、產品與人員技能一起納入分流。高風險或模糊案件直接升級，普通案件則送到最適合的 Queue，避免重要客訴被一般規則拖延。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Intent &amp; Risk Classification + Urgency Detection + SLA-Aware Routing + Escalation</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>解析案件內容與客戶情境，辨識Intent、Urgency與高風險訊號，結合SLA、產品與Agent Skills推薦處理Queue、優先順序與需要立即Escalation的案件</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>客服主管設定分流與升級政策、驗證高風險與模糊案件並監督誤分派；AI不得因客戶價值或其他Proxy自動降低一般客戶的必要服務與風險處理</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>縮短高風險案件被辨識並送到正確處理人的時間，降低SLA違約、錯誤分流與重大客訴延誤</p></div>
+      </section>
+    </div>
+  </div>
+
+
+<!-- cs02-experiment:start -->
+<div class="detail-stack" id="cs02-experiment">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">08</span><h2>實驗：風險優先，不讓一般客戶被 VIP 擠掉</h2></div><div class="detail-body solution-detail"><p><strong>限定的政策分流與流程遷移檢查通過。</strong>一般客戶的已標註高風險案件，優先於普通 VIP 帳務工單；只建議合格且可用的人員承接。資料或訊號不明時補證據／轉人工，不硬交答案。</p><div class="data-box"><h3>合成主案例</h3><p>T-critical：P0、incident 隊列、合格 incident-1；回應期限 11:45 UTC，在固定比較時點 12:00 UTC 已過期限。<br>T-outage：P1、technical 隊列、tech-1；期限 12:30 UTC。<br>T-vip：P2、billing 隊列、billing-1；期限 15:45 UTC。</p><p>日期均為 2026-10-26。SLA 和風險欄位是合成政策輸入，不是業界標準或客戶承諾；輸出只是建議，沒有派單。</p></div><details><summary>改進前，流程在哪裡失敗？</summary><p>修改前的實際探測發現，流程把分析者寫死為上一領域的 A12，而凍結的 CS02 案件指定 A05；原客服 Worker 也只能查答案，不能分流。保留失敗後，補上分析角色配置與受限政策工具，沒有改七關或放寬標準。</p></details></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">09</span><h2>重用流程，把需要人決定的事留下來</h2></div><div class="detail-body solution-detail"><p>同一套七關流程現可由 A05 承接客服分析；審查、獨立程式驗證與模擬管理關卡仍受保護。未知分類／風險、無合格人員、過期政策與錯誤時間，都不能當作正常成功。</p><details><summary>證據與驗收</summary><p>八種合成情境、新增 27 項檢查、完整 276 項回歸通過，保留 E93 回歸。另測偽造優先級／期限／承接者／執行結果被拒，未解案件不得接受，過期決策或來源改動被攔截。</p><p><a href="../../../data/consulting/CS02/experiment.json">實驗、原始失敗與限制</a> · <a href="../../../data/consulting/CS02/policy.json">合成政策</a> · <a href="../../../data/consulting/CS02/tickets.json">結構化工單與人員</a> · <a href="../../../data/consulting/CS02/protocol.json">凍結驗收標準</a></p></details><p>依確定性規則處理預先分類的欄位，不代表能理解任意客訴文字、隔離模型互相挑錯、最佳化工作負載或改善真實 SLA。審查由同一助手模擬，沒有派單、發訊息或對客戶承諾。</p></div></section></div>
+<section class="detail-section" id="cs02-reuse-followup"><div class="detail-title"><h2>持續驗證：換個相近情境，流程還有效嗎？</h2></div><div class="detail-body solution-detail"><p>先凍結能力，再用簡單的新情境驗證；不為了測試而增加問題難度。前一輪發現工具與驗證器使用不同日期，修正為主程式明確提供同一時間後，再以跨午夜的值班工單檢查重用能力。</p><p><strong>2026-10-27：兩個直接重用條件通過，兩個轉人工／停止條件符合預期。</strong>SLA 截止瞬間不算逾期，一秒後算逾期；合格人員不可用時保留高風險優先級、轉人工且不得接受未解結果，停止狀態重新開啟仍有效；政策到期時要求補證據。</p><details><summary>證據、限制與下一步</summary><p>這是一個合成情境的四個條件，各執行一次，沒有修改引擎、roles、skills 或 tools，也沒有外部模型呼叫。轉人工／停止不算解題成功，兩個時間邊界變體也不是兩次獨立遷移證明。同一助手編製與檢查，不是盲測、正式 Problem X 或完整七關驗證；不證明真實派單、歷史政策查詢或人力最佳化。先前日期修正後的完整回歸為 280 項通過，本輪僅執行新情境測試。</p><p>後續繼續用相近情境尋找實際缺口，保留失敗再修正；目前沒有新增 Planner 的證據。CS02 的展示成熟度與全站案例數不變。</p><p><a href="../../../data/consulting/CS02/reuse-shift.json">重用測試：合成輸入、預期結果與實際狀態</a></p></details></div></section>
+<!-- cs02-experiment:end -->
+<!-- framework-problem:start -->
+<div class="detail-stack"><section class="detail-section" id="framework-approach"><div class="detail-title"><h2>這個問題如何透過 Agent Framework 處理？</h2></div><div class="detail-body solution-detail"><p data-case-maturity="policy_triage_demo"><strong>目前進度：政策分流示範 · 合成結構化工單</strong><br>限定的優先級、隊列與升級建議已通過；真實派單及一般語言理解仍未驗證。</p><p>先釐清決策與證據需求，再組合顧問 Skills 與允許的 Tools，透過人機協作、安全邊界與治理審查形成方案。框架提供共用方法，不代表本題所有能力都已實作或成果已驗證。</p><p><a href="../../practice/index.html#agent-framework">了解共用解題框架 →</a></p><p><a href="https://www.linkedin.com/in/vincent-tseng-5aa8b832/" data-consulting-contact target="_blank" rel="noopener noreferrer">在 LinkedIn 討論這個問題 ↗</a></p><p>可先提供 CS02 題號、情境與想做的決策；初次聯絡以概況為主，不必提供機密資料。</p></div></section></div>
+<!-- framework-problem:end -->
+<nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../CS01/index.html">← CS01　產品還沒上線，客服能不能先知道客戶最可能遇到什麼問題？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=business&category=Customer%20Service">回問題地圖</a>
+    <a class="next" href="../CS03/index.html">CS03　每天這麼多客服對話，哪些服務環節的品質正在變差？哪些互動需要立刻看？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

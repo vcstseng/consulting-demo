@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>E93 · 十個 AI 都給出一樣的答案，真的代表有十份獨立判斷嗎？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a href="../../practice/index.html" data-solving-practice>解題實踐</a> <a href="../../roadmap/index.html" data-future-roadmap>研究路線圖</a> <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=system&category=System%20Effects">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">E93</span>
+        <span class="meta-pill">系統性後果</span>
+      </div>
+      <h1>十個 AI 都給出一樣的答案，真的代表有十份獨立判斷嗎？</h1>
+      <p class="problem-summary">企業同時使用多個 AI Agent、部門模型或分析工具時，看似獨立的建議，可能其實共用同一個基礎模型、資料來源、Prompt、上游分析或假設。結果「大家都同意」可能只是同一個觀點被複製很多次，而不是多份獨立證據得出相同結論。</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>企業同時使用多個 AI Agent、部門模型或分析工具時，看似獨立的建議，可能其實共用同一個基礎模型、資料來源、Prompt、上游分析或假設。結果「大家都同意」可能只是同一個觀點被複製很多次，而不是多份獨立證據得出相同結論。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">多個 AI 給出同樣答案時，要先知道它們是否其實用了同一個 Model、Prompt、RAG 來源、上游分析或相同假設。沒有這些 Lineage，看起來像十份獨立意見，可能只是同一條證據鏈被重複十次。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Agent Outputs、Model IDs、Prompts、Retrieved Sources、Upstream Analysis、Assumptions、Decision Records</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>Agent Platform、LLM Gateway、RAG、Data Catalog、Decision Logs</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>傳統決策流程通常假設不同分析來源具有一定獨立性；在多 Agent 環境裡，這個假設很容易失效。AI 可以協助追蹤可觀測的來源、依賴關係與語意相似度，但不能把看不到的模型內部推理假裝成可稽核證據。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">為每個建議保留模型、Prompt／Policy、檢索證據、假設與上游輸出的來源，建立 Decision Dependency Map。只有確認不同答案真的來自不同證據與推理路徑，才能把一致性當成有意義的訊號。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Decision Provenance + Dependency Mapping + Diversity Controls</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>追蹤每個建議使用的模型、Prompt／Policy 版本、檢索證據、假設與上游輸出，建立可觀測的依賴關係，辨識多個答案是否其實來自同一條證據鏈或共同來源。</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>決定哪些重大決策真正需要獨立判斷，刻意安排不同資料、模型、方法或人工挑戰；不能把 Agent 票數直接當成信心。</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>看見表面共識背後的共同依賴，降低共同失效風險；無法保證觀點真正獨立，但至少不會把重複訊號誤認成多份證據。</p></div>
+      </section>
+    </div>
+  </div>
+
+
+<!-- e93-experiment:start -->
+<div class="detail-stack" id="e93-experiment">
+<section class="detail-section"><div class="detail-title"><span class="detail-num">08</span><h2>實驗：相同答案，不等於獨立證據</h2></div><div class="detail-body solution-detail"><p><strong>限定的來源相依查核通過；自主 Agent 團隊能力仍未證明。</strong>十份合成報告雖然同意同一結論，卻都透過轉載與摘要追到同一原始來源。十份報告，不代表十份獨立支持的判斷。</p><div class="data-box"><h3>10 份報告 → 共用轉載與摘要 → 1 個已揭露原始來源</h3><p>查核的是可見來源關係，未知的相依仍保留；即使根來源不同，也不能直接推論統計獨立或內容為真。</p></div><details><summary>哪裡失敗？後來改了什麼？</summary><p>未改動的原始工具清單無法執行來源相依查核，首次準備失敗已保留。補上受限來源追溯工具及另一套程式驗證後，用同一版流程與標準重新測試，沒有降低門檻。</p></details></div></section>
+<section class="detail-section"><div class="detail-title"><span class="detail-num">09</span><h2>驗證整個流程，不只看答案</h2></div><div class="detail-body solution-detail"><p>先凍結問題與標準 → 確認準備 → 分析 → 挑錯 → 重驗 → 對精確版本決策 → 帶限制交付。缺證據就停止推進；中途改標準會讓原 run 失效，不把失敗改成成功。</p><details><summary>檢查與證據</summary><p>八種合成情境涵蓋共用與不同根來源、上游報告、矛盾證據、缺漏、循環引用、來源指令與無關來源。新增 25 項檢查、完整 249 項回歸通過；這是程式與流程檢查，不是獨立模型或商業成效驗證。</p><p>另測退回重驗與重試上限、過期決策、停止後恢復、來源改動攔截。本次主要接受 run 只有一版分析，未發生實際退回；退回路徑由另外的控制測試驗證。</p><p><a href="../../../data/consulting/E93/experiment.json">實驗紀錄與限制 JSON</a> · <a href="../../../data/consulting/E93/source.json">合成來源圖</a> · <a href="../../../data/consulting/E93/protocol.json">凍結驗收標準</a></p></details><p>分析由確定性工具執行，角色審查由同一助手完成；不是盲測，也不是多個隔離 AI 互相挑錯。隱藏相依、獨立推理、真實證據與商業成效仍未證明。</p></div></section>
+</div>
+<!-- e93-experiment:end -->
+<div class="detail-stack"><section class="detail-section" id="e93-reuse-followup"><div class="detail-title"><h2>換個簡單情境：供應商評估的證據能否重用？</h2></div><div class="detail-body solution-detail"><p><strong>2026-10-27：兩個直接重用條件通過，一個缺來源停止條件符合預期。</strong>三份評估報告中，兩份追溯至同一份供應商紀錄，另一份引用反對證據。現有工具保留共用來源與反對立場，不把三份報告當成三次獨立判斷；未提供立場時維持未知，底層來源缺失時要求補證據。</p><details><summary>流程控制、證據與限制</summary><p>分析提交後更動來源，舊結果的接受會被攔截。這輪凍結既有能力，各條件一次完成，沒有修改引擎或呼叫外部模型。這是同一助手編製與檢查的合成情境，不是盲測、正式 Problem X 或完整七關驗證，也不能判定供應商是否值得採用、證據是否真實或是否存在隱藏相依。缺來源停止不算解題成功。</p><p><a href="../../../data/consulting/E93/reuse-supplier.json">供應商情境：合成輸入、預期與結果</a> · <a href="../../practice/index.html#reuse-milestone">三類能力的重用里程碑</a></p></details></div></section></div>
+<!-- framework-problem:start -->
+<div class="detail-stack"><section class="detail-section" id="framework-approach"><div class="detail-title"><h2>這個問題如何透過 Agent Framework 處理？</h2></div><div class="detail-body solution-detail"><p data-case-maturity="evidence_audit_demo"><strong>目前進度：來源相依查核示範 · 合成證據</strong><br>限定的來源與流程檢查已通過；不代表完整 E93 解決或自主 Agent 能力已被證明。</p><p>先釐清決策與證據需求，再組合顧問 Skills 與允許的 Tools，透過人機協作、安全邊界與治理審查形成方案。框架提供共用方法，不代表本題所有能力都已實作或成果已驗證。</p><p><a href="../../practice/index.html#agent-framework">了解共用解題框架 →</a></p><p><a href="https://www.linkedin.com/in/vincent-tseng-5aa8b832/" data-consulting-contact target="_blank" rel="noopener noreferrer">在 LinkedIn 討論這個問題 ↗</a></p><p>可先提供 E93 題號、情境與想做的決策；初次聯絡以概況為主，不必提供機密資料。</p></div></section></div>
+<!-- framework-problem:end -->
+<nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../COL08/index.html">← COL08　AI 讓每個人產出變多之後，原本的 KPI 還有意義嗎？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=system&category=System%20Effects">回問題地圖</a>
+    <a class="next" href="../E94/index.html">E94　如果有個決定，人自己都不願意做，為什麼變成「模型建議」後就可以做？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+{
+  "schema_version": "0.1-navigation",
+  "review_date": "2026-11-04",
+  "reference_module": "99-problems",
+  "basis": "Manual navigation associations to existing capability descriptions. Not problem-level matching, validated coverage or suitability.",
+  "groups": [
+    {
+      "id": "business",
+      "label": {
+        "zh": "企業工作",
+        "en": "Business work"
+      },
+      "reference_url": "https://vcstseng.github.io/99-problems/pages/problem-map/index.html?group=business"
+    },
+    {
+      "id": "ai",
+      "label": {
+        "zh": "AI 能力與治理",
+        "en": "AI capabilities & governance"
+      },
+      "reference_url": "https://vcstseng.github.io/99-problems/pages/problem-map/index.html?group=ai"
+    }
+  ],
+  "categories": [
+    {
+      "id": "business-sales",
+      "group": "business",
+      "label": {
+        "zh": "銷售",
+        "en": "Sales"
+      },
+      "capability_ids": [
+        "crm",
+        "prospecting",
+        "forecasting"
+      ]
+    },
+    {
+      "id": "business-marketing",
+      "group": "business",
+      "label": {
+        "zh": "行銷",
+        "en": "Marketing"
+      },
+      "capability_ids": [
+        "marketing-research",
+        "writing",
+        "visual-content"
+      ]
+    },
+    {
+      "id": "business-finance",
+      "group": "business",
+      "label": {
+        "zh": "財務",
+        "en": "Finance"
+      },
+      "capability_ids": [
+        "invoices",
+        "accounting",
+        "payments",
+        "data-analysis",
+        "forecasting"
+      ]
+    },
+    {
+      "id": "business-hr",
+      "group": "business",
+      "label": {
+        "zh": "人資",
+        "en": "Human resources"
+      },
+      "capability_ids": [
+        "people-operations",
+        "learning"
+      ]
+    },
+    {
+      "id": "business-procurement",
+      "group": "business",
+      "label": {
+        "zh": "採購",
+        "en": "Procurement"
+      },
+      "capability_ids": [
+        "document-conversion",
+        "data-analysis",
+        "procurement-search"
+      ]
+    },
+    {
+      "id": "business-operations",
+      "group": "business",
+      "label": {
+        "zh": "營運",
+        "en": "Operations"
+      },
+      "capability_ids": [
+        "scheduling",
+        "work-coordination",
+        "meeting-review"
+      ]
+    },
+    {
+      "id": "business-customer-service",
+      "group": "business",
+      "label": {
+        "zh": "客服",
+        "en": "Customer service"
+      },
+      "capability_ids": [
+        "customer-conversations",
+        "support-tickets",
+        "knowledge-access"
+      ]
+    },
+    {
+      "id": "business-supply-chain",
+      "group": "business",
+      "label": {
+        "zh": "供應鏈",
+        "en": "Supply chain"
+      },
+      "capability_ids": [
+        "supplychain",
+        "forecasting"
+      ]
+    },
+    {
+      "id": "business-legal",
+      "group": "business",
+      "label": {
+        "zh": "法務／合規",
+        "en": "Legal / compliance"
+      },
+      "capability_ids": [
+        "legal-documents"
+      ]
+    },
+    {
+      "id": "business-management",
+      "group": "business",
+      "label": {
+        "zh": "管理",
+        "en": "Management"
+      },
+      "capability_ids": [
+        "work-coordination",
+        "meeting-review",
+        "web-research",
+        "data-analysis"
+      ]
+    },
+    {
+      "id": "ai-security",
+      "group": "ai",
+      "label": {
+        "zh": "安全",
+        "en": "Security"
+      },
+      "capability_ids": [
+        "security-review"
+      ]
+    },
+    {
+      "id": "ai-governance-control",
+      "group": "ai",
+      "label": {
+        "zh": "治理與控制",
+        "en": "Governance & control"
+      },
+      "capability_ids": [
+        "ai-operations"
+      ]
+    },
+    {
+      "id": "ai-reliability-verification",
+      "group": "ai",
+      "label": {
+        "zh": "可靠性與驗證",
+        "en": "Reliability & verification"
+      },
+      "capability_ids": [
+        "ai-evaluation"
+      ]
+    },
+    {
+      "id": "ai-native-development",
+      "group": "ai",
+      "label": {
+        "zh": "AI 原生開發",
+        "en": "AI-native development"
+      },
+      "capability_ids": [
+        "web-testing",
+        "ai-operations",
+        "system-monitoring"
+      ]
+    },
+    {
+      "id": "ai-human-collaboration",
+      "group": "ai",
+      "label": {
+        "zh": "人機協作",
+        "en": "Human–AI collaboration"
+      },
+      "capability_ids": []
+    }
+  ]
+}

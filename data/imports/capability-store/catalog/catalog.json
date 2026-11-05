@@ -1,0 +1,3782 @@
+{
+  "metadata": {
+    "schema_version": "0.1-prototype",
+    "review_date": "2026-11-04",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "candidate_pool_sha256": "77e6e14f071d1d65224de311b0b60838cea7fc0bd6854f5c7c51b3200f6165f8",
+    "source_count": 5,
+    "candidate_occurrences": 6551,
+    "exact_url_candidate_count": 6459,
+    "capability_count": 32,
+    "resource_count": 84,
+    "tested_count": 0,
+    "basis": "Review of saved curated-list entries; not installation, original-repository audit, or popularity verification.",
+    "selection_policy": "Concrete enterprise work first; 2–4 choices per theme; limited industry examples; no type quotas.",
+    "trending_status": "weekly_snapshot_saved_separate_feed"
+  },
+  "works": [
+    {
+      "id": "sales-marketing",
+      "label": {
+        "zh": "獲客、行銷與銷售",
+        "en": "Sales and marketing"
+      }
+    },
+    {
+      "id": "customer-service",
+      "label": {
+        "zh": "客服、接待與客戶互動",
+        "en": "Customer service"
+      }
+    },
+    {
+      "id": "finance-accounting",
+      "label": {
+        "zh": "財務、會計、稅務與收付款",
+        "en": "Finance, accounting and payments"
+      }
+    },
+    {
+      "id": "legal-compliance",
+      "label": {
+        "zh": "法律、合約、合規與稽核",
+        "en": "Legal, contracts and compliance"
+      }
+    },
+    {
+      "id": "risk-security",
+      "label": {
+        "zh": "風險、安全、隱私與身分",
+        "en": "Risk, security, privacy and identity"
+      }
+    },
+    {
+      "id": "people-workforce",
+      "label": {
+        "zh": "招募、人力與員工管理",
+        "en": "Recruitment and workforce"
+      }
+    },
+    {
+      "id": "supplychain-procurement",
+      "label": {
+        "zh": "採購、供應鏈、物流與庫存",
+        "en": "Procurement, supply chain and inventory"
+      }
+    },
+    {
+      "id": "production-quality",
+      "label": {
+        "zh": "生產、製程與品質",
+        "en": "Production, processes and quality"
+      }
+    },
+    {
+      "id": "facilities-maintenance",
+      "label": {
+        "zh": "設施、設備、物業與維護",
+        "en": "Facilities, property and maintenance"
+      }
+    },
+    {
+      "id": "healthcare-care",
+      "label": {
+        "zh": "醫療、診斷、照護與健康支持",
+        "en": "Healthcare and care support"
+      }
+    },
+    {
+      "id": "research-discovery",
+      "label": {
+        "zh": "研究、研發與探索",
+        "en": "Research and discovery"
+      }
+    },
+    {
+      "id": "software-development",
+      "label": {
+        "zh": "軟體開發、測試與維運",
+        "en": "Software development, testing and operations"
+      }
+    },
+    {
+      "id": "ai-lifecycle",
+      "label": {
+        "zh": "AI 開發、部署、評估與治理",
+        "en": "AI development, evaluation and governance"
+      }
+    },
+    {
+      "id": "education-training",
+      "label": {
+        "zh": "教育、學習與技能培訓",
+        "en": "Education and training"
+      }
+    },
+    {
+      "id": "content-creative",
+      "label": {
+        "zh": "內容、媒體與創意設計",
+        "en": "Content, media and creative design"
+      }
+    },
+    {
+      "id": "data-knowledge",
+      "label": {
+        "zh": "資料、文件、知識與資訊處理",
+        "en": "Data, documents and knowledge"
+      }
+    },
+    {
+      "id": "operations-planning",
+      "label": {
+        "zh": "營運、規劃、排程與協作",
+        "en": "Operations, planning and collaboration"
+      }
+    },
+    {
+      "id": "personal-life",
+      "label": {
+        "zh": "個人生活、陪伴與日常活動",
+        "en": "Personal life and companionship"
+      }
+    },
+    {
+      "id": "energy-environment",
+      "label": {
+        "zh": "能源、環境、農業與永續管理",
+        "en": "Energy, environment and sustainability"
+      }
+    },
+    {
+      "id": "matching-transactions",
+      "label": {
+        "zh": "媒合、交易與經紀",
+        "en": "Matching, transactions and brokerage"
+      }
+    },
+    {
+      "id": "engineering-design",
+      "label": {
+        "zh": "工程設計、模擬與硬體研發",
+        "en": "Engineering design and simulation"
+      }
+    },
+    {
+      "id": "assessment-detection",
+      "label": {
+        "zh": "評估、偵測、預測與量測",
+        "en": "Assessment, detection and measurement"
+      }
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "document-conversion",
+      "label": {
+        "zh": "文件轉換與擷取",
+        "en": "Document conversion and extraction"
+      },
+      "work_ids": [
+        "data-knowledge"
+      ],
+      "resource_ids": [
+        "cap-002c9bfb2252c1",
+        "cap-d1dbbe8ad81060",
+        "cap-debcab44e30f38"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "data-analysis",
+      "label": {
+        "zh": "表格與資料分析",
+        "en": "Spreadsheet and data analysis"
+      },
+      "work_ids": [
+        "data-knowledge"
+      ],
+      "resource_ids": [
+        "cap-4ee2ee8570fab8",
+        "cap-21061df722cd7d",
+        "cap-1eaff2b0f70497"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "knowledge-access",
+      "label": {
+        "zh": "文件知識查詢",
+        "en": "Documentation and knowledge access"
+      },
+      "work_ids": [
+        "data-knowledge"
+      ],
+      "resource_ids": [
+        "cap-abdb142795b688",
+        "cap-12ec94910a635f",
+        "cap-36cd27f0df97a0"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "web-research",
+      "label": {
+        "zh": "網路研究與資料蒐集",
+        "en": "Web research and collection"
+      },
+      "work_ids": [
+        "research-discovery"
+      ],
+      "resource_ids": [
+        "cap-81fe53041ca8ac",
+        "cap-084da3f43141a9",
+        "cap-e4d6bc6d5fedc7"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "meeting-review",
+      "label": {
+        "zh": "會議記錄與回顧",
+        "en": "Meeting records and review"
+      },
+      "work_ids": [
+        "operations-planning"
+      ],
+      "resource_ids": [
+        "cap-bfaaf2325b6bce",
+        "cap-8d098643c9f79c",
+        "cap-1fa9d9c7561ef5"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "scheduling",
+      "label": {
+        "zh": "行事曆與預約",
+        "en": "Calendar and scheduling"
+      },
+      "work_ids": [
+        "operations-planning"
+      ],
+      "resource_ids": [
+        "cap-f10d18a38928c9",
+        "cap-99ecb4d4ebebb5"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "work-coordination",
+      "label": {
+        "zh": "任務與協作資料",
+        "en": "Tasks and collaboration data"
+      },
+      "work_ids": [
+        "operations-planning"
+      ],
+      "resource_ids": [
+        "cap-1116eae4426e10",
+        "cap-ad4b960be7e56a",
+        "cap-c61f652ef62f7c"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "invoices",
+      "label": {
+        "zh": "發票與收據處理",
+        "en": "Invoices and receipts"
+      },
+      "work_ids": [
+        "finance-accounting"
+      ],
+      "resource_ids": [
+        "cap-b3b3817a191586",
+        "cap-d4ab5fc2b55f3c"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "accounting",
+      "label": {
+        "zh": "會計資料存取",
+        "en": "Accounting data access"
+      },
+      "work_ids": [
+        "finance-accounting"
+      ],
+      "resource_ids": [
+        "cap-ac8ea957fa622a",
+        "cap-5207b2ecbe7bfc"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "payments",
+      "label": {
+        "zh": "付款與訂單操作",
+        "en": "Payments and orders"
+      },
+      "work_ids": [
+        "finance-accounting"
+      ],
+      "resource_ids": [
+        "cap-b6d747872693a1",
+        "cap-68373126700512"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "crm",
+      "label": {
+        "zh": "客戶資料與銷售流程",
+        "en": "CRM data and sales workflows"
+      },
+      "work_ids": [
+        "sales-marketing"
+      ],
+      "resource_ids": [
+        "cap-10c3c181478c85",
+        "cap-5ed05c1f1e392a",
+        "cap-d62f0ee3067cb9"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "prospecting",
+      "label": {
+        "zh": "潛在客戶研究",
+        "en": "Prospect research"
+      },
+      "work_ids": [
+        "sales-marketing"
+      ],
+      "resource_ids": [
+        "cap-2d974958692750",
+        "cap-23f72a5f9f7bc9"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "marketing-research",
+      "label": {
+        "zh": "行銷與競品資料",
+        "en": "Marketing and competitor data"
+      },
+      "work_ids": [
+        "sales-marketing"
+      ],
+      "resource_ids": [
+        "cap-2d8e6f60c41ad6",
+        "cap-3efee18f08cb0a",
+        "cap-302dea6690a6ff"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "writing",
+      "label": {
+        "zh": "內容研究與寫作",
+        "en": "Content research and writing"
+      },
+      "work_ids": [
+        "content-creative"
+      ],
+      "resource_ids": [
+        "cap-fd440a6e84889a",
+        "cap-94e2b3cd0b801c",
+        "cap-f4b8b20bf19612"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "visual-content",
+      "label": {
+        "zh": "設計與簡報製作",
+        "en": "Design and presentations"
+      },
+      "work_ids": [
+        "content-creative"
+      ],
+      "resource_ids": [
+        "cap-ec9f8f05586c64",
+        "cap-44501a809b2dda",
+        "cap-7ac1d5a6484400"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "customer-conversations",
+      "label": {
+        "zh": "客戶對話與預約",
+        "en": "Customer conversations and bookings"
+      },
+      "work_ids": [
+        "customer-service"
+      ],
+      "resource_ids": [
+        "cap-5311e7913a48f4",
+        "cap-c4e13027e2e053",
+        "cap-efd044aecf227b"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "support-tickets",
+      "label": {
+        "zh": "客服工單處理",
+        "en": "Support ticket handling"
+      },
+      "work_ids": [
+        "customer-service"
+      ],
+      "resource_ids": [
+        "cap-f89e5f2cc575ac",
+        "cap-84efdae37998fe"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "people-operations",
+      "label": {
+        "zh": "招募與人事資料",
+        "en": "Recruitment and people data"
+      },
+      "work_ids": [
+        "people-workforce"
+      ],
+      "resource_ids": [
+        "cap-b68e82d5131b4d",
+        "cap-a7ccbf83ba28ed",
+        "cap-ddf171d34c4d82"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "legal-documents",
+      "label": {
+        "zh": "法律文件研究與簽署",
+        "en": "Legal document research and signing"
+      },
+      "work_ids": [
+        "legal-compliance"
+      ],
+      "resource_ids": [
+        "cap-e4aeb99b70136d",
+        "cap-29a493ec3dad2d",
+        "cap-4fac974b827ff2"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "security-review",
+      "label": {
+        "zh": "安全掃描與威脅分析",
+        "en": "Security scanning and threat analysis"
+      },
+      "work_ids": [
+        "risk-security"
+      ],
+      "resource_ids": [
+        "cap-2e7c2a49086203",
+        "cap-d81548a6abde42",
+        "cap-e6b271c15ab72c"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "web-testing",
+      "label": {
+        "zh": "網頁操作與測試",
+        "en": "Browser automation and web testing"
+      },
+      "work_ids": [
+        "software-development"
+      ],
+      "resource_ids": [
+        "cap-ba31bde2dfc28f",
+        "cap-9f16085714adc9"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "ai-evaluation",
+      "label": {
+        "zh": "AI 評估與觀測",
+        "en": "AI evaluation and observability"
+      },
+      "work_ids": [
+        "ai-lifecycle"
+      ],
+      "resource_ids": [
+        "cap-24cf555d116238",
+        "cap-cc9be4621c6c11",
+        "cap-b918b0c3e13754"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "ai-operations",
+      "label": {
+        "zh": "提示詞、軌跡與資料觀測",
+        "en": "Prompts, traces and data observability"
+      },
+      "work_ids": [
+        "ai-lifecycle"
+      ],
+      "resource_ids": [
+        "cap-3f55996ac42134",
+        "cap-89ddec2a3c7aaf",
+        "cap-5601761a951d42"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "system-monitoring",
+      "label": {
+        "zh": "系統監測與問題追蹤",
+        "en": "System monitoring and issue investigation"
+      },
+      "work_ids": [
+        "software-development"
+      ],
+      "resource_ids": [
+        "cap-49a924b95823ee",
+        "cap-37f4d216795f56",
+        "cap-47efc4e6474c09"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "learning",
+      "label": {
+        "zh": "學習內容與複習",
+        "en": "Learning content and review"
+      },
+      "work_ids": [
+        "education-training"
+      ],
+      "resource_ids": [
+        "cap-8cfeadb48b5cf6",
+        "cap-4442debbeedf93",
+        "cap-2184304bd2545d"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "supplychain",
+      "label": {
+        "zh": "供應鏈營運與風險資料",
+        "en": "Supply chain operations and risk data"
+      },
+      "work_ids": [
+        "supplychain-procurement"
+      ],
+      "resource_ids": [
+        "cap-dfcf9822d582d6",
+        "cap-9f22cde6b6b50d"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "procurement-search",
+      "label": {
+        "zh": "公開標案搜尋",
+        "en": "Public procurement search"
+      },
+      "work_ids": [
+        "supplychain-procurement"
+      ],
+      "resource_ids": [
+        "cap-bcd1c60a14d84c",
+        "cap-928808fac46491"
+      ],
+      "scope": "enterprise_work"
+    },
+    {
+      "id": "industrial-data",
+      "label": {
+        "zh": "工業設備資料連接",
+        "en": "Industrial equipment data connections"
+      },
+      "work_ids": [
+        "production-quality"
+      ],
+      "resource_ids": [
+        "cap-0b193947860955",
+        "cap-9b3de749813b3b"
+      ],
+      "scope": "industry_example"
+    },
+    {
+      "id": "engineering",
+      "label": {
+        "zh": "工程建模與圖面處理",
+        "en": "Engineering models and drawings"
+      },
+      "work_ids": [
+        "engineering-design"
+      ],
+      "resource_ids": [
+        "cap-001c3e04d3a800",
+        "cap-ab5cfa86bf2c77",
+        "cap-fb6866978c3ed1",
+        "cap-dec1fda92758e8"
+      ],
+      "scope": "industry_example"
+    },
+    {
+      "id": "clinical-data",
+      "label": {
+        "zh": "臨床資料存取",
+        "en": "Clinical data access"
+      },
+      "work_ids": [
+        "healthcare-care"
+      ],
+      "resource_ids": [
+        "cap-d1aa56847e9036",
+        "cap-31589150fa1b79"
+      ],
+      "scope": "industry_example"
+    },
+    {
+      "id": "carbon",
+      "label": {
+        "zh": "碳排估算與雲端區域比較",
+        "en": "Carbon estimates and cloud region comparison"
+      },
+      "work_ids": [
+        "energy-environment"
+      ],
+      "resource_ids": [
+        "cap-5d074572938729",
+        "cap-79f72c95ce9ce1"
+      ],
+      "scope": "industry_example"
+    },
+    {
+      "id": "forecasting",
+      "label": {
+        "zh": "資料分析與時間序列預測",
+        "en": "Data analysis and time-series forecasting"
+      },
+      "work_ids": [
+        "assessment-detection"
+      ],
+      "resource_ids": [
+        "cap-18ec26a11bd3b7",
+        "cap-32d759133998d6"
+      ],
+      "scope": "enterprise_work"
+    }
+  ],
+  "resources": [
+    {
+      "id": "cap-001c3e04d3a800",
+      "name": "mikan-atomoki/text-to-model",
+      "url": "https://github.com/mikan-atomoki/text-to-model",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "以自然語言在 Fusion 360 建立草圖、實體與零件模型。",
+        "en": "Turn natural language into 3D models in Fusion 360, with CAD tools for sketches, extrudes, fillets and JIS standard parts."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/mikan-atomoki/text-to-model",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 381,
+          "source_section": "🎨 Art & Culture",
+          "raw_text": "- [mikan-atomoki/text-to-model](https://github.com/mikan-atomoki/text-to-model) [![text-to-model MCP server](https://glama.ai/mcp/servers/mikan-atomoki/text-to-model/badges/score.svg)](https://glama.ai/mcp/servers/mikan-atomoki/text-to-model) 🐍 🏠 🪟 🍎 - Turn natural language into 3D models in Fusion 360, with CAD tools for sketches, extrudes, fillets and JIS standard parts.",
+          "name": "mikan-atomoki/text-to-model",
+          "description_en": "Turn natural language into 3D models in Fusion 360, with CAD tools for sketches, extrudes, fillets and JIS standard parts.",
+          "url": "https://github.com/mikan-atomoki/text-to-model",
+          "url_key": "https://github.com/mikan-atomoki/text-to-model",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 6
+    },
+    {
+      "id": "cap-002c9bfb2252c1",
+      "name": "Microsoft MarkItDown",
+      "url": "https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "將檔案與文件轉為 Markdown，供後續文字處理使用。",
+        "en": "Convert files and documents to Markdown for LLMs"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/microsoft/markitdown",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 367,
+          "source_section": "AI, Media and Data Visualization",
+          "raw_text": "- **[Microsoft MarkItDown](https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp)** - Convert files and documents to Markdown for LLMs",
+          "name": "Microsoft MarkItDown",
+          "description_en": "Convert files and documents to Markdown for LLMs",
+          "url": "https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp",
+          "url_key": "https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp",
+          "suggested_type": "mcp_tool"
+        },
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 2250,
+          "source_section": "📂 File Systems",
+          "raw_text": "- [microsoft/markitdown](https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp) 🎖️ 🐍 🏠 - Convert many file formats, local or remote, to Markdown for LLMs using MarkItDown.",
+          "name": "microsoft/markitdown",
+          "description_en": "Convert many file formats, local or remote, to Markdown for LLMs using MarkItDown.",
+          "url": "https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp",
+          "url_key": "https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 8
+    },
+    {
+      "id": "cap-084da3f43141a9",
+      "name": "exa-labs/exa-mcp-server",
+      "url": "https://github.com/exa-labs/exa-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "提供網頁搜尋與程式碼情境查詢。",
+        "en": "AI web search and code context with Exa"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/exa-labs/exa-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 173,
+          "source_section": "Search and Research",
+          "raw_text": "- **[exa-labs/exa-mcp-server](https://github.com/exa-labs/exa-mcp-server)** - AI web search and code context with Exa",
+          "name": "exa-labs/exa-mcp-server",
+          "description_en": "AI web search and code context with Exa",
+          "url": "https://github.com/exa-labs/exa-mcp-server",
+          "url_key": "https://github.com/exa-labs/exa-mcp-server",
+          "suggested_type": "mcp_tool"
+        },
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 3937,
+          "source_section": "🔎 Search & Data Extraction",
+          "raw_text": "- [exa-labs/exa-mcp-server](https://github.com/exa-labs/exa-mcp-server) 🎖️ 📇 ☁️ - Real-time web search using the Exa AI Search API.",
+          "name": "exa-labs/exa-mcp-server",
+          "description_en": "Real-time web search using the Exa AI Search API.",
+          "url": "https://github.com/exa-labs/exa-mcp-server",
+          "url_key": "https://github.com/exa-labs/exa-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 218
+    },
+    {
+      "id": "cap-0b193947860955",
+      "name": "kukapay/opcua-mcp",
+      "url": "https://github.com/kukapay/opcua-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "連接支援 OPC UA 的工業系統。",
+        "en": "Connect to OPC UA-enabled industrial systems."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/kukapay/opcua-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 2097,
+          "source_section": "📟 Embedded System",
+          "raw_text": "- [kukapay/opcua-mcp](https://github.com/kukapay/opcua-mcp) 🐍 📟 - Connect to OPC UA-enabled industrial systems.",
+          "name": "kukapay/opcua-mcp",
+          "description_en": "Connect to OPC UA-enabled industrial systems.",
+          "url": "https://github.com/kukapay/opcua-mcp",
+          "url_key": "https://github.com/kukapay/opcua-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 296
+    },
+    {
+      "id": "cap-10c3c181478c85",
+      "name": "Salesforce",
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/headless-360-mcp.html",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "存取 Salesforce CRM 資料與操作。",
+        "en": "Salesforce CRM data and actions via hosted MCP servers"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 457,
+          "source_section": "Web, Marketing and Product",
+          "raw_text": "- **[Salesforce](https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/headless-360-mcp.html)** - Salesforce CRM data and actions via hosted MCP servers",
+          "name": "Salesforce",
+          "description_en": "Salesforce CRM data and actions via hosted MCP servers",
+          "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/headless-360-mcp.html",
+          "url_key": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/headless-360-mcp.html",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 453
+    },
+    {
+      "id": "cap-1116eae4426e10",
+      "name": "its-dart/dart-mcp-server",
+      "url": "https://github.com/its-dart/dart-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "透過 Dart 管理專案與任務。",
+        "en": "Dart project and task management"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/its-dart/dart-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 256,
+          "source_section": "Productivity and Project Management",
+          "raw_text": "- **[its-dart/dart-mcp-server](https://github.com/its-dart/dart-mcp-server)** - Dart project and task management",
+          "name": "its-dart/dart-mcp-server",
+          "description_en": "Dart project and task management",
+          "url": "https://github.com/its-dart/dart-mcp-server",
+          "url_key": "https://github.com/its-dart/dart-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 465
+    },
+    {
+      "id": "cap-12ec94910a635f",
+      "name": "GitBook",
+      "url": "https://gitbook.com/docs/getting-started/ai-documentation/gitbook-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "搜尋與查詢 GitBook 文件空間。",
+        "en": "Search and query GitBook documentation spaces"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 225,
+          "source_section": "Developer Tools",
+          "raw_text": "- **[GitBook](https://gitbook.com/docs/getting-started/ai-documentation/gitbook-mcp)** - Search and query GitBook documentation spaces",
+          "name": "GitBook",
+          "description_en": "Search and query GitBook documentation spaces",
+          "url": "https://gitbook.com/docs/getting-started/ai-documentation/gitbook-mcp",
+          "url_key": "https://gitbook.com/docs/getting-started/ai-documentation/gitbook-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 495
+    },
+    {
+      "id": "cap-18ec26a11bd3b7",
+      "name": "TensorLink-AI/ephemeris-mcp",
+      "url": "https://github.com/TensorLink-AI/ephemeris-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "提供時間序列的機率預測，可指定模型或整合多個模型的預測。",
+        "en": "Probabilistic time-series forecasting: quantile forecasts from Chronos-2, TimesFM 2.5, Toto 2, TiRex-2 and IBM Granite foundation models, routed to one model, named explicitly, or ensembled. Remote server with an npm stdio bridge."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/TensorLink-AI/ephemeris-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 2054,
+          "source_section": "🧮 Data Science Tools",
+          "raw_text": "- [TensorLink-AI/ephemeris-mcp](https://github.com/TensorLink-AI/ephemeris-mcp) [![TensorLink-AI/ephemeris-mcp MCP server](https://glama.ai/mcp/servers/TensorLink-AI/ephemeris-mcp/badges/score.svg)](https://glama.ai/mcp/servers/TensorLink-AI/ephemeris-mcp) 🎖️ 📇 ☁️ 🍎 🪟 🐧 - Probabilistic time-series forecasting: quantile forecasts from Chronos-2, TimesFM 2.5, Toto 2, TiRex-2 and IBM Granite foundation models, routed to one model, named explicitly, or ensembled. Remote server with an npm stdio bridge.",
+          "name": "TensorLink-AI/ephemeris-mcp",
+          "description_en": "Probabilistic time-series forecasting: quantile forecasts from Chronos-2, TimesFM 2.5, Toto 2, TiRex-2 and IBM Granite foundation models, routed to one model, named explicitly, or ensembled. Remote server with an npm stdio bridge.",
+          "url": "https://github.com/TensorLink-AI/ephemeris-mcp",
+          "url_key": "https://github.com/tensorlink-ai/ephemeris-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 637
+    },
+    {
+      "id": "cap-1eaff2b0f70497",
+      "name": "📊 AI Data Analysis Agent",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/starter_ai_agents/ai_data_analysis_agent/",
+      "types": [
+        "agent_example"
+      ],
+      "summary": {
+        "zh": "以自然語言對 CSV 或 Excel 檔案提問的應用範例。",
+        "en": "Ask questions of any CSV or Excel file in plain English"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "awesome-llm-apps",
+          "source_repo": "Shubhamsaboo/awesome-llm-apps",
+          "source_commit": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/awesome-llm-apps/README.md",
+          "source_line": 103,
+          "source_section": "🌱 Starter AI Agents",
+          "raw_text": "*   [📊 AI Data Analysis Agent](starter_ai_agents/ai_data_analysis_agent/) - Ask questions of any CSV or Excel file in plain English",
+          "name": "📊 AI Data Analysis Agent",
+          "description_en": "Ask questions of any CSV or Excel file in plain English",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/starter_ai_agents/ai_data_analysis_agent/",
+          "url_key": "https://github.com/shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/starter_ai_agents/ai_data_analysis_agent",
+          "suggested_type": "agent"
+        }
+      ],
+      "candidate_pool_index": 807
+    },
+    {
+      "id": "cap-1fa9d9c7561ef5",
+      "name": "Meeting Insights Analyzer",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/meeting-insights-analyzer/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "從會議逐字稿分析發言比例、語助詞與互動模式。",
+        "en": "Analyzes meeting transcripts to uncover behavioral patterns including conflict avoidance, speaking ratios, filler words, and leadership style."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 176,
+          "source_section": "Communication & Writing",
+          "raw_text": "- [Meeting Insights Analyzer](./meeting-insights-analyzer/) - Analyzes meeting transcripts to uncover behavioral patterns including conflict avoidance, speaking ratios, filler words, and leadership style.",
+          "name": "Meeting Insights Analyzer",
+          "description_en": "Analyzes meeting transcripts to uncover behavioral patterns including conflict avoidance, speaking ratios, filler words, and leadership style.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/meeting-insights-analyzer/",
+          "url_key": "https://github.com/composiohq/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/meeting-insights-analyzer",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 838
+    },
+    {
+      "id": "cap-21061df722cd7d",
+      "name": "Dot (getdot.ai)",
+      "url": "https://docs.getdot.ai/developers/mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "從資料倉儲查詢資料，產生回答、圖表與 SQL。",
+        "en": "AI data analyst: answers, charts and SQL from your warehouse"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 524,
+          "source_section": "Emerging and Independent",
+          "raw_text": "- **[Dot (getdot.ai)](https://docs.getdot.ai/developers/mcp)** - AI data analyst: answers, charts and SQL from your warehouse",
+          "name": "Dot (getdot.ai)",
+          "description_en": "AI data analyst: answers, charts and SQL from your warehouse",
+          "url": "https://docs.getdot.ai/developers/mcp",
+          "url_key": "https://docs.getdot.ai/developers/mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 864
+    },
+    {
+      "id": "cap-2184304bd2545d",
+      "name": "O'Reilly",
+      "url": "https://learning.oreilly.com/apidocs/mcp/content/",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "搜尋 O’Reilly 書籍、課程與學習內容。",
+        "en": "Search O'Reilly learning content, books and courses (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 227,
+          "source_section": "Developer Tools",
+          "raw_text": "- **[O'Reilly](https://learning.oreilly.com/apidocs/mcp/content/)** - Search O'Reilly learning content, books and courses ([Claude](https://claude.com/marketplace/connectors/oreilly))",
+          "name": "O'Reilly",
+          "description_en": "Search O'Reilly learning content, books and courses (Claude)",
+          "url": "https://learning.oreilly.com/apidocs/mcp/content/",
+          "url_key": "https://learning.oreilly.com/apidocs/mcp/content",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 877
+    },
+    {
+      "id": "cap-23f72a5f9f7bc9",
+      "name": "Lead Research Assistant",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/lead-research-assistant/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "依產品分析、目標公司搜尋與聯繫策略建議，協助研究潛在客戶。",
+        "en": "Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 168,
+          "source_section": "Business & Marketing",
+          "raw_text": "- [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.",
+          "name": "Lead Research Assistant",
+          "description_en": "Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/lead-research-assistant/",
+          "url_key": "https://github.com/composiohq/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/lead-research-assistant",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 945
+    },
+    {
+      "id": "cap-24cf555d116238",
+      "name": "comet-ml/opik-mcp",
+      "url": "https://github.com/comet-ml/opik-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "提供 LLM 可觀測性與評估。",
+        "en": "Comet Opik LLM observability and evaluation"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/comet-ml/opik-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 122,
+          "source_section": "Observability and Analytics",
+          "raw_text": "- **[comet-ml/opik-mcp](https://github.com/comet-ml/opik-mcp)** - Comet Opik LLM observability and evaluation",
+          "name": "comet-ml/opik-mcp",
+          "description_en": "Comet Opik LLM observability and evaluation",
+          "url": "https://github.com/comet-ml/opik-mcp",
+          "url_key": "https://github.com/comet-ml/opik-mcp",
+          "suggested_type": "mcp_tool"
+        },
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 1610,
+          "source_section": "💻 Developer Tools",
+          "raw_text": "- [Comet-ML/Opik-MCP](https://github.com/comet-ml/opik-mcp) 🎖️ 📇 ☁️ 🏠 - Use natural language to explore LLM observability, traces, and monitoring data captured by Opik.",
+          "name": "Comet-ML/Opik-MCP",
+          "description_en": "Use natural language to explore LLM observability, traces, and monitoring data captured by Opik.",
+          "url": "https://github.com/comet-ml/opik-mcp",
+          "url_key": "https://github.com/comet-ml/opik-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 970
+    },
+    {
+      "id": "cap-29a493ec3dad2d",
+      "name": "👨‍⚖️ AI Legal Agent Team (Cloud & Local)",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/multi_agent_apps/agent_teams/ai_legal_agent_team/",
+      "types": [
+        "agent_example"
+      ],
+      "summary": {
+        "zh": "法律研究、合約分析與策略規劃的 Agent 團隊範例。",
+        "en": "Research, contract analysis, and strategy from a full legal bench"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "awesome-llm-apps",
+          "source_repo": "Shubhamsaboo/awesome-llm-apps",
+          "source_commit": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/awesome-llm-apps/README.md",
+          "source_line": 157,
+          "source_section": "🤝 Multi-agent Teams",
+          "raw_text": "*   [👨‍⚖️ AI Legal Agent Team (Cloud & Local)](advanced_ai_agents/multi_agent_apps/agent_teams/ai_legal_agent_team/) - Research, contract analysis, and strategy from a full legal bench",
+          "name": "👨‍⚖️ AI Legal Agent Team (Cloud & Local)",
+          "description_en": "Research, contract analysis, and strategy from a full legal bench",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/multi_agent_apps/agent_teams/ai_legal_agent_team/",
+          "url_key": "https://github.com/shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/multi_agent_apps/agent_teams/ai_legal_agent_team",
+          "suggested_type": "application_example"
+        }
+      ],
+      "candidate_pool_index": 1081
+    },
+    {
+      "id": "cap-2d8e6f60c41ad6",
+      "name": "Supermetrics",
+      "url": "https://github.com/supermetrics-public/supermetrics-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "查詢多個行銷平台的資料。",
+        "en": "Query live marketing data from 170+ platforms (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/supermetrics-public/supermetrics-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 452,
+          "source_section": "Web, Marketing and Product",
+          "raw_text": "- **[Supermetrics](https://github.com/supermetrics-public/supermetrics-mcp)** - Query live marketing data from 170+ platforms ([Claude](https://claude.com/marketplace/connectors/supermetrics))",
+          "name": "Supermetrics",
+          "description_en": "Query live marketing data from 170+ platforms (Claude)",
+          "url": "https://github.com/supermetrics-public/supermetrics-mcp",
+          "url_key": "https://github.com/supermetrics-public/supermetrics-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1179
+    },
+    {
+      "id": "cap-2d974958692750",
+      "name": "apolloio/apollo-mcp-plugin",
+      "url": "https://github.com/apolloio/apollo-mcp-plugin",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "取得 Apollo.io 潛在客戶與銷售資料。",
+        "en": "Apollo.io prospecting and sales data"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/apolloio/apollo-mcp-plugin",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 435,
+          "source_section": "Web, Marketing and Product",
+          "raw_text": "- **[apolloio/apollo-mcp-plugin](https://github.com/apolloio/apollo-mcp-plugin)** - Apollo.io prospecting and sales data",
+          "name": "apolloio/apollo-mcp-plugin",
+          "description_en": "Apollo.io prospecting and sales data",
+          "url": "https://github.com/apolloio/apollo-mcp-plugin",
+          "url_key": "https://github.com/apolloio/apollo-mcp-plugin",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1181
+    },
+    {
+      "id": "cap-2e7c2a49086203",
+      "name": "Snyk",
+      "url": "https://github.com/snyk/studio-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "在 Agent 工作流程中執行安全掃描。",
+        "en": "Snyk security scanning inside agentic workflows"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/snyk/studio-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 240,
+          "source_section": "Security and Code Quality",
+          "raw_text": "- **[Snyk](https://github.com/snyk/studio-mcp)** - Snyk security scanning inside agentic workflows",
+          "name": "Snyk",
+          "description_en": "Snyk security scanning inside agentic workflows",
+          "url": "https://github.com/snyk/studio-mcp",
+          "url_key": "https://github.com/snyk/studio-mcp",
+          "suggested_type": "mcp_tool"
+        },
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 4325,
+          "source_section": "🔒 Security",
+          "raw_text": "- [snyk/studio-mcp](https://github.com/snyk/studio-mcp) 🎖️ 📇 ☁️ 🍎 🪟 🐧 - Embeds Snyk's security engines into agentic workflows to secure AI-generated code in real time and work through vulnerability backlogs faster.",
+          "name": "snyk/studio-mcp",
+          "description_en": "Embeds Snyk's security engines into agentic workflows to secure AI-generated code in real time and work through vulnerability backlogs faster.",
+          "url": "https://github.com/snyk/studio-mcp",
+          "url_key": "https://github.com/snyk/studio-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1202
+    },
+    {
+      "id": "cap-302dea6690a6ff",
+      "name": "Competitive Ads Extractor",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/competitive-ads-extractor/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "從廣告資料庫擷取與分析競爭者廣告的訊息與創意。",
+        "en": "Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 165,
+          "source_section": "Business & Marketing",
+          "raw_text": "- [Competitive Ads Extractor](./competitive-ads-extractor/) - Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.",
+          "name": "Competitive Ads Extractor",
+          "description_en": "Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/competitive-ads-extractor/",
+          "url_key": "https://github.com/composiohq/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/competitive-ads-extractor",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 1243
+    },
+    {
+      "id": "cap-31589150fa1b79",
+      "name": "wso2/fhir-mcp-server",
+      "url": "https://github.com/wso2/fhir-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "透過 FHIR API 與 SMART on FHIR 授權，搜尋、讀寫與分析臨床資料。",
+        "en": "Search, retrieve, create, update and analyze clinical data via FHIR APIs, with SMART-on-FHIR authentication."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/wso2/fhir-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 521,
+          "source_section": "Biology, Medicine and Bioinformatics",
+          "raw_text": "- [wso2/fhir-mcp-server](https://github.com/wso2/fhir-mcp-server) 🐍 🏠 ☁️ - Search, retrieve, create, update and analyze clinical data via FHIR APIs, with SMART-on-FHIR authentication.",
+          "name": "wso2/fhir-mcp-server",
+          "description_en": "Search, retrieve, create, update and analyze clinical data via FHIR APIs, with SMART-on-FHIR authentication.",
+          "url": "https://github.com/wso2/fhir-mcp-server",
+          "url_key": "https://github.com/wso2/fhir-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1270
+    },
+    {
+      "id": "cap-32d759133998d6",
+      "name": "embeddedlayers/mcp-analytics",
+      "url": "https://github.com/embeddedlayers/mcp-analytics",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "對 CSV 或串接服務的資料進行統計分析、預測與機器學習，輸出互動報告。",
+        "en": "Statistical analysis, forecasting and ML on CSV files or live data from Shopify, Stripe, GA4 and more, with interactive HTML reports."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/embeddedlayers/mcp-analytics",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 1197,
+          "source_section": "👤 Customer Data Platforms",
+          "raw_text": "- [embeddedlayers/mcp-analytics](https://github.com/embeddedlayers/mcp-analytics) [![embeddedlayers/mcp-analytics MCP server](https://glama.ai/mcp/servers/embeddedlayers/mcp-analytics/badges/score.svg)](https://glama.ai/mcp/servers/embeddedlayers/mcp-analytics) 🐍 ☁️ - Statistical analysis, forecasting and ML on CSV files or live data from Shopify, Stripe, GA4 and more, with interactive HTML reports.",
+          "name": "embeddedlayers/mcp-analytics",
+          "description_en": "Statistical analysis, forecasting and ML on CSV files or live data from Shopify, Stripe, GA4 and more, with interactive HTML reports.",
+          "url": "https://github.com/embeddedlayers/mcp-analytics",
+          "url_key": "https://github.com/embeddedlayers/mcp-analytics",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1293
+    },
+    {
+      "id": "cap-36cd27f0df97a0",
+      "name": "Docsy",
+      "url": "https://docsy.remcp.site/docs",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "唯讀查詢帶有版本資訊與原始連結的文件。",
+        "en": "Read-only versioned developer documentation with original source links"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 537,
+          "source_section": "Emerging and Independent",
+          "raw_text": "- **[Docsy](https://docsy.remcp.site/docs)** - Read-only versioned developer documentation with original source links",
+          "name": "Docsy",
+          "description_en": "Read-only versioned developer documentation with original source links",
+          "url": "https://docsy.remcp.site/docs",
+          "url_key": "https://docsy.remcp.site/docs",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1400
+    },
+    {
+      "id": "cap-37f4d216795f56",
+      "name": "Netdata",
+      "url": "https://github.com/netdata/netdata/blob/master/src/web/mcp/README.md",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "基礎設施監測與根因分析。",
+        "en": "Infrastructure monitoring and root cause analysis with Netdata"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/netdata/netdata",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 137,
+          "source_section": "Observability and Analytics",
+          "raw_text": "- **[Netdata](https://github.com/netdata/netdata/blob/master/src/web/mcp/README.md)** - Infrastructure monitoring and root cause analysis with Netdata",
+          "name": "Netdata",
+          "description_en": "Infrastructure monitoring and root cause analysis with Netdata",
+          "url": "https://github.com/netdata/netdata/blob/master/src/web/mcp/README.md",
+          "url_key": "https://github.com/netdata/netdata/blob/master/src/web/mcp/README.md",
+          "suggested_type": "mcp_tool"
+        },
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 3570,
+          "source_section": "📊 Monitoring",
+          "raw_text": "- [netdata/netdata#Netdata](https://github.com/netdata/netdata/blob/master/src/web/mcp/README.md) 🎖️ 🏠 ☁️ 📟 🍎 🪟 🐧 - Discovery, exploration, reporting and root cause analysis over Netdata metrics, logs, systems, containers, processes and network connections.",
+          "name": "netdata/netdata#Netdata",
+          "description_en": "Discovery, exploration, reporting and root cause analysis over Netdata metrics, logs, systems, containers, processes and network connections.",
+          "url": "https://github.com/netdata/netdata/blob/master/src/web/mcp/README.md",
+          "url_key": "https://github.com/netdata/netdata/blob/master/src/web/mcp/README.md",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1425
+    },
+    {
+      "id": "cap-3efee18f08cb0a",
+      "name": "Moz",
+      "url": "https://moz.com/api/docs/guides/mcp-servers",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "取得 SEO 關鍵字、連結與網站指標。",
+        "en": "SEO keyword, link and site metrics from Moz"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 462,
+          "source_section": "Web, Marketing and Product",
+          "raw_text": "- **[Moz](https://moz.com/api/docs/guides/mcp-servers)** - SEO keyword, link and site metrics from Moz",
+          "name": "Moz",
+          "description_en": "SEO keyword, link and site metrics from Moz",
+          "url": "https://moz.com/api/docs/guides/mcp-servers",
+          "url_key": "https://moz.com/api/docs/guides/mcp-servers",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1589
+    },
+    {
+      "id": "cap-3f55996ac42134",
+      "name": "langfuse/mcp-server-langfuse",
+      "url": "https://github.com/langfuse/mcp-server-langfuse",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "存取 Langfuse 的提示詞管理。",
+        "en": "Access Langfuse prompt management"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/langfuse/mcp-server-langfuse",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 124,
+          "source_section": "Observability and Analytics",
+          "raw_text": "- **[langfuse/mcp-server-langfuse](https://github.com/langfuse/mcp-server-langfuse)** - Access Langfuse prompt management",
+          "name": "langfuse/mcp-server-langfuse",
+          "description_en": "Access Langfuse prompt management",
+          "url": "https://github.com/langfuse/mcp-server-langfuse",
+          "url_key": "https://github.com/langfuse/mcp-server-langfuse",
+          "suggested_type": "mcp_tool"
+        },
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 1733,
+          "source_section": "💻 Developer Tools",
+          "raw_text": "- [langfuse/mcp-server-langfuse](https://github.com/langfuse/mcp-server-langfuse) 🐍 🏠 - Access and manage LLM application prompts created with Langfuse Prompt Management.",
+          "name": "langfuse/mcp-server-langfuse",
+          "description_en": "Access and manage LLM application prompts created with Langfuse Prompt Management.",
+          "url": "https://github.com/langfuse/mcp-server-langfuse",
+          "url_key": "https://github.com/langfuse/mcp-server-langfuse",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1596
+    },
+    {
+      "id": "cap-4442debbeedf93",
+      "name": "ankimcp/anki-mcp-server",
+      "url": "https://github.com/ankimcp/anki-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "建立與複習 Anki 記憶卡。",
+        "en": "Create and review Anki flashcards"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ankimcp/anki-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 252,
+          "source_section": "Productivity and Project Management",
+          "raw_text": "- **[ankimcp/anki-mcp-server](https://github.com/ankimcp/anki-mcp-server)** - Create and review Anki flashcards",
+          "name": "ankimcp/anki-mcp-server",
+          "description_en": "Create and review Anki flashcards",
+          "url": "https://github.com/ankimcp/anki-mcp-server",
+          "url_key": "https://github.com/ankimcp/anki-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1728
+    },
+    {
+      "id": "cap-44501a809b2dda",
+      "name": "googleworkspace/gws-slides",
+      "url": "https://officialskills.sh/googleworkspace/skills/gws-slides",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "讀取與寫入 Google Slides 簡報。",
+        "en": "Read and write Google Slides presentations"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "voltagent-skills",
+          "source_repo": "VoltAgent/awesome-agent-skills",
+          "source_commit": "459d2421bdfe2f8111d291fff161926815939288",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/voltagent-skills/README.md",
+          "source_line": 519,
+          "source_section": "Skills by Google Workspace CLI",
+          "raw_text": "- **[googleworkspace/gws-slides](https://officialskills.sh/googleworkspace/skills/gws-slides)** - Read and write Google Slides presentations",
+          "name": "googleworkspace/gws-slides",
+          "description_en": "Read and write Google Slides presentations",
+          "url": "https://officialskills.sh/googleworkspace/skills/gws-slides",
+          "url_key": "https://officialskills.sh/googleworkspace/skills/gws-slides",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 1733
+    },
+    {
+      "id": "cap-47efc4e6474c09",
+      "name": "instana/mcp-instana",
+      "url": "https://github.com/instana/mcp-instana",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "應用程式效能監測。",
+        "en": "IBM Instana application performance monitoring"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/instana/mcp-instana",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 129,
+          "source_section": "Observability and Analytics",
+          "raw_text": "- **[instana/mcp-instana](https://github.com/instana/mcp-instana)** - IBM Instana application performance monitoring",
+          "name": "instana/mcp-instana",
+          "description_en": "IBM Instana application performance monitoring",
+          "url": "https://github.com/instana/mcp-instana",
+          "url_key": "https://github.com/instana/mcp-instana",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1818
+    },
+    {
+      "id": "cap-49a924b95823ee",
+      "name": "initMAX/zabbix-mcp-server",
+      "url": "https://github.com/initMAX/zabbix-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "查詢 Zabbix 主機、觸發條件與問題。",
+        "en": "Zabbix monitoring: hosts, triggers and problems"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/initMAX/zabbix-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 123,
+          "source_section": "Observability and Analytics",
+          "raw_text": "- **[initMAX/zabbix-mcp-server](https://github.com/initMAX/zabbix-mcp-server)** - Zabbix monitoring: hosts, triggers and problems",
+          "name": "initMAX/zabbix-mcp-server",
+          "description_en": "Zabbix monitoring: hosts, triggers and problems",
+          "url": "https://github.com/initMAX/zabbix-mcp-server",
+          "url_key": "https://github.com/initmax/zabbix-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1851
+    },
+    {
+      "id": "cap-4ee2ee8570fab8",
+      "name": "xlsx",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "處理試算表公式、圖表與資料轉換。",
+        "en": "Spreadsheet manipulation: formulas, charts, data transformations."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/anthropics/skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 114,
+          "source_section": "Document Processing",
+          "raw_text": "- [xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx) - Spreadsheet manipulation: formulas, charts, data transformations.",
+          "name": "xlsx",
+          "description_en": "Spreadsheet manipulation: formulas, charts, data transformations.",
+          "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+          "url_key": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 1973
+    },
+    {
+      "id": "cap-4fac974b827ff2",
+      "name": "SignNow",
+      "url": "https://docs.signnow.com/docs/signnow/mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "透過 SignNow 管理電子簽署文件與簽署邀請。",
+        "en": "SignNow MCP server for e-signature documents and invites (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 266,
+          "source_section": "Productivity and Project Management",
+          "raw_text": "- **[SignNow](https://docs.signnow.com/docs/signnow/mcp-server)** - SignNow MCP server for e-signature documents and invites ([Claude](https://claude.com/marketplace/connectors/signnow))",
+          "name": "SignNow",
+          "description_en": "SignNow MCP server for e-signature documents and invites (Claude)",
+          "url": "https://docs.signnow.com/docs/signnow/mcp-server",
+          "url_key": "https://docs.signnow.com/docs/signnow/mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 1995
+    },
+    {
+      "id": "cap-5207b2ecbe7bfc",
+      "name": "QuickBooks",
+      "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "存取 QuickBooks Online 會計資料與報表。",
+        "en": "Access QuickBooks Online accounting data and reports (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/intuit/quickbooks-online-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 301,
+          "source_section": "Finance and Payments",
+          "raw_text": "- **[QuickBooks](https://github.com/intuit/quickbooks-online-mcp-server)** - Access QuickBooks Online accounting data and reports ([Claude](https://claude.com/marketplace/connectors/quickbooks))",
+          "name": "QuickBooks",
+          "description_en": "Access QuickBooks Online accounting data and reports (Claude)",
+          "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+          "url_key": "https://github.com/intuit/quickbooks-online-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 2045
+    },
+    {
+      "id": "cap-5311e7913a48f4",
+      "name": "Intercom",
+      "url": "https://github.com/intercom/intercom-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "存取 Intercom 對話與聯絡人。",
+        "en": "Intercom MCP docs for conversations and contacts (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/intercom/intercom-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 338,
+          "source_section": "Communication and Messaging",
+          "raw_text": "- **[Intercom](https://github.com/intercom/intercom-mcp-server)** - Intercom MCP docs for conversations and contacts ([Claude](https://claude.com/marketplace/connectors/intercom))",
+          "name": "Intercom",
+          "description_en": "Intercom MCP docs for conversations and contacts (Claude)",
+          "url": "https://github.com/intercom/intercom-mcp-server",
+          "url_key": "https://github.com/intercom/intercom-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 2071
+    },
+    {
+      "id": "cap-5601761a951d42",
+      "name": "Monte Carlo",
+      "url": "https://docs.getmontecarlo.com/docs/monte-carlo-mcp-server-technical-overview",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "提供資料與 AI 可觀測性，包含監測、資料沿襲與警示。",
+        "en": "Data and AI observability, monitors, lineage, alerts (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 135,
+          "source_section": "Observability and Analytics",
+          "raw_text": "- **[Monte Carlo](https://docs.getmontecarlo.com/docs/monte-carlo-mcp-server-technical-overview)** - Data and AI observability, monitors, lineage, alerts ([Claude](https://claude.com/marketplace/connectors/monte-carlo))",
+          "name": "Monte Carlo",
+          "description_en": "Data and AI observability, monitors, lineage, alerts (Claude)",
+          "url": "https://docs.getmontecarlo.com/docs/monte-carlo-mcp-server-technical-overview",
+          "url_key": "https://docs.getmontecarlo.com/docs/monte-carlo-mcp-server-technical-overview",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 2159
+    },
+    {
+      "id": "cap-5d074572938729",
+      "name": "jagan-shanmugam/climatiq-mcp-server",
+      "url": "https://github.com/jagan-shanmugam/climatiq-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "透過 Climatiq API 計算碳排與氣候影響。",
+        "en": "Calculate carbon emissions and climate impact via the Climatiq API."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/jagan-shanmugam/climatiq-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 4936,
+          "source_section": "🛠️ Other Tools and Integrations",
+          "raw_text": "- [jagan-shanmugam/climatiq-mcp-server](https://github.com/jagan-shanmugam/climatiq-mcp-server) 🐍 🏠 - Calculate carbon emissions and climate impact via the Climatiq API.",
+          "name": "jagan-shanmugam/climatiq-mcp-server",
+          "description_en": "Calculate carbon emissions and climate impact via the Climatiq API.",
+          "url": "https://github.com/jagan-shanmugam/climatiq-mcp-server",
+          "url_key": "https://github.com/jagan-shanmugam/climatiq-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 2325
+    },
+    {
+      "id": "cap-5ed05c1f1e392a",
+      "name": "HubSpot",
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "透過遠端 MCP 存取 HubSpot CRM 資料。",
+        "en": "Remote HubSpot MCP server for CRM data (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 440,
+          "source_section": "Web, Marketing and Product",
+          "raw_text": "- **[HubSpot](https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server)** - Remote HubSpot MCP server for CRM data ([Claude](https://claude.com/marketplace/connectors/hubspot))",
+          "name": "HubSpot",
+          "description_en": "Remote HubSpot MCP server for CRM data (Claude)",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+          "url_key": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 2364
+    },
+    {
+      "id": "cap-68373126700512",
+      "name": "square/square-mcp-server",
+      "url": "https://github.com/square/square-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "存取 Square 付款、商品目錄與訂單。",
+        "en": "Square payments, catalog and orders"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/square/square-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 290,
+          "source_section": "Finance and Payments",
+          "raw_text": "- **[square/square-mcp-server](https://github.com/square/square-mcp-server)** - Square payments, catalog and orders",
+          "name": "square/square-mcp-server",
+          "description_en": "Square payments, catalog and orders",
+          "url": "https://github.com/square/square-mcp-server",
+          "url_key": "https://github.com/square/square-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 2590
+    },
+    {
+      "id": "cap-79f72c95ce9ce1",
+      "name": "stevensu04/eco-router-mcp",
+      "url": "https://github.com/stevensu04/eco-router-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "依電力碳強度與預估延遲比較雲端區域，並提供批次工作時段建議；即時資料需額外服務。",
+        "en": "Picks the lowest-carbon AWS, Google Cloud or Azure region for a workload. Maps all 134 public regions to their electricity grids and ranks them by carbon intensity and estimated latency, with EU/EEA data residency filters. find_clean_window finds the cleanest start time for batch jobs over the next 72 hours. Works without an API key using annual averages (grid-level for the US and Canada); add an Electricity Maps token for live data and forecasts. npx -y eco-router-mcp"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/stevensu04/eco-router-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 2203,
+          "source_section": "🌳 Environment & Nature",
+          "raw_text": "- [stevensu04/eco-router-mcp](https://github.com/stevensu04/eco-router-mcp) [![stevensu04/eco-router-mcp MCP server](https://glama.ai/mcp/servers/stevensu04/eco-router-mcp/badges/score.svg)](https://glama.ai/mcp/servers/stevensu04/eco-router-mcp) 📇 ☁️ 🍎 🪟 🐧 - Picks the lowest-carbon AWS, Google Cloud or Azure region for a workload. Maps all 134 public regions to their electricity grids and ranks them by carbon intensity and estimated latency, with EU/EEA data residency filters. `find_clean_window` finds the cleanest start time for batch jobs over the next 72 hours. Works without an API key using annual averages (grid-level for the US and Canada); add an Electricity Maps token for live data and forecasts. `npx -y eco-router-mcp`",
+          "name": "stevensu04/eco-router-mcp",
+          "description_en": "Picks the lowest-carbon AWS, Google Cloud or Azure region for a workload. Maps all 134 public regions to their electricity grids and ranks them by carbon intensity and estimated latency, with EU/EEA data residency filters. find_clean_window finds the cleanest start time for batch jobs over the next 72 hours. Works without an API key using annual averages (grid-level for the US and Canada); add an Electricity Maps token for live data and forecasts. npx -y eco-router-mcp",
+          "url": "https://github.com/stevensu04/eco-router-mcp",
+          "url_key": "https://github.com/stevensu04/eco-router-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 3022
+    },
+    {
+      "id": "cap-7ac1d5a6484400",
+      "name": "anthropics/pptx",
+      "url": "https://officialskills.sh/anthropics/skills/pptx",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "建立、編輯與分析 PowerPoint 簡報。",
+        "en": "Create, edit, and analyze PowerPoint presentations"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "voltagent-skills",
+          "source_repo": "VoltAgent/awesome-agent-skills",
+          "source_commit": "459d2421bdfe2f8111d291fff161926815939288",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/voltagent-skills/README.md",
+          "source_line": 115,
+          "source_section": "Official Claude Skills",
+          "raw_text": "- **[anthropics/pptx](https://officialskills.sh/anthropics/skills/pptx)** - Create, edit, and analyze PowerPoint presentations",
+          "name": "anthropics/pptx",
+          "description_en": "Create, edit, and analyze PowerPoint presentations",
+          "url": "https://officialskills.sh/anthropics/skills/pptx",
+          "url_key": "https://officialskills.sh/anthropics/skills/pptx",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 3041
+    },
+    {
+      "id": "cap-81fe53041ca8ac",
+      "name": "Tavily",
+      "url": "https://github.com/tavily-ai/tavily-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "提供網頁搜尋與內容擷取。",
+        "en": "Web search and extraction with Tavily (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/tavily-ai/tavily-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 177,
+          "source_section": "Search and Research",
+          "raw_text": "- **[Tavily](https://github.com/tavily-ai/tavily-mcp)** - Web search and extraction with Tavily ([Claude](https://claude.com/marketplace/connectors/tavily))",
+          "name": "Tavily",
+          "description_en": "Web search and extraction with Tavily (Claude)",
+          "url": "https://github.com/tavily-ai/tavily-mcp",
+          "url_key": "https://github.com/tavily-ai/tavily-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 3205
+    },
+    {
+      "id": "cap-84efdae37998fe",
+      "name": "michaelrice/zendesk-mcp",
+      "url": "https://github.com/michaelrice/zendesk-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "讀寫 Zendesk 工單、留言與相關管理資料。",
+        "en": "Read and write Zendesk tickets, comments, views, macros, users, groups, organizations and time tracking, with optional Help Center and GitLab integration."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/michaelrice/zendesk-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 4563,
+          "source_section": "🎧 Support & Service Management",
+          "raw_text": "- [michaelrice/zendesk-mcp](https://github.com/michaelrice/zendesk-mcp) [![michaelrice/zendesk-mcp MCP server](https://glama.ai/mcp/servers/michaelrice/zendesk-mcp/badges/score.svg)](https://glama.ai/mcp/servers/michaelrice/zendesk-mcp) 🐍 ☁️ 🍎 🪟 🐧 - Read and write Zendesk tickets, comments, views, macros, users, groups, organizations and time tracking, with optional Help Center and GitLab integration.",
+          "name": "michaelrice/zendesk-mcp",
+          "description_en": "Read and write Zendesk tickets, comments, views, macros, users, groups, organizations and time tracking, with optional Help Center and GitLab integration.",
+          "url": "https://github.com/michaelrice/zendesk-mcp",
+          "url_key": "https://github.com/michaelrice/zendesk-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 3285
+    },
+    {
+      "id": "cap-89ddec2a3c7aaf",
+      "name": "LangSmith Fetch",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/langsmith-fetch/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "從 LangSmith Studio 取得並分析 LangChain／LangGraph 執行軌跡。",
+        "en": "Debug LangChain and LangGraph agents by automatically fetching and analyzing execution traces from LangSmith Studio. First AI observability skill for Claude Code. *By @OthmanAdi*"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 134,
+          "source_section": "Development & Code Tools",
+          "raw_text": "- [LangSmith Fetch](./langsmith-fetch/) - Debug LangChain and LangGraph agents by automatically fetching and analyzing execution traces from LangSmith Studio. First AI observability skill for Claude Code. *By [@OthmanAdi](https://github.com/OthmanAdi)*",
+          "name": "LangSmith Fetch",
+          "description_en": "Debug LangChain and LangGraph agents by automatically fetching and analyzing execution traces from LangSmith Studio. First AI observability skill for Claude Code. *By @OthmanAdi*",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/langsmith-fetch/",
+          "url_key": "https://github.com/composiohq/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/langsmith-fetch",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 3418
+    },
+    {
+      "id": "cap-8cfeadb48b5cf6",
+      "name": "Udemy Business",
+      "url": "https://business-support.udemy.com/hc/en-us/articles/34213384429335-How-to-Integrate-the-Udemy-Business-MCP-Server-With-Your-AI-Tool",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "搜尋 Udemy Business 課程與學習內容。",
+        "en": "Search courses and surface learning content (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 269,
+          "source_section": "Productivity and Project Management",
+          "raw_text": "- **[Udemy Business](https://business-support.udemy.com/hc/en-us/articles/34213384429335-How-to-Integrate-the-Udemy-Business-MCP-Server-With-Your-AI-Tool)** - Search courses and surface learning content ([Claude](https://claude.com/marketplace/connectors/udemy-business))",
+          "name": "Udemy Business",
+          "description_en": "Search courses and surface learning content (Claude)",
+          "url": "https://business-support.udemy.com/hc/en-us/articles/34213384429335-How-to-Integrate-the-Udemy-Business-MCP-Server-With-Your-AI-Tool",
+          "url_key": "https://business-support.udemy.com/hc/en-us/articles/34213384429335-How-to-Integrate-the-Udemy-Business-MCP-Server-With-Your-AI-Tool",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 3493
+    },
+    {
+      "id": "cap-8d098643c9f79c",
+      "name": "Granola",
+      "url": "https://docs.granola.ai/help-center/sharing/integrations/mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "查詢會議筆記與逐字稿。",
+        "en": "Granola MCP to query meeting notes and transcripts (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 263,
+          "source_section": "Productivity and Project Management",
+          "raw_text": "- **[Granola](https://docs.granola.ai/help-center/sharing/integrations/mcp)** - Granola MCP to query meeting notes and transcripts ([Claude](https://claude.com/marketplace/connectors/granola))",
+          "name": "Granola",
+          "description_en": "Granola MCP to query meeting notes and transcripts (Claude)",
+          "url": "https://docs.granola.ai/help-center/sharing/integrations/mcp",
+          "url_key": "https://docs.granola.ai/help-center/sharing/integrations/mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 3495
+    },
+    {
+      "id": "cap-928808fac46491",
+      "name": "atomno-mcp/mcp-zakupki",
+      "url": "https://github.com/atomno-mcp/mcp-zakupki",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "搜尋俄羅斯公開採購標案與合約。",
+        "en": "Search Russian public procurement tenders and contracts on zakupki.gov.ru."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/atomno-mcp/mcp-zakupki",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 3266,
+          "source_section": "⚖️ Legal",
+          "raw_text": "- [atomno-mcp/mcp-zakupki](https://github.com/atomno-mcp/mcp-zakupki) [![atomno-mcp/mcp-zakupki MCP server](https://glama.ai/mcp/servers/atomno-mcp/mcp-zakupki/badges/score.svg)](https://glama.ai/mcp/servers/atomno-mcp/mcp-zakupki) 🐍 ☁️ - Search Russian public procurement tenders and contracts on zakupki.gov.ru.",
+          "name": "atomno-mcp/mcp-zakupki",
+          "description_en": "Search Russian public procurement tenders and contracts on zakupki.gov.ru.",
+          "url": "https://github.com/atomno-mcp/mcp-zakupki",
+          "url_key": "https://github.com/atomno-mcp/mcp-zakupki",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 3627
+    },
+    {
+      "id": "cap-94e2b3cd0b801c",
+      "name": "👁️ First Reader",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/agent_skills/first-reader/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "模擬讀者對草稿的反應，提供閱讀回饋。",
+        "en": "Simulates real readers going through your draft and reports where they lose interest, where they stop reading, and what they remember afterward, without rewriting a word"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "awesome-llm-apps",
+          "source_repo": "Shubhamsaboo/awesome-llm-apps",
+          "source_commit": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/awesome-llm-apps/README.md",
+          "source_line": 81,
+          "source_section": "🧩 Agent Skills",
+          "raw_text": "*   [👁️ First Reader](agent_skills/first-reader/) - Simulates real readers going through your draft and reports where they lose interest, where they stop reading, and what they remember afterward, without rewriting a word",
+          "name": "👁️ First Reader",
+          "description_en": "Simulates real readers going through your draft and reports where they lose interest, where they stop reading, and what they remember afterward, without rewriting a word",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/agent_skills/first-reader/",
+          "url_key": "https://github.com/shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/agent_skills/first-reader",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 3689
+    },
+    {
+      "id": "cap-99ecb4d4ebebb5",
+      "name": "Google Calendar Automation",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/google-calendar-automation/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "管理 Google Calendar 活動、參與者、空閒時間與重複活動。",
+        "en": "Automate Google Calendar: events, attendees, free/busy, and recurring schedules."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 288,
+          "source_section": "App Automation via Composio",
+          "raw_text": "- [Google Calendar Automation](./google-calendar-automation/) - Automate Google Calendar: events, attendees, free/busy, and recurring schedules.",
+          "name": "Google Calendar Automation",
+          "description_en": "Automate Google Calendar: events, attendees, free/busy, and recurring schedules.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/google-calendar-automation/",
+          "url_key": "https://github.com/composiohq/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/google-calendar-automation",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 3830
+    },
+    {
+      "id": "cap-9b3de749813b3b",
+      "name": "FoundryNet/forge-mcp",
+      "url": "https://github.com/FoundryNet/forge-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "連接不同協定與製造商的工業設備，處理遙測與設備健康資料。",
+        "en": "Connect AI agents to industrial equipment across protocols and manufacturers: cross-OEM telemetry normalization, health index and failure prediction."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/FoundryNet/forge-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 2879,
+          "source_section": "🏭 Industrial & IoT",
+          "raw_text": "- [FoundryNet/forge-mcp](https://github.com/FoundryNet/forge-mcp) 🐍 ☁️ - Connect AI agents to industrial equipment across protocols and manufacturers: cross-OEM telemetry normalization, health index and failure prediction.",
+          "name": "FoundryNet/forge-mcp",
+          "description_en": "Connect AI agents to industrial equipment across protocols and manufacturers: cross-OEM telemetry normalization, health index and failure prediction.",
+          "url": "https://github.com/FoundryNet/forge-mcp",
+          "url_key": "https://github.com/foundrynet/forge-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 3868
+    },
+    {
+      "id": "cap-9f16085714adc9",
+      "name": "Webapp Testing",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/webapp-testing/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "以 Playwright 測試本機網頁應用，檢查前端功能、除錯與擷取畫面。",
+        "en": "Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 151,
+          "source_section": "Development & Code Tools",
+          "raw_text": "- [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.",
+          "name": "Webapp Testing",
+          "description_en": "Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/webapp-testing/",
+          "url_key": "https://github.com/composiohq/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/webapp-testing",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 3964
+    },
+    {
+      "id": "cap-9f22cde6b6b50d",
+      "name": "SupplyMaven-SCR/supplymaven-mcp-server",
+      "url": "https://github.com/SupplyMaven-SCR/supplymaven-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "取得供應鏈中斷、商品價格、港口壅塞、運費與貿易政策等風險資料。",
+        "en": "Real-time supply chain risk data: disruption indices, commodity prices, port congestion, border delays, chokepoints, freight and trade policy."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/SupplyMaven-SCR/supplymaven-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 2675,
+          "source_section": "💰 Finance & Fintech",
+          "raw_text": "- [SupplyMaven-SCR/supplymaven-mcp-server](https://github.com/SupplyMaven-SCR/supplymaven-mcp-server) [![SupplyMaven-SCR/supplymaven-mcp-server MCP server](https://glama.ai/mcp/servers/SupplyMaven-SCR/supplymaven-mcp-server/badges/score.svg)](https://glama.ai/mcp/servers/SupplyMaven-SCR/supplymaven-mcp-server) 📇 ☁️ - Real-time supply chain risk data: disruption indices, commodity prices, port congestion, border delays, chokepoints, freight and trade policy.",
+          "name": "SupplyMaven-SCR/supplymaven-mcp-server",
+          "description_en": "Real-time supply chain risk data: disruption indices, commodity prices, port congestion, border delays, chokepoints, freight and trade policy.",
+          "url": "https://github.com/SupplyMaven-SCR/supplymaven-mcp-server",
+          "url_key": "https://github.com/supplymaven-scr/supplymaven-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 3966
+    },
+    {
+      "id": "cap-a7ccbf83ba28ed",
+      "name": "BambooHR Automation",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/bamboohr-automation/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "管理 BambooHR 員工、休假、報表與通訊錄。",
+        "en": "Automate BambooHR: employees, time off, reports, and directory management."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 333,
+          "source_section": "App Automation via Composio",
+          "raw_text": "- [BambooHR Automation](./bamboohr-automation/) - Automate BambooHR: employees, time off, reports, and directory management.",
+          "name": "BambooHR Automation",
+          "description_en": "Automate BambooHR: employees, time off, reports, and directory management.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/bamboohr-automation/",
+          "url_key": "https://github.com/composiohq/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/bamboohr-automation",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 4181
+    },
+    {
+      "id": "cap-ab5cfa86bf2c77",
+      "name": "pzfreo/build123d-mcp",
+      "url": "https://github.com/pzfreo/build123d-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "建立、檢視與量測 3D 幾何，並匯出 STEP／STL 等格式。",
+        "en": "Create, inspect and iterate on 3D geometry with build123d parametric CAD: render PNG/SVG views, measure geometry and export STEP/STL."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/pzfreo/build123d-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 392,
+          "source_section": "🎨 Art & Culture",
+          "raw_text": "- [pzfreo/build123d-mcp](https://github.com/pzfreo/build123d-mcp) [![pzfreo/build123d-mcp MCP server](https://glama.ai/mcp/servers/pzfreo/build123d-mcp/badges/score.svg)](https://glama.ai/mcp/servers/pzfreo/build123d-mcp) 🐍 🏠 🍎 🪟 🐧 - Create, inspect and iterate on 3D geometry with build123d parametric CAD: render PNG/SVG views, measure geometry and export STEP/STL.",
+          "name": "pzfreo/build123d-mcp",
+          "description_en": "Create, inspect and iterate on 3D geometry with build123d parametric CAD: render PNG/SVG views, measure geometry and export STEP/STL.",
+          "url": "https://github.com/pzfreo/build123d-mcp",
+          "url_key": "https://github.com/pzfreo/build123d-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 4271
+    },
+    {
+      "id": "cap-abdb142795b688",
+      "name": "tapestry",
+      "url": "https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "連結與摘要相關文件，整理成知識網絡。",
+        "en": "Interlink and summarize related documents into knowledge networks."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 203,
+          "source_section": "Productivity & Organization",
+          "raw_text": "- [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry) - Interlink and summarize related documents into knowledge networks.",
+          "name": "tapestry",
+          "description_en": "Interlink and summarize related documents into knowledge networks.",
+          "url": "https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry",
+          "url_key": "https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 4282
+    },
+    {
+      "id": "cap-ac8ea957fa622a",
+      "name": "XeroAPI/xero-mcp-server",
+      "url": "https://github.com/XeroAPI/xero-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "連接 Xero 會計資料。",
+        "en": "Xero accounting"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/XeroAPI/xero-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 288,
+          "source_section": "Finance and Payments",
+          "raw_text": "- **[XeroAPI/xero-mcp-server](https://github.com/XeroAPI/xero-mcp-server)** - Xero accounting",
+          "name": "XeroAPI/xero-mcp-server",
+          "description_en": "Xero accounting",
+          "url": "https://github.com/XeroAPI/xero-mcp-server",
+          "url_key": "https://github.com/xeroapi/xero-mcp-server",
+          "suggested_type": "mcp_tool"
+        },
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 2700,
+          "source_section": "💰 Finance & Fintech",
+          "raw_text": "- [XeroAPI/xero-mcp-server](https://github.com/XeroAPI/xero-mcp-server) 📇 ☁️ - Access Xero's accounting and business features via its API.",
+          "name": "XeroAPI/xero-mcp-server",
+          "description_en": "Access Xero's accounting and business features via its API.",
+          "url": "https://github.com/XeroAPI/xero-mcp-server",
+          "url_key": "https://github.com/xeroapi/xero-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 4294
+    },
+    {
+      "id": "cap-ad4b960be7e56a",
+      "name": "Notion",
+      "url": "https://github.com/makenotion/notion-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "存取 Notion 頁面與資料庫。",
+        "en": "Notion pages and databases (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/makenotion/notion-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 387,
+          "source_section": "Design and Collaboration",
+          "raw_text": "- **[Notion](https://github.com/makenotion/notion-mcp-server)** - Notion pages and databases ([Claude](https://claude.com/marketplace/connectors/notion))",
+          "name": "Notion",
+          "description_en": "Notion pages and databases (Claude)",
+          "url": "https://github.com/makenotion/notion-mcp-server",
+          "url_key": "https://github.com/makenotion/notion-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 4314
+    },
+    {
+      "id": "cap-b3b3817a191586",
+      "name": "Invoice Organizer",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/invoice-organizer/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "讀取發票與收據、擷取資訊並重新命名，協助整理文件。",
+        "en": "Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 196,
+          "source_section": "Productivity & Organization",
+          "raw_text": "- [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.",
+          "name": "Invoice Organizer",
+          "description_en": "Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/invoice-organizer/",
+          "url_key": "https://github.com/composiohq/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/invoice-organizer",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 4482
+    },
+    {
+      "id": "cap-b68e82d5131b4d",
+      "name": "Workable",
+      "url": "https://workable.readme.io/reference/workable-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "存取職缺、候選人與招募流程。",
+        "en": "Jobs, candidates and hiring pipeline in Workable (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 492,
+          "source_section": "HR and Recruiting",
+          "raw_text": "- **[Workable](https://workable.readme.io/reference/workable-mcp-server)** - Jobs, candidates and hiring pipeline in Workable ([Claude](https://claude.com/marketplace/connectors/workable))",
+          "name": "Workable",
+          "description_en": "Jobs, candidates and hiring pipeline in Workable (Claude)",
+          "url": "https://workable.readme.io/reference/workable-mcp-server",
+          "url_key": "https://workable.readme.io/reference/workable-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 4544
+    },
+    {
+      "id": "cap-b6d747872693a1",
+      "name": "paypal/agent-toolkit",
+      "url": "https://github.com/paypal/agent-toolkit",
+      "types": [
+        "toolkit"
+      ],
+      "summary": {
+        "zh": "提供 PayPal 付款與商務相關工具。",
+        "en": "PayPal payments and commerce tools for agents"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/paypal/agent-toolkit",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 289,
+          "source_section": "Finance and Payments",
+          "raw_text": "- **[paypal/agent-toolkit](https://github.com/paypal/agent-toolkit)** - PayPal payments and commerce tools for agents",
+          "name": "paypal/agent-toolkit",
+          "description_en": "PayPal payments and commerce tools for agents",
+          "url": "https://github.com/paypal/agent-toolkit",
+          "url_key": "https://github.com/paypal/agent-toolkit",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 4552
+    },
+    {
+      "id": "cap-b918b0c3e13754",
+      "name": "muratcankoylan/evaluation",
+      "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/evaluation",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "建立 Agent 系統的評估框架。",
+        "en": "Build evaluation frameworks for agent systems"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "voltagent-skills",
+          "source_repo": "VoltAgent/awesome-agent-skills",
+          "source_commit": "459d2421bdfe2f8111d291fff161926815939288",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/voltagent-skills/README.md",
+          "source_line": 1821,
+          "source_section": "Context Engineering",
+          "raw_text": "- **[muratcankoylan/evaluation](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/evaluation)** - Build evaluation frameworks for agent systems",
+          "name": "muratcankoylan/evaluation",
+          "description_en": "Build evaluation frameworks for agent systems",
+          "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/evaluation",
+          "url_key": "https://github.com/muratcankoylan/agent-skills-for-context-engineering/tree/main/skills/evaluation",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 4628
+    },
+    {
+      "id": "cap-ba31bde2dfc28f",
+      "name": "Playwright",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "提供瀏覽器自動化操作。",
+        "en": "Browser automation with Playwright"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/microsoft/playwright-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 164,
+          "source_section": "Browser Automation and Web Data",
+          "raw_text": "- **[Playwright](https://github.com/microsoft/playwright-mcp)** - Browser automation with Playwright",
+          "name": "Playwright",
+          "description_en": "Browser automation with Playwright",
+          "url": "https://github.com/microsoft/playwright-mcp",
+          "url_key": "https://github.com/microsoft/playwright-mcp",
+          "suggested_type": "mcp_tool"
+        },
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 601,
+          "source_section": "📂 Browser Automation",
+          "raw_text": "- [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) - Playwright browser automation: interact with web pages through structured accessibility snapshots.",
+          "name": "microsoft/playwright-mcp",
+          "description_en": "Playwright browser automation: interact with web pages through structured accessibility snapshots.",
+          "url": "https://github.com/microsoft/playwright-mcp",
+          "url_key": "https://github.com/microsoft/playwright-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 4660
+    },
+    {
+      "id": "cap-bcd1c60a14d84c",
+      "name": "qune-tech/ocds-mcp",
+      "url": "https://github.com/qune-tech/ocds-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "搜尋德國公開採購資料，依公司資料進行標案語意匹配與篩選。",
+        "en": "German public procurement data (OCDS): semantic search, tender matching against company profiles and structured filtering."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/qune-tech/ocds-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 4043,
+          "source_section": "🔎 Search & Data Extraction",
+          "raw_text": "- [qune-tech/ocds-mcp](https://github.com/qune-tech/ocds-mcp) [![qune-tech/ocds-mcp MCP server](https://glama.ai/mcp/servers/qune-tech/ocds-mcp/badges/score.svg)](https://glama.ai/mcp/servers/qune-tech/ocds-mcp) 🦀 🏠 🐧 🍎 🪟 - German public procurement data (OCDS): semantic search, tender matching against company profiles and structured filtering.",
+          "name": "qune-tech/ocds-mcp",
+          "description_en": "German public procurement data (OCDS): semantic search, tender matching against company profiles and structured filtering.",
+          "url": "https://github.com/qune-tech/ocds-mcp",
+          "url_key": "https://github.com/qune-tech/ocds-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 4734
+    },
+    {
+      "id": "cap-bfaaf2325b6bce",
+      "name": "Otter.ai",
+      "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "存取會議逐字稿與會議洞察。",
+        "en": "Otter MCP server for meeting transcripts and insights (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 336,
+          "source_section": "Communication and Messaging",
+          "raw_text": "- **[Otter.ai](https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server)** - Otter MCP server for meeting transcripts and insights ([Claude](https://claude.com/marketplace/connectors/otter-ai))",
+          "name": "Otter.ai",
+          "description_en": "Otter MCP server for meeting transcripts and insights (Claude)",
+          "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+          "url_key": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 4829
+    },
+    {
+      "id": "cap-c4e13027e2e053",
+      "name": "Intercom Automation",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/intercom-automation/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "管理 Intercom 對話、聯絡人、公司、工單與文章。",
+        "en": "Automate Intercom: conversations, contacts, companies, tickets, and articles."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 250,
+          "source_section": "App Automation via Composio",
+          "raw_text": "- [Intercom Automation](./intercom-automation/) - Automate Intercom: conversations, contacts, companies, tickets, and articles.",
+          "name": "Intercom Automation",
+          "description_en": "Automate Intercom: conversations, contacts, companies, tickets, and articles.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/intercom-automation/",
+          "url_key": "https://github.com/composiohq/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/intercom-automation",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 4957
+    },
+    {
+      "id": "cap-c61f652ef62f7c",
+      "name": "📑 Notion MCP Agent",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/mcp_ai_agents/notion_mcp_agent",
+      "types": [
+        "agent_example"
+      ],
+      "summary": {
+        "zh": "從終端介面與 Notion 頁面互動的 Agent 範例。",
+        "en": "Talk to your Notion pages from the terminal"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "awesome-llm-apps",
+          "source_repo": "Shubhamsaboo/awesome-llm-apps",
+          "source_commit": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/awesome-llm-apps/README.md",
+          "source_line": 204,
+          "source_section": "♾️ MCP AI Agents",
+          "raw_text": "*   [📑 Notion MCP Agent](mcp_ai_agents/notion_mcp_agent) - Talk to your Notion pages from the terminal",
+          "name": "📑 Notion MCP Agent",
+          "description_en": "Talk to your Notion pages from the terminal",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/mcp_ai_agents/notion_mcp_agent",
+          "url_key": "https://github.com/shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/mcp_ai_agents/notion_mcp_agent",
+          "suggested_type": "agent"
+        }
+      ],
+      "candidate_pool_index": 4992
+    },
+    {
+      "id": "cap-cc9be4621c6c11",
+      "name": "Arize Phoenix",
+      "url": "https://github.com/Arize-ai/phoenix",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "提供 LLM 可觀測性與評估。",
+        "en": "LLM observability and evaluation with Phoenix"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/Arize-ai/phoenix",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 139,
+          "source_section": "Observability and Analytics",
+          "raw_text": "- **[Arize Phoenix](https://github.com/Arize-ai/phoenix)** - LLM observability and evaluation with Phoenix",
+          "name": "Arize Phoenix",
+          "description_en": "LLM observability and evaluation with Phoenix",
+          "url": "https://github.com/Arize-ai/phoenix",
+          "url_key": "https://github.com/arize-ai/phoenix",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 5147
+    },
+    {
+      "id": "cap-d1aa56847e9036",
+      "name": "the-momentum/fhir-mcp-server",
+      "url": "https://github.com/the-momentum/fhir-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "連接 FHIR 伺服器，查詢病患病歷等資料。",
+        "en": "Connect to FHIR servers, for example to query patient history in natural language."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/the-momentum/fhir-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 516,
+          "source_section": "Biology, Medicine and Bioinformatics",
+          "raw_text": "- [the-momentum/fhir-mcp-server](https://github.com/the-momentum/fhir-mcp-server) 🐍 🏠 ☁️ - Connect to FHIR servers, for example to query patient history in natural language.",
+          "name": "the-momentum/fhir-mcp-server",
+          "description_en": "Connect to FHIR servers, for example to query patient history in natural language.",
+          "url": "https://github.com/the-momentum/fhir-mcp-server",
+          "url_key": "https://github.com/the-momentum/fhir-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 5266
+    },
+    {
+      "id": "cap-d1dbbe8ad81060",
+      "name": "Docling",
+      "url": "https://github.com/docling-project/docling-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "文件轉換與處理工具。",
+        "en": "Document conversion and processing with Docling"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/docling-project/docling-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 371,
+          "source_section": "AI, Media and Data Visualization",
+          "raw_text": "- **[Docling](https://github.com/docling-project/docling-mcp)** - Document conversion and processing with Docling",
+          "name": "Docling",
+          "description_en": "Document conversion and processing with Docling",
+          "url": "https://github.com/docling-project/docling-mcp",
+          "url_key": "https://github.com/docling-project/docling-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 5270
+    },
+    {
+      "id": "cap-d4ab5fc2b55f3c",
+      "name": "Invompt",
+      "url": "https://github.com/Invompt/invompt-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "從 AI 助理建立與檢視發票。",
+        "en": "Create and review invoices from an AI assistant"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/Invompt/invompt-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 508,
+          "source_section": "Emerging and Independent",
+          "raw_text": "- **[Invompt](https://github.com/Invompt/invompt-mcp)** - Create and review invoices from an AI assistant",
+          "name": "Invompt",
+          "description_en": "Create and review invoices from an AI assistant",
+          "url": "https://github.com/Invompt/invompt-mcp",
+          "url_key": "https://github.com/invompt/invompt-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 5348
+    },
+    {
+      "id": "cap-d62f0ee3067cb9",
+      "name": "Zoho CRM Automation",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/zoho-crm-automation/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "管理 Zoho CRM 潛在客戶、聯絡人、交易與帳戶。",
+        "en": "Automate Zoho CRM: leads, contacts, deals, accounts, and modules."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 234,
+          "source_section": "App Automation via Composio",
+          "raw_text": "- [Zoho CRM Automation](./zoho-crm-automation/) - Automate Zoho CRM: leads, contacts, deals, accounts, and modules.",
+          "name": "Zoho CRM Automation",
+          "description_en": "Automate Zoho CRM: leads, contacts, deals, accounts, and modules.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/zoho-crm-automation/",
+          "url_key": "https://github.com/composiohq/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/zoho-crm-automation",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 5391
+    },
+    {
+      "id": "cap-d81548a6abde42",
+      "name": "cycodehq/cycode-cli",
+      "url": "https://github.com/cycodehq/cycode-cli",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "應用程式安全掃描工具。",
+        "en": "Cycode application security scanning"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/cycodehq/cycode-cli",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 237,
+          "source_section": "Security and Code Quality",
+          "raw_text": "- **[cycodehq/cycode-cli](https://github.com/cycodehq/cycode-cli)** - Cycode application security scanning",
+          "name": "cycodehq/cycode-cli",
+          "description_en": "Cycode application security scanning",
+          "url": "https://github.com/cycodehq/cycode-cli",
+          "url_key": "https://github.com/cycodehq/cycode-cli",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 5439
+    },
+    {
+      "id": "cap-ddf171d34c4d82",
+      "name": "💼 AI Recruitment Agent Team",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/multi_agent_apps/agent_teams/ai_recruitment_agent_team/",
+      "types": [
+        "agent_example"
+      ],
+      "summary": {
+        "zh": "涵蓋履歷篩選與面試排程的招募 Agent 團隊範例。",
+        "en": "Resume screening to interview scheduling, end to end"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "awesome-llm-apps",
+          "source_repo": "Shubhamsaboo/awesome-llm-apps",
+          "source_commit": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/awesome-llm-apps/README.md",
+          "source_line": 158,
+          "source_section": "🤝 Multi-agent Teams",
+          "raw_text": "*   [💼 AI Recruitment Agent Team](advanced_ai_agents/multi_agent_apps/agent_teams/ai_recruitment_agent_team/) - Resume screening to interview scheduling, end to end",
+          "name": "💼 AI Recruitment Agent Team",
+          "description_en": "Resume screening to interview scheduling, end to end",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/multi_agent_apps/agent_teams/ai_recruitment_agent_team/",
+          "url_key": "https://github.com/shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/multi_agent_apps/agent_teams/ai_recruitment_agent_team",
+          "suggested_type": "application_example"
+        }
+      ],
+      "candidate_pool_index": 5582
+    },
+    {
+      "id": "cap-debcab44e30f38",
+      "name": "Unstructured-IO/UNS-MCP",
+      "url": "https://github.com/Unstructured-IO/UNS-MCP",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "處理與匯入非結構化文件。",
+        "en": "Process and ingest unstructured documents with Unstructured"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/Unstructured-IO/UNS-MCP",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 92,
+          "source_section": "Databases and Data",
+          "raw_text": "- **[Unstructured-IO/UNS-MCP](https://github.com/Unstructured-IO/UNS-MCP)** - Process and ingest unstructured documents with Unstructured",
+          "name": "Unstructured-IO/UNS-MCP",
+          "description_en": "Process and ingest unstructured documents with Unstructured",
+          "url": "https://github.com/Unstructured-IO/UNS-MCP",
+          "url_key": "https://github.com/unstructured-io/uns-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 5602
+    },
+    {
+      "id": "cap-dec1fda92758e8",
+      "name": "imnoo-team/quality-control-plan-mcp",
+      "url": "https://github.com/imnoo-team/quality-control-plan-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "從工程圖 PDF 擷取公差等資訊，產生品質管制計畫、標註圖面與 Excel 報表。",
+        "en": "Generate quality control plans from technical-drawing PDFs: extract tolerances, fits, threads, GD&T and finishes into ballooned drawings and Excel reports."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/imnoo-team/quality-control-plan-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 4929,
+          "source_section": "🛠️ Other Tools and Integrations",
+          "raw_text": "- [imnoo-team/quality-control-plan-mcp](https://github.com/imnoo-team/quality-control-plan-mcp) [![quality-control-plan-mcp MCP server](https://glama.ai/mcp/servers/imnoo-team/quality-control-plan-mcp/badges/score.svg)](https://glama.ai/mcp/servers/imnoo-team/quality-control-plan-mcp) 📇 ☁️ 🏠 🍎 🪟 🐧 - Generate quality control plans from technical-drawing PDFs: extract tolerances, fits, threads, GD&T and finishes into ballooned drawings and Excel reports.",
+          "name": "imnoo-team/quality-control-plan-mcp",
+          "description_en": "Generate quality control plans from technical-drawing PDFs: extract tolerances, fits, threads, GD&T and finishes into ballooned drawings and Excel reports.",
+          "url": "https://github.com/imnoo-team/quality-control-plan-mcp",
+          "url_key": "https://github.com/imnoo-team/quality-control-plan-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 5603
+    },
+    {
+      "id": "cap-dfcf9822d582d6",
+      "name": "OFODevelopment/cerebrochain-mcp-server",
+      "url": "https://github.com/OFODevelopment/cerebrochain-mcp-server",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "提供運價比較、庫存、訂單追蹤、車隊物流與需求預測相關工具。",
+        "en": "Supply chain and logistics tools: carrier rate shopping, inventory management, order tracking, fleet logistics and demand forecasting."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/OFODevelopment/cerebrochain-mcp-server",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 2169,
+          "source_section": "🛒 E-Commerce",
+          "raw_text": "- [OFODevelopment/cerebrochain-mcp-server](https://github.com/OFODevelopment/cerebrochain-mcp-server) [![OFODevelopment/cerebrochain-mcp-server MCP server](https://glama.ai/mcp/servers/OFODevelopment/cerebrochain-mcp-server/badges/score.svg)](https://glama.ai/mcp/servers/OFODevelopment/cerebrochain-mcp-server) 📇 ☁️ - Supply chain and logistics tools: carrier rate shopping, inventory management, order tracking, fleet logistics and demand forecasting.",
+          "name": "OFODevelopment/cerebrochain-mcp-server",
+          "description_en": "Supply chain and logistics tools: carrier rate shopping, inventory management, order tracking, fleet logistics and demand forecasting.",
+          "url": "https://github.com/OFODevelopment/cerebrochain-mcp-server",
+          "url_key": "https://github.com/ofodevelopment/cerebrochain-mcp-server",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 5626
+    },
+    {
+      "id": "cap-e4aeb99b70136d",
+      "name": "Master Claude for Legal",
+      "url": "https://github.com/sboghossian/master-claude-for-legal",
+      "types": [
+        "skill_collection"
+      ],
+      "summary": {
+        "zh": "包含 NDA 分流、合約版本比較、引文查核與會議簡報等工作的法律 Skill 集合。",
+        "en": "Skill pack for legal teams. NDA triage, multi-party version diff, citation verifier, meeting brief, and the Friday-newsletter status synthesis pattern. Includes 10 reference docs (privilege, verification, long documents, practice areas) and 3 firm templates. Built from the public Anthropic Claude for Legal Teams webinar dataset. *By @sboghossian*"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/sboghossian/master-claude-for-legal",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 116,
+          "source_section": "Document Processing",
+          "raw_text": "- [Master Claude for Legal](https://github.com/sboghossian/master-claude-for-legal) - Skill pack for legal teams. NDA triage, multi-party version diff, citation verifier, meeting brief, and the Friday-newsletter status synthesis pattern. Includes 10 reference docs (privilege, verification, long documents, practice areas) and 3 firm templates. Built from the public Anthropic Claude for Legal Teams webinar dataset. *By [@sboghossian](https://github.com/sboghossian)*",
+          "name": "Master Claude for Legal",
+          "description_en": "Skill pack for legal teams. NDA triage, multi-party version diff, citation verifier, meeting brief, and the Friday-newsletter status synthesis pattern. Includes 10 reference docs (privilege, verification, long documents, practice areas) and 3 firm templates. Built from the public Anthropic Claude for Legal Teams webinar dataset. *By @sboghossian*",
+          "url": "https://github.com/sboghossian/master-claude-for-legal",
+          "url_key": "https://github.com/sboghossian/master-claude-for-legal",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 5741
+    },
+    {
+      "id": "cap-e4d6bc6d5fedc7",
+      "name": "🔍 AI Deep Research Agent",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/single_agent_apps/ai_deep_research_agent/",
+      "types": [
+        "agent_example"
+      ],
+      "summary": {
+        "zh": "結合 OpenAI Agents SDK 與 Firecrawl 的網路研究範例。",
+        "en": "Comprehensive web research with the OpenAI Agents SDK and Firecrawl"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "awesome-llm-apps",
+          "source_repo": "Shubhamsaboo/awesome-llm-apps",
+          "source_commit": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/awesome-llm-apps/README.md",
+          "source_line": 121,
+          "source_section": "🚀 Advanced AI Agents",
+          "raw_text": "*   [🔍 AI Deep Research Agent](advanced_ai_agents/single_agent_apps/ai_deep_research_agent/) - Comprehensive web research with the OpenAI Agents SDK and Firecrawl",
+          "name": "🔍 AI Deep Research Agent",
+          "description_en": "Comprehensive web research with the OpenAI Agents SDK and Firecrawl",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/single_agent_apps/ai_deep_research_agent/",
+          "url_key": "https://github.com/shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/single_agent_apps/ai_deep_research_agent",
+          "suggested_type": "agent"
+        }
+      ],
+      "candidate_pool_index": 5749
+    },
+    {
+      "id": "cap-e6b271c15ab72c",
+      "name": "threat-hunting-with-sigma-rules",
+      "url": "https://github.com/jthack/threat-hunting-with-sigma-rules-skill",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "以 Sigma 規則進行威脅搜尋與安全事件分析。",
+        "en": "Use Sigma detection rules to hunt for threats and analyze security events."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/jthack/threat-hunting-with-sigma-rules-skill",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 219,
+          "source_section": "Security & Systems",
+          "raw_text": "- [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.",
+          "name": "threat-hunting-with-sigma-rules",
+          "description_en": "Use Sigma detection rules to hunt for threats and analyze security events.",
+          "url": "https://github.com/jthack/threat-hunting-with-sigma-rules-skill",
+          "url_key": "https://github.com/jthack/threat-hunting-with-sigma-rules-skill",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 5806
+    },
+    {
+      "id": "cap-ec9f8f05586c64",
+      "name": "Canva",
+      "url": "https://www.canva.dev/docs/apps/mcp/",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "建立與編輯 Canva 設計。",
+        "en": "Create and edit Canva designs (Claude)"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": null,
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 385,
+          "source_section": "Design and Collaboration",
+          "raw_text": "- **[Canva](https://www.canva.dev/docs/apps/mcp/)** - Create and edit Canva designs ([Claude](https://claude.com/marketplace/connectors/canva))",
+          "name": "Canva",
+          "description_en": "Create and edit Canva designs (Claude)",
+          "url": "https://www.canva.dev/docs/apps/mcp/",
+          "url_key": "https://www.canva.dev/docs/apps/mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 5974
+    },
+    {
+      "id": "cap-efd044aecf227b",
+      "name": "oneappsworld/callchatsyn-mcp",
+      "url": "https://github.com/oneappsworld/callchatsyn-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "提供中英文常見問題回覆、可預約時段查詢與預約。",
+        "en": "Small-business customer service via CallChatSyn: answer customer questions from the business's own FAQs (English/Chinese), list open appointment times in its time zone, and book appointments."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/oneappsworld/callchatsyn-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 4565,
+          "source_section": "🎧 Support & Service Management",
+          "raw_text": "- [oneappsworld/callchatsyn-mcp](https://github.com/oneappsworld/callchatsyn-mcp) [![oneappsworld/callchatsyn-mcp MCP server](https://glama.ai/mcp/servers/oneappsworld/callchatsyn-mcp/badges/score.svg)](https://glama.ai/mcp/servers/oneappsworld/callchatsyn-mcp) 🎖️ 📇 ☁️ - Small-business customer service via CallChatSyn: answer customer questions from the business's own FAQs (English/Chinese), list open appointment times in its time zone, and book appointments.",
+          "name": "oneappsworld/callchatsyn-mcp",
+          "description_en": "Small-business customer service via CallChatSyn: answer customer questions from the business's own FAQs (English/Chinese), list open appointment times in its time zone, and book appointments.",
+          "url": "https://github.com/oneappsworld/callchatsyn-mcp",
+          "url_key": "https://github.com/oneappsworld/callchatsyn-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 6055
+    },
+    {
+      "id": "cap-f10d18a38928c9",
+      "name": "Cal.com",
+      "url": "https://github.com/calcom/cal-mcp",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "透過 Cal.com 處理排程。",
+        "en": "Official Cal.com MCP server for scheduling"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/calcom/cal-mcp",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "official-mcp",
+          "source_repo": "VoltAgent/official-mcp-servers",
+          "source_commit": "9183df990f9b33c675fa09e78cab3debcbb4a541",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/official-mcp/README.md",
+          "source_line": 262,
+          "source_section": "Productivity and Project Management",
+          "raw_text": "- **[Cal.com](https://github.com/calcom/cal-mcp)** - Official Cal.com MCP server for scheduling",
+          "name": "Cal.com",
+          "description_en": "Official Cal.com MCP server for scheduling",
+          "url": "https://github.com/calcom/cal-mcp",
+          "url_key": "https://github.com/calcom/cal-mcp",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 6081
+    },
+    {
+      "id": "cap-f4b8b20bf19612",
+      "name": "🗞️ AI Journalist Agent",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/single_agent_apps/ai_journalist_agent/",
+      "types": [
+        "agent_example"
+      ],
+      "summary": {
+        "zh": "研究、撰寫與編輯文章的 Agent 範例。",
+        "en": "Researches, writes, and edits articles on any topic"
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "awesome-llm-apps",
+          "source_repo": "Shubhamsaboo/awesome-llm-apps",
+          "source_commit": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/awesome-llm-apps/README.md",
+          "source_line": 133,
+          "source_section": "🚀 Advanced AI Agents",
+          "raw_text": "*   [🗞️ AI Journalist Agent](advanced_ai_agents/single_agent_apps/ai_journalist_agent/) - Researches, writes, and edits articles on any topic",
+          "name": "🗞️ AI Journalist Agent",
+          "description_en": "Researches, writes, and edits articles on any topic",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/single_agent_apps/ai_journalist_agent/",
+          "url_key": "https://github.com/shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/single_agent_apps/ai_journalist_agent",
+          "suggested_type": "agent"
+        }
+      ],
+      "candidate_pool_index": 6176
+    },
+    {
+      "id": "cap-f89e5f2cc575ac",
+      "name": "Zendesk Automation",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/zendesk-automation/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "管理 Zendesk 工單、使用者、組織、搜尋與巨集。",
+        "en": "Automate Zendesk: tickets, users, organizations, search, and macros."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 310,
+          "source_section": "App Automation via Composio",
+          "raw_text": "- [Zendesk Automation](./zendesk-automation/) - Automate Zendesk: tickets, users, organizations, search, and macros.",
+          "name": "Zendesk Automation",
+          "description_en": "Automate Zendesk: tickets, users, organizations, search, and macros.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/zendesk-automation/",
+          "url_key": "https://github.com/composiohq/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/zendesk-automation",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 6271
+    },
+    {
+      "id": "cap-fb6866978c3ed1",
+      "name": "ProductOfAmerica/mcp-server-kicad",
+      "url": "https://github.com/ProductOfAmerica/mcp-server-kicad",
+      "types": [
+        "mcp_tool"
+      ],
+      "summary": {
+        "zh": "處理 KiCad 電路圖、PCB 佈局、規則檢查與製造檔案匯出。",
+        "en": "KiCad EDA automation: schematic capture, PCB layout, ERC, DRC and Gerber, BOM and 3D exports for KiCad 9 and 10."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ProductOfAmerica/mcp-server-kicad",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "punkpeye-mcp",
+          "source_repo": "punkpeye/awesome-mcp-servers",
+          "source_commit": "29f2d490cc02468e7c9d87b0cf68d40d3041e7ef",
+          "source_file": "data/raw/snapshots/sources-20261104T114042Z/punkpeye-mcp/README.md",
+          "source_line": 2103,
+          "source_section": "📟 Embedded System",
+          "raw_text": "- [ProductOfAmerica/mcp-server-kicad](https://github.com/ProductOfAmerica/mcp-server-kicad) [![ProductOfAmerica/mcp-server-kicad MCP server](https://glama.ai/mcp/servers/ProductOfAmerica/mcp-server-kicad/badges/score.svg)](https://glama.ai/mcp/servers/ProductOfAmerica/mcp-server-kicad) 🐍 📟 🏠 - KiCad EDA automation: schematic capture, PCB layout, ERC, DRC and Gerber, BOM and 3D exports for KiCad 9 and 10.",
+          "name": "ProductOfAmerica/mcp-server-kicad",
+          "description_en": "KiCad EDA automation: schematic capture, PCB layout, ERC, DRC and Gerber, BOM and 3D exports for KiCad 9 and 10.",
+          "url": "https://github.com/ProductOfAmerica/mcp-server-kicad",
+          "url_key": "https://github.com/productofamerica/mcp-server-kicad",
+          "suggested_type": "mcp_tool"
+        }
+      ],
+      "candidate_pool_index": 6342
+    },
+    {
+      "id": "cap-fd440a6e84889a",
+      "name": "Content Research Writer",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/content-research-writer/",
+      "types": [
+        "skill"
+      ],
+      "summary": {
+        "zh": "協助內容研究、引用資料、文章開頭與分段寫作回饋。",
+        "en": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing section-by-section feedback."
+      },
+      "summary_basis": "curated-list description; not independently tested",
+      "parent_repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "metrics": null,
+      "license": null,
+      "review_status": "directory_reviewed_not_tested",
+      "evidence": [
+        {
+          "source_id": "composio-skills",
+          "source_repo": "ComposioHQ/awesome-claude-skills",
+          "source_commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+          "source_file": "data/raw/snapshots/additional-sources-20261104T120521Z/composio-skills/README.md",
+          "source_line": 174,
+          "source_section": "Communication & Writing",
+          "raw_text": "- [Content Research Writer](./content-research-writer/) - Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing section-by-section feedback.",
+          "name": "Content Research Writer",
+          "description_en": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing section-by-section feedback.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/content-research-writer/",
+          "url_key": "https://github.com/composiohq/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/content-research-writer",
+          "suggested_type": "skill"
+        }
+      ],
+      "candidate_pool_index": 6387
+    }
+  ],
+  "coverage": [
+    {
+      "work_id": "sales-marketing",
+      "theme_count": 3,
+      "resource_count": 8,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "customer-service",
+      "theme_count": 2,
+      "resource_count": 5,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "finance-accounting",
+      "theme_count": 3,
+      "resource_count": 6,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "legal-compliance",
+      "theme_count": 1,
+      "resource_count": 3,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "risk-security",
+      "theme_count": 1,
+      "resource_count": 3,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "people-workforce",
+      "theme_count": 1,
+      "resource_count": 3,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "supplychain-procurement",
+      "theme_count": 2,
+      "resource_count": 4,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "production-quality",
+      "theme_count": 1,
+      "resource_count": 2,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "facilities-maintenance",
+      "theme_count": 0,
+      "resource_count": 0,
+      "status": "not_curated_in_prototype"
+    },
+    {
+      "work_id": "healthcare-care",
+      "theme_count": 1,
+      "resource_count": 2,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "research-discovery",
+      "theme_count": 1,
+      "resource_count": 3,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "software-development",
+      "theme_count": 2,
+      "resource_count": 5,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "ai-lifecycle",
+      "theme_count": 2,
+      "resource_count": 6,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "education-training",
+      "theme_count": 1,
+      "resource_count": 3,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "content-creative",
+      "theme_count": 2,
+      "resource_count": 6,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "data-knowledge",
+      "theme_count": 3,
+      "resource_count": 9,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "operations-planning",
+      "theme_count": 3,
+      "resource_count": 8,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "personal-life",
+      "theme_count": 0,
+      "resource_count": 0,
+      "status": "not_curated_in_prototype"
+    },
+    {
+      "work_id": "energy-environment",
+      "theme_count": 1,
+      "resource_count": 2,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "matching-transactions",
+      "theme_count": 0,
+      "resource_count": 0,
+      "status": "not_curated_in_prototype"
+    },
+    {
+      "work_id": "engineering-design",
+      "theme_count": 1,
+      "resource_count": 4,
+      "status": "has_candidates"
+    },
+    {
+      "work_id": "assessment-detection",
+      "theme_count": 1,
+      "resource_count": 2,
+      "status": "has_candidates"
+    }
+  ]
+}

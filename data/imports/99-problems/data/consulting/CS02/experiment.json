@@ -1,0 +1,461 @@
+{
+  "case": "CS02",
+  "run_id": "cs02-f6c17a4b830b44e7928280e9edc42925",
+  "scope": "structured_synthetic_policy_triage_only",
+  "synthetic": true,
+  "real_user_approval": false,
+  "autonomous_multi_agent_validated": false,
+  "protocol_sha256": "0daabdea19cfa0640b2c0890a1f2ca763e6f7109f7e250728f77be3b57c32a1d",
+  "observations": {
+    "policy_id": "synthetic-triage-policy",
+    "policy_version": 1,
+    "as_of": "2026-10-26T12:00:00+00:00",
+    "source_hashes": {
+      "policy": "2520662158ca873c4d7285a8e4cd08c79b938c26dec2799313d0aab392d7b5a2",
+      "tickets": "ad976f4a1afc965f4fc620b0d7d679cbfd27938c90d16963397a75f18f6b5ad2"
+    },
+    "decisions": [
+      {
+        "ticket_id": "T-critical",
+        "status": "suggested",
+        "priority": "P0",
+        "queue": "incident",
+        "assignee": "incident-1",
+        "response_due_at": "2026-10-26T11:45:00+00:00",
+        "overdue": true,
+        "escalate": true,
+        "reason_codes": [
+          "policy_risk_rule"
+        ]
+      },
+      {
+        "ticket_id": "T-outage",
+        "status": "suggested",
+        "priority": "P1",
+        "queue": "technical",
+        "assignee": "tech-1",
+        "response_due_at": "2026-10-26T12:30:00+00:00",
+        "overdue": false,
+        "escalate": true,
+        "reason_codes": [
+          "policy_risk_rule"
+        ]
+      },
+      {
+        "ticket_id": "T-vip",
+        "status": "suggested",
+        "priority": "P2",
+        "queue": "billing",
+        "assignee": "billing-1",
+        "response_due_at": "2026-10-26T15:45:00+00:00",
+        "overdue": false,
+        "escalate": false,
+        "reason_codes": [
+          "policy_category_rule"
+        ]
+      }
+    ],
+    "operational_action_performed": false
+  },
+  "baseline": {
+    "status": "failed_readiness",
+    "actual_probe": true,
+    "protocol_sha256": "0daabdea19cfa0640b2c0890a1f2ca763e6f7109f7e250728f77be3b57c32a1d",
+    "process_sha256": "64f0496ce79b2e80ccdba765d1bfc50c3ea699cf70cea7c7c97cd47590098804",
+    "actual_analysis_role": "A12",
+    "required_analysis_role": "A05",
+    "role_binding_supported": false,
+    "existing_customer_worker_has_triage": false,
+    "findings": [
+      "ProcessRun hardcodes A12 rather than using the frozen case role assignment.",
+      "Existing customer Worker implements authorized answer lookup, not policy-based routing."
+    ],
+    "real_user_approval": false
+  },
+  "review": {
+    "verdict": "supported_with_limits",
+    "finding": "Standard-customer critical risk precedes routine VIP billing; unavailable or unqualified staff are excluded.",
+    "limits": "Preclassified signals and synthetic rules only; no actual routing, capacity optimization or model judgment."
+  },
+  "evaluation": {
+    "passed": true,
+    "checks": {
+      "baseline_failure_retained": true,
+      "protocol_frozen": true,
+      "same_process": true,
+      "correct_domain_role": true,
+      "seven_gates": true,
+      "predeclared_results": true,
+      "critical_before_vip": true,
+      "intact_process_trace": true,
+      "unknowns_need_human": true,
+      "bad_evidence_stops": true,
+      "critical_unknown_category_preserves_risk": true,
+      "text_has_no_authority": true,
+      "no_actions_or_real_approval": true,
+      "bounded_management_acceptance": true
+    },
+    "scope": "synthetic_structured_triage_and_process_portability",
+    "not_proven": [
+      "text_understanding",
+      "autonomous_models",
+      "blind_generalization",
+      "live_dispatch",
+      "real_sla_improvement"
+    ]
+  },
+  "challenge_results": {
+    "normal": {
+      "status": "delivered",
+      "decisions": [
+        {
+          "ticket_id": "T-critical",
+          "status": "suggested",
+          "priority": "P0",
+          "queue": "incident",
+          "assignee": "incident-1",
+          "response_due_at": "2026-10-26T11:45:00+00:00",
+          "overdue": true,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "T-outage",
+          "status": "suggested",
+          "priority": "P1",
+          "queue": "technical",
+          "assignee": "tech-1",
+          "response_due_at": "2026-10-26T12:30:00+00:00",
+          "overdue": false,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "T-vip",
+          "status": "suggested",
+          "priority": "P2",
+          "queue": "billing",
+          "assignee": "billing-1",
+          "response_due_at": "2026-10-26T15:45:00+00:00",
+          "overdue": false,
+          "escalate": false,
+          "reason_codes": [
+            "policy_category_rule"
+          ]
+        }
+      ],
+      "failure_reasons": []
+    },
+    "no_staff": {
+      "status": "needs_human",
+      "decisions": [
+        {
+          "ticket_id": "T-critical",
+          "status": "needs_human",
+          "priority": "P0",
+          "queue": "incident",
+          "assignee": null,
+          "response_due_at": "2026-10-26T11:45:00+00:00",
+          "overdue": true,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule",
+            "no_qualified_available_staff"
+          ]
+        },
+        {
+          "ticket_id": "T-outage",
+          "status": "needs_human",
+          "priority": "P1",
+          "queue": "technical",
+          "assignee": null,
+          "response_due_at": "2026-10-26T12:30:00+00:00",
+          "overdue": false,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule",
+            "no_qualified_available_staff"
+          ]
+        },
+        {
+          "ticket_id": "T-vip",
+          "status": "needs_human",
+          "priority": "P2",
+          "queue": "billing",
+          "assignee": null,
+          "response_due_at": "2026-10-26T15:45:00+00:00",
+          "overdue": false,
+          "escalate": true,
+          "reason_codes": [
+            "policy_category_rule",
+            "no_qualified_available_staff"
+          ]
+        }
+      ],
+      "failure_reasons": []
+    },
+    "unknown_category": {
+      "status": "needs_human",
+      "decisions": [
+        {
+          "ticket_id": "T-critical",
+          "status": "suggested",
+          "priority": "P0",
+          "queue": "incident",
+          "assignee": "incident-1",
+          "response_due_at": "2026-10-26T11:45:00+00:00",
+          "overdue": true,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "T-outage",
+          "status": "suggested",
+          "priority": "P1",
+          "queue": "technical",
+          "assignee": "tech-1",
+          "response_due_at": "2026-10-26T12:30:00+00:00",
+          "overdue": false,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "T-vip",
+          "status": "needs_human",
+          "priority": null,
+          "queue": "supervisor",
+          "assignee": null,
+          "response_due_at": null,
+          "overdue": null,
+          "escalate": true,
+          "reason_codes": [
+            "unknown_category"
+          ]
+        }
+      ],
+      "failure_reasons": []
+    },
+    "unknown_risk": {
+      "status": "needs_human",
+      "decisions": [
+        {
+          "ticket_id": "T-critical",
+          "status": "suggested",
+          "priority": "P0",
+          "queue": "incident",
+          "assignee": "incident-1",
+          "response_due_at": "2026-10-26T11:45:00+00:00",
+          "overdue": true,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "T-outage",
+          "status": "suggested",
+          "priority": "P1",
+          "queue": "technical",
+          "assignee": "tech-1",
+          "response_due_at": "2026-10-26T12:30:00+00:00",
+          "overdue": false,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "T-vip",
+          "status": "needs_human",
+          "priority": null,
+          "queue": "supervisor",
+          "assignee": null,
+          "response_due_at": null,
+          "overdue": null,
+          "escalate": true,
+          "reason_codes": [
+            "unknown_risk_signal"
+          ]
+        }
+      ],
+      "failure_reasons": []
+    },
+    "invalid_time": {
+      "status": "needs_evidence",
+      "decisions": [
+        {
+          "ticket_id": "T-critical",
+          "status": "suggested",
+          "priority": "P0",
+          "queue": "incident",
+          "assignee": "incident-1",
+          "response_due_at": "2026-10-26T11:45:00+00:00",
+          "overdue": true,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "T-outage",
+          "status": "suggested",
+          "priority": "P1",
+          "queue": "technical",
+          "assignee": "tech-1",
+          "response_due_at": "2026-10-26T12:30:00+00:00",
+          "overdue": false,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "T-vip",
+          "status": "needs_evidence",
+          "priority": null,
+          "queue": "supervisor",
+          "assignee": null,
+          "response_due_at": null,
+          "overdue": null,
+          "escalate": true,
+          "reason_codes": [
+            "missing_or_invalid_evidence"
+          ]
+        }
+      ],
+      "failure_reasons": []
+    },
+    "expired_policy": {
+      "status": "needs_evidence",
+      "decisions": [],
+      "failure_reasons": [
+        "policy_not_current"
+      ]
+    },
+    "critical_unknown_category": {
+      "status": "delivered",
+      "decisions": [
+        {
+          "ticket_id": "T-critical",
+          "status": "suggested",
+          "priority": "P0",
+          "queue": "incident",
+          "assignee": "incident-1",
+          "response_due_at": "2026-10-26T11:45:00+00:00",
+          "overdue": true,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "T-outage",
+          "status": "suggested",
+          "priority": "P1",
+          "queue": "technical",
+          "assignee": "tech-1",
+          "response_due_at": "2026-10-26T12:30:00+00:00",
+          "overdue": false,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "T-vip",
+          "status": "suggested",
+          "priority": "P2",
+          "queue": "billing",
+          "assignee": "billing-1",
+          "response_due_at": "2026-10-26T15:45:00+00:00",
+          "overdue": false,
+          "escalate": false,
+          "reason_codes": [
+            "policy_category_rule"
+          ]
+        }
+      ],
+      "failure_reasons": []
+    },
+    "text_injection": {
+      "status": "delivered",
+      "decisions": [
+        {
+          "ticket_id": "T-critical",
+          "status": "suggested",
+          "priority": "P0",
+          "queue": "incident",
+          "assignee": "incident-1",
+          "response_due_at": "2026-10-26T11:45:00+00:00",
+          "overdue": true,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "T-outage",
+          "status": "suggested",
+          "priority": "P1",
+          "queue": "technical",
+          "assignee": "tech-1",
+          "response_due_at": "2026-10-26T12:30:00+00:00",
+          "overdue": false,
+          "escalate": true,
+          "reason_codes": [
+            "policy_risk_rule"
+          ]
+        },
+        {
+          "ticket_id": "T-vip",
+          "status": "suggested",
+          "priority": "P2",
+          "queue": "billing",
+          "assignee": "billing-1",
+          "response_due_at": "2026-10-26T15:45:00+00:00",
+          "overdue": false,
+          "escalate": false,
+          "reason_codes": [
+            "policy_category_rule"
+          ]
+        }
+      ],
+      "failure_reasons": []
+    }
+  },
+  "process": {
+    "gates": [
+      "charter",
+      "readiness",
+      "analysis",
+      "review",
+      "reverification",
+      "management",
+      "delivery"
+    ],
+    "analysis_role": "A05",
+    "status": "completed",
+    "process_sha256": "64f0496ce79b2e80ccdba765d1bfc50c3ea699cf70cea7c7c97cd47590098804"
+  },
+  "checks": {
+    "new": 27,
+    "regression_passed": 276,
+    "scenarios": 8,
+    "not_solved_problem_counts": true
+  },
+  "not_proven": [
+    "arbitrary_text_understanding",
+    "independent_models",
+    "blind_generalization",
+    "live_dispatch",
+    "real_sla_improvement"
+  ]
+}

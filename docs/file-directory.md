@@ -1,14 +1,18 @@
-# 目錄與資料流
+# 目前目錄與資料流
 
-- web/src/app.js、styles.css：統一外框、內容模板、語言與互動。
-- web/src/engine.js：網址、領域取資料、詳情識別與資料驗證，與 UI 分開。
-- web/scripts/build.mjs：離線建置，將固定樣本轉為網站資料。
-- web/tests：與範圍、導覽及來源相關的測試。
-- web/dist：忽略版控的本機／發布產物。
-- data/samples/round-one.json：本輪八筆展示內容與十個領域；非完整資料庫。
-- data/references/modules.json：原模組 URL／commit／固定標記。
-- data/cases：後續案例預留，仍無案例或 matching。
-- docs：決策、範圍、來源、同步政策、進度與檢查紀錄。
-- .github/workflows：GitHub Pages 建置發布。
+- data/imports/99-problems：正式雙語問題、原方法文件、四個合成案例頁與證據檔。
+- data/imports/startup-radar：4,085 筆 catalog、21 份詳情、分類、展示去重及原補充。
+- data/imports/capability-store：凍結構想／L3、原 catalog、熱門快照與導覽。
+- data/imports/manifest.json：固定來源版本與 SHA-256；匯入檔案由 Git 保留原換行。
+- data/references/modules.json：來源位置與本輪範圍。
+- data/samples/round-one.json：第一輪八筆樣本的歷史留存，不再用於建置。
+- data/cases：仍不新增跨模組案例，原合成案例保存在來源快照內。
+- scripts/build_integration.py：離線核對快照，轉成統一版展示資料。
+- web/src/engine.js：共用 URL、原分類、OR／AND、先篩後去重及分頁。
+- web/src/app.js、styles.css：沿用 v2 外框與分頁，完整模組／領域／詳情閱讀。
+- web/scripts/build.mjs：呼叫資料建置並複製前端。
+- web/tests：16 項完整性與行為測試。
+- web/dist：忽略版控的產物。catalog.json 約 0.7 MiB，startups.json 約 3.5 MiB；startup/details、guides、case-pages、evidence 按需讀取。
+- docs：目前規格、進度與驗證；round-one／ux-v2 文件保留歷史，不當作目前資料數量。
 
-顯示資料從 data/samples → build 驗證 → web/dist/data/catalog.json → 共用 UI 讀取。未來可以替換資料接入層，保留外框與穩定 ID；目前不需要後端或第三方套件。
+固定來源快照 → 離線驗證／轉換 → 精簡主目錄＋獨立新創索引／詳情 → 共用 UI。沒有資料庫、自動更新或來源執行程式。

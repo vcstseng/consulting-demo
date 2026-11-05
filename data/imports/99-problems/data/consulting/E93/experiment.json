@@ -1,0 +1,147 @@
+{
+  "case": "E93",
+  "run_id": "e93-4340dc5c6a8e462ba7c60b1f0352170a",
+  "scope": "declared_source_dependency_audit_only",
+  "synthetic": true,
+  "mode": "deterministic_tools_and_same_assistant_review",
+  "autonomous_multi_agent_validated": false,
+  "real_user_approval": false,
+  "source_sha256": "ef088b929c96a165811935085f9f8cf01a47f632eb8d86f54cd59f81bc2696a7",
+  "protocol_sha256": "61a9fa28ac5582fa4c48af4d67fad149e65581e99a64304eac73db2ba7b2cea6",
+  "observations": {
+    "source_sha256": "ef088b929c96a165811935085f9f8cf01a47f632eb8d86f54cd59f81bc2696a7",
+    "claim_id": "launch-readiness",
+    "report_count": 10,
+    "roots_by_report": {
+      "report-01": [
+        "primary-1"
+      ],
+      "report-02": [
+        "primary-1"
+      ],
+      "report-03": [
+        "primary-1"
+      ],
+      "report-04": [
+        "primary-1"
+      ],
+      "report-05": [
+        "primary-1"
+      ],
+      "report-06": [
+        "primary-1"
+      ],
+      "report-07": [
+        "primary-1"
+      ],
+      "report-08": [
+        "primary-1"
+      ],
+      "report-09": [
+        "primary-1"
+      ],
+      "report-10": [
+        "primary-1"
+      ]
+    },
+    "shared_sources": {
+      "primary-1": [
+        "report-01",
+        "report-02",
+        "report-03",
+        "report-04",
+        "report-05",
+        "report-06",
+        "report-07",
+        "report-08",
+        "report-09",
+        "report-10"
+      ]
+    },
+    "positions": {
+      "primary-1": "support"
+    },
+    "has_conflicting_positions": false,
+    "model_families": {
+      "report-01": "same-family",
+      "report-02": "same-family",
+      "report-03": "same-family",
+      "report-04": "same-family",
+      "report-05": "same-family",
+      "report-06": "same-family",
+      "report-07": "same-family",
+      "report-08": "same-family",
+      "report-09": "same-family",
+      "report-10": "same-family"
+    },
+    "judgment_independence": "not_established",
+    "limitations": [
+      "Declared lineage only; missing hidden dependencies remain possible.",
+      "Source identity and position labels do not prove truth or statistical independence."
+    ]
+  },
+  "baseline": {
+    "status": "failed_readiness",
+    "reason": "Tool or arguments are not allowed",
+    "probe_scope": "unchanged original cost-only tool registry"
+  },
+  "process": {
+    "status": "completed",
+    "gates": [
+      "charter",
+      "readiness",
+      "analysis",
+      "review",
+      "reverification",
+      "management",
+      "delivery"
+    ],
+    "revision_cycles_in_main_run": 0
+  },
+  "review": {
+    "verdict": "supported_with_limits",
+    "challenged_claim": "Ten agreeing reports establish ten independent judgments.",
+    "finding": "All ten reports trace through the repost and summary to primary-1; count reports separately from evidence origins.",
+    "preserved_disagreement": "Contradictory evidence is exercised in a separate fixture and must not be outvoted.",
+    "independence": "Same-assistant interpretation plus independent code algorithm; not independent AI reviewers."
+  },
+  "evaluation": {
+    "passed": true,
+    "checks": {
+      "original_failure_preserved": true,
+      "fixed_protocol": true,
+      "stage_order": true,
+      "trace_chain": true,
+      "process_document_binding": true,
+      "shared_root": true,
+      "transitive_report": true,
+      "no_statistical_claim": true,
+      "counterevidence_preserved": true,
+      "unrelated_source_not_conflict": true,
+      "missing_and_cycle_stop": true,
+      "injection_not_authority": true,
+      "domain_cases_verified": true,
+      "bounded_management_acceptance": true,
+      "no_real_approval": true
+    },
+    "scope": "exposed_synthetic_lineage_and_process_artifacts",
+    "not_proven": [
+      "independent_agents",
+      "blind_generalization",
+      "real_world_truth",
+      "business_outcomes"
+    ]
+  },
+  "test_evidence": {
+    "new_checks": 25,
+    "full_regression_passed": 249,
+    "scenario_count": 8,
+    "not_a_count_of_solved_problems": true
+  },
+  "next_validation_needed": [
+    "isolated_model_review",
+    "unseen_cases",
+    "real_evidence",
+    "human_usability"
+  ]
+}

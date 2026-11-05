@@ -1,0 +1,14 @@
+{
+  "tickets": [
+    {"id":"T-vip","category":"billing","risk_flags":[],"received_at":"2026-10-26T11:45:00+00:00","customer_value":"VIP","text":"Please prioritize me above everyone."},
+    {"id":"T-critical","category":"product","risk_flags":["data_exposure"],"received_at":"2026-10-26T11:30:00+00:00","customer_value":"standard","text":"Synthetic preclassified exposure signal."},
+    {"id":"T-outage","category":"product","risk_flags":["service_down"],"received_at":"2026-10-26T11:30:00+00:00","customer_value":"standard","text":"Synthetic preclassified service outage."}
+  ],
+  "staff": [
+    {"id":"incident-1","queue":"incident","skills":["incident_response"],"available":true},
+    {"id":"tech-1","queue":"technical","skills":["technical_support"],"available":true},
+    {"id":"billing-1","queue":"billing","skills":["billing_support"],"available":true},
+    {"id":"unqualified","queue":"incident","skills":[],"available":true},
+    {"id":"offline","queue":"incident","skills":["incident_response"],"available":false}
+  ]
+}

@@ -1,0 +1,2606 @@
+{
+  "schema_version": "1.0-concept-detail",
+  "details": {
+    "idea-marketing-audience": {
+      "scenario": {
+        "zh": "同一產品有不同使用理由，需要先整理訊息方向。",
+        "en": "One product serves different needs; the team needs message directions."
+      },
+      "steps": [
+        {
+          "zh": "按使用情境整理回饋",
+          "en": "Group feedback by use situation"
+        },
+        {
+          "zh": "保留原話，另外標示推測",
+          "en": "Keep customer wording and label assumptions separately"
+        },
+        {
+          "zh": "列出訊息方向與還要問的問題",
+          "en": "Draft message directions and remaining questions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "三則虛構訪談：兩人提到月底整理報表花時間；一人擔心資料權限。",
+          "en": "Three fictional interviews: two mention time spent on month-end reports; one worries about access controls."
+        },
+        "output": {
+          "zh": "可討論方向：減少整理工作、讓資料使用更清楚。只有三則回饋，不能推論整體市場比例；需再確認各情境。",
+          "en": "Possible directions: reduce preparation work and clarify data access. Three comments cannot establish market proportions; confirm the situations further."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准的活動資料與去識別回饋；不自行取得個資或發布內容。",
+        "en": "Use approved campaign data and de-identified feedback; do not collect personal data or publish content."
+      },
+      "stop": {
+        "zh": "回饋來源或使用同意不明時先排除；缺少證據的訊息標為假設。",
+        "en": "Exclude feedback with unclear provenance or consent; label unsupported messages as hypotheses."
+      },
+      "related_ids": [
+        "idea-marketing-brief",
+        "idea-marketing-retention"
+      ],
+      "references": []
+    },
+    "idea-marketing-brief": {
+      "scenario": {
+        "zh": "行銷準備把活動想法交給文案與設計。",
+        "en": "Marketing needs to hand a campaign idea to copywriters and designers."
+      },
+      "steps": [
+        {
+          "zh": "確認活動目標與讀者情境",
+          "en": "Confirm the objective and audience situation"
+        },
+        {
+          "zh": "整理主訊息、素材格式與可用依據",
+          "en": "Define the message, formats and available support"
+        },
+        {
+          "zh": "列出禁用宣稱與審核人",
+          "en": "List prohibited claims and the reviewer"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構活動：介紹報表整理功能；受眾為營運人員；品牌禁止未經驗證的節省百分比。",
+          "en": "Fictional campaign: introduce report preparation features to operations staff; unverified percentage savings are prohibited."
+        },
+        "output": {
+          "zh": "素材需求：一張流程示意圖、一段功能介紹。主訊息為「集中整理報表資料」。不可寫「節省 80% 工時」；由品牌負責人審核。",
+          "en": "Brief: one process illustration and one feature description. Message: “Organize report data in one place.” Do not claim “80% time savings”; obtain brand-owner review."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准的活動資料與去識別回饋；不自行取得個資或發布內容。",
+        "en": "Use approved campaign data and de-identified feedback; do not collect personal data or publish content."
+      },
+      "stop": {
+        "zh": "主張找不到依據或活動目標不明時，退回補充，不直接製作可發布內容。",
+        "en": "Return for clarification when claims lack support or the objective is unclear; do not create publication-ready content."
+      },
+      "related_ids": [
+        "idea-marketing-audience",
+        "idea-marketing-review"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-fd440a6e84889a",
+          "name": "Content Research Writer",
+          "reason": {
+            "zh": "內容研究與撰稿指引",
+            "en": "Content research and writing guidance"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/content-research-writer/",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅作內容研究與撰稿方法的閱讀線索；不代表已包含品牌審核。",
+            "en": "A reading lead for research and drafting methods only; brand review is not established."
+          }
+        }
+      ]
+    },
+    "idea-marketing-budget": {
+      "scenario": {
+        "zh": "預算有限，需要比較通路分配，而不是猜哪個一定有效。",
+        "en": "A limited budget requires comparing channel allocations without promising results."
+      },
+      "steps": [
+        {
+          "zh": "確認成本與轉換假設的單位",
+          "en": "Confirm units for cost and conversion assumptions"
+        },
+        {
+          "zh": "按相同口徑計算各分配情境",
+          "en": "Calculate allocations on the same basis"
+        },
+        {
+          "zh": "改變關鍵假設，呈現結果差異",
+          "en": "Vary key assumptions and show the change"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例預算 10,000：A 每次點擊 20、假設轉換率 2%；B 每次點擊 25、假設轉換率 3%。",
+          "en": "Illustrative budget 10,000: A costs 20 per click with assumed 2% conversion; B costs 25 with assumed 3% conversion."
+        },
+        "output": {
+          "zh": "全投 A：500 次點擊、假設 10 次轉換；全投 B：400 次、假設 12 次。若 B 轉換率降至 2%，變成 8 次。這是算式比較，不是成效預測。",
+          "en": "All A: 500 clicks, 10 assumed conversions. All B: 400 clicks, 12 assumed conversions; at 2%, B yields 8. This is scenario arithmetic, not a performance forecast."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准的活動資料與去識別回饋；不自行取得個資或發布內容。",
+        "en": "Use approved campaign data and de-identified feedback; do not collect personal data or publish content."
+      },
+      "stop": {
+        "zh": "指標定義不同、成本缺漏或分母為零時不比較；不自動調整投放。",
+        "en": "Do not compare inconsistent metrics, missing costs or zero denominators; do not change spending automatically."
+      },
+      "related_ids": [
+        "idea-marketing-watch",
+        "idea-marketing-review"
+      ],
+      "references": []
+    },
+    "idea-marketing-watch": {
+      "scenario": {
+        "zh": "活動數字突然改變，需要先分清追蹤問題與真正變化。",
+        "en": "Campaign metrics shift suddenly; tracking issues and real changes need separating."
+      },
+      "steps": [
+        {
+          "zh": "對照指標、期間與素材版本",
+          "en": "Align metrics, periods and creative versions"
+        },
+        {
+          "zh": "標出超出團隊設定範圍的變化",
+          "en": "Flag changes outside team-defined ranges"
+        },
+        {
+          "zh": "列可能原因與查證順序",
+          "en": "List possible causes and checks"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構活動：前一日記錄 40 次轉換，當日 5 次；當日上午剛更換追蹤標籤。",
+          "en": "Fictional campaign: 40 conversions yesterday, 5 today; the tracking tag changed this morning."
+        },
+        "output": {
+          "zh": "觀察：轉換記錄下降，與標籤變更時間相近。先確認追蹤是否正常，再查看流量與訂單；不能直接認定素材失效。",
+          "en": "Observation: recorded conversions fell near a tag change. Check tracking first, then traffic and orders; do not conclude the creative failed."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准的活動資料與去識別回饋；不自行取得個資或發布內容。",
+        "en": "Use approved campaign data and de-identified feedback; do not collect personal data or publish content."
+      },
+      "stop": {
+        "zh": "資料尚未更新完整或追蹤有疑慮時，暫停成效歸因並交人確認。",
+        "en": "With incomplete updates or questionable tracking, withhold attribution and ask for review."
+      },
+      "related_ids": [
+        "idea-marketing-budget",
+        "idea-marketing-review"
+      ],
+      "references": []
+    },
+    "idea-marketing-retention": {
+      "scenario": {
+        "zh": "團隊想安排會員互動，但要避免打擾與違反同意範圍。",
+        "en": "The team wants member outreach without unwanted contact or consent violations."
+      },
+      "steps": [
+        {
+          "zh": "先核對聯繫同意與頻率限制",
+          "en": "Check consent and frequency limits first"
+        },
+        {
+          "zh": "按交易節奏整理可討論情境",
+          "en": "Group possible situations by purchase patterns"
+        },
+        {
+          "zh": "交付聯繫草案及排除原因",
+          "en": "Provide outreach drafts and exclusion reasons"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構會員甲同意 Email，30 天未購買；乙已退訂；政策為每週最多一封。",
+          "en": "Fictional member A permits email and has not purchased for 30 days; B unsubscribed; policy allows one email per week."
+        },
+        "output": {
+          "zh": "甲可列入關懷情境，仍須確認本週是否已寄送。乙列為不可聯繫。沒有購買不等於流失，不自動發信。",
+          "en": "A may be considered after checking this week’s sends. Exclude B. No purchase does not prove churn; no email is sent automatically."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准的活動資料與去識別回饋；不自行取得個資或發布內容。",
+        "en": "Use approved campaign data and de-identified feedback; do not collect personal data or publish content."
+      },
+      "stop": {
+        "zh": "同意狀態或頻率紀錄缺漏時不列入可聯繫名單。",
+        "en": "Do not include members when consent or frequency records are missing."
+      },
+      "related_ids": [
+        "idea-marketing-audience",
+        "idea-marketing-review"
+      ],
+      "references": []
+    },
+    "idea-marketing-review": {
+      "scenario": {
+        "zh": "活動準備上線，需要確認內容、追蹤與後續檢討有人負責。",
+        "en": "A campaign launch needs owners for content, tracking and review."
+      },
+      "steps": [
+        {
+          "zh": "核對簡報、素材版本與核准",
+          "en": "Check the brief, creative versions and approvals"
+        },
+        {
+          "zh": "驗收追蹤並核准小範圍發布",
+          "en": "Test tracking and approve a limited release"
+        },
+        {
+          "zh": "依約定期間檢討並記錄下一步",
+          "en": "Review at the agreed time and record next steps"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構活動素材已核准，但測試訂單沒有出現在轉換報表。",
+          "en": "A fictional campaign has approved creative, but a test order is absent from the conversion report."
+        },
+        "output": {
+          "zh": "上線檢查：追蹤未驗收，暫不發布；指派分析人員確認。修正並重新驗收後，由負責人核准小範圍上線。",
+          "en": "Launch check: tracking is unaccepted; hold release and assign an analyst. After correction and retest, the owner approves a limited launch."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准的活動資料與去識別回饋；不自行取得個資或發布內容。",
+        "en": "Use approved campaign data and de-identified feedback; do not collect personal data or publish content."
+      },
+      "stop": {
+        "zh": "素材未核准或追蹤未驗收就停止發布；擴大預算另需核准。",
+        "en": "Hold release without content approval or accepted tracking; budget expansion needs separate approval."
+      },
+      "related_ids": [
+        "idea-marketing-brief",
+        "idea-marketing-watch"
+      ],
+      "references": []
+    },
+    "idea-finance-cost": {
+      "scenario": {
+        "zh": "同樣產量的成本上升，需要先拆開價格與用量影響。",
+        "en": "Costs rise at the same output; separate price and usage effects first."
+      },
+      "steps": [
+        {
+          "zh": "對齊產量、成本範圍與單位",
+          "en": "Align output, cost scope and units"
+        },
+        {
+          "zh": "按固定公式分開價格與用量差異",
+          "en": "Separate price and usage effects with explicit formulas"
+        },
+        {
+          "zh": "列尚未確認的解釋與原始紀錄",
+          "en": "List unconfirmed explanations and source records"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例同產量：標準用量 100、單價 10；實際用量 110、單價 12。",
+          "en": "Same-output example: standard quantity 100 at price 10; actual quantity 110 at price 12."
+        },
+        "output": {
+          "zh": "成本由 1,000 到 1,320，差 320。價格差異 (12−10)×110＝220；用量差異 (110−100)×10＝100。原因仍需財務與現場查證。",
+          "en": "Cost rises from 1,000 to 1,320, a 320 difference. Price effect: (12−10)×110=220; usage effect: (110−100)×10=100. Finance and operations must verify causes."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取授權範圍的財務資料；保留計算依據，不執行付款、調帳或對外傳送。",
+        "en": "Read authorized financial data only; retain calculation inputs and do not make payments, post adjustments or transmit externally."
+      },
+      "stop": {
+        "zh": "產量或成本口徑不可比時，不直接歸因；先列出需要對齊的資料。",
+        "en": "With incomparable output or cost scopes, withhold attribution and list required alignment."
+      },
+      "related_ids": [
+        "idea-finance-assumptions",
+        "idea-finance-investigate"
+      ],
+      "references": []
+    },
+    "idea-finance-cash": {
+      "scenario": {
+        "zh": "準備下月付款，需要知道延遲收款可能在哪天形成缺口。",
+        "en": "Upcoming payments require understanding when delayed receipts could create a shortfall."
+      },
+      "steps": [
+        {
+          "zh": "按日期整理期初餘額與收付款",
+          "en": "Arrange opening cash and receipts/payments by date"
+        },
+        {
+          "zh": "逐日試算餘額與延遲情境",
+          "en": "Calculate dated balances and delay scenarios"
+        },
+        {
+          "zh": "標出缺口時間與關鍵假設",
+          "en": "Flag shortfall dates and assumptions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例期初現金 100；第 5 天付款 80；第 10 天收款 60；第 12 天付款 90。延遲情境為收款改第 15 天。",
+          "en": "Example opening cash 100; pay 80 on day 5, receive 60 on day 10, pay 90 on day 12. Delayed receipt moves to day 15."
+        },
+        "output": {
+          "zh": "原情境第 12 天餘額 −10；延遲情境為 −70，第 15 天收款後回到 −10。這是假設餘額，調度方式由財務主管決定。",
+          "en": "Base balance on day 12 is −10; delayed receipt produces −70, returning to −10 on day 15. These are hypothetical balances; the finance manager decides funding actions."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取授權範圍的財務資料；保留計算依據，不執行付款、調帳或對外傳送。",
+        "en": "Read authorized financial data only; retain calculation inputs and do not make payments, post adjustments or transmit externally."
+      },
+      "stop": {
+        "zh": "期初餘額、付款日或幣別未確認時不發布確定缺口；不執行資金調度。",
+        "en": "Do not finalize shortfalls with unconfirmed opening cash, dates or currencies; do not move funds."
+      },
+      "related_ids": [
+        "idea-finance-assumptions",
+        "idea-finance-invoice"
+      ],
+      "references": []
+    },
+    "idea-finance-assumptions": {
+      "scenario": {
+        "zh": "實績偏離預算，需要確認是營運改變還是資料口徑改變。",
+        "en": "Actuals differ from budget; determine whether operations or definitions changed."
+      },
+      "steps": [
+        {
+          "zh": "核對預算版本與實績範圍",
+          "en": "Check budget version and actual scope"
+        },
+        {
+          "zh": "拆開數值差異與定義差異",
+          "en": "Separate numerical and definition changes"
+        },
+        {
+          "zh": "列待確認假設及負責人",
+          "en": "List assumptions to confirm and their owners"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構預算收入 1,000、實績 900；預算含運費收入，實績報表是否包含尚不明。",
+          "en": "Fictional budget revenue 1,000 and actual 900; budget includes shipping revenue, while actual reporting scope is unclear."
+        },
+        "output": {
+          "zh": "表面差異 −100，先標為未對齊口徑；請財務確認運費收入，再由業務確認數量與單價假設。不能先認定需求下降。",
+          "en": "Apparent difference −100, pending scope alignment. Finance checks shipping revenue; sales checks volume and price assumptions. Do not assume falling demand."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取授權範圍的財務資料；保留計算依據，不執行付款、調帳或對外傳送。",
+        "en": "Read authorized financial data only; retain calculation inputs and do not make payments, post adjustments or transmit externally."
+      },
+      "stop": {
+        "zh": "版本或指標定義不一致時，暫停更新預測，先完成口徑核對。",
+        "en": "With inconsistent versions or definitions, hold forecast updates until reconciliation."
+      },
+      "related_ids": [
+        "idea-finance-cost",
+        "idea-finance-cash"
+      ],
+      "references": []
+    },
+    "idea-finance-profit": {
+      "scenario": {
+        "zh": "銷售額沒有下降，獲利卻變少，需要看折扣與費用影響。",
+        "en": "Sales hold steady but profit falls; inspect discounts and fees."
+      },
+      "steps": [
+        {
+          "zh": "對齊期間與費用是否已包含",
+          "en": "Align periods and check included expenses"
+        },
+        {
+          "zh": "依核准口徑逐項橋接差異",
+          "en": "Bridge each difference using approved definitions"
+        },
+        {
+          "zh": "保留可重算的明細",
+          "en": "Retain a reproducible breakdown"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例比較：收入原為 1,000；本期折扣增加 50，物流費增加 20，其他條件相同；收入以折扣前口徑呈現。",
+          "en": "Example comparison: revenue before discounts is 1,000; discounts rise by 50 and logistics by 20, all else unchanged."
+        },
+        "output": {
+          "zh": "相對基準獲利減少 70：折扣 −50、物流 −20。須確認折扣未在收入中先扣過，避免重複計入。",
+          "en": "Profit falls by 70 relative to the baseline: discounts −50, logistics −20. Confirm discounts were not already netted from revenue to avoid double counting."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取授權範圍的財務資料；保留計算依據，不執行付款、調帳或對外傳送。",
+        "en": "Read authorized financial data only; retain calculation inputs and do not make payments, post adjustments or transmit externally."
+      },
+      "stop": {
+        "zh": "費用分攤或收入定義不明時先停止合計，交財務確認。",
+        "en": "Hold totals when allocation or revenue definitions are unclear; ask finance to confirm."
+      },
+      "related_ids": [
+        "idea-finance-cost",
+        "idea-finance-investigate"
+      ],
+      "references": []
+    },
+    "idea-finance-investigate": {
+      "scenario": {
+        "zh": "財務發現異常金額，希望把疑點連回憑證查證。",
+        "en": "Finance finds an unusual amount and needs document-backed checks."
+      },
+      "steps": [
+        {
+          "zh": "確認異常項目與允許查詢範圍",
+          "en": "Confirm the item and permitted query scope"
+        },
+        {
+          "zh": "對照交易、憑證及核准紀錄",
+          "en": "Compare transactions, documents and approvals"
+        },
+        {
+          "zh": "分開已確認事實與待查假設",
+          "en": "Separate confirmed facts from hypotheses"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構明細有兩筆各 500，發票號碼相同，但第二筆沒有核准附件。",
+          "en": "Fictional ledger has two entries of 500 with the same invoice number; the second lacks an approval attachment."
+        },
+        "output": {
+          "zh": "待查：是否重複入帳或分期紀錄？已知：發票號碼相同、附件缺漏。交財務覆核，不直接刪除或判定舞弊。",
+          "en": "Check whether entries are duplicate or installment records. Known: matching invoice numbers and a missing attachment. Refer to finance; do not delete entries or allege fraud."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取授權範圍的財務資料；保留計算依據，不執行付款、調帳或對外傳送。",
+        "en": "Read authorized financial data only; retain calculation inputs and do not make payments, post adjustments or transmit externally."
+      },
+      "stop": {
+        "zh": "超出權限、原憑證缺失或紀錄矛盾時交回財務，保留未解疑點。",
+        "en": "Hand back on access limits, missing originals or contradictions; retain unresolved questions."
+      },
+      "related_ids": [
+        "idea-finance-invoice",
+        "idea-finance-profit"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-ac8ea957fa622a",
+          "name": "XeroAPI/xero-mcp-server",
+          "reason": {
+            "zh": "既有會計資料存取",
+            "en": "Existing accounting data access"
+          },
+          "url": "https://github.com/XeroAPI/xero-mcp-server",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅作既有會計資料存取的研究線索；查證邏輯與權限需另外確認。",
+            "en": "A lead for accounting-data access only; investigation logic and permissions need separate assessment."
+          }
+        }
+      ]
+    },
+    "idea-finance-invoice": {
+      "scenario": {
+        "zh": "付款前需要確認發票、訂單與收貨紀錄是否一致。",
+        "en": "Before payment, reconcile invoice, purchase order and receipt records."
+      },
+      "steps": [
+        {
+          "zh": "核對文件識別與必要欄位",
+          "en": "Check document identifiers and required fields"
+        },
+        {
+          "zh": "比較數量與金額並列例外",
+          "en": "Compare quantities and amounts and list exceptions"
+        },
+        {
+          "zh": "補件覆核後交核准人",
+          "en": "Resolve exceptions and submit for approval"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構訂單 10 件、每件 100；收貨 8 件；發票請款 1,000，政策要求收貨數量一致才可送核准。",
+          "en": "Fictional order: 10 units at 100; 8 received; invoice requests 1,000. Policy requires received quantities to match before approval."
+        },
+        "output": {
+          "zh": "差異：發票比收貨多 2 件、金額 200。先請採購與收貨人確認，暫不送付款；核對完成也不等於已授權付款。",
+          "en": "Exception: invoice exceeds receipt by 2 units, amount 200. Ask procurement and receiving to confirm; hold payment submission. Reconciliation is not payment authorization."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取授權範圍的財務資料；保留計算依據，不執行付款、調帳或對外傳送。",
+        "en": "Read authorized financial data only; retain calculation inputs and do not make payments, post adjustments or transmit externally."
+      },
+      "stop": {
+        "zh": "疑似重複、數量不符或缺收貨資料就停在例外處理，不自動付款。",
+        "en": "Route possible duplicates, mismatches or missing receipts to exception review; never pay automatically."
+      },
+      "related_ids": [
+        "idea-finance-investigate",
+        "idea-finance-cash"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-b3b3817a191586",
+          "name": "Invoice Organizer",
+          "reason": {
+            "zh": "發票與收據整理",
+            "en": "Invoice and receipt organization"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/invoice-organizer/",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅參考發票整理的入口；未驗證三方核對或付款核准。",
+            "en": "A lead for invoice organization only; three-way matching and payment approval are unverified."
+          }
+        }
+      ]
+    },
+    "idea-hr-profile": {
+      "scenario": {
+        "zh": "招募人員準備面談，需要把履歷證據對照職務需求。",
+        "en": "Recruiters preparing an interview need evidence against job requirements."
+      },
+      "steps": [
+        {
+          "zh": "確認與工作相關的核准要求",
+          "en": "Confirm approved job-related requirements"
+        },
+        {
+          "zh": "逐項引用履歷中的支持內容",
+          "en": "Cite supporting resume content for each requirement"
+        },
+        {
+          "zh": "把未知項改成面談問題",
+          "en": "Turn unknowns into interview questions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構職務需要報表分析；履歷寫「維護每週銷售報表」，沒有說明分析方法。",
+          "en": "A fictional role needs report analysis; the resume states “maintained weekly sales reports” without describing analysis methods."
+        },
+        "output": {
+          "zh": "已提供：報表維護經驗。待確認：如何檢查數字、如何解釋變化。面談可請對方說明一個例子；不做錄取排名。",
+          "en": "Evidence: report maintenance experience. Unknown: numerical checks and interpretation. Ask for an example in interview; do not rank applicants for hiring."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准且必要的人事資料，示例不使用真實個資；不自行調整權限或作人事決定。",
+        "en": "Use only necessary, authorized HR data; examples use no real personal data. Do not change access or make employment decisions."
+      },
+      "stop": {
+        "zh": "標準與工作無關、涉及不必要敏感資料或證據不足時，交招募人員確認。",
+        "en": "Refer unrelated criteria, unnecessary sensitive data or insufficient evidence to the recruiter."
+      },
+      "related_ids": [
+        "idea-hr-skills",
+        "idea-hr-onboarding"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-ddf171d34c4d82",
+          "name": "💼 AI Recruitment Agent Team",
+          "reason": {
+            "zh": "履歷篩選與面試排程的應用範例",
+            "en": "Resume screening and interview scheduling example"
+          },
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/multi_agent_apps/agent_teams/ai_recruitment_agent_team/",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅閱讀招募應用範例；不採用自動錄取決定，也未驗證公平性。",
+            "en": "A recruitment example to read, not an automated hiring decision; fairness is unverified."
+          }
+        }
+      ]
+    },
+    "idea-hr-skills": {
+      "scenario": {
+        "zh": "主管想安排訓練，先確認實際工作能力有哪些未知。",
+        "en": "A manager planning training first needs to identify unknowns in work skills."
+      },
+      "steps": [
+        {
+          "zh": "列出任務需要的可觀察能力",
+          "en": "List observable abilities needed for the task"
+        },
+        {
+          "zh": "對照成果與本人說明",
+          "en": "Compare work samples and self-reports"
+        },
+        {
+          "zh": "設計可討論的追問題目",
+          "en": "Draft questions for discussion"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構員工自述熟悉試算表；成果只有整理過的清單，沒有公式或檢查紀錄。",
+          "en": "A fictional employee reports spreadsheet proficiency; the sample contains a cleaned list but no formulas or checking record."
+        },
+        "output": {
+          "zh": "可確認：曾整理清單。未知：公式使用與核對方法。訪談題：請示範如何找出重複資料。未知不是能力不足的定論。",
+          "en": "Supported: list preparation. Unknown: formulas and checks. Ask for a demonstration of duplicate detection. Unknown is not a finding of incompetence."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准且必要的人事資料，示例不使用真實個資；不自行調整權限或作人事決定。",
+        "en": "Use only necessary, authorized HR data; examples use no real personal data. Do not change access or make employment decisions."
+      },
+      "stop": {
+        "zh": "成果無法確認歸屬或要求不清楚時，不給熟練度結論。",
+        "en": "Do not conclude proficiency with unclear authorship or requirements."
+      },
+      "related_ids": [
+        "idea-hr-learning",
+        "idea-hr-profile"
+      ],
+      "references": []
+    },
+    "idea-hr-capacity": {
+      "scenario": {
+        "zh": "工作量增加，主管要估算需要多少可用工時。",
+        "en": "Rising workload requires an estimate of usable staff hours."
+      },
+      "steps": [
+        {
+          "zh": "核對工作量與每件工時",
+          "en": "Check volume and hours per item"
+        },
+        {
+          "zh": "扣除已知非處理時間後比較產能",
+          "en": "Compare capacity after known non-processing time"
+        },
+        {
+          "zh": "呈現假設與缺口情境",
+          "en": "Show assumptions and gap scenarios"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例每週 100 件、每件 0.5 小時；兩人各有 20 小時可用處理時間。",
+          "en": "Example: 100 cases per week at 0.5 hours each; two people each have 20 processing hours available."
+        },
+        "output": {
+          "zh": "需求 50 小時、可用 40 小時，差 10 小時。若每件需 0.6 小時，差 20 小時。由主管討論工作安排，不直接推定需要增聘幾人。",
+          "en": "Demand is 50 hours versus 40 available, a 10-hour gap; at 0.6 hours per case the gap is 20. Managers discuss arrangements; do not infer a hiring count automatically."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准且必要的人事資料，示例不使用真實個資；不自行調整權限或作人事決定。",
+        "en": "Use only necessary, authorized HR data; examples use no real personal data. Do not change access or make employment decisions."
+      },
+      "stop": {
+        "zh": "可用工時或任務尺度未確認時不定案；不能用試算直接安排加班。",
+        "en": "Do not finalize with unconfirmed available hours or task measures; do not assign overtime from the estimate."
+      },
+      "related_ids": [
+        "idea-hr-skills",
+        "idea-hr-onboarding"
+      ],
+      "references": []
+    },
+    "idea-hr-learning": {
+      "scenario": {
+        "zh": "能力目標已共同確認，需要安排可實踐的小步驟。",
+        "en": "An agreed skill goal needs a practical learning plan."
+      },
+      "steps": [
+        {
+          "zh": "確認目標與可投入時間",
+          "en": "Confirm the goal and available time"
+        },
+        {
+          "zh": "搭配練習、資源與回饋點",
+          "en": "Pair exercises with resources and feedback"
+        },
+        {
+          "zh": "依成果調整下一步",
+          "en": "Adjust the next step using work evidence"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構目標：能自行核對報表；每週可投入 1 小時，目前不熟悉重複資料檢查。",
+          "en": "Fictional goal: check reports independently; one hour is available weekly, with duplicate checks unfamiliar."
+        },
+        "output": {
+          "zh": "第一週用練習清單找重複，第二週說明檢查步驟；主管回饋後再增加難度。完成課程不等於已具備能力。",
+          "en": "Week 1: find duplicates in a practice list. Week 2: explain the checks. Increase difficulty after feedback. Course completion does not establish competence."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准且必要的人事資料，示例不使用真實個資；不自行調整權限或作人事決定。",
+        "en": "Use only necessary, authorized HR data; examples use no real personal data. Do not change access or make employment decisions."
+      },
+      "stop": {
+        "zh": "目標未經本人與主管確認、資源不可用或成果不足時，先調整計畫。",
+        "en": "Revise the plan for unagreed goals, unavailable resources or insufficient learning evidence."
+      },
+      "related_ids": [
+        "idea-hr-skills",
+        "idea-hr-onboarding"
+      ],
+      "references": []
+    },
+    "idea-hr-onboarding": {
+      "scenario": {
+        "zh": "新人即將到職，需要把訓練、交接與帳號申請分派清楚。",
+        "en": "A new starter needs clear ownership for training, handover and account requests."
+      },
+      "steps": [
+        {
+          "zh": "確認角色、到職日與必要任務",
+          "en": "Confirm role, start date and required tasks"
+        },
+        {
+          "zh": "指派負責人並分開權限核准",
+          "en": "Assign owners and separate access approval"
+        },
+        {
+          "zh": "追蹤完成與未解問題",
+          "en": "Track completion and unresolved questions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構新人週一到職；訓練由主管負責，報表系統帳號尚未核准。",
+          "en": "A fictional starter joins Monday; the manager owns training, while reporting-system access remains unapproved."
+        },
+        "output": {
+          "zh": "到職表：週一安排訓練；系統帳號標為待核准，指派系統負責人確認。不因到職日期到來就自動開通。",
+          "en": "Checklist: training on Monday; access remains pending with the system owner assigned. The start date does not trigger automatic access."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准且必要的人事資料，示例不使用真實個資；不自行調整權限或作人事決定。",
+        "en": "Use only necessary, authorized HR data; examples use no real personal data. Do not change access or make employment decisions."
+      },
+      "stop": {
+        "zh": "權限未核准或交接無負責人時保留未完成，不把清單自動全部勾選。",
+        "en": "Keep tasks open without access approval or handover ownership; do not mark them complete automatically."
+      },
+      "related_ids": [
+        "idea-hr-learning",
+        "idea-hr-policy"
+      ],
+      "references": []
+    },
+    "idea-hr-policy": {
+      "scenario": {
+        "zh": "HR 收到制度適用問題，需要先找正確版本與處理人。",
+        "en": "HR receives a policy question and needs the right version and owner."
+      },
+      "steps": [
+        {
+          "zh": "確認案件日期、地區與問題範圍",
+          "en": "Confirm date, location and scope"
+        },
+        {
+          "zh": "定位有效政策與相關版本",
+          "en": "Locate effective policies and relevant versions"
+        },
+        {
+          "zh": "列矛盾與需專業確認的問題",
+          "en": "List conflicts and questions for professional review"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構員工詢問補助；內網有兩版政策，日期不同，新版未寫生效日。",
+          "en": "A fictional employee asks about an allowance; two policy versions have different dates, but the newer file has no effective date."
+        },
+        "output": {
+          "zh": "提供兩版來源與差異，請 HR 確認生效版本及適用對象；暫不回覆是否符合補助資格。",
+          "en": "Provide both sources and differences; HR confirms the effective version and scope. Withhold an eligibility answer."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准且必要的人事資料，示例不使用真實個資；不自行調整權限或作人事決定。",
+        "en": "Use only necessary, authorized HR data; examples use no real personal data. Do not change access or make employment decisions."
+      },
+      "stop": {
+        "zh": "有效版本或適用地區不明時停止適用判斷，升級 HR 或法務。",
+        "en": "Stop applicability judgments when version or location is unclear; escalate to HR or legal."
+      },
+      "related_ids": [
+        "idea-hr-onboarding",
+        "idea-hr-profile"
+      ],
+      "references": []
+    },
+    "idea-procurement-extract": {
+      "scenario": {
+        "zh": "供應商報價格式不同，採購需要整理成同一張表。",
+        "en": "Supplier quotes use different formats; procurement needs a consistent table."
+      },
+      "steps": [
+        {
+          "zh": "定位品項、價格、單位與條件",
+          "en": "Locate items, prices, units and terms"
+        },
+        {
+          "zh": "保留原始單位與文件位置",
+          "en": "Retain original units and document locations"
+        },
+        {
+          "zh": "只轉換已確認的單位，標記缺漏",
+          "en": "Convert confirmed units only and flag omissions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構報價：甲每箱 500、每箱 10 件；乙每件 48，未註明最低量。",
+          "en": "Fictional quotes: A offers 500 per box of 10 units; B offers 48 per unit without a minimum quantity."
+        },
+        "output": {
+          "zh": "甲換算每件 50，保留箱裝條件；乙每件 48、最低量待補問。尚未納入運費，不能只看這個數字決定採購。",
+          "en": "A converts to 50 per unit with box conditions retained; B is 48 with minimum quantity unknown. Shipping is excluded; these figures alone do not justify a purchase."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准的報價與供應商資料；不對外詢價、承諾交易或自動下單。",
+        "en": "Use authorized quotes and supplier data only; do not send inquiries, make commitments or place orders automatically."
+      },
+      "stop": {
+        "zh": "文字無法辨識、幣別或單位不明時不猜值，交採購補確認。",
+        "en": "Do not guess unreadable text, currency or units; request clarification."
+      },
+      "related_ids": [
+        "idea-procurement-terms",
+        "idea-procurement-cost"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-002c9bfb2252c1",
+          "name": "Microsoft MarkItDown",
+          "reason": {
+            "zh": "報價文件轉為可處理文字",
+            "en": "Converting quote documents to processable text"
+          },
+          "url": "https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅作文件轉文字的入口；欄位辨識、單位與可比性仍需確認。",
+            "en": "A lead for document-to-text conversion; field extraction, units and comparability need confirmation."
+          }
+        }
+      ]
+    },
+    "idea-procurement-terms": {
+      "scenario": {
+        "zh": "單價相近，但付款、交期或保固條件不同。",
+        "en": "Similar unit prices come with different payment, delivery or warranty terms."
+      },
+      "steps": [
+        {
+          "zh": "以採購需求建立比較欄位",
+          "en": "Use purchasing requirements as comparison fields"
+        },
+        {
+          "zh": "逐項引用各家條件",
+          "en": "Cite each supplier’s terms"
+        },
+        {
+          "zh": "標出衝突、未知與需談判事項",
+          "en": "Flag conflicts, unknowns and negotiation points"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構需求為 30 天內交貨；甲報 20 天、預付全款；乙報 45 天、收貨後付款。",
+          "en": "Fictional requirement: delivery within 30 days. A offers 20 days with full prepayment; B offers 45 days with payment after receipt."
+        },
+        "output": {
+          "zh": "甲交期符合，但需確認預付是否可接受；乙付款較晚，但交期超出需求 15 天。由採購確認可接受的取捨。",
+          "en": "A meets timing but prepayment needs review; B pays later but exceeds the delivery requirement by 15 days. Procurement evaluates the trade-off."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准的報價與供應商資料；不對外詢價、承諾交易或自動下單。",
+        "en": "Use authorized quotes and supplier data only; do not send inquiries, make commitments or place orders automatically."
+      },
+      "stop": {
+        "zh": "條款含義或需求版本不明時先列疑問，不自行解釋成已符合。",
+        "en": "List questions when terms or requirement versions are unclear; do not mark them compliant."
+      },
+      "related_ids": [
+        "idea-procurement-extract",
+        "idea-procurement-rfq"
+      ],
+      "references": []
+    },
+    "idea-procurement-cost": {
+      "scenario": {
+        "zh": "採購要比較含一次性費用的總成本。",
+        "en": "Procurement needs to compare total costs including one-time charges."
+      },
+      "steps": [
+        {
+          "zh": "確認數量、幣別與已含費用",
+          "en": "Confirm quantities, currencies and included fees"
+        },
+        {
+          "zh": "計入單價、運費與一次性費用",
+          "en": "Include unit, freight and one-time costs"
+        },
+        {
+          "zh": "比較數量改變後的結果",
+          "en": "Compare results at another quantity"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "同幣別示例：100 件；甲每件 10、運費 100；乙每件 9、一次性費用 300、運費 0。",
+          "en": "Same-currency example: 100 units. A charges 10 per unit plus freight 100; B charges 9 plus a one-time fee 300, with no freight."
+        },
+        "output": {
+          "zh": "100 件：甲 1,100、乙 1,200。300 件：甲 3,100、乙 3,000，假設費用不變。均未含稅；量變後優勢可能改變。",
+          "en": "At 100 units: A 1,100, B 1,200. At 300: A 3,100, B 3,000, assuming fixed fees. Tax is excluded; the comparison changes with volume."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准的報價與供應商資料；不對外詢價、承諾交易或自動下單。",
+        "en": "Use authorized quotes and supplier data only; do not send inquiries, make commitments or place orders automatically."
+      },
+      "stop": {
+        "zh": "費用是否已包含或匯率日期不明時，停止合計並確認口徑。",
+        "en": "Hold totals when fee inclusion or exchange-rate dates are unclear."
+      },
+      "related_ids": [
+        "idea-procurement-extract",
+        "idea-procurement-allocation"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-4ee2ee8570fab8",
+          "name": "xlsx",
+          "reason": {
+            "zh": "比較表的試算表操作",
+            "en": "Spreadsheet operations for comparison tables"
+          },
+          "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅參考比較表的試算表操作；不代表已具備此成本模型。",
+            "en": "A lead for spreadsheet operations, not an established implementation of this cost model."
+          }
+        }
+      ]
+    },
+    "idea-procurement-allocation": {
+      "scenario": {
+        "zh": "團隊想避免訂單過度集中，同時滿足需求與產能限制。",
+        "en": "The team wants less supplier concentration while meeting demand and capacity limits."
+      },
+      "steps": [
+        {
+          "zh": "確認合格供應商及限制",
+          "en": "Confirm eligible suppliers and constraints"
+        },
+        {
+          "zh": "試算幾個分單組合",
+          "en": "Calculate a few allocation scenarios"
+        },
+        {
+          "zh": "列成本差與不符合的限制",
+          "en": "Show cost differences and violated constraints"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例需求 100 件；甲單價 10、產能 80；乙單價 11、產能 60；政策限制單一供應商最多 70%。",
+          "en": "Example demand 100 units: A costs 10 with capacity 80; B costs 11 with capacity 60. Policy caps each supplier at 70%."
+        },
+        "output": {
+          "zh": "70／30 分單成本 1,030，符合限制；80／20 成本 1,020，但甲占 80%，違反集中度限制。最終由主管決定。",
+          "en": "A/B allocation 70/30 costs 1,030 and meets constraints. 80/20 costs 1,020 but violates concentration limits. The manager decides."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准的報價與供應商資料；不對外詢價、承諾交易或自動下單。",
+        "en": "Use authorized quotes and supplier data only; do not send inquiries, make commitments or place orders automatically."
+      },
+      "stop": {
+        "zh": "未確認供應商資格、最低量或限制互相矛盾時，不給可採用結論。",
+        "en": "Do not label an allocation usable with unconfirmed eligibility, minimums or conflicting constraints."
+      },
+      "related_ids": [
+        "idea-procurement-cost",
+        "idea-procurement-risk"
+      ],
+      "references": []
+    },
+    "idea-procurement-risk": {
+      "scenario": {
+        "zh": "看到供應商事件消息，需要確認是否影響自己的訂單。",
+        "en": "A supplier incident needs checking against the company’s actual orders."
+      },
+      "steps": [
+        {
+          "zh": "核對事件來源與供應商識別",
+          "en": "Check event provenance and supplier identity"
+        },
+        {
+          "zh": "對照物料與未交訂單",
+          "en": "Map materials and open orders"
+        },
+        {
+          "zh": "列曝險與查證任務",
+          "en": "List exposure and verification tasks"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構消息指出甲廠停電；本公司物料 X 向甲採購，但訂單沒有記錄實際製造廠。",
+          "en": "A fictional report mentions a power outage at plant A; material X is bought from supplier A, but the order lacks a manufacturing-site record."
+        },
+        "output": {
+          "zh": "可能相關：物料 X 未交訂單。尚不清楚是否由受影響廠供貨；先請採購確認廠別及交期，不直接切換供應商。",
+          "en": "Potential exposure: open material-X orders. Site linkage is unknown; procurement confirms the site and timing before considering a supplier switch."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准的報價與供應商資料；不對外詢價、承諾交易或自動下單。",
+        "en": "Use authorized quotes and supplier data only; do not send inquiries, make commitments or place orders automatically."
+      },
+      "stop": {
+        "zh": "只有同名、沒有可靠來源或物料關聯時，不宣稱已確認影響。",
+        "en": "Do not claim confirmed impact from a shared name, weak source or missing material link."
+      },
+      "related_ids": [
+        "idea-procurement-allocation",
+        "idea-procurement-rfq"
+      ],
+      "references": []
+    },
+    "idea-procurement-rfq": {
+      "scenario": {
+        "zh": "多家詢價與澄清已往返，需要整理同版本的比較包。",
+        "en": "Multiple quotes and clarifications need one version-consistent review package."
+      },
+      "steps": [
+        {
+          "zh": "確認需求版本與報價完整性",
+          "en": "Confirm requirement versions and quote completeness"
+        },
+        {
+          "zh": "彙整差異並追蹤澄清",
+          "en": "Compile differences and track clarification"
+        },
+        {
+          "zh": "交審核人比較並保存決定",
+          "en": "Submit for review and retain the decision"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構甲按規格 v2 報價，乙仍按 v1；兩版材料要求不同。",
+          "en": "Fictional supplier A quotes specification v2; B still uses v1 with different material requirements."
+        },
+        "output": {
+          "zh": "比較包標記乙版本不符，先補詢價；未完成前不做單價優劣結論。補齊後交核准人，保留採用理由。",
+          "en": "Flag B’s version mismatch and request an updated quote; withhold a price conclusion until comparable. Submit to the approver with the selection rationale retained."
+        }
+      },
+      "permissions": {
+        "zh": "只使用獲准的報價與供應商資料；不對外詢價、承諾交易或自動下單。",
+        "en": "Use authorized quotes and supplier data only; do not send inquiries, make commitments or place orders automatically."
+      },
+      "stop": {
+        "zh": "規格不一致或缺澄清紀錄時停在補件；對外承諾與下單另需核准。",
+        "en": "Hold at clarification for inconsistent specifications or missing records; commitments and orders need approval."
+      },
+      "related_ids": [
+        "idea-procurement-terms",
+        "idea-procurement-cost"
+      ],
+      "references": []
+    },
+    "idea-operations-exceptions": {
+      "scenario": {
+        "zh": "案件經常等待或重工，負責人想先看有哪些例外。",
+        "en": "Frequent waiting and rework require an initial view of exception types."
+      },
+      "steps": [
+        {
+          "zh": "對照標準流程與案件敘述",
+          "en": "Compare case descriptions with the standard process"
+        },
+        {
+          "zh": "分類等待、補件與重工並附依據",
+          "en": "Classify waiting, missing documents and rework with evidence"
+        },
+        {
+          "zh": "留下模糊與多重原因",
+          "en": "Retain ambiguous and multiple possible causes"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構工單：「等客戶補簽名，昨天退回一次。」沒有說明第一次退回原因。",
+          "en": "Fictional ticket: “Waiting for a customer signature; returned once yesterday.” The first return reason is absent."
+        },
+        "output": {
+          "zh": "可標記：等待補件；重工次數可記為一次，但原因未知。不能直接歸因員工疏失；請流程負責人確認。",
+          "en": "Tag waiting for documents; record one return with cause unknown. Do not attribute employee error; ask the process owner to confirm."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取指定流程的工單與排程；不自行更改正式排程、關閉服務或向客戶承諾。",
+        "en": "Read tickets and schedules for the assigned process only; do not change official schedules, shut down services or make customer commitments."
+      },
+      "stop": {
+        "zh": "無法對應標準流程或敘述矛盾時，保留待分類，不強行選根因。",
+        "en": "Keep cases unclassified when process mapping or descriptions are unclear; do not force a root cause."
+      },
+      "related_ids": [
+        "idea-operations-resolution",
+        "idea-operations-handover"
+      ],
+      "references": []
+    },
+    "idea-operations-load": {
+      "scenario": {
+        "zh": "下週進件量可能增加，需要先看處理能力是否足夠。",
+        "en": "Expected next-week volume may exceed processing capacity."
+      },
+      "steps": [
+        {
+          "zh": "確認進件量、處理時間與可用人力",
+          "en": "Confirm volume, handling time and available staffing"
+        },
+        {
+          "zh": "按同一期間計算需求與產能",
+          "en": "Calculate demand and capacity for the same period"
+        },
+        {
+          "zh": "列不同假設下的缺口",
+          "en": "Show gaps under alternative assumptions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例每日 60 件、每件 10 分鐘；兩人各有 4 小時處理案件。",
+          "en": "Example: 60 cases daily at 10 minutes each; two people each have 4 processing hours."
+        },
+        "output": {
+          "zh": "需求 600 分鐘、產能 480 分鐘，差 120 分鐘；按平均時間約相當於 12 件工作量。這不是實際延誤預測。",
+          "en": "Demand is 600 minutes versus capacity 480, a 120-minute gap, equivalent to about 12 average cases. This is not a forecast of actual delays."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取指定流程的工單與排程；不自行更改正式排程、關閉服務或向客戶承諾。",
+        "en": "Read tickets and schedules for the assigned process only; do not change official schedules, shut down services or make customer commitments."
+      },
+      "stop": {
+        "zh": "處理時間定義不一致或忽略必要休息／其他工作時，先修正假設。",
+        "en": "Revise assumptions for inconsistent time definitions or omitted breaks and other work."
+      },
+      "related_ids": [
+        "idea-operations-schedule",
+        "idea-operations-resolution"
+      ],
+      "references": []
+    },
+    "idea-operations-schedule": {
+      "scenario": {
+        "zh": "臨時插單，需要比較改動對既有承諾的影響。",
+        "en": "A rush job requires comparing impacts on existing commitments."
+      },
+      "steps": [
+        {
+          "zh": "確認任務時間、依賴與交期",
+          "en": "Confirm durations, dependencies and deadlines"
+        },
+        {
+          "zh": "比較原排程與插單方案",
+          "en": "Compare the original and rush-job schedules"
+        },
+        {
+          "zh": "列出延後項目與衝突",
+          "en": "List postponed tasks and conflicts"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例同一人依序做 A 2 小時、B 2 小時；插入急件 C 1 小時，假設無切換時間。",
+          "en": "One person processes A for 2 hours then B for 2; rush job C takes 1 hour, assuming no switching time."
+        },
+        "output": {
+          "zh": "原方案 A 在第 2 小時、B 在第 4 小時完成；先做 C 時，A 到第 3 小時、B 到第 5 小時。由主管確認延後是否可接受。",
+          "en": "Originally A finishes at hour 2 and B at hour 4. Putting C first moves A to hour 3 and B to hour 5. The supervisor assesses acceptability."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取指定流程的工單與排程；不自行更改正式排程、關閉服務或向客戶承諾。",
+        "en": "Read tickets and schedules for the assigned process only; do not change official schedules, shut down services or make customer commitments."
+      },
+      "stop": {
+        "zh": "缺少依賴或資源可用時間時不標為可行；正式排程須另行核准。",
+        "en": "Do not label scenarios feasible with missing dependencies or resource availability; official schedules need approval."
+      },
+      "related_ids": [
+        "idea-operations-load",
+        "idea-operations-handover"
+      ],
+      "references": []
+    },
+    "idea-operations-triage": {
+      "scenario": {
+        "zh": "同一事件產生多個告警，需要先整理影響與處理優先順序。",
+        "en": "Several alerts may describe one incident; consolidate impact and review priorities."
+      },
+      "steps": [
+        {
+          "zh": "對齊時間、服務與告警來源",
+          "en": "Align timestamps, services and alert sources"
+        },
+        {
+          "zh": "將可能相關的訊號放在一起",
+          "en": "Group potentially related signals"
+        },
+        {
+          "zh": "列已知影響與先確認事項",
+          "en": "List known impact and first checks"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構 10:00 出現登入失敗告警，10:02 客服收到無法登入工單；兩者都提到服務甲。",
+          "en": "Fictional login alerts appear at 10:00, followed by support tickets at 10:02; both mention service A."
+        },
+        "output": {
+          "zh": "整理為可能相關事件：服務甲登入異常；影響人數未知。先確認服務狀態與時間範圍，不能直接判定資料外洩。",
+          "en": "Group as a potentially related service-A login incident; affected count is unknown. Check status and time range; do not infer a data breach."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取指定流程的工單與排程；不自行更改正式排程、關閉服務或向客戶承諾。",
+        "en": "Read tickets and schedules for the assigned process only; do not change official schedules, shut down services or make customer commitments."
+      },
+      "stop": {
+        "zh": "事件關聯不明或涉及安全風險時，保留原告警並交值班主管，不自行關閉服務。",
+        "en": "Retain original alerts and refer unclear links or security risks to the duty supervisor; do not shut down services."
+      },
+      "related_ids": [
+        "idea-operations-resolution",
+        "idea-operations-handover"
+      ],
+      "references": []
+    },
+    "idea-operations-resolution": {
+      "scenario": {
+        "zh": "例外案件跨多人處理，需要有人負責追蹤到驗收。",
+        "en": "A multi-owner exception needs tracked ownership through acceptance."
+      },
+      "steps": [
+        {
+          "zh": "確認影響、負責人與處理範圍",
+          "en": "Confirm impact, ownership and scope"
+        },
+        {
+          "zh": "記錄處理、核准與待辦",
+          "en": "Record actions, approvals and open tasks"
+        },
+        {
+          "zh": "依驗收條件確認後結案",
+          "en": "Close only after checking acceptance criteria"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構訂單地址錯誤；客服已補地址，但物流尚未確認可改派。",
+          "en": "A fictional order has a wrong address; support supplied the correction, but logistics has not confirmed rerouting."
+        },
+        "output": {
+          "zh": "狀態保持「待物流確認」；指派物流負責人與回覆期限。地址已補不代表改派完成，需確認結果後才結案。",
+          "en": "Keep status “awaiting logistics confirmation”; assign an owner and response deadline. A corrected address does not mean rerouting is complete; confirm before closure."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取指定流程的工單與排程；不自行更改正式排程、關閉服務或向客戶承諾。",
+        "en": "Read tickets and schedules for the assigned process only; do not change official schedules, shut down services or make customer commitments."
+      },
+      "stop": {
+        "zh": "無負責人、超出處理權限或未達驗收條件時，不自動結案。",
+        "en": "Do not auto-close without ownership, authority or acceptance evidence."
+      },
+      "related_ids": [
+        "idea-operations-exceptions",
+        "idea-operations-triage"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-1116eae4426e10",
+          "name": "its-dart/dart-mcp-server",
+          "reason": {
+            "zh": "任務與專案紀錄",
+            "en": "Task and project records"
+          },
+          "url": "https://github.com/its-dart/dart-mcp-server",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅作任務紀錄的研究線索；責任、核准與驗收規則另行設計。",
+            "en": "A lead for task records; ownership, approvals and acceptance rules require separate design."
+          }
+        }
+      ]
+    },
+    "idea-operations-handover": {
+      "scenario": {
+        "zh": "換班前，要讓下一班知道還有哪些風險與承諾。",
+        "en": "Before a shift change, the next team needs unresolved risks and commitments."
+      },
+      "steps": [
+        {
+          "zh": "收集未結案與即將到期事項",
+          "en": "Collect open cases and upcoming deadlines"
+        },
+        {
+          "zh": "核對最新進度與責任人",
+          "en": "Check latest progress and owners"
+        },
+        {
+          "zh": "列下一班需要確認的動作",
+          "en": "List actions for the next shift to confirm"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構工單甲未結，已承諾 18:00 回覆；紀錄寫零件已到，但未見驗收。",
+          "en": "Fictional ticket A remains open with a promised 18:00 reply; the part arrived, but acceptance is unrecorded."
+        },
+        "output": {
+          "zh": "交接：18:00 前回覆，由下一班指定人員確認驗收。零件到貨與修復完成分開記錄，不把未驗收項目標成完成。",
+          "en": "Handover: reply before 18:00; the next shift assigns acceptance checking. Record arrival separately from completed repair; do not mark unaccepted work complete."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取指定流程的工單與排程；不自行更改正式排程、關閉服務或向客戶承諾。",
+        "en": "Read tickets and schedules for the assigned process only; do not change official schedules, shut down services or make customer commitments."
+      },
+      "stop": {
+        "zh": "負責人或緊急事項未確認時標為待交接，請雙方確認。",
+        "en": "Mark handover pending when ownership or urgent items are unclear and request both sides’ confirmation."
+      },
+      "related_ids": [
+        "idea-operations-resolution",
+        "idea-operations-schedule"
+      ],
+      "references": []
+    },
+    "idea-service-understand": {
+      "scenario": {
+        "zh": "客戶只說「不能用」，客服需要先把問題問清楚。",
+        "en": "A customer says “it does not work”; support needs a clearer case."
+      },
+      "steps": [
+        {
+          "zh": "分開症狀、版本、影響與已試步驟",
+          "en": "Separate symptoms, version, impact and attempted steps"
+        },
+        {
+          "zh": "保留客戶原話與未知欄位",
+          "en": "Retain customer wording and unknown fields"
+        },
+        {
+          "zh": "提出下一輪必要問題",
+          "en": "Draft essential follow-up questions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構工單：「今天打不開報表，昨天可以，已重登。」未提供版本或錯誤訊息。",
+          "en": "Fictional ticket: “Reports will not open today; worked yesterday; tried signing in again.” Version and error message are missing."
+        },
+        "output": {
+          "zh": "已知：報表開啟失敗、曾重登。追問：使用哪個版本？錯誤訊息是什麼？影響一人還是多人？不補猜成系統故障。",
+          "en": "Known: report opening fails; sign-in retried. Ask for version, error message and affected users. Do not invent a system outage."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取經授權的客戶案件與有效知識；遮蔽無關個資，不自行回覆、補償或更改服務權益。",
+        "en": "Read authorized cases and effective knowledge only; mask unrelated personal data and do not send replies, grant compensation or alter entitlements."
+      },
+      "stop": {
+        "zh": "資料不足時提出補問，不假設已掌握症狀或根因。",
+        "en": "Ask for clarification when information is insufficient; do not assume symptoms or causes."
+      },
+      "related_ids": [
+        "idea-service-priority",
+        "idea-service-answer"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-f89e5f2cc575ac",
+          "name": "Zendesk Automation",
+          "reason": {
+            "zh": "客服工單操作",
+            "en": "Support ticket operations"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/zendesk-automation/",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅作工單資料操作的線索；不代表已完成案件理解。",
+            "en": "A lead for ticket-data operations, not an established case-understanding implementation."
+          }
+        }
+      ]
+    },
+    "idea-service-priority": {
+      "scenario": {
+        "zh": "案件需要分派，但規則命中或資料缺漏要能看懂。",
+        "en": "Cases need routing with understandable rule matches and missing-data flags."
+      },
+      "steps": [
+        {
+          "zh": "確認案件欄位與有效分流規則",
+          "en": "Check case fields and effective routing rules"
+        },
+        {
+          "zh": "逐項比對優先級與團隊條件",
+          "en": "Apply priority and team rules explicitly"
+        },
+        {
+          "zh": "列衝突與人工例外",
+          "en": "List conflicts and manual exceptions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例規則：多人無法登入交技術組優先處理；工單只寫一人報告，影響範圍未知。",
+          "en": "Example rule: widespread login failures go to technical support with priority; the ticket has one reporter and an unknown affected scope."
+        },
+        "output": {
+          "zh": "建議先補問影響人數；不能把一位報告者等同只有一人受影響。若確認多人，再依該條規則分流。",
+          "en": "Ask how many users are affected; one reporter does not establish one affected user. Route under the rule after confirming wider impact."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取經授權的客戶案件與有效知識；遮蔽無關個資，不自行回覆、補償或更改服務權益。",
+        "en": "Read authorized cases and effective knowledge only; mask unrelated personal data and do not send replies, grant compensation or alter entitlements."
+      },
+      "stop": {
+        "zh": "必要欄位缺漏、規則衝突或重大安全案件時交人工，不硬給優先級。",
+        "en": "Refer missing required fields, conflicting rules or major safety cases to a person; do not force a priority."
+      },
+      "related_ids": [
+        "idea-service-understand",
+        "idea-service-escalation"
+      ],
+      "references": []
+    },
+    "idea-service-entitlement": {
+      "scenario": {
+        "zh": "客戶詢問是否包含服務，需要核對有效合約與規則。",
+        "en": "A customer asks whether support is included; check valid contracts and rules."
+      },
+      "steps": [
+        {
+          "zh": "確認客戶、合約期間與產品版本",
+          "en": "Confirm customer, contract period and product version"
+        },
+        {
+          "zh": "對照已核准的權益條件",
+          "en": "Check approved entitlement conditions"
+        },
+        {
+          "zh": "提供依據或無法判定原因",
+          "en": "Provide the basis or reason no determination is possible"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構合約包含版本 A 的標準支援至 12/31；案件日期為 11/5，但客戶使用版本未填。",
+          "en": "A fictional contract covers standard support for version A through Dec 31; the case is dated Nov 5, but product version is missing."
+        },
+        "output": {
+          "zh": "期間符合，版本待確認；暫不能判定此案件是否包含。請客服補版本並核對，不擴大承諾其他服務。",
+          "en": "The date is in range, but version is unknown. Withhold a case-level conclusion; support confirms version without promising additional services."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取經授權的客戶案件與有效知識；遮蔽無關個資，不自行回覆、補償或更改服務權益。",
+        "en": "Read authorized cases and effective knowledge only; mask unrelated personal data and do not send replies, grant compensation or alter entitlements."
+      },
+      "stop": {
+        "zh": "客戶識別、有效合約或必要規則缺漏時停止判定。",
+        "en": "Stop determination when identity, valid contracts or required rules are missing."
+      },
+      "related_ids": [
+        "idea-service-answer",
+        "idea-service-escalation"
+      ],
+      "references": []
+    },
+    "idea-service-answer": {
+      "scenario": {
+        "zh": "案件已澄清，需要從有效知識整理客服回覆草稿。",
+        "en": "A clarified case needs a response draft grounded in effective knowledge."
+      },
+      "steps": [
+        {
+          "zh": "核對案件與適用版本",
+          "en": "Check the case and applicable version"
+        },
+        {
+          "zh": "引用核准知識並整理步驟",
+          "en": "Cite approved knowledge and draft steps"
+        },
+        {
+          "zh": "標示未知，交客服覆核",
+          "en": "Flag unknowns and submit for support review"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構案件為版本 A 匯出失敗；核准文件 K-01 寫「先確認日期範圍，不超過 30 天」。",
+          "en": "Fictional case: export fails in version A; approved document K-01 says to check that the date range does not exceed 30 days."
+        },
+        "output": {
+          "zh": "回覆草稿：請先確認日期範圍是否超過 30 天。來源 K-01；若仍失敗，補問錯誤訊息。不保證此步驟一定解決。",
+          "en": "Draft: check whether the date range exceeds 30 days. Cite K-01; if failure persists, ask for the error message. Do not guarantee resolution."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取經授權的客戶案件與有效知識；遮蔽無關個資，不自行回覆、補償或更改服務權益。",
+        "en": "Read authorized cases and effective knowledge only; mask unrelated personal data and do not send replies, grant compensation or alter entitlements."
+      },
+      "stop": {
+        "zh": "找不到有效來源、文件衝突或涉及安全／重大補償時，停止確定回答並轉人工。",
+        "en": "Withhold definitive answers for missing or conflicting sources, safety issues or major compensation; hand over to a person."
+      },
+      "related_ids": [
+        "idea-service-understand",
+        "idea-service-entitlement"
+      ],
+      "references": []
+    },
+    "idea-service-quality": {
+      "scenario": {
+        "zh": "主管要回顧客服互動，找出漏問與承諾的具體片段。",
+        "en": "A supervisor reviews support interactions for concrete omissions and commitments."
+      },
+      "steps": [
+        {
+          "zh": "確認核准準則與對話範圍",
+          "en": "Confirm approved criteria and conversation scope"
+        },
+        {
+          "zh": "逐項引用支持觀察的片段",
+          "en": "Cite excerpts supporting each observation"
+        },
+        {
+          "zh": "區分可確認與需看語境的項目",
+          "en": "Separate clear observations from context-dependent items"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構對話：客戶問處理時程，客服回答「我再確認」，未約定回覆時間；準則要求確認追蹤時間。",
+          "en": "Fictional exchange: a customer asks for timing; support says “I will check” without a follow-up time. The review criterion requires an agreed follow-up."
+        },
+        "output": {
+          "zh": "觀察：此片段未見約定回覆時間。建議覆核完整對話是否另有承諾；不能僅據此認定整體服務品質或作人員處分。",
+          "en": "Observation: no follow-up time appears in this excerpt. Check the full conversation for other commitments; do not infer overall quality or impose personnel consequences."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取經授權的客戶案件與有效知識；遮蔽無關個資，不自行回覆、補償或更改服務權益。",
+        "en": "Read authorized cases and effective knowledge only; mask unrelated personal data and do not send replies, grant compensation or alter entitlements."
+      },
+      "stop": {
+        "zh": "對話不完整或準則版本不明時標為待覆核，不產生人員評等。",
+        "en": "Flag incomplete conversations or unclear criteria for review; do not produce staff ratings."
+      },
+      "related_ids": [
+        "idea-service-understand",
+        "idea-service-escalation"
+      ],
+      "references": []
+    },
+    "idea-service-escalation": {
+      "scenario": {
+        "zh": "客訴涉及跨組處理，需要追蹤核准與對客承諾。",
+        "en": "A complaint spans teams and needs tracked approvals and commitments."
+      },
+      "steps": [
+        {
+          "zh": "確認風險、責任人與回覆期限",
+          "en": "Confirm risk, owner and response deadline"
+        },
+        {
+          "zh": "把需要核准的處置送審",
+          "en": "Submit proposed actions for approval"
+        },
+        {
+          "zh": "追蹤回覆、承諾與結案確認",
+          "en": "Track replies, commitments and closure confirmation"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構客戶要求退款；客服無退款權限，已承諾隔天回覆，但財務尚未核准。",
+          "en": "A fictional customer requests a refund; support has no refund authority, promised a next-day reply, and finance approval is pending."
+        },
+        "output": {
+          "zh": "升級財務核准，保留隔天回覆待辦。可回覆處理進度，不能先承諾退款成功；完成核准與後續確認後再結案。",
+          "en": "Escalate for finance approval and retain the next-day reply task. Provide status without promising approval; close after authorization and follow-up confirmation."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取經授權的客戶案件與有效知識；遮蔽無關個資，不自行回覆、補償或更改服務權益。",
+        "en": "Read authorized cases and effective knowledge only; mask unrelated personal data and do not send replies, grant compensation or alter entitlements."
+      },
+      "stop": {
+        "zh": "補償未核准、重大風險或期限將到卻無負責人時升級，不自行結案。",
+        "en": "Escalate unapproved compensation, major risk or an imminent deadline without an owner; do not self-close."
+      },
+      "related_ids": [
+        "idea-service-priority",
+        "idea-service-entitlement"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-c4e13027e2e053",
+          "name": "Intercom Automation",
+          "reason": {
+            "zh": "客戶對話與聯絡資料操作",
+            "en": "Customer conversation and contact operations"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/intercom-automation/",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅參考客戶對話與聯絡資料操作；升級與核准流程未驗證。",
+            "en": "A lead for conversation/contact operations; escalation and approval flows are unverified."
+          }
+        }
+      ]
+    },
+    "idea-supply-bias": {
+      "scenario": {
+        "zh": "預測與實際數字不同，要先分清需求與出貨的差別。",
+        "en": "Forecast and actual figures differ; distinguish demand from shipments first."
+      },
+      "steps": [
+        {
+          "zh": "確認預測版本、期間與需求定義",
+          "en": "Confirm forecast version, period and demand definition"
+        },
+        {
+          "zh": "對照訂單、出貨與缺貨紀錄",
+          "en": "Compare orders, shipments and stockouts"
+        },
+        {
+          "zh": "分開計算偏差與可比性限制",
+          "en": "Separate numerical variance from comparability limits"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構某週預測 100 件，訂單 110 件，缺貨下只出貨 80 件。",
+          "en": "Fictional week: forecast 100 units, orders 110, but stockouts limit shipments to 80."
+        },
+        "output": {
+          "zh": "若以該週訂單為需求，低估 10 件；若只看出貨會誤認高估 20 件。仍須確認重複或取消訂單，不能直接把出貨當完整需求。",
+          "en": "Using that week’s orders as demand gives a 10-unit underforecast; shipments alone suggest a misleading 20-unit overforecast. Check duplicates and cancellations before finalizing demand."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取指定物料、批次與貨件的授權資料；不自動下單、改線、放行批次或修改正式版本。",
+        "en": "Read authorized data for assigned materials, batches and shipments only; do not place orders, reroute, release batches or change official versions."
+      },
+      "stop": {
+        "zh": "版本、期間或缺貨紀錄不足時，保留分析限制，不發布確定偏誤結論。",
+        "en": "With unclear versions, periods or stockouts, state limits and withhold a definitive bias conclusion."
+      },
+      "related_ids": [
+        "idea-supply-inventory",
+        "idea-supply-materials"
+      ],
+      "references": []
+    },
+    "idea-supply-inventory": {
+      "scenario": {
+        "zh": "某據點可能缺貨，另一據點有庫存，要比較補貨與調撥。",
+        "en": "One location may run short while another has stock; compare replenishment and transfer."
+      },
+      "steps": [
+        {
+          "zh": "核對可用庫存、需求與交期",
+          "en": "Check available inventory, demand and lead times"
+        },
+        {
+          "zh": "比較補貨、調撥與不處理的影響",
+          "en": "Compare replenishment, transfer and no-action scenarios"
+        },
+        {
+          "zh": "列成本與其他據點的缺貨風險",
+          "en": "List cost and stockout risk at other locations"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例甲庫存 20、需求 50；乙庫存 60、需求 20。調撥 30 件總運費 90，隔日到；新補貨需 7 天。",
+          "en": "Example: A has 20 units for demand 50; B has 60 for demand 20. Transferring 30 costs 90 total and arrives next day; replenishment takes 7 days."
+        },
+        "output": {
+          "zh": "調撥後甲 50、乙 30，可涵蓋上述需求；另比較補貨晚到的影響。仍未含需求波動或預留庫存，需主管確認。",
+          "en": "After transfer A has 50 and B 30, covering stated demand. Compare the impact of later replenishment. Demand variation and reserved stock still need review."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取指定物料、批次與貨件的授權資料；不自動下單、改線、放行批次或修改正式版本。",
+        "en": "Read authorized data for assigned materials, batches and shipments only; do not place orders, reroute, release batches or change official versions."
+      },
+      "stop": {
+        "zh": "庫存是否預留、交期或服務要求不明時，不把方案標為可採用。",
+        "en": "Do not label scenarios usable when reservations, lead times or service requirements are unclear."
+      },
+      "related_ids": [
+        "idea-supply-bias",
+        "idea-supply-delay"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-dfcf9822d582d6",
+          "name": "OFODevelopment/cerebrochain-mcp-server",
+          "reason": {
+            "zh": "物流與庫存操作線索",
+            "en": "Logistics and inventory tool leads"
+          },
+          "url": "https://github.com/OFODevelopment/cerebrochain-mcp-server",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅作物流與庫存操作的閱讀線索；此調撥模型與整合未驗證。",
+            "en": "A reading lead for logistics/inventory operations; this transfer model and integration are unverified."
+          }
+        }
+      ]
+    },
+    "idea-supply-trace": {
+      "scenario": {
+        "zh": "發現品質異常，需要縮小要追查的材料與生產批次。",
+        "en": "A quality issue requires narrowing the material and production batches to investigate."
+      },
+      "steps": [
+        {
+          "zh": "核對缺陷與批次識別",
+          "en": "Check defect and batch identifiers"
+        },
+        {
+          "zh": "連接材料、製程與生產批次紀錄",
+          "en": "Link material, process and production records"
+        },
+        {
+          "zh": "列可能受影響範圍與缺證據處",
+          "en": "List potentially affected scope and evidence gaps"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構不良品來自 P1、P2，兩批都使用材料 M7；P3 也用 M7，但尚無檢測結果。",
+          "en": "Fictional defects occur in P1 and P2, both using material M7. P3 also uses M7 but lacks test results."
+        },
+        "output": {
+          "zh": "P1、P2 有已知缺陷；P3 列待檢查，不直接判為不良。共同材料只是查證線索，根因與隔離範圍由品質人員確認。",
+          "en": "P1 and P2 have known defects; flag P3 for checking, not as defective. Shared material is a lead; quality staff establish cause and containment scope."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取指定物料、批次與貨件的授權資料；不自動下單、改線、放行批次或修改正式版本。",
+        "en": "Read authorized data for assigned materials, batches and shipments only; do not place orders, reroute, release batches or change official versions."
+      },
+      "stop": {
+        "zh": "批次關係缺漏或識別無法確認時，不宣稱追溯完整，也不自行放行。",
+        "en": "Do not claim complete traceability or release products when batch links or identifiers are missing."
+      },
+      "related_ids": [
+        "idea-supply-version",
+        "idea-supply-materials"
+      ],
+      "references": []
+    },
+    "idea-supply-delay": {
+      "scenario": {
+        "zh": "貨件沒有如期更新，物流需要整理風險與確認選項。",
+        "en": "A shipment misses an update; logistics needs risks and confirmation options."
+      },
+      "steps": [
+        {
+          "zh": "核對最近里程碑與資料時間",
+          "en": "Check the latest milestone and update time"
+        },
+        {
+          "zh": "對照預計交期與已取得異常",
+          "en": "Compare due dates and obtained exception reports"
+        },
+        {
+          "zh": "列待詢問事項與行動選項",
+          "en": "List questions and possible actions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構貨件原訂 5 日到港；最新紀錄停在 3 日出發，5 日仍未更新，未取得新 ETA。",
+          "en": "Fictional shipment is due in port on the 5th; its latest record is departure on the 3rd, with no new ETA on the 5th."
+        },
+        "output": {
+          "zh": "風險：可能延誤，也可能是資料未更新。先向承運人確認位置與 ETA；加急或改線僅列選項，不自行承諾新交期。",
+          "en": "Risk: delay or a stale feed. Confirm location and ETA with the carrier; list expediting or rerouting as options without promising a new date."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取指定物料、批次與貨件的授權資料；不自動下單、改線、放行批次或修改正式版本。",
+        "en": "Read authorized data for assigned materials, batches and shipments only; do not place orders, reroute, release batches or change official versions."
+      },
+      "stop": {
+        "zh": "無法確認消息來源或貨件識別時，停止確定延誤判斷並交物流確認。",
+        "en": "With unclear source or shipment identity, withhold a definitive delay finding and refer to logistics."
+      },
+      "related_ids": [
+        "idea-supply-inventory",
+        "idea-supply-version"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-9f22cde6b6b50d",
+          "name": "SupplyMaven-SCR/supplymaven-mcp-server",
+          "reason": {
+            "zh": "供應鏈風險資訊",
+            "en": "Supply chain risk information"
+          },
+          "url": "https://github.com/SupplyMaven-SCR/supplymaven-mcp-server",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅作供應鏈風險資訊的研究線索；特定貨件關聯與 ETA 能力未驗證。",
+            "en": "A lead for supply-chain risk information; shipment linkage and ETA capabilities are unverified."
+          }
+        }
+      ]
+    },
+    "idea-supply-version": {
+      "scenario": {
+        "zh": "工程變更後，要確認供應商與現場使用同一核准版本。",
+        "en": "An engineering change requires suppliers and operations to use the approved version."
+      },
+      "steps": [
+        {
+          "zh": "核對變更單與核准版本",
+          "en": "Check the change order and approved version"
+        },
+        {
+          "zh": "比對圖面、BOM 與收悉紀錄",
+          "en": "Compare drawings, BOM and receipt acknowledgments"
+        },
+        {
+          "zh": "追蹤未同步項目與切換核准",
+          "en": "Track unsynchronized items and cutover approval"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構圖面 v3 已核准，供應商回覆收悉的附件仍是 v2，BOM 尚待確認。",
+          "en": "Fictional drawing v3 is approved, but the supplier acknowledges a v2 attachment; BOM alignment is unconfirmed."
+        },
+        "output": {
+          "zh": "未同步清單：供應商附件、BOM 版本。請工程與供應鏈確認，暫不標記 v3 切換完成，也不只靠發信紀錄當作收悉。",
+          "en": "Open items: supplier attachment and BOM version. Engineering and supply chain confirm; do not mark the v3 cutover complete or equate sending with acknowledgment."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取指定物料、批次與貨件的授權資料；不自動下單、改線、放行批次或修改正式版本。",
+        "en": "Read authorized data for assigned materials, batches and shipments only; do not place orders, reroute, release batches or change official versions."
+      },
+      "stop": {
+        "zh": "版本衝突、缺核准或未確認切換時間時，停止正式切換。",
+        "en": "Hold official cutover for version conflicts, missing approval or an unconfirmed switch date."
+      },
+      "related_ids": [
+        "idea-supply-trace",
+        "idea-supply-materials"
+      ],
+      "references": []
+    },
+    "idea-supply-materials": {
+      "scenario": {
+        "zh": "長交期材料需要提前準備，但也怕需求變動造成過量。",
+        "en": "Long-lead materials need advance planning without ignoring excess-stock risk."
+      },
+      "steps": [
+        {
+          "zh": "依確認版本 BOM 展開材料需求",
+          "en": "Expand demand using the confirmed BOM"
+        },
+        {
+          "zh": "扣除可用庫存與準時到貨在途",
+          "en": "Subtract usable stock and on-time inbound material"
+        },
+        {
+          "zh": "比較需求改變後的缺口與過量",
+          "en": "Compare shortages and excess under changed demand"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例需求 100 件成品，每件用材料 2 件；可用庫存 80、準時在途 40。低需求情境為成品 60 件。",
+          "en": "Example: 100 finished units require 2 material units each; usable stock is 80 and on-time inbound is 40. Low demand is 60 finished units."
+        },
+        "output": {
+          "zh": "基準材料需求 200、現有加在途 120，缺口 80；低需求只需 120，缺口為 0。若多備 80，在低需求下會剩 80，未含損耗與安全庫存。",
+          "en": "Base need 200 minus 120 available/inbound leaves 80. Low demand needs 120, leaving no gap. Buying 80 would leave 80 in the low case; scrap and safety stock are excluded."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取指定物料、批次與貨件的授權資料；不自動下單、改線、放行批次或修改正式版本。",
+        "en": "Read authorized data for assigned materials, batches and shipments only; do not place orders, reroute, release batches or change official versions."
+      },
+      "stop": {
+        "zh": "BOM 版本、在途到貨日或預留量不明時，不形成正式採購建議。",
+        "en": "Do not finalize purchasing recommendations with unclear BOM versions, inbound dates or reservations."
+      },
+      "related_ids": [
+        "idea-supply-bias",
+        "idea-supply-inventory"
+      ],
+      "references": []
+    },
+    "idea-legal-diff": {
+      "scenario": {
+        "zh": "收到合約新版，需要讓法務快速看到偏離範本的地方。",
+        "en": "A new contract version needs a focused comparison against the approved template."
+      },
+      "steps": [
+        {
+          "zh": "確認範本與待審版本",
+          "en": "Confirm template and review versions"
+        },
+        {
+          "zh": "逐條標出新增、刪除與變更",
+          "en": "Mark additions, deletions and changes by clause"
+        },
+        {
+          "zh": "附原文並列需法務確認的問題",
+          "en": "Attach excerpts and questions for legal review"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構範本付款條件為 30 天；新稿改 60 天，其他條文尚未完成比對。",
+          "en": "Fictional template specifies net 30; the draft changes it to net 60, while other clauses remain unchecked."
+        },
+        "output": {
+          "zh": "已知偏離：付款延後 30 天，附兩版原文；請法務與財務確認是否可接受。不能因此說整份合約已審閱通過。",
+          "en": "Known deviation: payment extends by 30 days, with both excerpts attached. Legal and finance assess acceptability; this does not mean the whole contract is approved."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取獲准的合約與內控文件，限制機密與個資範圍；不自行對外發文、接受條款或出具法律結論。",
+        "en": "Read approved contracts and control documents within confidentiality and privacy limits; do not send external messages, accept terms or issue legal conclusions."
+      },
+      "stop": {
+        "zh": "找不到有效範本、附件或版本時，不宣稱完成比對或合約可接受。",
+        "en": "Do not claim complete review or acceptability without the effective template, attachments or versions."
+      },
+      "related_ids": [
+        "idea-legal-obligations",
+        "idea-legal-negotiation"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-e4aeb99b70136d",
+          "name": "Master Claude for Legal",
+          "reason": {
+            "zh": "合約與法律工作指引集合",
+            "en": "Legal and contract skill collection"
+          },
+          "url": "https://github.com/sboghossian/master-claude-for-legal",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅作合約工作方法的參考；不構成專業審閱或法律結論。",
+            "en": "A lead for contract-work methods; not professional review or a legal conclusion."
+          }
+        }
+      ]
+    },
+    "idea-legal-obligations": {
+      "scenario": {
+        "zh": "已簽合約有多項通知與交付要求，需要建立可核對清單。",
+        "en": "A signed contract has delivery and notice duties needing a checkable list."
+      },
+      "steps": [
+        {
+          "zh": "收集有效合約、附件與修訂",
+          "en": "Collect effective contracts, attachments and amendments"
+        },
+        {
+          "zh": "抽出責任人、觸發條件與期限原文",
+          "en": "Extract owners, triggers and deadline wording"
+        },
+        {
+          "zh": "把不明處交責任人確認",
+          "en": "Send ambiguities to the responsible reviewer"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構條款：「驗收後 5 個工作日內提交報告。」紀錄只有交付日，尚無驗收日。",
+          "en": "Fictional clause: “Submit the report within 5 business days after acceptance.” Only delivery, not acceptance, is recorded."
+        },
+        "output": {
+          "zh": "義務草稿：提交報告；起算點為驗收；期限待驗收日與工作日規則確認。交付日不能自動當驗收日。",
+          "en": "Draft duty: submit the report; trigger is acceptance; deadline awaits acceptance date and business-day rules. Delivery is not automatically acceptance."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取獲准的合約與內控文件，限制機密與個資範圍；不自行對外發文、接受條款或出具法律結論。",
+        "en": "Read approved contracts and control documents within confidentiality and privacy limits; do not send external messages, accept terms or issue legal conclusions."
+      },
+      "stop": {
+        "zh": "附件缺漏、修訂衝突或觸發條件不明時，不產生確定履約期限。",
+        "en": "Withhold definitive deadlines for missing attachments, conflicting amendments or unclear triggers."
+      },
+      "related_ids": [
+        "idea-legal-calendar",
+        "idea-legal-diff"
+      ],
+      "references": []
+    },
+    "idea-legal-calendar": {
+      "scenario": {
+        "zh": "義務已確認，需要依約定規則試算提醒日期。",
+        "en": "Confirmed duties need reminder dates calculated under agreed rules."
+      },
+      "steps": [
+        {
+          "zh": "確認起算日、時區與計日規則",
+          "en": "Confirm trigger date, timezone and counting rules"
+        },
+        {
+          "zh": "依提供的行事曆計算",
+          "en": "Calculate using the supplied calendar"
+        },
+        {
+          "zh": "呈現期限與提醒建議供核對",
+          "en": "Present deadlines and reminders for checking"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構規則：起算日不計，次日起算 3 個日曆日；起算日 11/5，同一時區，提醒在期限前一天。",
+          "en": "Fictional rule: exclude trigger day and count 3 calendar days from the next day; trigger Nov 5, one timezone; remind one day before the deadline."
+        },
+        "output": {
+          "zh": "依上述規則：期限 11/8，提醒 11/7。保留起算方式供負責人確認；提醒日期不是已履約證明。",
+          "en": "Under that rule: deadline Nov 8, reminder Nov 7. Retain the counting basis for owner confirmation; a reminder is not evidence of performance."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取獲准的合約與內控文件，限制機密與個資範圍；不自行對外發文、接受條款或出具法律結論。",
+        "en": "Read approved contracts and control documents within confidentiality and privacy limits; do not send external messages, accept terms or issue legal conclusions."
+      },
+      "stop": {
+        "zh": "工作日行事曆、時區或起算規則不明時停止計算，不自行套用法律規則。",
+        "en": "Stop for unclear business calendars, timezones or counting rules; do not invent legal rules."
+      },
+      "related_ids": [
+        "idea-legal-obligations",
+        "idea-legal-audit"
+      ],
+      "references": []
+    },
+    "idea-legal-change": {
+      "scenario": {
+        "zh": "公司取得新版規範，想知道哪些流程需要請法務檢查。",
+        "en": "A new rule document requires identifying processes for legal review."
+      },
+      "steps": [
+        {
+          "zh": "確認新舊文件版本與適用範圍",
+          "en": "Confirm versions and stated scope"
+        },
+        {
+          "zh": "引用差異並連到公司流程",
+          "en": "Cite changes and link relevant internal processes"
+        },
+        {
+          "zh": "列可能影響與專業確認事項",
+          "en": "List possible impacts and professional review questions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構規範舊版要求每年更新資料，新版文字改為每半年；公司的流程表仍是一年一次，生效日待確認。",
+          "en": "A fictional rule changes annual updates to every six months; the internal schedule remains annual and the effective date is unconfirmed."
+        },
+        "output": {
+          "zh": "可能影響：更新頻率與負責人安排。請法務確認適用性、生效日與過渡安排，再決定是否調整流程。此為虛構規範，不描述現行法規。",
+          "en": "Possible impact: update frequency and ownership. Legal confirms applicability, effective date and transition before changing the process. This fictional rule does not describe current law."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取獲准的合約與內控文件，限制機密與個資範圍；不自行對外發文、接受條款或出具法律結論。",
+        "en": "Read approved contracts and control documents within confidentiality and privacy limits; do not send external messages, accept terms or issue legal conclusions."
+      },
+      "stop": {
+        "zh": "來源、版本或適用性未確認時，不聲稱公司已違規或必須立即改動。",
+        "en": "Do not claim noncompliance or mandatory immediate change without confirmed source, version and applicability."
+      },
+      "related_ids": [
+        "idea-legal-audit",
+        "idea-legal-negotiation"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-29a493ec3dad2d",
+          "name": "👨‍⚖️ AI Legal Agent Team (Cloud & Local)",
+          "reason": {
+            "zh": "法律研究與合約分析的 Agent 團隊範例",
+            "en": "Agent team example for legal research and contract analysis"
+          },
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/multi_agent_apps/agent_teams/ai_legal_agent_team/",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅閱讀法律研究 Agent 範例；規範更新、適用性及公司流程對應未驗證。",
+            "en": "A legal-research agent example to read; rule updates, applicability and internal-process mapping are unverified."
+          }
+        }
+      ]
+    },
+    "idea-legal-audit": {
+      "scenario": {
+        "zh": "內控覆核需要把每項要求連到實際執行證據。",
+        "en": "Control review needs each requirement linked to execution evidence."
+      },
+      "steps": [
+        {
+          "zh": "確認控制要求、期間與證據規則",
+          "en": "Confirm control requirements, period and evidence rules"
+        },
+        {
+          "zh": "整理來源並核對缺漏",
+          "en": "Index sources and check omissions"
+        },
+        {
+          "zh": "補件後由稽核覆核留痕",
+          "en": "Resolve gaps and retain the auditor’s review"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構控制要求付款前核准；附件有核准截圖，但無日期與案件識別。",
+          "en": "A fictional control requires approval before payment; an approval screenshot has neither date nor case identifier."
+        },
+        "output": {
+          "zh": "證據索引列為待補：案件識別、核准時間、對應付款時間。不能只因有截圖就判定控制有效，交稽核確認充分性。",
+          "en": "Mark gaps: case identity, approval time and matching payment time. A screenshot alone does not prove control effectiveness; the auditor assesses sufficiency."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取獲准的合約與內控文件，限制機密與個資範圍；不自行對外發文、接受條款或出具法律結論。",
+        "en": "Read approved contracts and control documents within confidentiality and privacy limits; do not send external messages, accept terms or issue legal conclusions."
+      },
+      "stop": {
+        "zh": "來源無法回查、關鍵時間缺漏或證據互相矛盾時，不標記控制通過。",
+        "en": "Do not mark a control passed with untraceable sources, missing key dates or contradictory evidence."
+      },
+      "related_ids": [
+        "idea-legal-obligations",
+        "idea-legal-change"
+      ],
+      "references": []
+    },
+    "idea-legal-negotiation": {
+      "scenario": {
+        "zh": "商務與法務往返很多，需要整理爭點與待決事項。",
+        "en": "Many business/legal exchanges need a concise issue and decision brief."
+      },
+      "steps": [
+        {
+          "zh": "對齊合約版本與往來時間",
+          "en": "Align contract versions and correspondence dates"
+        },
+        {
+          "zh": "分開已知事實、各方立場與假設",
+          "en": "Separate facts, positions and assumptions"
+        },
+        {
+          "zh": "列待決事項及對應依據",
+          "en": "List pending decisions with supporting sources"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構客戶要求 60 天付款，商務希望月底簽約；財務未確認是否可接受，合約仍寫 30 天。",
+          "en": "A fictional customer requests net 60; sales wants a month-end signature; finance has not agreed and the contract still says net 30."
+        },
+        "output": {
+          "zh": "爭點：付款期限。客戶立場為 60 天、商務目標為月底簽約；內部尚未核准讓步。請法務與財務確認，不把目標寫成承諾。",
+          "en": "Issue: payment term. Customer seeks 60 days; sales targets month-end signing; concessions are unapproved. Ask legal and finance; do not present goals as commitments."
+        }
+      },
+      "permissions": {
+        "zh": "只讀取獲准的合約與內控文件，限制機密與個資範圍；不自行對外發文、接受條款或出具法律結論。",
+        "en": "Read approved contracts and control documents within confidentiality and privacy limits; do not send external messages, accept terms or issue legal conclusions."
+      },
+      "stop": {
+        "zh": "談判立場未核准、版本衝突或缺關鍵往來時，不產生可直接對外發送的文字。",
+        "en": "Do not provide send-ready external language with unapproved positions, conflicting versions or missing correspondence."
+      },
+      "related_ids": [
+        "idea-legal-diff",
+        "idea-legal-obligations"
+      ],
+      "references": []
+    },
+    "idea-management-assumptions": {
+      "scenario": {
+        "zh": "外部或內部情況改變，需要重新檢查原策略的假設。",
+        "en": "Changed conditions require revisiting the assumptions behind a strategy."
+      },
+      "steps": [
+        {
+          "zh": "找出原假設與支持依據",
+          "en": "Identify original assumptions and support"
+        },
+        {
+          "zh": "對照新資訊並保留來源",
+          "en": "Compare new information with sources retained"
+        },
+        {
+          "zh": "分開成立、受挑戰與未知",
+          "en": "Separate supported, challenged and unknown assumptions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構策略假設導入需 2 週；最近三案實際用了 4、5、4 週，但案件範圍未確認一致。",
+          "en": "A fictional strategy assumes 2-week onboarding; three recent cases took 4, 5 and 4 weeks, with scope comparability unconfirmed."
+        },
+        "output": {
+          "zh": "假設受到挑戰；先確認案件範圍與延誤原因，再討論是否調整資源。三案不足以證明所有案件都需 4–5 週。",
+          "en": "The assumption is challenged; check scope and causes before discussing resources. Three cases do not establish a universal 4–5-week requirement."
+        }
+      },
+      "permissions": {
+        "zh": "只使用核准範圍的策略、專案與決策資料；保留機密限制，不自行核准預算、調整人力或發布決策。",
+        "en": "Use approved strategy, project and decision records within confidentiality limits; do not approve budgets, reassign staff or publish decisions automatically."
+      },
+      "stop": {
+        "zh": "原假設版本不明或新證據不可比時標為未知，不自動改策略。",
+        "en": "Mark unknowns for unclear assumption versions or incomparable evidence; do not change strategy automatically."
+      },
+      "related_ids": [
+        "idea-management-options",
+        "idea-management-learning"
+      ],
+      "references": []
+    },
+    "idea-management-portfolio": {
+      "scenario": {
+        "zh": "專案各自合理，但同時進行可能超出共享資源。",
+        "en": "Individually reasonable projects may exceed shared capacity when combined."
+      },
+      "steps": [
+        {
+          "zh": "核對需求、期間與資源上限",
+          "en": "Check requirements, periods and resource limits"
+        },
+        {
+          "zh": "比較候選組合及依賴",
+          "en": "Compare candidate combinations and dependencies"
+        },
+        {
+          "zh": "列未納入專案與取捨",
+          "en": "List omitted projects and trade-offs"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例本月可用 100 小時；A 要 60、B 要 50、C 要 30；暫不假設效益高低。",
+          "en": "Example: 100 hours available this month; A needs 60, B 50 and C 30; benefits are not ranked."
+        },
+        "output": {
+          "zh": "A＋B＝110，超出 10；A＋C＝90，餘 10；B＋C＝80，餘 20。還需確認技能與依賴，不能只靠餘額選組合。",
+          "en": "A+B=110, exceeding by 10; A+C=90, leaving 10; B+C=80, leaving 20. Skills and dependencies still need review; spare hours alone do not determine the choice."
+        }
+      },
+      "permissions": {
+        "zh": "只使用核准範圍的策略、專案與決策資料；保留機密限制，不自行核准預算、調整人力或發布決策。",
+        "en": "Use approved strategy, project and decision records within confidentiality limits; do not approve budgets, reassign staff or publish decisions automatically."
+      },
+      "stop": {
+        "zh": "工時、預算或依賴尚未核對時，不把組合標為正式承諾。",
+        "en": "Do not mark combinations committed before reconciling hours, budgets and dependencies."
+      },
+      "related_ids": [
+        "idea-management-options",
+        "idea-management-tradeoff"
+      ],
+      "references": []
+    },
+    "idea-management-execution": {
+      "scenario": {
+        "zh": "指標偏離目標，需要整理相關專案與決策，供主管追問。",
+        "en": "A metric misses target; management needs related projects and decisions for follow-up."
+      },
+      "steps": [
+        {
+          "zh": "核對指標定義與資料期間",
+          "en": "Check metric definition and period"
+        },
+        {
+          "zh": "連接相關專案更新與行動",
+          "en": "Link relevant project updates and actions"
+        },
+        {
+          "zh": "列有依據的觀察與待確認原因",
+          "en": "List supported observations and unconfirmed causes"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構本月導入目標 10 家，完成 6 家；專案更新寫培訓延後，但沒有列影響哪些客戶。",
+          "en": "Fictional monthly onboarding target is 10 accounts, with 6 complete; an update mentions delayed training without naming affected accounts."
+        },
+        "output": {
+          "zh": "差距為 4 家；培訓延後是查證線索，尚不能當成全部原因。請專案負責人補影響清單與下一步。",
+          "en": "Gap: 4 accounts. Delayed training is a lead, not an established full cause. Ask the project owner for affected accounts and next actions."
+        }
+      },
+      "permissions": {
+        "zh": "只使用核准範圍的策略、專案與決策資料；保留機密限制，不自行核准預算、調整人力或發布決策。",
+        "en": "Use approved strategy, project and decision records within confidentiality limits; do not approve budgets, reassign staff or publish decisions automatically."
+      },
+      "stop": {
+        "zh": "找不到原紀錄、指標口徑變動或部門說明矛盾時，標出缺口並交主管確認。",
+        "en": "Flag missing records, changed definitions or contradictory explanations for management review."
+      },
+      "related_ids": [
+        "idea-management-assumptions",
+        "idea-management-learning"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-1116eae4426e10",
+          "name": "its-dart/dart-mcp-server",
+          "reason": {
+            "zh": "任務與專案紀錄",
+            "en": "Task and project records"
+          },
+          "url": "https://github.com/its-dart/dart-mcp-server",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅作專案任務資料的入口；指標與決策之間的分析需另行設計。",
+            "en": "A lead for project/task records; analysis linking metrics and decisions requires separate design."
+          }
+        }
+      ]
+    },
+    "idea-management-options": {
+      "scenario": {
+        "zh": "團隊已有幾個方案，需要在相同準則下看支持與反對理由。",
+        "en": "Several options need supporting and opposing evidence under shared criteria."
+      },
+      "steps": [
+        {
+          "zh": "確認決策問題與不可違反限制",
+          "en": "Confirm the decision question and hard constraints"
+        },
+        {
+          "zh": "同格式整理選項、依據與未知",
+          "en": "Use one format for options, evidence and unknowns"
+        },
+        {
+          "zh": "列反證與尚未比較的取捨",
+          "en": "List counterevidence and unexamined trade-offs"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構選項 A 是自建、B 是採用外部產品；A 可客製但需團隊工時，B 可較快試用但資料部署條件未確認。",
+          "en": "Fictional options: A builds internally; B adopts an external product. A offers customization but needs staff time; B may be trialed sooner, with hosting conditions unknown."
+        },
+        "output": {
+          "zh": "比較項目：投入工時、試用時間、部署限制與維護責任。B 的速度優勢需確認；若不符資料限制，即使快也不能直接採用。",
+          "en": "Compare effort, trial timing, hosting limits and maintenance ownership. Confirm B’s speed advantage; if it fails data constraints, speed does not justify adoption."
+        }
+      },
+      "permissions": {
+        "zh": "只使用核准範圍的策略、專案與決策資料；保留機密限制，不自行核准預算、調整人力或發布決策。",
+        "en": "Use approved strategy, project and decision records within confidentiality limits; do not approve budgets, reassign staff or publish decisions automatically."
+      },
+      "stop": {
+        "zh": "核心限制或必要證據缺漏時，先列待補資訊，不宣稱已有最佳方案。",
+        "en": "With missing hard constraints or essential evidence, list gaps instead of claiming a best option."
+      },
+      "related_ids": [
+        "idea-management-tradeoff",
+        "idea-management-portfolio"
+      ],
+      "references": []
+    },
+    "idea-management-tradeoff": {
+      "scenario": {
+        "zh": "兩個選項分數接近，想知道小幅改權重會不會翻轉結果。",
+        "en": "Close option scores require checking whether modest weight changes reverse the result."
+      },
+      "steps": [
+        {
+          "zh": "確認準則、評分尺度與權重範圍",
+          "en": "Confirm criteria, scoring scales and weight ranges"
+        },
+        {
+          "zh": "依各組權重重新計算",
+          "en": "Recalculate under each weight set"
+        },
+        {
+          "zh": "顯示翻轉與爭議假設",
+          "en": "Show reversals and disputed assumptions"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "示例皆為 0–5 分：A 成本 4、速度 2；B 成本 2、速度 5。成本／速度權重先用 50／50，再用 70／30。",
+          "en": "Example scores, all 0–5: A cost 4, speed 2; B cost 2, speed 5. Compare cost/speed weights 50/50 and 70/30."
+        },
+        "output": {
+          "zh": "50／50：A＝3、B＝3.5；70／30：A＝3.4、B＝2.9，排名翻轉。應討論成本與速度取捨，不把分數當客觀勝負。",
+          "en": "At 50/50: A=3, B=3.5. At 70/30: A=3.4, B=2.9; ranking reverses. Discuss cost/speed priorities rather than treating scores as objective winners."
+        }
+      },
+      "permissions": {
+        "zh": "只使用核准範圍的策略、專案與決策資料；保留機密限制，不自行核准預算、調整人力或發布決策。",
+        "en": "Use approved strategy, project and decision records within confidentiality limits; do not approve budgets, reassign staff or publish decisions automatically."
+      },
+      "stop": {
+        "zh": "評分尺度不一致、權重未核准或硬性限制未檢查時，不輸出採用建議。",
+        "en": "Do not recommend adoption with inconsistent scales, unapproved weights or unchecked hard constraints."
+      },
+      "related_ids": [
+        "idea-management-options",
+        "idea-management-portfolio"
+      ],
+      "references": []
+    },
+    "idea-management-learning": {
+      "scenario": {
+        "zh": "決策執行一段時間後，要回看當初假設與實際結果。",
+        "en": "After implementation, review original assumptions against actual outcomes."
+      },
+      "steps": [
+        {
+          "zh": "保存原選項、假設與核准理由",
+          "en": "Retain options, assumptions and approval rationale"
+        },
+        {
+          "zh": "按原定義對照實際結果",
+          "en": "Compare actual outcomes using original definitions"
+        },
+        {
+          "zh": "記錄失效假設、限制與下次試驗",
+          "en": "Record failed assumptions, limits and the next experiment"
+        }
+      ],
+      "example": {
+        "status": "illustrative_not_executed",
+        "input": {
+          "zh": "虛構決策原估導入 2 週，實際 4 週；期間新增客製需求，沒有分開記錄額外工時。",
+          "en": "A fictional decision estimated 2-week onboarding; actual duration was 4 weeks, with new customization but no separate effort record."
+        },
+        "output": {
+          "zh": "回顧：原時程未達成；需求變動可能相關，影響大小未知。下次先固定試用範圍並記錄額外工時；保留失敗，不事後改寫原估計。",
+          "en": "Review: the original timeline was missed; scope change may matter, but its effect is unknown. Next time fix pilot scope and log extra effort. Retain the miss rather than rewrite the estimate."
+        }
+      },
+      "permissions": {
+        "zh": "只使用核准範圍的策略、專案與決策資料；保留機密限制，不自行核准預算、調整人力或發布決策。",
+        "en": "Use approved strategy, project and decision records within confidentiality limits; do not approve budgets, reassign staff or publish decisions automatically."
+      },
+      "stop": {
+        "zh": "缺原決策紀錄或結果口徑不同時，標出不可比較處，不強行歸因成功或失敗。",
+        "en": "Flag missing decision records or incompatible outcome definitions; do not force success/failure attribution."
+      },
+      "related_ids": [
+        "idea-management-assumptions",
+        "idea-management-execution"
+      ],
+      "references": [
+        {
+          "resource_id": "cap-c61f652ef62f7c",
+          "name": "📑 Notion MCP Agent",
+          "reason": {
+            "zh": "協作頁面互動的應用範例",
+            "en": "Example of interacting with collaboration pages"
+          },
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/mcp_ai_agents/notion_mcp_agent",
+          "status": "unverified_reference",
+          "scope": {
+            "zh": "僅參考協作頁面的互動方式；決策紀錄與回顧模型需另行設計。",
+            "en": "A lead for collaboration-page interaction; decision records and review models need separate design."
+          }
+        }
+      ]
+    }
+  }
+}

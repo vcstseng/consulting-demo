@@ -1,0 +1,76 @@
+{
+  "cap-002c9bfb2252c1": {
+    "input": {
+      "zh": "檔案與文件",
+      "en": "Files and documents"
+    },
+    "output": {
+      "zh": "Markdown 文字",
+      "en": "Markdown text"
+    },
+    "basis_description_en": "Convert files and documents to Markdown for LLMs"
+  },
+  "cap-18ec26a11bd3b7": {
+    "input": {
+      "zh": "時間序列資料",
+      "en": "Time-series data"
+    },
+    "output": {
+      "zh": "機率與分位數預測",
+      "en": "Probabilistic and quantile forecasts"
+    },
+    "basis_description_en": "Probabilistic time-series forecasting: quantile forecasts from Chronos-2, TimesFM 2.5, Toto 2, TiRex-2 and IBM Granite foundation models, routed to one model, named explicitly, or ensembled. Remote server with an npm stdio bridge."
+  },
+  "cap-1eaff2b0f70497": {
+    "input": {
+      "zh": "CSV 或 Excel 檔案",
+      "en": "CSV or Excel files"
+    },
+    "output": null,
+    "basis_description_en": "Ask questions of any CSV or Excel file in plain English"
+  },
+  "cap-21061df722cd7d": {
+    "input": {
+      "zh": "資料倉儲",
+      "en": "A data warehouse"
+    },
+    "output": {
+      "zh": "回答、圖表與 SQL",
+      "en": "Answers, charts and SQL"
+    },
+    "basis_description_en": "AI data analyst: answers, charts and SQL from your warehouse"
+  },
+  "cap-32d759133998d6": {
+    "input": {
+      "zh": "CSV 或串接服務的資料",
+      "en": "CSV files or connected service data"
+    },
+    "output": {
+      "zh": "分析、預測與互動 HTML 報告",
+      "en": "Analysis, forecasts and interactive HTML reports"
+    },
+    "basis_description_en": "Statistical analysis, forecasting and ML on CSV files or live data from Shopify, Stripe, GA4 and more, with interactive HTML reports."
+  },
+  "cap-4ee2ee8570fab8": {
+    "input": {
+      "zh": "試算表",
+      "en": "Spreadsheets"
+    },
+    "output": {
+      "zh": "公式、圖表與資料轉換",
+      "en": "Formulas, charts and data transformations"
+    },
+    "basis_description_en": "Spreadsheet manipulation: formulas, charts, data transformations."
+  },
+  "cap-b3b3817a191586": {
+    "input": {
+      "zh": "發票與收據檔案",
+      "en": "Invoice and receipt files"
+    },
+    "output": {
+      "zh": "擷取資訊與統一命名的檔案",
+      "en": "Extracted information and consistently renamed files"
+    },
+    "basis_description_en": "Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently."
+  }
+}

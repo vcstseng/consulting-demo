@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>研究路線圖 — 99 Problems</title><meta name="description" content="從固定顧問團隊出發，研究依問題設計流程與演化能力：現有證據、七階段路線，以及安全與治理要求。"><link rel="stylesheet" href="../../assets/css/site.css"><link rel="stylesheet" href="../../assets/css/roadmap.css"><link rel="stylesheet" href="../../assets/css/presentation.css?v=freeze-20261027"></head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="主要導覽">
+    <a href="../../pages/problem-map/index.html">問題地圖</a>
+    <a href="../../pages/methodology/index.html">方法論</a>
+    <a href="../practice/index.html" data-solving-practice>解題實踐</a> <a href="../roadmap/index.html" data-future-roadmap aria-current="page">研究路線圖</a> <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+<main class="problem-detail" id="roadmap-content">
+<section class="page-head">
+<h1>研究路線圖</h1>
+<p class="subtitle">From Fixed Teams to Problem-driven, Evolving Capabilities</p>
+<p class="intro">我們希望從預先定義的顧問團隊出發，逐步研究系統如何依問題設計流程、組織所需能力，並把可驗證的執行經驗轉化為對未來問題更有效的解法。</p>
+<p>這份路線圖說明研究方向，以及推進各階段前需要的證據。它不代表系統已能自主演化，也不是承諾交付日期的開發排程；是否推進，取決於實際需求與實驗結果。</p>
+<p>更新：2026-10-27 · 持續驗證現有能力，依證據決定下一步</p>
+</section>
+<section class="presentation-overview" aria-labelledby="roadmap-overview"><h2 id="roadmap-overview">先看重點</h2><ul><li><strong>目前有什麼</strong>限定案例與相近情境的重用證據；自主演化仍未獲證明。</li><li><strong>接下來做什麼</strong>有具體需求或值得驗證的缺口時，再投入下一輪。</li><li><strong>動態規劃狀態</strong>僅第二階段暫緩，等待需求證據；其餘保留為研究方向。</li></ul></section>
+<nav class="roadmap-toc" aria-label="本頁目錄">
+<h2>本頁目錄</h2>
+<ul>
+<li><a href="#position">現在的位置</a>
+</li>
+<li><a href="#why">為什麼研究</a>
+</li>
+<li><a href="#principles">穩定規則與可變解法</a>
+</li>
+<li><a href="#stages">七個研究階段</a>
+</li>
+<li><a href="#planning-status">動態規劃的目前判斷</a>
+</li>
+<li><a href="#restart">何時重啟</a>
+</li>
+<li><a href="#evaluation">進步與停止的依據</a>
+</li>
+</ul>
+</nav><div class="detail-stack">
+<section class="detail-section" id="position"><div class="detail-title">
+<h2>現在的位置：可擴充，但尚未演化</h2></div><div class="detail-body solution-detail">
+<p>目前以預先定義的代理角色（Agents）、技能（Skills）、工具（Tools）與既有流程處理限定案例。改善由人類決定方向，與 AI 助手共同實作，再以程式和測試驗證。自主流程設計、能力生成與跨案例演化，仍未獲得證明。</p>
+<p><a href="../problems/CS02/index.html#cs02-experiment">CS02</a> 將合成政策、風險訊號與分流規則封裝在工作代理與工具中，再由獨立實作的驗證程式查核；<a href="../problems/E93/index.html#e93-experiment">E93</a> 將來源追溯與相依查核封裝為專用能力。這些實作能檢查限定範圍的結果與控制，尚不能證明團隊會自行設計新方法。角色審查仍由同一助手模擬，並非彼此隔離的模型獨立評閱。</p>
+<p>99 Problems 提供研究問題空間，不代表全部問題已經能由系統解決。既有案例與結果可在<a href="../practice/index.html">解題實踐</a>查看；本頁說明未來要研究什麼，以及何時值得推進。</p><div class="data-box" id="current-evidence">
+<h3>目前在做：換個簡單情境，驗證流程是否仍然有效</h3>
+<p>2026-10-27 已完成 CS02 工單分流、E93 證據來源查核、CS07 授權客服查詢與 F03 成本分析的相近情境測試。每輪先凍結既有能力、寫下驗收標準，再檢查結果與相關控制；發現失敗時保留紀錄，修正與重測分開進行。不刻意增加問題難度，也不先增加角色或工具。</p>
+<p>這些測試支持限定範圍的重用，不代表新增解決四題、獨立盲測或自主學習。正確停止、轉人工與拒答，也不算問題已解決。後續有具體需求或觀察到缺口時，再決定是否投入新測試。</p>
+<p><a href="../practice/index.html#f03-reuse-milestone">查看重用里程碑紀錄與限制 →</a>
+</p></div></div>
+</section>
+<section class="detail-section" id="why"><div class="detail-title">
+<h2>為什麼要研究，而不是直接增加更多 Agent？</h2></div><div class="detail-body solution-detail">
+<p>不同問題可能需要不同的取證策略、分工與執行順序。固定角色可能限制拆題方式；反覆由人類新增專用工具，也可能累積成難維護的能力集合。若經驗只留在單一案例，下一題未必做得更好。</p>
+<p>這些都是待驗證的限制，不是固定架構必然失效的證明。對清楚、穩定的任務，固定流程可能更便宜、更可靠。動態系統必須證明新增自由度帶來的收益足以抵銷規劃、查核、維護與風險成本。</p></div>
+</section>
+<section class="detail-section" id="principles"><div class="detail-title">
+<h2>核心原則：穩定的規則，可變的解法</h2></div><div class="detail-body solution-detail"><div class="data-split"><div class="data-box">
+<h3>研究中允許調整的解法</h3>
+<ul>
+<li>問題拆解、工作流程與取證順序。</li>
+<li>角色參與、分工與協作方式。</li>
+<li>技能的選擇與組合；後續才研究修改與生成。</li>
+<li>工具的選擇；後續才研究受控生成。</li>
+<li>執行中因新證據而調整策略。</li>
+</ul></div><div class="data-box">
+<h3>必須保持受控</h3>
+<ul>
+<li>安全要求、資料與工具的存取權限。</li>
+<li>治理規則、授權與責任歸屬。</li>
+<li>目標與驗收標準的訂定、變更及核准程序。</li>
+<li>證據與品質要求。</li>
+<li>介面契約及版本管理。</li>
+<li>記憶來源、版本與可追溯性。</li>
+<li>成本、時間、停止條件及資源上限。</li>
+<li>變更審核、成果失效與恢復規則。</li>
+</ul></div></div>
+<p>上述可變項目是分階段研究的範圍，並非目前全部已實作。穩定的規則仍可正式修訂，但不能由解題代理在執行時自行放寬。治理規則若需修訂，應走另外受控的變更程序。生成計畫不等於取得權限；提出改變的人也不能自行修改評分標準。治理應透過執行前檢查、執行時攔截與交付前驗證持續成立，不是要求所有案件走同樣七個節點。</p></div>
+</section>
+<section id="stages">
+<h2>分階段研究：每一步都需要自己的證據</h2>
+<p>以下順序說明各階段之間的研究依賴，不是承諾的開發排程。第一階段持續累積基準；第二階段等待實際需求證據；第三至七階段保留為長期探索。</p><div class="detail-stack">
+<section class="detail-section roadmap-stage" id="phase-1" data-research-phase="1"><div class="detail-title"><span class="detail-num">01</span>
+<h3>建立固定團隊的實證基準</h3></div>
+<p class="roadmap-status" data-phase-status="1"><span class="meta-pill">持續累積基準</span>
+</p>
+<details class="roadmap-phase-details"><summary>展開研究問題、驗證方式與風險</summary><dl><div>
+<dt>研究問題</dt>
+<dd>現有系統在哪些範圍有效，哪些失敗來自資料、能力或流程？先了解基線，而非預設要換成動態系統。</dd></div><div>
+<dt>預期行為</dt>
+<dd>沿用現有系統解題，保留版本、證據、品質結果、成本、人工介入、失敗與能力缺口。證據不足時停止、要求補充資料或轉交人類判斷。</dd></div><div>
+<dt>驗證方式</dt>
+<dd>用可重現案例與預先訂定的標準查核結果；區分程式測試、領域品質、真人審查與商業成效。</dd></div><div>
+<dt>進入下一階段的條件</dt>
+<dd>能重現基線，且觀察到值得比較的流程限制；不是只因固定架構看起來不夠先進就推進。</dd></div><div>
+<dt>主要失敗風險</dt>
+<dd>合成案例過於容易、共享上下文造成偏差，或只記成功和測試數量，沒有成本與人工介入的紀錄。</dd></div><div>
+<dt>具體例子</dt>
+<dd>CS02 重用測試曾發現工具與驗證器使用不同日期。先保留失敗，再明確傳入同一時間並重測；後續以相近新情境檢查重用能力。這是人類主導的改善，不是自主學習。</dd></div>
+</dl></details>
+</section>
+<section class="detail-section roadmap-stage" id="phase-2" data-research-phase="2"><div class="detail-title"><span class="detail-num">02</span>
+<h3>依問題設計流程</h3></div>
+<p class="roadmap-status" data-phase-status="2"><span class="meta-pill">暫緩（Deferred）— 待有實際需求證據</span>
+</p>
+<details class="roadmap-phase-details"><summary>展開研究問題、驗證方式與風險</summary><dl><div>
+<dt>研究問題</dt>
+<dd>在相同問題、資料、能力池及資源限制下，自行產生流程能否比公平的固定流程更有效？</dd></div><div>
+<dt>預期行為</dt>
+<dd>只使用既有代理、技能與工具，依問題決定參與者、順序、依賴與條件分支；新證據出現時提出有版本、有理由的受控調整。</dd></div><div>
+<dt>驗證方式</dt>
+<dd>計畫須可檢查與執行，不只是文字描述。與未被刻意削弱的固定流程基準比較，計入規劃、驗證、失敗、重試及重新規劃成本；案例專用人工模板不能算自主規劃成果。</dd></div><div>
+<dt>進入下一階段的條件</dt>
+<dd>先找到真實且有意義的流程選擇，再證明品質與控制不退步，收益能抵銷額外成本。流程更多樣或步驟更少本身不算成功。</dd></div><div>
+<dt>主要失敗風險</dt>
+<dd>規劃器（Planner）只重述工具內部分支，或依賴預寫的案例模板、削弱比較基準、忽略規劃成本，才顯得更有效。</dd></div><div>
+<dt>具體例子</dt>
+<dd>若同一能力池能先查來源或先計算，而證據條件會實質影響後續成本與品質，才值得比較；目前已檢查案例尚未找到這種必要性。</dd></div>
+</dl></details>
+</section>
+<section class="detail-section roadmap-stage" id="phase-3" data-research-phase="3"><div class="detail-title"><span class="detail-num">03</span>
+<h3>調整角色與技能</h3></div>
+<p class="roadmap-status" data-phase-status="3"><span class="meta-pill">長期探索</span>
+</p>
+<details class="roadmap-phase-details"><summary>展開研究問題、驗證方式與風險</summary><dl><div>
+<dt>研究問題</dt>
+<dd>當流程變動不足以滿足反覆出現的需求，修改或生成角色與技能，是否真的帶來可驗證的新能力？</dd></div><div>
+<dt>預期行為</dt>
+<dd>先組合既有能力，必要時產生任務專屬角色或技能，作為有版本與來源的臨時資產。角色描述不授予新的資料或工具權限。</dd></div><div>
+<dt>驗證方式</dt>
+<dd>固定其他條件，比較修改前後能完成的工作、證據品質與失敗表現；區分換提示語、換角色名稱與可驗證的新能力。</dd></div><div>
+<dt>進入下一階段的條件</dt>
+<dd>已確認流程本身不足，且新能力有可重現的收益、清楚適用範圍與受控權限，才研究更高風險的工具生成。</dd></div><div>
+<dt>主要失敗風險</dt>
+<dd>角色無限增生、同一模型換名字被當成獨立專家，或只增加敘述品質而沒有改善判斷。</dd></div><div>
+<dt>具體例子</dt>
+<dd>任務臨時增加「政策衝突審查」技能，必須證明能抓到原本會漏掉的衝突，而不是只多寫一段政策摘要。</dd></div>
+</dl></details>
+</section>
+<section class="detail-section roadmap-stage" id="phase-4" data-research-phase="4"><div class="detail-title"><span class="detail-num">04</span>
+<h3>受控工具生成</h3></div>
+<p class="roadmap-status" data-phase-status="4"><span class="meta-pill">長期探索</span>
+</p>
+<details class="roadmap-phase-details"><summary>展開研究問題、驗證方式與風險</summary><dl><div>
+<dt>研究問題</dt>
+<dd>既有工具確實不足時，生成特定計算器、檢查器或模擬器，能否安全且值得？</dd></div><div>
+<dt>預期行為</dt>
+<dd>把生成、測試、核准與執行分開。限定輸入輸出、依賴、資源與權限，保留版本；未核准程式不能直接成為執行能力。</dd></div><div>
+<dt>驗證方式</dt>
+<dd>在適當隔離環境以獨立測例、錯誤輸入、權限及依賴檢查驗證，並把維護成本與既有工具替代方案納入比較。</dd></div><div>
+<dt>進入下一階段的條件</dt>
+<dd>新工具通過功能與安全要求，知道誰負責維護、何時停用；再評估是否值得保存與重用。</dd></div><div>
+<dt>主要失敗風險</dt>
+<dd>可執行就被當作可信、測試與程式共用錯誤假設、依賴或權限擴張，以及一次性程式變成長期負擔。</dd></div><div>
+<dt>具體例子</dt>
+<dd>遇到未涵蓋的成本公式時，可研究生成一個窄計算器；但不能以它自己的輸出驗證自己，也不能因此取得企業系統寫入權限。</dd></div>
+</dl></details>
+</section>
+<section class="detail-section roadmap-stage" id="phase-5" data-research-phase="5"><div class="detail-title"><span class="detail-num">05</span>
+<h3>組織記憶與能力生命週期</h3></div>
+<p class="roadmap-status" data-phase-status="5"><span class="meta-pill">長期探索</span>
+</p>
+<details class="roadmap-phase-details"><summary>展開研究問題、驗證方式與風險</summary><dl><div>
+<dt>研究問題</dt>
+<dd>哪些經驗與臨時能力值得保留，如何在正確情境重用，又何時應淘汰？</dd></div><div>
+<dt>預期行為</dt>
+<dd>記錄來源、授權、適用條件、版本、成功及失敗；區分任務臨時資產與經審核的能力庫，管理檢索、升格、停用與依賴。</dd></div><div>
+<dt>驗證方式</dt>
+<dd>比較有無相關經驗時的後續表現，測試錯誤、過期、不適用記憶的拒用與回復；不只量儲存筆數。</dd></div><div>
+<dt>進入下一階段的條件</dt>
+<dd>能追溯保留理由，並有重用價值與淘汰證據；錯誤記憶不會無限制傳播，才研究系統化演化。</dd></div><div>
+<dt>主要失敗風險</dt>
+<dd>錯誤經驗污染、過期政策被重用、客戶資料未經授權跨案使用，或能力庫變大卻更難選擇。</dd></div><div>
+<dt>具體例子</dt>
+<dd>「相同來源被多次轉載不等於獨立證據」可以成為有來源的查核經驗；單一客戶的私有政策則不能自動升格為全域規則。</dd></div>
+</dl></details>
+</section>
+<section class="detail-section roadmap-stage" id="phase-6" data-research-phase="6"><div class="detail-title"><span class="detail-num">06</span>
+<h3>以證據驅動的演化</h3></div>
+<p class="roadmap-status" data-phase-status="6"><span class="meta-pill">長期探索</span>
+</p>
+<details class="roadmap-phase-details"><summary>展開研究問題、驗證方式與風險</summary><dl><div>
+<dt>研究問題</dt>
+<dd>過去執行結果能否促成改變，並改善後續未參與調整的案例，而非只適配眼前測試？</dd></div><div>
+<dt>預期行為</dt>
+<dd>提出改變、保留候選與舊版，依固定評估程序驗證，再保留有效改變或淘汰無效改變。動態生成是每題產生配置；演化還要求過去結果改善未來表現。</dd></div><div>
+<dt>驗證方式</dt>
+<dd>與未改動基線比較，使用未參與調整案例、跨能力回歸及重複觀察，計入提案、失敗與維護成本。提案者不能自行修改評分。</dd></div><div>
+<dt>進入下一階段的條件</dt>
+<dd>改善可重複、不是只對已見案例有效，且沒有犧牲其他能力或控制，才進入更廣的遷移研究。</dd></div><div>
+<dt>主要失敗風險</dt>
+<dd>對評分集過擬合、只保留有利結果、改門檻來過關，或局部變好卻破壞其他領域。</dd></div><div>
+<dt>具體例子</dt>
+<dd>一次客服失敗引出的能力調整，應在之後未用來調整的工單上持續有效，同時保留 E93 的來源查核能力；只讓原題過關不算演化。</dd></div>
+</dl></details>
+</section>
+<section class="detail-section roadmap-stage" id="phase-7" data-research-phase="7"><div class="detail-title"><span class="detail-num">07</span>
+<h3>Problem X：遷移至已知範圍之外</h3></div>
+<p class="roadmap-status" data-phase-status="7"><span class="meta-pill">長期探索 · 正式 Problem X 保留</span>
+</p>
+<details class="roadmap-phase-details"><summary>展開研究問題、驗證方式與風險</summary><dl><div>
+<dt>研究問題</dt>
+<dd>累積的方法與能力能否處理未參與開發、規劃器調整或能力選擇設計的新問題？</dd></div><div>
+<dt>預期行為</dt>
+<dd>正式 Problem X 不作為早期流程開發案例。測試時保留完整版本與接觸紀錄，允許誠實指出資料不足或能力缺口。</dd></div><div>
+<dt>驗證方式</dt>
+<dd>評估未見案例的結果、證據、控制、成本與人工介入，分開診斷流程失敗、資料不足和工具缺口。結果一旦用於調整，該案例就不再算未見。</dd></div><div>
+<dt>進入下一階段的條件</dt>
+<dd>需要跨不同新問題的持續證據與明確適用界線，才擴大能力主張；單一 Problem X 成功不能證明普遍泛化。</dd></div><div>
+<dt>主要失敗風險</dt>
+<dd>測試污染、題目其實已被間接看過、用新工具補完後仍宣稱原系統遷移成功，或把合理停止算成問題已解決。</dd></div><div>
+<dt>具體例子</dt>
+<dd>陌生營運問題若有足夠資料和既有能力，測能否重組解法；若缺關鍵資料，應說清楚缺口，而不是為了展示遷移硬交答案。</dd></div>
+</dl></details>
+</section></div>
+</section>
+<section class="detail-section" id="planning-status"><div class="detail-title">
+<h2>為什麼目前暫不啟動動態規劃？</h2></div><div class="detail-body solution-detail">
+<p>在已檢查的 CS02 與 E93 案例中，關鍵分支多已封裝在工作代理與工具內，再由驗證程式查核。尚未找到足以支持新增規劃器的實質流程選擇；現在加入規劃器，可能只增加成本並重述既有邏輯。今天的相近情境測試也未提供啟動動態規劃的新證據。</p>
+<p><strong>僅第二階段的動態規劃目前暫緩，等待實際需求證據。</strong>整份研究路線圖並未暫停：固定基準仍可持續累積，其他階段保留為研究方向。這個判斷只適用於已檢查的案例與能力，不代表所有 99 Problems 都不需要動態規劃；也不表示動態規劃已排定實作。</p></div>
+</section>
+<section class="detail-section" id="restart"><div class="detail-title">
+<h2>出現什麼訊號，才重新啟動？</h2></div><div class="detail-body solution-detail">
+<ul>
+<li>同一能力池下有多種取證或解題策略，選擇會影響品質、成本或時間。</li>
+<li>人類反覆需要調整流程與角色配置，而不是偶發的案例例外。</li>
+<li>不同案例重複出現相似的能力缺口。</li>
+<li>固定流程出現可觀察的無效工作或不必要人工介入。</li>
+</ul>
+<p>不為啟動研究而刻意拆細工具、增加步驟、提高題目難度或削弱比較基準。重啟時重新確認最小值得驗證的變動，不一次開放全部能力；若既有能力不足以公平比較，先承認缺口。</p></div>
+</section>
+<section class="detail-section" id="evaluation"><div class="detail-title">
+<h2>如何判斷進步，以及何時停止</h2></div><div class="detail-body solution-detail">
+<ul>
+<li>結果正確性、完整度與證據品質。</li>
+<li>權限、查核、版本、停止與恢復控制是否持續有效。</li>
+<li>包含規劃、驗證、失敗與重規劃的總成本及時間。</li>
+<li>必要與不必要的人工介入。</li>
+<li>未參與開發案例的表現，及測試污染情況。</li>
+<li>收益是否可重複，是否造成其他能力退步。</li>
+</ul>
+<p>有效結論可能是：固定流程已足夠；動態配置只對部分問題有效；新增自由度無法抵銷成本與風險；或目前證據不足。這些都應如實保留，不以持續增加功能代替研究成功。</p>
+<p>實驗開始前訂定通過、失敗與結果不明確的規則。數值門檻若沒有依據，先以開發案例校準，再凍結門檻做保留測試；不捏造完成日期、百分比或效益。後續是否投入，由這些證據決定。</p></div>
+</section></div>
+<p class="roadmap-return"><a href="../practice/index.html">查看目前實踐與案例 →</a>
+</p>
+</main>
+<script src="../../assets/js/site.js?v=roadmap-20261027">
+</script></body></html>

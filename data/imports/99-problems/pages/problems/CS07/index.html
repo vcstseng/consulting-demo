@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CS07 · 客戶問題進來了，現在到底該給他什麼正確答案或解法？ — 99 Problems</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+</head>
+<body>
+<header class="site-header site-shell">
+  <a class="brand" href="../../../index.html">
+    <span class="brand-mark">99</span>
+    <span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="../../problem-map/index.html">問題地圖</a>
+    <a href="../../methodology/index.html">方法論</a>
+    <a href="../../practice/index.html" data-solving-practice>解題實踐</a> <a href="../../roadmap/index.html" data-future-roadmap>研究路線圖</a> <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+  </nav>
+</header>
+
+<main class="problem-detail">
+  <a class="problem-back" href="../../problem-map/index.html?group=business&category=Customer%20Service">← 回問題地圖</a>
+
+  <section class="problem-hero">
+    <div>
+      <div class="problem-meta">
+        <span class="meta-pill id">CS07</span>
+        <span class="meta-pill">客服</span>
+      </div>
+      <h1>客戶問題進來了，現在到底該給他什麼正確答案或解法？</h1>
+      <p class="problem-summary">客服要正確解決一個案件，往往必須同時理解客戶問題、產品/版本、合約或權益、公司Policy、Troubleshooting步驟與歷史處理經驗；這些資訊分散在多個系統與文件中，使第一線人員容易給出不完整、過期或不適用於該客戶的答案。</p>
+    </div>
+  </section>
+
+  <div class="detail-stack">
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">01</span><h2>問題是什麼？</h2></div>
+      <div class="detail-body"><p>客服要正確解決一個案件，往往必須同時理解客戶問題、產品/版本、合約或權益、公司Policy、Troubleshooting步驟與歷史處理經驗；這些資訊分散在多個系統與文件中，使第一線人員容易給出不完整、過期或不適用於該客戶的答案。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">02</span><h2>需要知道什麼？</h2></div>
+      <div class="detail-body">
+        <p class="section-explanation">要給客戶正確答案，不能只看 FAQ。還要知道客戶是哪個版本、有哪些權益、SLA／Warranty、目前有效的 Policy、SOP、歷史 Resolution 和服務紀錄，才能避免給出過期或不適用的處理方式。</p>
+        <div class="data-split">
+          <div class="data-box"><h3>主要資料</h3><p>Ticket/對話、客戶與產品/版本、Entitlement/SLA/Warranty、Policy、KB/SOP、歷史Resolution與Service History</p></div>
+          <div class="data-box"><h3>既有系統</h3><p>CRM、Ticketing/CCaaS、KB/DMS、Product/Entitlement System、Billing/Order Systems</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section ai-angle">
+      <div class="detail-title"><span class="detail-num">03</span><h2>AI 改變了什麼？</h2></div>
+      <div class="detail-body"><p>客服解法高度依賴非結構化Knowledge與Case Context；RAG/LLM可整合產品、Policy與歷史案例形成具來源的Resolution Recommendation，但Entitlement、金額、資格與其他可形式化條件應由Deterministic Rules驗證，Evidence不足或高風險案件必須Abstain/Escalate。</p></div>
+    </section>
+
+    <section class="detail-section">
+      <div class="detail-title"><span class="detail-num">04</span><h2>怎麼解？</h2></div>
+      <div class="detail-body solution-detail">
+        <p class="section-explanation">先理解案件與客戶情境，再檢索目前有效的知識、政策和相似已解決案例；可形式化的資格與權益交由規則驗證。證據足夠時提供具來源的處理步驟，不足或風險高時就停下來交給人工。</p>
+        <div class="solution-core-block">
+          <span class="solution-core-label">Solution Core</span>
+          <p class="solution-core">Case Understanding + Entitlement-Aware RAG + Policy/Procedure Reasoning + Resolution Recommendation + Abstention/Escalation</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trio-row">
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">05</span><h2>AI 做什麼？</h2></div>
+        <div class="detail-body"><p>先解析客戶問題、產品版本與Account Context，檢索目前有效的KB、SOP、Policy與相似Resolved Cases，再以Entitlement/Eligibility Rules確認該客戶可使用的處理方式，提供具Citation的Resolution Steps並標示Evidence Gap；無法可靠回答或涉及高風險承諾時轉交人工。</p></div>
+      </section>
+      <section class="detail-section">
+        <div class="detail-title"><span class="detail-num">06</span><h2>人決定什麼？</h2></div>
+        <div class="detail-body"><p>Customer Service、Product與Policy Owners定義Approved Sources與處理規則，處理安全、法律、重大退款/補償與模糊例外，並對對外承諾及最終Resolution負責。</p></div>
+      </section>
+      <section class="detail-section detail-outcome">
+        <div class="detail-title"><span class="detail-num">07</span><h2>最後改善什麼？</h2></div>
+        <div class="detail-body"><p>提高First-Contact Resolution與答案一致性，減少因使用錯誤、過期或不適用資訊造成的重複聯繫、Escalation與Customer Harm。</p></div>
+      </section>
+    </div>
+  </div>
+
+
+<div class="detail-stack"><section class="detail-section" id="cs07-reuse-followup"><div class="detail-title"><h2>換個簡單情境：新產品的授權客服答案</h2></div><div class="detail-body solution-detail"><p><strong>2026-10-27：兩個直接重用條件通過，四個拒絕提供答案的條件符合預期。</strong>新產品的不同版本取得各自正確的授權步驟；文件有效期最後一天仍可使用。帳戶停用、隔天文件過期、同時有兩份適用文件或角色未授權時，均停止提供答案，不任意挑選文件。</p><details><summary>權限邊界、證據與限制</summary><p>各條件一次完成、一次查詢；結果中未出現合成的內部文件識別碼或內容。客戶、角色、版本與日期由主程式指定，工單內容不能自行授權。沒有修改既有能力、呼叫外部模型或執行客服步驟。這是同一助手編製與檢查的合成情境，不是盲測、正式 Problem X、任意問答、完整七關或正式環境的權限保證。正確拒答不算解決客戶問題；完整顧問方案仍未公開。</p><p><a href="../../../data/consulting/CS07/reuse-product.json">新產品情境：合成輸入、預期與結果</a> · <a href="../../practice/index.html#reuse-milestone">三類能力的重用里程碑</a></p></details></div></section></div>
+<!-- framework-problem:start -->
+<div class="detail-stack"><section class="detail-section" id="framework-approach"><div class="detail-title"><h2>這個問題如何透過 Agent Framework 處理？</h2></div><div class="detail-body solution-detail"><p data-case-maturity="local_workflow_demo"><strong>目前進度：流程已演練 · 完整案例待公開</strong><br>已公開限定的授權查詢重用測試；完整顧問方案與真實客戶成果尚未公開。</p><p>先釐清決策與證據需求，再組合顧問 Skills 與允許的 Tools，透過人機協作、安全邊界與治理審查形成方案。框架提供共用方法，不代表本題所有能力都已實作或成果已驗證。</p><p><a href="../../practice/index.html#agent-framework">了解共用解題框架 →</a></p><p><a href="https://www.linkedin.com/in/vincent-tseng-5aa8b832/" data-consulting-contact target="_blank" rel="noopener noreferrer">在 LinkedIn 討論這個問題 ↗</a></p><p>可先提供 CS07 題號、情境與想做的決策；初次聯絡以概況為主，不必提供機密資料。</p></div></section></div>
+<!-- framework-problem:end -->
+<nav class="problem-footer-nav" aria-label="問題導覽">
+    <a href="../CS06/index.html">← CS06　哪些 B2B 客戶的關係已出現風險？哪些訊號值得 CSM 現在注意？</a>
+    <a class="to-map" href="../../problem-map/index.html?group=business&category=Customer%20Service">回問題地圖</a>
+    <a class="next" href="../SC01/index.html">SC01　設計一直改，工廠和供應商手上拿的是不是同一版、最新一版？ →</a>
+  </nav>
+</main>
+
+<script src="../../../data/problems.js"></script>
+<script src="../../../data/extensions.js"></script>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,2209 @@
+{
+  "schema_version": "0.1-concepts",
+  "created_at": "2026-11-04",
+  "basis": "Imagined capability concepts requested by the user. Not implemented software, validated solutions or verified repo matches.",
+  "domains": [
+    {
+      "work_id": "business-sales",
+      "label": {
+        "zh": "銷售",
+        "en": "Sales"
+      },
+      "stages": [
+        {
+          "id": "stage-sales-1",
+          "label": {
+            "zh": "找對客戶",
+            "en": "Find the right prospects"
+          },
+          "concept_ids": [
+            "idea-sales-fit",
+            "idea-sales-priority"
+          ]
+        },
+        {
+          "id": "stage-sales-2",
+          "label": {
+            "zh": "推進商機與報價",
+            "en": "Develop deals and quotes"
+          },
+          "concept_ids": [
+            "idea-sales-discovery",
+            "idea-sales-margin"
+          ]
+        },
+        {
+          "id": "stage-sales-3",
+          "label": {
+            "zh": "風險與商機檢討",
+            "en": "Review risks and pipeline"
+          },
+          "concept_ids": [
+            "idea-sales-risk",
+            "idea-sales-review"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "resource_id": "cap-2d974958692750",
+          "name": "apolloio/apollo-mcp-plugin",
+          "reason": {
+            "zh": "潛在客戶資料蒐集",
+            "en": "Prospect data collection"
+          },
+          "url": "https://github.com/apolloio/apollo-mcp-plugin",
+          "status": "unverified_reference"
+        },
+        {
+          "resource_id": "cap-23f72a5f9f7bc9",
+          "name": "Lead Research Assistant",
+          "reason": {
+            "zh": "潛在客戶研究與聯繫策略指引",
+            "en": "Prospect research and outreach guidance"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/lead-research-assistant/",
+          "status": "unverified_reference"
+        }
+      ]
+    },
+    {
+      "work_id": "business-marketing",
+      "label": {
+        "zh": "行銷",
+        "en": "Marketing"
+      },
+      "stages": [
+        {
+          "id": "stage-marketing-1",
+          "label": {
+            "zh": "理解受眾與訊息",
+            "en": "Understand audiences and messages"
+          },
+          "concept_ids": [
+            "idea-marketing-audience",
+            "idea-marketing-brief"
+          ]
+        },
+        {
+          "id": "stage-marketing-2",
+          "label": {
+            "zh": "規劃與觀察活動",
+            "en": "Plan and monitor campaigns"
+          },
+          "concept_ids": [
+            "idea-marketing-budget",
+            "idea-marketing-watch"
+          ]
+        },
+        {
+          "id": "stage-marketing-3",
+          "label": {
+            "zh": "會員互動與檢討",
+            "en": "Engagement and campaign review"
+          },
+          "concept_ids": [
+            "idea-marketing-retention",
+            "idea-marketing-review"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "resource_id": "cap-302dea6690a6ff",
+          "name": "Competitive Ads Extractor",
+          "reason": {
+            "zh": "競品廣告研究",
+            "en": "Competitor ad research"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/competitive-ads-extractor/",
+          "status": "unverified_reference"
+        },
+        {
+          "resource_id": "cap-fd440a6e84889a",
+          "name": "Content Research Writer",
+          "reason": {
+            "zh": "內容研究與撰稿指引",
+            "en": "Content research and writing guidance"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/content-research-writer/",
+          "status": "unverified_reference"
+        }
+      ]
+    },
+    {
+      "work_id": "business-finance",
+      "label": {
+        "zh": "財務",
+        "en": "Finance"
+      },
+      "stages": [
+        {
+          "id": "stage-finance-1",
+          "label": {
+            "zh": "分析成本與現金",
+            "en": "Analyze cost and cash"
+          },
+          "concept_ids": [
+            "idea-finance-cost",
+            "idea-finance-cash"
+          ]
+        },
+        {
+          "id": "stage-finance-2",
+          "label": {
+            "zh": "檢視假設與獲利",
+            "en": "Review assumptions and profit"
+          },
+          "concept_ids": [
+            "idea-finance-assumptions",
+            "idea-finance-profit"
+          ]
+        },
+        {
+          "id": "stage-finance-3",
+          "label": {
+            "zh": "查證與核准",
+            "en": "Investigate and approve"
+          },
+          "concept_ids": [
+            "idea-finance-investigate",
+            "idea-finance-invoice"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "resource_id": "cap-ac8ea957fa622a",
+          "name": "XeroAPI/xero-mcp-server",
+          "reason": {
+            "zh": "既有會計資料存取",
+            "en": "Existing accounting data access"
+          },
+          "url": "https://github.com/XeroAPI/xero-mcp-server",
+          "status": "unverified_reference"
+        },
+        {
+          "resource_id": "cap-b3b3817a191586",
+          "name": "Invoice Organizer",
+          "reason": {
+            "zh": "發票與收據整理",
+            "en": "Invoice and receipt organization"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/invoice-organizer/",
+          "status": "unverified_reference"
+        }
+      ]
+    },
+    {
+      "work_id": "business-hr",
+      "label": {
+        "zh": "人資",
+        "en": "Human resources"
+      },
+      "stages": [
+        {
+          "id": "stage-hr-1",
+          "label": {
+            "zh": "職務與能力理解",
+            "en": "Understand roles and skills"
+          },
+          "concept_ids": [
+            "idea-hr-profile",
+            "idea-hr-skills"
+          ]
+        },
+        {
+          "id": "stage-hr-2",
+          "label": {
+            "zh": "人力與發展規劃",
+            "en": "Plan capacity and development"
+          },
+          "concept_ids": [
+            "idea-hr-capacity",
+            "idea-hr-learning"
+          ]
+        },
+        {
+          "id": "stage-hr-3",
+          "label": {
+            "zh": "到職與案件處理",
+            "en": "Onboard and handle cases"
+          },
+          "concept_ids": [
+            "idea-hr-onboarding",
+            "idea-hr-policy"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "resource_id": "cap-ddf171d34c4d82",
+          "name": "💼 AI Recruitment Agent Team",
+          "reason": {
+            "zh": "履歷篩選與面試排程的應用範例",
+            "en": "Resume screening and interview scheduling example"
+          },
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/multi_agent_apps/agent_teams/ai_recruitment_agent_team/",
+          "status": "unverified_reference"
+        },
+        {
+          "resource_id": "cap-a7ccbf83ba28ed",
+          "name": "BambooHR Automation",
+          "reason": {
+            "zh": "員工與休假資料操作",
+            "en": "Employee and time-off data operations"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/bamboohr-automation/",
+          "status": "unverified_reference"
+        }
+      ]
+    },
+    {
+      "work_id": "business-procurement",
+      "label": {
+        "zh": "採購",
+        "en": "Procurement"
+      },
+      "stages": [
+        {
+          "id": "stage-procurement-1",
+          "label": {
+            "zh": "讀懂報價與條件",
+            "en": "Understand quotes and terms"
+          },
+          "concept_ids": [
+            "idea-procurement-extract",
+            "idea-procurement-terms"
+          ]
+        },
+        {
+          "id": "stage-procurement-2",
+          "label": {
+            "zh": "比較成本與分單",
+            "en": "Compare costs and allocations"
+          },
+          "concept_ids": [
+            "idea-procurement-cost",
+            "idea-procurement-allocation"
+          ]
+        },
+        {
+          "id": "stage-procurement-3",
+          "label": {
+            "zh": "風險與採購流程",
+            "en": "Manage risk and approval"
+          },
+          "concept_ids": [
+            "idea-procurement-risk",
+            "idea-procurement-rfq"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "resource_id": "cap-002c9bfb2252c1",
+          "name": "Microsoft MarkItDown",
+          "reason": {
+            "zh": "報價文件轉為可處理文字",
+            "en": "Converting quote documents to processable text"
+          },
+          "url": "https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp",
+          "status": "unverified_reference"
+        },
+        {
+          "resource_id": "cap-4ee2ee8570fab8",
+          "name": "xlsx",
+          "reason": {
+            "zh": "比較表的試算表操作",
+            "en": "Spreadsheet operations for comparison tables"
+          },
+          "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+          "status": "unverified_reference"
+        }
+      ]
+    },
+    {
+      "work_id": "business-operations",
+      "label": {
+        "zh": "營運",
+        "en": "Operations"
+      },
+      "stages": [
+        {
+          "id": "stage-operations-1",
+          "label": {
+            "zh": "理解流程與負荷",
+            "en": "Understand process and workload"
+          },
+          "concept_ids": [
+            "idea-operations-exceptions",
+            "idea-operations-load"
+          ]
+        },
+        {
+          "id": "stage-operations-2",
+          "label": {
+            "zh": "排程與異常介入",
+            "en": "Schedule and intervene"
+          },
+          "concept_ids": [
+            "idea-operations-schedule",
+            "idea-operations-triage"
+          ]
+        },
+        {
+          "id": "stage-operations-3",
+          "label": {
+            "zh": "處理與交接",
+            "en": "Resolve and hand over"
+          },
+          "concept_ids": [
+            "idea-operations-resolution",
+            "idea-operations-handover"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "resource_id": "cap-1116eae4426e10",
+          "name": "its-dart/dart-mcp-server",
+          "reason": {
+            "zh": "任務與專案紀錄",
+            "en": "Task and project records"
+          },
+          "url": "https://github.com/its-dart/dart-mcp-server",
+          "status": "unverified_reference"
+        },
+        {
+          "resource_id": "cap-99ecb4d4ebebb5",
+          "name": "Google Calendar Automation",
+          "reason": {
+            "zh": "行事曆與排程資料",
+            "en": "Calendar and scheduling data"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/google-calendar-automation/",
+          "status": "unverified_reference"
+        }
+      ]
+    },
+    {
+      "work_id": "business-customer-service",
+      "label": {
+        "zh": "客服",
+        "en": "Customer service"
+      },
+      "stages": [
+        {
+          "id": "stage-customer-service-1",
+          "label": {
+            "zh": "理解與分流案件",
+            "en": "Understand and route cases"
+          },
+          "concept_ids": [
+            "idea-service-understand",
+            "idea-service-priority"
+          ]
+        },
+        {
+          "id": "stage-customer-service-2",
+          "label": {
+            "zh": "確認權益與解答",
+            "en": "Check entitlements and draft answers"
+          },
+          "concept_ids": [
+            "idea-service-entitlement",
+            "idea-service-answer"
+          ]
+        },
+        {
+          "id": "stage-customer-service-3",
+          "label": {
+            "zh": "品質與升級追蹤",
+            "en": "Review quality and escalation"
+          },
+          "concept_ids": [
+            "idea-service-quality",
+            "idea-service-escalation"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "resource_id": "cap-f89e5f2cc575ac",
+          "name": "Zendesk Automation",
+          "reason": {
+            "zh": "客服工單操作",
+            "en": "Support ticket operations"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/zendesk-automation/",
+          "status": "unverified_reference"
+        },
+        {
+          "resource_id": "cap-c4e13027e2e053",
+          "name": "Intercom Automation",
+          "reason": {
+            "zh": "客戶對話與聯絡資料操作",
+            "en": "Customer conversation and contact operations"
+          },
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/intercom-automation/",
+          "status": "unverified_reference"
+        }
+      ]
+    },
+    {
+      "work_id": "business-supply-chain",
+      "label": {
+        "zh": "供應鏈",
+        "en": "Supply chain"
+      },
+      "stages": [
+        {
+          "id": "stage-supply-chain-1",
+          "label": {
+            "zh": "需求與庫存規劃",
+            "en": "Plan demand and inventory"
+          },
+          "concept_ids": [
+            "idea-supply-bias",
+            "idea-supply-inventory"
+          ]
+        },
+        {
+          "id": "stage-supply-chain-2",
+          "label": {
+            "zh": "品質與出貨風險",
+            "en": "Investigate quality and shipment risk"
+          },
+          "concept_ids": [
+            "idea-supply-trace",
+            "idea-supply-delay"
+          ]
+        },
+        {
+          "id": "stage-supply-chain-3",
+          "label": {
+            "zh": "版本與材料準備",
+            "en": "Manage revisions and materials"
+          },
+          "concept_ids": [
+            "idea-supply-version",
+            "idea-supply-materials"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "resource_id": "cap-9f22cde6b6b50d",
+          "name": "SupplyMaven-SCR/supplymaven-mcp-server",
+          "reason": {
+            "zh": "供應鏈風險資訊",
+            "en": "Supply chain risk information"
+          },
+          "url": "https://github.com/SupplyMaven-SCR/supplymaven-mcp-server",
+          "status": "unverified_reference"
+        },
+        {
+          "resource_id": "cap-dfcf9822d582d6",
+          "name": "OFODevelopment/cerebrochain-mcp-server",
+          "reason": {
+            "zh": "物流與庫存操作線索",
+            "en": "Logistics and inventory tool leads"
+          },
+          "url": "https://github.com/OFODevelopment/cerebrochain-mcp-server",
+          "status": "unverified_reference"
+        }
+      ]
+    },
+    {
+      "work_id": "business-legal",
+      "label": {
+        "zh": "法務／合規",
+        "en": "Legal / compliance"
+      },
+      "stages": [
+        {
+          "id": "stage-legal-1",
+          "label": {
+            "zh": "條款與義務理解",
+            "en": "Understand clauses and obligations"
+          },
+          "concept_ids": [
+            "idea-legal-diff",
+            "idea-legal-obligations"
+          ]
+        },
+        {
+          "id": "stage-legal-2",
+          "label": {
+            "zh": "期限與法規影響",
+            "en": "Track deadlines and changes"
+          },
+          "concept_ids": [
+            "idea-legal-calendar",
+            "idea-legal-change"
+          ]
+        },
+        {
+          "id": "stage-legal-3",
+          "label": {
+            "zh": "證據覆核與交接",
+            "en": "Review evidence and handover"
+          },
+          "concept_ids": [
+            "idea-legal-audit",
+            "idea-legal-negotiation"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "resource_id": "cap-e4aeb99b70136d",
+          "name": "Master Claude for Legal",
+          "reason": {
+            "zh": "合約與法律工作指引集合",
+            "en": "Legal and contract skill collection"
+          },
+          "url": "https://github.com/sboghossian/master-claude-for-legal",
+          "status": "unverified_reference"
+        },
+        {
+          "resource_id": "cap-29a493ec3dad2d",
+          "name": "👨‍⚖️ AI Legal Agent Team (Cloud & Local)",
+          "reason": {
+            "zh": "法律研究與合約分析的 Agent 團隊範例",
+            "en": "Agent team example for legal research and contract analysis"
+          },
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/advanced_ai_agents/multi_agent_apps/agent_teams/ai_legal_agent_team/",
+          "status": "unverified_reference"
+        }
+      ]
+    },
+    {
+      "work_id": "business-management",
+      "label": {
+        "zh": "管理",
+        "en": "Management"
+      },
+      "stages": [
+        {
+          "id": "stage-management-1",
+          "label": {
+            "zh": "策略與資源取捨",
+            "en": "Review strategy and resources"
+          },
+          "concept_ids": [
+            "idea-management-assumptions",
+            "idea-management-portfolio"
+          ]
+        },
+        {
+          "id": "stage-management-2",
+          "label": {
+            "zh": "執行與選項比較",
+            "en": "Review execution and options"
+          },
+          "concept_ids": [
+            "idea-management-execution",
+            "idea-management-options"
+          ]
+        },
+        {
+          "id": "stage-management-3",
+          "label": {
+            "zh": "決策與學習",
+            "en": "Decide and learn"
+          },
+          "concept_ids": [
+            "idea-management-tradeoff",
+            "idea-management-learning"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "resource_id": "cap-c61f652ef62f7c",
+          "name": "📑 Notion MCP Agent",
+          "reason": {
+            "zh": "協作頁面互動的應用範例",
+            "en": "Example of interacting with collaboration pages"
+          },
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306/mcp_ai_agents/notion_mcp_agent",
+          "status": "unverified_reference"
+        },
+        {
+          "resource_id": "cap-1116eae4426e10",
+          "name": "its-dart/dart-mcp-server",
+          "reason": {
+            "zh": "任務與專案紀錄",
+            "en": "Task and project records"
+          },
+          "url": "https://github.com/its-dart/dart-mcp-server",
+          "status": "unverified_reference"
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "idea-sales-fit",
+      "kind": "skill",
+      "name": {
+        "zh": "客戶適配判讀",
+        "en": "Customer fit assessment"
+      },
+      "purpose": {
+        "zh": "把客戶需求與我們的產品條件逐項比對，列出符合、衝突與未知之處。",
+        "en": "Compare a prospect's needs with product constraints and separate fit, conflicts and unknowns."
+      },
+      "input": {
+        "zh": "公司簡介、訪談筆記、產品適用條件",
+        "en": "Company profile, discovery notes and product constraints"
+      },
+      "output": {
+        "zh": "適配說明與待補問清單",
+        "en": "Fit rationale and unanswered questions"
+      },
+      "human_decision": {
+        "zh": "業務確認是否值得投入，不把資料缺漏當成不適合。",
+        "en": "Sales decides whether to pursue; missing information is not a negative finding."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-sales-priority",
+      "kind": "tool",
+      "name": {
+        "zh": "潛在客戶優先排序",
+        "en": "Prospect priority calculator"
+      },
+      "purpose": {
+        "zh": "依團隊自訂權重試算聯絡優先順序，讓排序理由可以重算。",
+        "en": "Calculate outreach priority with team-defined weights and reproducible scores."
+      },
+      "input": {
+        "zh": "客戶名單、需求訊號、評分規則",
+        "en": "Prospect list, demand signals and scoring rules"
+      },
+      "output": {
+        "zh": "優先名單、各項分數與缺資料標示",
+        "en": "Priority list, score breakdown and missing-data flags"
+      },
+      "human_decision": {
+        "zh": "主管核准權重並處理策略客戶例外。",
+        "en": "A manager approves weights and strategic-account exceptions."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-sales-discovery",
+      "kind": "skill",
+      "name": {
+        "zh": "訪談重點與承諾整理",
+        "en": "Discovery notes and commitments"
+      },
+      "purpose": {
+        "zh": "從會議內容分開整理客戶說過的需求、業務推測與雙方承諾。",
+        "en": "Separate stated needs, seller assumptions and commitments in discovery conversations."
+      },
+      "input": {
+        "zh": "會議逐字稿、Email、既有商機紀錄",
+        "en": "Meeting transcripts, emails and deal records"
+      },
+      "output": {
+        "zh": "需求摘要、原文依據與下一次必問事項",
+        "en": "Needs summary, supporting excerpts and follow-up questions"
+      },
+      "human_decision": {
+        "zh": "業務確認摘要與承諾後才寫回 CRM。",
+        "en": "Sales confirms the summary and commitments before updating CRM."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-sales-margin",
+      "kind": "tool",
+      "name": {
+        "zh": "報價毛利與折扣試算",
+        "en": "Quote margin and discount simulator"
+      },
+      "purpose": {
+        "zh": "比較折扣、數量與付款條件改變後的毛利及收款差異。",
+        "en": "Compare margin and collection implications of discounts, volumes and payment terms."
+      },
+      "input": {
+        "zh": "單價、成本、數量、折扣及帳期假設",
+        "en": "Prices, costs, volumes, discounts and payment assumptions"
+      },
+      "output": {
+        "zh": "情境比較表與超出門檻的提示",
+        "en": "Scenario comparison and threshold warnings"
+      },
+      "human_decision": {
+        "zh": "主管決定讓利條件，工具不自動對外報價。",
+        "en": "A manager decides concessions; no quote is sent automatically."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-sales-risk",
+      "kind": "agent",
+      "name": {
+        "zh": "商機停滯調查員",
+        "en": "Deal stall investigator"
+      },
+      "purpose": {
+        "zh": "定期讀取商機進度與最近互動，找出承諾落空或決策流程不明的線索。",
+        "en": "Review deal progress and recent interactions for missed commitments or unclear decisions."
+      },
+      "input": {
+        "zh": "CRM 階段、會議紀錄、往來訊息",
+        "en": "CRM stages, meeting records and correspondence"
+      },
+      "output": {
+        "zh": "附依據的風險摘要、待確認事項與行動草案",
+        "en": "Evidence-linked risks, questions and draft next actions"
+      },
+      "human_decision": {
+        "zh": "業務判斷是否追蹤，不能把沉默直接視為流失。",
+        "en": "Sales decides follow-up; silence alone does not prove loss."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-sales-review",
+      "kind": "workflow",
+      "name": {
+        "zh": "每週商機檢討流程",
+        "en": "Weekly pipeline review"
+      },
+      "purpose": {
+        "zh": "收集異動→核對數字→整理風險→開會確認→追蹤行動，留下每週決定。",
+        "en": "Collect changes → reconcile figures → review risks → confirm decisions → track actions."
+      },
+      "input": {
+        "zh": "商機快照、目標、上週行動與負責人",
+        "en": "Pipeline snapshots, targets, previous actions and owners"
+      },
+      "output": {
+        "zh": "檢討議程、差異表、決策與下週行動",
+        "en": "Review agenda, changes, decisions and next-week actions"
+      },
+      "human_decision": {
+        "zh": "主管核准預測及資源調整，業務負責對外承諾。",
+        "en": "Managers approve forecasts and resources; sales owns commitments."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-marketing-audience",
+      "kind": "skill",
+      "name": {
+        "zh": "受眾需求與訊息拆解",
+        "en": "Audience needs and messaging"
+      },
+      "purpose": {
+        "zh": "把客戶回饋整理成不同需求情境，分開標示原話與推測。",
+        "en": "Turn feedback into audience need scenarios while distinguishing quotes from inference."
+      },
+      "input": {
+        "zh": "訪談、評論、問卷與產品定位",
+        "en": "Interviews, reviews, surveys and product positioning"
+      },
+      "output": {
+        "zh": "需求情境、訊息方向與證據缺口",
+        "en": "Need scenarios, message directions and evidence gaps"
+      },
+      "human_decision": {
+        "zh": "行銷確認受眾與主張，不把少數回饋當市場結論。",
+        "en": "Marketing validates audiences and claims; a few comments are not market proof."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-marketing-brief",
+      "kind": "skill",
+      "name": {
+        "zh": "創意素材簡報產生",
+        "en": "Creative brief drafting"
+      },
+      "purpose": {
+        "zh": "把活動目的轉成可交給設計與文案的素材需求，保留禁止宣稱與品牌限制。",
+        "en": "Translate campaign goals into a brief with claim restrictions and brand constraints."
+      },
+      "input": {
+        "zh": "活動目標、受眾、品牌規範、可用證據",
+        "en": "Campaign goals, audience, brand rules and available evidence"
+      },
+      "output": {
+        "zh": "素材簡報、文案方向與檢查清單",
+        "en": "Creative brief, copy directions and checklist"
+      },
+      "human_decision": {
+        "zh": "品牌負責人核准內容後才製作或發布。",
+        "en": "A brand owner approves content before production or publication."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-marketing-budget",
+      "kind": "tool",
+      "name": {
+        "zh": "通路預算情境試算",
+        "en": "Channel budget scenario planner"
+      },
+      "purpose": {
+        "zh": "比較不同預算分配的假設結果，顯示結果對轉換率與成本的敏感度。",
+        "en": "Compare budget allocations and sensitivity to conversion and cost assumptions."
+      },
+      "input": {
+        "zh": "通路成本、轉換假設、預算與投放限制",
+        "en": "Channel costs, conversion assumptions, budgets and constraints"
+      },
+      "output": {
+        "zh": "情境表、敏感度與假設清單",
+        "en": "Scenarios, sensitivity and assumptions"
+      },
+      "human_decision": {
+        "zh": "行銷決定預算；歷史相關性不當成增量成效。",
+        "en": "Marketing sets budgets; historical correlation is not incremental impact."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-marketing-watch",
+      "kind": "agent",
+      "name": {
+        "zh": "活動異常觀察員",
+        "en": "Campaign anomaly watcher"
+      },
+      "purpose": {
+        "zh": "追蹤素材與通路數據，整理異常變化以及需要人工查明的可能原因。",
+        "en": "Monitor campaign changes and flag anomalies with questions for investigation."
+      },
+      "input": {
+        "zh": "活動指標、素材版本、預期區間與更新紀錄",
+        "en": "Campaign metrics, creative versions, expected ranges and changes"
+      },
+      "output": {
+        "zh": "異常摘要、受影響項目與調查建議",
+        "en": "Anomaly brief, affected items and investigation suggestions"
+      },
+      "human_decision": {
+        "zh": "人員確認追蹤設定與原因後才停投或調整。",
+        "en": "People check tracking and causes before changing spend."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-marketing-retention",
+      "kind": "skill",
+      "name": {
+        "zh": "會員互動情境整理",
+        "en": "Member engagement scenarios"
+      },
+      "purpose": {
+        "zh": "依購買節奏與聯繫紀錄整理可討論的互動情境，標示同意與頻率限制。",
+        "en": "Outline engagement scenarios from buying cadence and contact history, with consent limits."
+      },
+      "input": {
+        "zh": "會員交易、互動紀錄、行銷同意與頻率政策",
+        "en": "Transactions, contacts, consent records and frequency policies"
+      },
+      "output": {
+        "zh": "互動情境草案與不可聯繫名單",
+        "en": "Engagement drafts and do-not-contact exclusions"
+      },
+      "human_decision": {
+        "zh": "行銷核准接觸對象與內容，不自動對會員發送。",
+        "en": "Marketing approves recipients and content; nothing is sent automatically."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-marketing-review",
+      "kind": "workflow",
+      "name": {
+        "zh": "活動上線到檢討",
+        "en": "Campaign launch-to-review"
+      },
+      "purpose": {
+        "zh": "簡報→素材審核→追蹤驗收→小範圍發布→成效檢討，逐步留下核准紀錄。",
+        "en": "Brief → creative approval → tracking check → limited launch → outcome review."
+      },
+      "input": {
+        "zh": "素材、指標定義、預算、核准與實際結果",
+        "en": "Creative assets, metric definitions, budgets, approvals and results"
+      },
+      "output": {
+        "zh": "上線檢查、版本紀錄與可追蹤的檢討",
+        "en": "Launch checks, version history and traceable review"
+      },
+      "human_decision": {
+        "zh": "發布與擴大投放需人核准。",
+        "en": "Launch and spending expansion require human approval."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-finance-cost",
+      "kind": "skill",
+      "name": {
+        "zh": "成本差異拆解",
+        "en": "Cost variance breakdown"
+      },
+      "purpose": {
+        "zh": "把成本上升拆成價格、用量、效率與組合差異，列出需要查證的解釋。",
+        "en": "Break cost changes into price, usage, efficiency and mix differences with hypotheses."
+      },
+      "input": {
+        "zh": "標準成本、實際成本、產量與成本口徑",
+        "en": "Standard and actual costs, volumes and cost definitions"
+      },
+      "output": {
+        "zh": "差異橋接表、假設與查證清單",
+        "en": "Variance bridge, hypotheses and checks"
+      },
+      "human_decision": {
+        "zh": "財務與現場確認歸因，差異不等於根因。",
+        "en": "Finance and operations verify attribution; variance is not a root cause."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-finance-cash",
+      "kind": "tool",
+      "name": {
+        "zh": "現金缺口情境試算",
+        "en": "Cash gap scenario simulator"
+      },
+      "purpose": {
+        "zh": "按收付款日期試算餘額，對延遲收款與突發支出做情境比較。",
+        "en": "Project balances by payment date and compare delayed collections or unexpected outflows."
+      },
+      "input": {
+        "zh": "期初現金、應收應付、付款日期與情境假設",
+        "en": "Opening cash, receivables, payables, dates and assumptions"
+      },
+      "output": {
+        "zh": "現金走勢、缺口時間與敏感度",
+        "en": "Cash trajectory, gap timing and sensitivity"
+      },
+      "human_decision": {
+        "zh": "財務主管決定調度；工具不執行付款或借款。",
+        "en": "Finance decides funding; the tool makes no payments or borrowing decisions."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-finance-assumptions",
+      "kind": "skill",
+      "name": {
+        "zh": "預算假設變動整理",
+        "en": "Budget assumption review"
+      },
+      "purpose": {
+        "zh": "比對預算與實績，區分數字偏差、口徑變更與可能失效的營運假設。",
+        "en": "Compare budget and actuals, separating variances, definition changes and weakened assumptions."
+      },
+      "input": {
+        "zh": "預算、實績、指標定義與原假設",
+        "en": "Budget, actuals, metric definitions and original assumptions"
+      },
+      "output": {
+        "zh": "偏差說明、待更新假設與補資料事項",
+        "en": "Variance notes, assumptions to revisit and missing data"
+      },
+      "human_decision": {
+        "zh": "預算負責人確認假設後再修正預測。",
+        "en": "Budget owners confirm assumptions before revising forecasts."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-finance-profit",
+      "kind": "tool",
+      "name": {
+        "zh": "獲利流失橋接試算",
+        "en": "Profit leakage bridge"
+      },
+      "purpose": {
+        "zh": "把折扣、退貨、物流與通路費等影響拆開，對照產品和客戶組合。",
+        "en": "Separate discounts, returns, freight and fees across product and customer mix."
+      },
+      "input": {
+        "zh": "交易明細、費用分攤規則與比較期間",
+        "en": "Transactions, allocation rules and comparison periods"
+      },
+      "output": {
+        "zh": "獲利橋接、影響排行與計算明細",
+        "en": "Profit bridge, impact ranking and calculations"
+      },
+      "human_decision": {
+        "zh": "財務核准分攤口徑，避免重複計入費用。",
+        "en": "Finance approves allocations and prevents double counting."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-finance-investigate",
+      "kind": "agent",
+      "name": {
+        "zh": "財務異常查證助理",
+        "en": "Financial anomaly investigator"
+      },
+      "purpose": {
+        "zh": "根據異常數字追查相關紀錄，整理有證據的解釋與仍缺少的資料。",
+        "en": "Investigate unusual figures using linked records and distinguish evidence from gaps."
+      },
+      "input": {
+        "zh": "異常項目、交易紀錄、憑證與允許的查詢範圍",
+        "en": "Anomalies, transactions, documents and permitted query scope"
+      },
+      "output": {
+        "zh": "可追溯的調查摘要與待覆核項目",
+        "en": "Traceable findings and review queue"
+      },
+      "human_decision": {
+        "zh": "財務覆核後才調整帳務或對外說明。",
+        "en": "Finance reviews before ledger changes or external explanations."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-finance-invoice",
+      "kind": "workflow",
+      "name": {
+        "zh": "發票核對到付款核准",
+        "en": "Invoice-to-approval workflow"
+      },
+      "purpose": {
+        "zh": "收件→抽取欄位→核對訂單與收貨→處理例外→人工核准，保留差異。",
+        "en": "Receive → extract → match orders and receipts → resolve exceptions → approve."
+      },
+      "input": {
+        "zh": "發票、訂單、收貨資料、容差與核准規則",
+        "en": "Invoices, purchase orders, receipts, tolerances and approval rules"
+      },
+      "output": {
+        "zh": "匹配結果、差異清單與待核准案件",
+        "en": "Match results, discrepancies and approval queue"
+      },
+      "human_decision": {
+        "zh": "人員確認重複或不符案件，付款另需授權。",
+        "en": "People review mismatches and duplicates; payment requires separate authorization."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-hr-profile",
+      "kind": "skill",
+      "name": {
+        "zh": "職務與履歷證據對照",
+        "en": "Role-to-resume evidence mapping"
+      },
+      "purpose": {
+        "zh": "把職務需求拆成可觀察的證據，再整理履歷哪些內容支持或尚未交代。",
+        "en": "Turn role requirements into evidence criteria and map resume evidence and gaps."
+      },
+      "input": {
+        "zh": "職務需求、履歷與核准的評估標準",
+        "en": "Role requirements, resumes and approved criteria"
+      },
+      "output": {
+        "zh": "證據對照與面談問題，不作錄取決定",
+        "en": "Evidence map and interview questions, not a hiring decision"
+      },
+      "human_decision": {
+        "zh": "招募人員確認標準與公平性，最終判斷由人負責。",
+        "en": "Recruiters validate criteria and fairness; people make hiring decisions."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-hr-skills",
+      "kind": "skill",
+      "name": {
+        "zh": "技能缺口訪談準備",
+        "en": "Skills gap interview preparation"
+      },
+      "purpose": {
+        "zh": "整理工作成果與自述技能的證據缺口，產生需透過訪談確認的問題。",
+        "en": "Identify gaps between work evidence and claimed skills for a review conversation."
+      },
+      "input": {
+        "zh": "職務能力要求、專案成果與自述經驗",
+        "en": "Role skills, project outputs and self-reported experience"
+      },
+      "output": {
+        "zh": "技能證據清單、未知項與訪談題目",
+        "en": "Skills evidence, unknowns and interview prompts"
+      },
+      "human_decision": {
+        "zh": "主管與員工共同確認，不把提及技能等同熟練。",
+        "en": "Managers and employees validate; mentioning a skill does not prove proficiency."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-hr-capacity",
+      "kind": "tool",
+      "name": {
+        "zh": "人力與工時需求試算",
+        "en": "Workforce capacity calculator"
+      },
+      "purpose": {
+        "zh": "把工作量與標準工時轉成不同人力配置情境，顯示假設與缺口。",
+        "en": "Translate workloads and task times into staffing scenarios with explicit gaps."
+      },
+      "input": {
+        "zh": "工作量、工時、技能組合、班次與限制",
+        "en": "Workload, task times, skill mix, shifts and constraints"
+      },
+      "output": {
+        "zh": "產能缺口、人力情境與敏感度",
+        "en": "Capacity gaps, staffing scenarios and sensitivity"
+      },
+      "human_decision": {
+        "zh": "主管確認工時與勞動條件，不自動排定人事結果。",
+        "en": "Managers validate effort and labor constraints; no personnel outcome is automated."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-hr-learning",
+      "kind": "agent",
+      "name": {
+        "zh": "學習路徑規劃助理",
+        "en": "Learning path planning assistant"
+      },
+      "purpose": {
+        "zh": "依確認過的能力缺口，整理練習、資源和檢核點，追蹤學習證據。",
+        "en": "Suggest practice, resources and checkpoints from confirmed gaps and track learning evidence."
+      },
+      "input": {
+        "zh": "能力目標、可投入時間、資源與成果回饋",
+        "en": "Skills goals, available time, resources and feedback"
+      },
+      "output": {
+        "zh": "可調整的學習計畫與檢核問題",
+        "en": "Adaptable learning plan and checkpoint questions"
+      },
+      "human_decision": {
+        "zh": "員工與主管共同選定目標，不保證課程能補齊能力。",
+        "en": "Employees and managers choose goals; a course does not guarantee competence."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-hr-onboarding",
+      "kind": "workflow",
+      "name": {
+        "zh": "新人到職與交接",
+        "en": "Onboarding and handover workflow"
+      },
+      "purpose": {
+        "zh": "確認角色→安排帳號與訓練→指派交接→追蹤完成→收集問題。",
+        "en": "Confirm role → arrange access and training → assign handover → track completion → review issues."
+      },
+      "input": {
+        "zh": "職務、到職日、核准權限、任務與負責人",
+        "en": "Role, start date, approved access, tasks and owners"
+      },
+      "output": {
+        "zh": "到職任務表、未完成事項與交接紀錄",
+        "en": "Onboarding checklist, open tasks and handover record"
+      },
+      "human_decision": {
+        "zh": "系統權限由負責人核准，不能因到職自動擴權。",
+        "en": "Access owners approve permissions; joining does not imply automatic access."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-hr-policy",
+      "kind": "skill",
+      "name": {
+        "zh": "人事案件規範定位",
+        "en": "HR case policy lookup"
+      },
+      "purpose": {
+        "zh": "整理案件需要查哪些公司制度與適用規範，標示版本衝突及待專業確認事項。",
+        "en": "Locate policies relevant to an HR case and flag version conflicts and review needs."
+      },
+      "input": {
+        "zh": "案件概況、有效政策、適用地區與日期",
+        "en": "Case outline, effective policies, jurisdiction and dates"
+      },
+      "output": {
+        "zh": "來源清單、待釐清問題與升級建議",
+        "en": "Source list, questions and escalation suggestions"
+      },
+      "human_decision": {
+        "zh": "HR 或法務決定處理方式，不以構想代替法律判斷。",
+        "en": "HR or legal decides the response; the concept does not replace legal judgment."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-procurement-extract",
+      "kind": "skill",
+      "name": {
+        "zh": "報價條件抽取與標準化",
+        "en": "Quote extraction and normalization"
+      },
+      "purpose": {
+        "zh": "把各家報價的品項、單位、最低量、模具費與付款條件整理到同一格式。",
+        "en": "Normalize items, units, minimum quantities, tooling and terms across quotes."
+      },
+      "input": {
+        "zh": "報價文件、欄位規格與單位對照",
+        "en": "Quote documents, target fields and unit mappings"
+      },
+      "output": {
+        "zh": "附原文位置的報價表與缺漏清單",
+        "en": "Quote table with source locations and missing fields"
+      },
+      "human_decision": {
+        "zh": "採購確認規格和單位是否真正可比。",
+        "en": "Procurement confirms that specifications and units are comparable."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-procurement-terms",
+      "kind": "skill",
+      "name": {
+        "zh": "商務條件差異整理",
+        "en": "Commercial terms comparison"
+      },
+      "purpose": {
+        "zh": "把交期、保固、付款與運費條件的差異逐項列出，不只看單價。",
+        "en": "Compare delivery, warranty, payment and freight terms beyond unit price."
+      },
+      "input": {
+        "zh": "多家報價、採購需求與核准條件",
+        "en": "Supplier quotes, requirements and approved terms"
+      },
+      "output": {
+        "zh": "條件差異、模糊條款與追問清單",
+        "en": "Terms differences, ambiguities and questions"
+      },
+      "human_decision": {
+        "zh": "採購與法務確認條款含義及談判底線。",
+        "en": "Procurement and legal confirm meaning and negotiation limits."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-procurement-cost",
+      "kind": "tool",
+      "name": {
+        "zh": "總採購成本試算",
+        "en": "Total procurement cost simulator"
+      },
+      "purpose": {
+        "zh": "把單價、運費、匯率與一次性費用換成同一口徑，試算不同數量。",
+        "en": "Normalize price, freight, currency and one-off fees across quantity scenarios."
+      },
+      "input": {
+        "zh": "已確認的報價表、匯率、數量與分攤假設",
+        "en": "Confirmed quotes, exchange rates, quantities and allocation assumptions"
+      },
+      "output": {
+        "zh": "可重算的成本比較與敏感度",
+        "en": "Reproducible cost comparison and sensitivity"
+      },
+      "human_decision": {
+        "zh": "採購確認隱藏成本與比較口徑，不自動選供應商。",
+        "en": "Procurement validates hidden costs and assumptions; no supplier is selected automatically."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-procurement-allocation",
+      "kind": "tool",
+      "name": {
+        "zh": "供應商分單情境比較",
+        "en": "Supplier allocation scenarios"
+      },
+      "purpose": {
+        "zh": "在產能、最低量、成本與集中度限制下比較幾種訂單分配。",
+        "en": "Compare allocations under capacity, minimum quantity, cost and concentration constraints."
+      },
+      "input": {
+        "zh": "合格供應商、需求量、產能與限制條件",
+        "en": "Qualified suppliers, demand, capacity and constraints"
+      },
+      "output": {
+        "zh": "分單方案、限制違反與成本比較",
+        "en": "Allocation scenarios, constraint violations and costs"
+      },
+      "human_decision": {
+        "zh": "採購主管決定風險取捨及最終分單。",
+        "en": "Procurement managers decide risk trade-offs and allocation."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-procurement-risk",
+      "kind": "agent",
+      "name": {
+        "zh": "供應商風險調查助理",
+        "en": "Supplier risk investigation assistant"
+      },
+      "purpose": {
+        "zh": "把事件線索連到實際供應商與物料，整理可能受影響的訂單及待確認事項。",
+        "en": "Link event signals to suppliers and materials, outlining potentially affected orders."
+      },
+      "input": {
+        "zh": "供應商、物料依賴、訂單與已取得事件資訊",
+        "en": "Suppliers, material dependencies, orders and available event information"
+      },
+      "output": {
+        "zh": "曝險摘要、來源依據與查證任務",
+        "en": "Exposure brief, source evidence and verification tasks"
+      },
+      "human_decision": {
+        "zh": "採購確認關聯與嚴重性後才聯繫或切換供應商。",
+        "en": "Procurement verifies relevance before contacting or switching suppliers."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-procurement-rfq",
+      "kind": "workflow",
+      "name": {
+        "zh": "詢價到採購核准",
+        "en": "RFQ-to-approval workflow"
+      },
+      "purpose": {
+        "zh": "確認需求→收集報價→整理差異→補問供應商→審核比較→核准。",
+        "en": "Confirm needs → collect quotes → compare → clarify → review → approve."
+      },
+      "input": {
+        "zh": "需求、報價、澄清紀錄、評選規則與核准人",
+        "en": "Requirements, quotes, clarifications, criteria and approvers"
+      },
+      "output": {
+        "zh": "版本一致的比較包與決策紀錄",
+        "en": "Versioned comparison pack and decision record"
+      },
+      "human_decision": {
+        "zh": "對外詢問、承諾及下單依授權由人核准。",
+        "en": "External requests, commitments and orders follow human authorization."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-operations-exceptions",
+      "kind": "skill",
+      "name": {
+        "zh": "流程例外分類",
+        "en": "Process exception classification"
+      },
+      "purpose": {
+        "zh": "把工單與 Email 中的等待、重工與補件原因整理成可追蹤的類別。",
+        "en": "Categorize waiting, rework and missing-information explanations in tickets and email."
+      },
+      "input": {
+        "zh": "工單、往來訊息、標準流程與分類規則",
+        "en": "Tickets, correspondence, standard process and category rules"
+      },
+      "output": {
+        "zh": "例外類別、原文依據與待確認項目",
+        "en": "Exception categories, source excerpts and unknowns"
+      },
+      "human_decision": {
+        "zh": "流程負責人確認分類，不把敘述直接當根因。",
+        "en": "Process owners validate categories; descriptions are not root-cause proof."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-operations-load",
+      "kind": "tool",
+      "name": {
+        "zh": "短期工作負荷試算",
+        "en": "Short-term workload simulator"
+      },
+      "purpose": {
+        "zh": "按預估進件量與處理時間比較負荷，找出可能超出服務能力的時段。",
+        "en": "Compare expected volume and handling time against service capacity."
+      },
+      "input": {
+        "zh": "預估案件量、處理時間、人力與服務目標",
+        "en": "Expected volume, handling times, staffing and service targets"
+      },
+      "output": {
+        "zh": "負荷走勢、產能缺口與假設",
+        "en": "Load profile, capacity gaps and assumptions"
+      },
+      "human_decision": {
+        "zh": "主管確認服務優先順序與資源安排。",
+        "en": "Managers confirm priorities and resource changes."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-operations-schedule",
+      "kind": "tool",
+      "name": {
+        "zh": "插單與延誤排程比較",
+        "en": "Disruption scheduling scenarios"
+      },
+      "purpose": {
+        "zh": "在插單、延誤或人員缺席時，重算可行順序及影響，不直接改正式排程。",
+        "en": "Recalculate feasible sequences and impacts after urgent work, delays or absences."
+      },
+      "input": {
+        "zh": "任務、依賴、可用資源與交期限制",
+        "en": "Tasks, dependencies, resource availability and due dates"
+      },
+      "output": {
+        "zh": "排程方案、衝突與延誤影響",
+        "en": "Schedule options, conflicts and delay impacts"
+      },
+      "human_decision": {
+        "zh": "現場主管確認可行性後才更新排程。",
+        "en": "Operations confirms feasibility before changing the live schedule."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-operations-triage",
+      "kind": "agent",
+      "name": {
+        "zh": "營運異常整理員",
+        "en": "Operational incident triage assistant"
+      },
+      "purpose": {
+        "zh": "把多個相關告警整理為事件，找出影響範圍及建議先確認的事項。",
+        "en": "Group related alerts into incidents with impact context and initial checks."
+      },
+      "input": {
+        "zh": "告警、設備或服務關聯、影響指標與處理紀錄",
+        "en": "Alerts, dependencies, impact metrics and incident records"
+      },
+      "output": {
+        "zh": "事件摘要、優先建議與證據缺口",
+        "en": "Incident brief, suggested priorities and evidence gaps"
+      },
+      "human_decision": {
+        "zh": "值班主管決定介入順序，不自行關閉服務。",
+        "en": "The duty manager decides intervention; no service is shut down automatically."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-operations-resolution",
+      "kind": "workflow",
+      "name": {
+        "zh": "例外案件處理閉環",
+        "en": "Exception resolution workflow"
+      },
+      "purpose": {
+        "zh": "收件→判斷影響→指派負責人→處理與核准→驗收→記錄重複問題。",
+        "en": "Intake → assess impact → assign owner → act and approve → verify → record recurrence."
+      },
+      "input": {
+        "zh": "例外案件、責任表、處理規範與驗收條件",
+        "en": "Exceptions, ownership, procedures and acceptance criteria"
+      },
+      "output": {
+        "zh": "處理紀錄、未結案件與改善線索",
+        "en": "Resolution record, open cases and improvement leads"
+      },
+      "human_decision": {
+        "zh": "負責人驗收後才結案，超範圍事項升級。",
+        "en": "Owners verify closure; out-of-scope cases are escalated."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-operations-handover",
+      "kind": "skill",
+      "name": {
+        "zh": "跨班交接整理",
+        "en": "Shift handover summary"
+      },
+      "purpose": {
+        "zh": "從未完成任務與處理紀錄整理下一班需要知道的風險、承諾與待辦。",
+        "en": "Summarize open work, risks, commitments and next-shift actions."
+      },
+      "input": {
+        "zh": "工單、班次紀錄、期限與負責人",
+        "en": "Tickets, shift records, deadlines and owners"
+      },
+      "output": {
+        "zh": "可核對的交接摘要與未確認事項",
+        "en": "Checkable handover brief and unconfirmed items"
+      },
+      "human_decision": {
+        "zh": "交接雙方確認責任與緊急事項。",
+        "en": "Both shifts confirm ownership and urgent matters."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-service-understand",
+      "kind": "skill",
+      "name": {
+        "zh": "客戶案件結構化",
+        "en": "Customer case structuring"
+      },
+      "purpose": {
+        "zh": "將客戶描述拆成症狀、版本、影響與已試過的步驟，標示缺少的資訊。",
+        "en": "Structure symptoms, versions, impact and attempted fixes from a customer report."
+      },
+      "input": {
+        "zh": "工單、對話、產品資料與案件欄位規格",
+        "en": "Tickets, conversations, product data and case fields"
+      },
+      "output": {
+        "zh": "案件摘要與下一輪澄清問題",
+        "en": "Case summary and clarification questions"
+      },
+      "human_decision": {
+        "zh": "客服確認理解，不能補造客戶未提供的事實。",
+        "en": "Support confirms understanding without inventing customer facts."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-service-priority",
+      "kind": "tool",
+      "name": {
+        "zh": "案件分流規則試算",
+        "en": "Ticket routing rule simulator"
+      },
+      "purpose": {
+        "zh": "依核准規則檢查優先級與負責團隊，顯示規則衝突或缺欄位。",
+        "en": "Evaluate approved priority and routing rules, exposing conflicts or missing fields."
+      },
+      "input": {
+        "zh": "結構化案件、SLA、團隊職責與分流規則",
+        "en": "Structured cases, SLAs, team responsibilities and routing rules"
+      },
+      "output": {
+        "zh": "建議分流、命中規則與需人工處理的例外",
+        "en": "Suggested routing, rule traces and manual exceptions"
+      },
+      "human_decision": {
+        "zh": "高風險、衝突及重大客戶案件交人確認。",
+        "en": "People review high-risk, conflicting and major-account cases."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-service-entitlement",
+      "kind": "tool",
+      "name": {
+        "zh": "服務權益核對",
+        "en": "Service entitlement checker"
+      },
+      "purpose": {
+        "zh": "依有效合約、版本與資格規則核對可提供的服務，不由語言模型猜資格。",
+        "en": "Check service availability against effective contracts, versions and eligibility rules."
+      },
+      "input": {
+        "zh": "客戶識別、有效合約、產品版本與權益規則",
+        "en": "Customer identity, effective contracts, versions and entitlement rules"
+      },
+      "output": {
+        "zh": "核對結果、規則依據與無法判定原因",
+        "en": "Eligibility result, rule evidence and reasons for uncertainty"
+      },
+      "human_decision": {
+        "zh": "客服處理例外與對外承諾，缺必要資料就停止判定。",
+        "en": "Support handles exceptions and commitments; missing data stops a decision."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-service-answer",
+      "kind": "agent",
+      "name": {
+        "zh": "具依據的解答草擬助理",
+        "en": "Evidence-based answer drafting assistant"
+      },
+      "purpose": {
+        "zh": "查找有效知識與相似案例，草擬有來源的處理步驟，缺證據時提出補問。",
+        "en": "Retrieve effective knowledge and similar cases to draft sourced steps or ask for evidence."
+      },
+      "input": {
+        "zh": "已澄清案件、核准知識、有效政策與權益結果",
+        "en": "Clarified case, approved knowledge, effective policies and entitlement result"
+      },
+      "output": {
+        "zh": "解答草稿、來源與未確認事項",
+        "en": "Answer draft, sources and unresolved points"
+      },
+      "human_decision": {
+        "zh": "客服覆核後才發送；涉及安全或重大補償轉人工。",
+        "en": "Support reviews before sending; safety or major compensation requires escalation."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-service-quality",
+      "kind": "skill",
+      "name": {
+        "zh": "客服互動品質回顧",
+        "en": "Support interaction quality review"
+      },
+      "purpose": {
+        "zh": "按核准準則整理互動中的漏問、承諾與處理步驟，附對話證據。",
+        "en": "Review missing questions, commitments and steps against approved quality criteria."
+      },
+      "input": {
+        "zh": "客服對話、品質準則與政策版本",
+        "en": "Support conversations, quality criteria and policy versions"
+      },
+      "output": {
+        "zh": "逐項品質觀察與需覆核的片段",
+        "en": "Itemized observations and excerpts for review"
+      },
+      "human_decision": {
+        "zh": "主管覆核語境，不直接用結果決定人員處分。",
+        "en": "Managers review context; observations do not directly determine disciplinary outcomes."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-service-escalation",
+      "kind": "workflow",
+      "name": {
+        "zh": "客訴升級與追蹤",
+        "en": "Complaint escalation workflow"
+      },
+      "purpose": {
+        "zh": "收件→辨識風險→指派與核准→回覆→追蹤承諾→確認結案。",
+        "en": "Intake → identify risk → assign and approve → respond → track commitments → close."
+      },
+      "input": {
+        "zh": "客訴、風險規則、核准路徑與回覆期限",
+        "en": "Complaints, risk rules, approvals and response deadlines"
+      },
+      "output": {
+        "zh": "升級紀錄、核准回覆與承諾追蹤表",
+        "en": "Escalation record, approved response and commitment tracker"
+      },
+      "human_decision": {
+        "zh": "重大補償、法律與安全議題由授權人決定。",
+        "en": "Authorized people decide major compensation, legal and safety matters."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-supply-bias",
+      "kind": "skill",
+      "name": {
+        "zh": "需求預測偏誤整理",
+        "en": "Demand forecast bias review"
+      },
+      "purpose": {
+        "zh": "比較預測與實際需求，區分持續高估、低估與缺貨造成的銷售截斷。",
+        "en": "Compare forecasts and demand, distinguishing bias from stockout-censored sales."
+      },
+      "input": {
+        "zh": "預測版本、實際訂單、出貨與缺貨紀錄",
+        "en": "Forecast versions, orders, shipments and stockouts"
+      },
+      "output": {
+        "zh": "偏誤分析、可比性限制與待查問題",
+        "en": "Bias analysis, comparability limits and questions"
+      },
+      "human_decision": {
+        "zh": "規劃人員確認需求定義，不能把出貨直接當需求。",
+        "en": "Planners confirm demand definitions; shipments are not automatically demand."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-supply-inventory",
+      "kind": "tool",
+      "name": {
+        "zh": "補貨與調撥情境試算",
+        "en": "Replenishment and transfer simulator"
+      },
+      "purpose": {
+        "zh": "在服務水準、交期與庫存成本假設下，比較補貨及據點間調撥。",
+        "en": "Compare replenishment and transfers under service, lead-time and inventory-cost assumptions."
+      },
+      "input": {
+        "zh": "庫存、需求情境、交期、運費與限制",
+        "en": "Inventory, demand scenarios, lead times, freight and constraints"
+      },
+      "output": {
+        "zh": "補貨／調撥方案、成本與缺貨風險",
+        "en": "Replenishment and transfer options, costs and stockout risks"
+      },
+      "human_decision": {
+        "zh": "供應鏈主管決定採用方案，不自動產生訂單。",
+        "en": "Supply chain managers choose the plan; no order is created automatically."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-supply-trace",
+      "kind": "skill",
+      "name": {
+        "zh": "品質批次關聯整理",
+        "en": "Quality lot relationship mapping"
+      },
+      "purpose": {
+        "zh": "將缺陷紀錄連到供應商、材料批次與生產批次，縮小值得查證的範圍。",
+        "en": "Link defects to suppliers, material lots and production lots for investigation."
+      },
+      "input": {
+        "zh": "缺陷、批次關係、製程與供應商紀錄",
+        "en": "Defects, lot genealogy, process and supplier records"
+      },
+      "output": {
+        "zh": "關聯圖、可能受影響批次與證據缺口",
+        "en": "Relationship map, potentially affected lots and evidence gaps"
+      },
+      "human_decision": {
+        "zh": "品質人員驗證根因與隔離範圍。",
+        "en": "Quality personnel verify causes and containment boundaries."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-supply-delay",
+      "kind": "agent",
+      "name": {
+        "zh": "出貨延誤追蹤助理",
+        "en": "Shipment delay monitoring assistant"
+      },
+      "purpose": {
+        "zh": "追蹤里程碑與已取得的異常訊號，整理可能延誤的貨件及可討論選項。",
+        "en": "Track milestones and available signals to flag shipments and response options."
+      },
+      "input": {
+        "zh": "出貨里程碑、承運資訊、交期與異常消息",
+        "en": "Shipment milestones, carrier data, due dates and incident information"
+      },
+      "output": {
+        "zh": "風險貨件摘要、依據與待確認選項",
+        "en": "Shipment risk brief, evidence and options to confirm"
+      },
+      "human_decision": {
+        "zh": "物流人員核准改線、加急與對客戶的承諾。",
+        "en": "Logistics approves rerouting, expediting and customer commitments."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-supply-version",
+      "kind": "workflow",
+      "name": {
+        "zh": "產品版本交接核對",
+        "en": "Product revision handover workflow"
+      },
+      "purpose": {
+        "zh": "收集變更→比對核准版本→通知負責人→確認供應商收悉→追蹤切換。",
+        "en": "Collect changes → compare approved revisions → notify owners → confirm receipt → track cutover."
+      },
+      "input": {
+        "zh": "圖面、BOM、變更單、核准與供應商確認",
+        "en": "Drawings, BOMs, change orders, approvals and supplier acknowledgments"
+      },
+      "output": {
+        "zh": "版本差異、未同步清單與交接紀錄",
+        "en": "Revision differences, unsynchronized items and handover log"
+      },
+      "human_decision": {
+        "zh": "工程與供應鏈核准正式版本及切換時間。",
+        "en": "Engineering and supply chain approve revisions and cutover timing."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-supply-materials",
+      "kind": "tool",
+      "name": {
+        "zh": "長交期材料備料試算",
+        "en": "Long-lead material scenario planner"
+      },
+      "purpose": {
+        "zh": "對不同需求與交期情境計算材料缺口、備料成本與過量風險。",
+        "en": "Calculate shortages, preparation costs and excess risks across demand and lead-time scenarios."
+      },
+      "input": {
+        "zh": "需求情境、BOM、庫存、在途與材料交期",
+        "en": "Demand scenarios, BOMs, inventory, in-transit supply and lead times"
+      },
+      "output": {
+        "zh": "材料需求差異、備料方案與敏感度",
+        "en": "Material gaps, preparation options and sensitivity"
+      },
+      "human_decision": {
+        "zh": "規劃與採購確認風險承擔，不自動下採購單。",
+        "en": "Planning and procurement accept risks; no purchase order is issued automatically."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-legal-diff",
+      "kind": "skill",
+      "name": {
+        "zh": "合約條款偏離整理",
+        "en": "Contract deviation review"
+      },
+      "purpose": {
+        "zh": "將合約與核准範本比對，標出缺漏、異常義務與需要法務判讀的差異。",
+        "en": "Compare a contract with approved standards and flag omissions and unusual obligations."
+      },
+      "input": {
+        "zh": "合約、核准範本、審閱規則與版本",
+        "en": "Contract, approved template, review rules and versions"
+      },
+      "output": {
+        "zh": "附原文的差異表與審閱問題",
+        "en": "Source-linked deviation table and review questions"
+      },
+      "human_decision": {
+        "zh": "法務解釋條款並決定接受與否。",
+        "en": "Legal interprets clauses and decides acceptance."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-legal-obligations",
+      "kind": "skill",
+      "name": {
+        "zh": "合約義務與期限抽取",
+        "en": "Contract obligation extraction"
+      },
+      "purpose": {
+        "zh": "把交付、通知、續約與終止等承諾整理成可核對的義務清單。",
+        "en": "Extract delivery, notice, renewal and termination commitments for review."
+      },
+      "input": {
+        "zh": "已簽合約、附件、修訂與日期定義",
+        "en": "Signed contracts, attachments, amendments and date definitions"
+      },
+      "output": {
+        "zh": "義務草稿、期限依據與不明條款",
+        "en": "Draft obligations, date evidence and ambiguous clauses"
+      },
+      "human_decision": {
+        "zh": "法務與業務負責人確認義務及責任歸屬。",
+        "en": "Legal and business owners confirm obligations and ownership."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-legal-calendar",
+      "kind": "tool",
+      "name": {
+        "zh": "合約期限與提醒試算",
+        "en": "Contract deadline calculator"
+      },
+      "purpose": {
+        "zh": "依確認過的起算日、工作日與通知規則計算期限，顯示計算依據。",
+        "en": "Calculate deadlines using confirmed start dates, calendars and notice rules."
+      },
+      "input": {
+        "zh": "已確認義務、日期規則、行事曆與時區",
+        "en": "Confirmed obligations, date rules, calendars and time zones"
+      },
+      "output": {
+        "zh": "期限表、提醒建議與規則衝突",
+        "en": "Deadline schedule, reminder suggestions and rule conflicts"
+      },
+      "human_decision": {
+        "zh": "負責人確認日期解釋，提醒不代表已完成履約。",
+        "en": "Owners confirm interpretations; a reminder does not establish compliance."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-legal-change",
+      "kind": "agent",
+      "name": {
+        "zh": "法規變動影響整理助理",
+        "en": "Regulatory change impact assistant"
+      },
+      "purpose": {
+        "zh": "把已取得的新舊規範差異連到公司政策與流程，列出需要專業確認的影響。",
+        "en": "Relate available regulatory changes to policies and processes for expert review."
+      },
+      "input": {
+        "zh": "新舊規範、適用範圍、公司政策與流程清單",
+        "en": "Old and new requirements, scope, policies and process inventory"
+      },
+      "output": {
+        "zh": "可能影響、來源與待確認負責人",
+        "en": "Potential impacts, sources and owners to confirm"
+      },
+      "human_decision": {
+        "zh": "法務判斷適用性與修正要求，不自動出具法律結論。",
+        "en": "Legal determines applicability and action; no legal conclusion is automated."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-legal-audit",
+      "kind": "workflow",
+      "name": {
+        "zh": "內控證據收集與覆核",
+        "en": "Control evidence review workflow"
+      },
+      "purpose": {
+        "zh": "列控制要求→收集執行證據→核對缺漏→指派補件→人工覆核留痕。",
+        "en": "List controls → collect execution evidence → check gaps → request evidence → review."
+      },
+      "input": {
+        "zh": "控制清單、交易與核准紀錄、證據規則",
+        "en": "Controls, transactions, approval records and evidence rules"
+      },
+      "output": {
+        "zh": "證據索引、缺漏案件與覆核紀錄",
+        "en": "Evidence index, gaps and review record"
+      },
+      "human_decision": {
+        "zh": "稽核人員判斷證據充分性，不把有附件等同有效內控。",
+        "en": "Auditors judge sufficiency; an attachment alone does not prove an effective control."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-legal-negotiation",
+      "kind": "skill",
+      "name": {
+        "zh": "法務議題交接摘要",
+        "en": "Legal issue handover brief"
+      },
+      "purpose": {
+        "zh": "將合約爭點與商務背景整理成法務可追查的問題包，區分事實和立場。",
+        "en": "Prepare traceable legal questions with commercial context, separating facts from positions."
+      },
+      "input": {
+        "zh": "往來訊息、合約版本、商務目標與已知事實",
+        "en": "Correspondence, contract versions, business goals and known facts"
+      },
+      "output": {
+        "zh": "爭點摘要、證據位置與待決事項",
+        "en": "Issue brief, evidence locations and decisions needed"
+      },
+      "human_decision": {
+        "zh": "法務與商務主管核准談判立場及對外文字。",
+        "en": "Legal and business managers approve positions and external wording."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-management-assumptions",
+      "kind": "skill",
+      "name": {
+        "zh": "策略假設檢視",
+        "en": "Strategic assumption review"
+      },
+      "purpose": {
+        "zh": "把原策略中的關鍵假設與新證據對照，標出仍成立、受挑戰與未知之處。",
+        "en": "Compare strategic assumptions with new evidence, separating support, challenges and unknowns."
+      },
+      "input": {
+        "zh": "策略假設、原決策依據與新取得資訊",
+        "en": "Strategic assumptions, original evidence and new information"
+      },
+      "output": {
+        "zh": "假設變動摘要與待驗證問題",
+        "en": "Assumption changes and validation questions"
+      },
+      "human_decision": {
+        "zh": "管理層決定是否調整策略，不把單一訊號當結論。",
+        "en": "Leadership decides strategy changes; one signal is not conclusive."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-management-portfolio",
+      "kind": "tool",
+      "name": {
+        "zh": "專案組合資源試算",
+        "en": "Project portfolio resource simulator"
+      },
+      "purpose": {
+        "zh": "比較不同專案組合的預算、工時、依賴與時程衝突，顯示取捨。",
+        "en": "Compare project portfolios across budgets, effort, dependencies and schedule conflicts."
+      },
+      "input": {
+        "zh": "專案需求、資源上限、依賴與效益假設",
+        "en": "Project needs, resource limits, dependencies and benefit assumptions"
+      },
+      "output": {
+        "zh": "組合情境、資源衝突與假設敏感度",
+        "en": "Portfolio scenarios, resource conflicts and sensitivity"
+      },
+      "human_decision": {
+        "zh": "管理層決定優先順序與效益取捨。",
+        "en": "Leadership decides priorities and benefit trade-offs."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-management-execution",
+      "kind": "agent",
+      "name": {
+        "zh": "策略執行脈絡整理員",
+        "en": "Strategy execution context assistant"
+      },
+      "purpose": {
+        "zh": "將 KPI 異常連到專案更新與會議決定，整理需要主管關注的執行問題。",
+        "en": "Connect KPI changes with project updates and decisions to surface execution questions."
+      },
+      "input": {
+        "zh": "指標、專案更新、會議紀錄與行動項目",
+        "en": "Metrics, project updates, meeting records and actions"
+      },
+      "output": {
+        "zh": "執行摘要、依據與需介入的問題",
+        "en": "Execution brief, evidence and intervention questions"
+      },
+      "human_decision": {
+        "zh": "主管確認原因與處置，不能把部門說明直接當事實。",
+        "en": "Managers verify causes and actions; departmental explanations need evidence."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-management-options",
+      "kind": "skill",
+      "name": {
+        "zh": "決策選項與反證整理",
+        "en": "Decision options and counterevidence"
+      },
+      "purpose": {
+        "zh": "將候選方案的假設、支持與反對證據放在同一格式，指出尚未比較的取捨。",
+        "en": "Structure options, assumptions and supporting or opposing evidence for comparison."
+      },
+      "input": {
+        "zh": "決策問題、候選方案、限制與證據",
+        "en": "Decision question, options, constraints and evidence"
+      },
+      "output": {
+        "zh": "選項比較、反證與待補資訊",
+        "en": "Options comparison, counterevidence and missing information"
+      },
+      "human_decision": {
+        "zh": "決策者設定準則與可接受風險。",
+        "en": "Decision makers set criteria and acceptable risks."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-management-tradeoff",
+      "kind": "tool",
+      "name": {
+        "zh": "決策權重敏感度試算",
+        "en": "Decision weight sensitivity calculator"
+      },
+      "purpose": {
+        "zh": "調整準則權重與情境，查看選項排名是否因小幅改動就翻轉。",
+        "en": "Vary criteria weights and scenarios to see whether small changes reverse rankings."
+      },
+      "input": {
+        "zh": "已確認選項、準則、評分與權重範圍",
+        "en": "Confirmed options, criteria, scores and weight ranges"
+      },
+      "output": {
+        "zh": "敏感度表、穩定選項與爭議假設",
+        "en": "Sensitivity table, robust options and contested assumptions"
+      },
+      "human_decision": {
+        "zh": "管理層確認準則合理性，不把加權分數當客觀真相。",
+        "en": "Leadership validates criteria; weighted scores are not objective truth."
+      },
+      "status": "concept_only",
+      "implementation": null
+    },
+    {
+      "id": "idea-management-learning",
+      "kind": "workflow",
+      "name": {
+        "zh": "決策到成果回顧",
+        "en": "Decision-to-outcome review"
+      },
+      "purpose": {
+        "zh": "記錄選項與假設→核准→追蹤結果→對照原預期→更新可重用的經驗。",
+        "en": "Record options and assumptions → approve → track outcomes → compare expectations → learn."
+      },
+      "input": {
+        "zh": "決策紀錄、預期成果、實際結果與環境變動",
+        "en": "Decision records, expected outcomes, actual results and context changes"
+      },
+      "output": {
+        "zh": "可追溯的回顧、失效假設與後續實驗",
+        "en": "Traceable review, failed assumptions and follow-up experiments"
+      },
+      "human_decision": {
+        "zh": "決策者確認學習結論，保留失敗與不確定性。",
+        "en": "Decision makers validate lessons and retain failures and uncertainty."
+      },
+      "status": "concept_only",
+      "implementation": null
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "domain_desktop": [
+    {
+      "count": "共 7 筆 · 1–7",
+      "overflow": false,
+      "panels": 1,
+      "rows": 7,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-sales&tab=problems"
+    },
+    {
+      "count": "共 278 筆 · 1–20",
+      "overflow": false,
+      "panels": 1,
+      "rows": 20,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-sales&tab=startups"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-sales&tab=capabilities"
+    },
+    {
+      "count": "共 4 筆 · 1–4",
+      "overflow": false,
+      "panels": 1,
+      "rows": 4,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-marketing&tab=problems"
+    },
+    {
+      "count": "共 278 筆 · 1–20",
+      "overflow": false,
+      "panels": 1,
+      "rows": 20,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-marketing&tab=startups"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-marketing&tab=capabilities"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-finance&tab=problems"
+    },
+    {
+      "count": "共 384 筆 · 1–20",
+      "overflow": false,
+      "panels": 1,
+      "rows": 20,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-finance&tab=startups"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-finance&tab=capabilities"
+    },
+    {
+      "count": "共 7 筆 · 1–7",
+      "overflow": false,
+      "panels": 1,
+      "rows": 7,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-hr&tab=problems"
+    },
+    {
+      "count": "共 125 筆 · 1–20",
+      "overflow": false,
+      "panels": 1,
+      "rows": 20,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-hr&tab=startups"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-hr&tab=capabilities"
+    },
+    {
+      "count": "共 5 筆 · 1–5",
+      "overflow": false,
+      "panels": 1,
+      "rows": 5,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-procurement&tab=problems"
+    },
+    {
+      "count": "共 146 筆 · 1–20",
+      "overflow": false,
+      "panels": 1,
+      "rows": 20,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-procurement&tab=startups"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-procurement&tab=capabilities"
+    },
+    {
+      "count": "共 5 筆 · 1–5",
+      "overflow": false,
+      "panels": 1,
+      "rows": 5,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-operations&tab=problems"
+    },
+    {
+      "count": "共 739 筆 · 1–20",
+      "overflow": false,
+      "panels": 1,
+      "rows": 20,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-operations&tab=startups"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-operations&tab=capabilities"
+    },
+    {
+      "count": "共 7 筆 · 1–7",
+      "overflow": false,
+      "panels": 1,
+      "rows": 7,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-customer-service&tab=problems"
+    },
+    {
+      "count": "共 163 筆 · 1–20",
+      "overflow": false,
+      "panels": 1,
+      "rows": 20,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-customer-service&tab=startups"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-customer-service&tab=capabilities"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-supply-chain&tab=problems"
+    },
+    {
+      "count": "共 146 筆 · 1–20",
+      "overflow": false,
+      "panels": 1,
+      "rows": 20,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-supply-chain&tab=startups"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-supply-chain&tab=capabilities"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-legal&tab=problems"
+    },
+    {
+      "count": "共 194 筆 · 1–20",
+      "overflow": false,
+      "panels": 1,
+      "rows": 20,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-legal&tab=startups"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-legal&tab=capabilities"
+    },
+    {
+      "count": "共 4 筆 · 1–4",
+      "overflow": false,
+      "panels": 1,
+      "rows": 4,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-management&tab=problems"
+    },
+    {
+      "count": "共 586 筆 · 1–20",
+      "overflow": false,
+      "panels": 1,
+      "rows": 20,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-management&tab=startups"
+    },
+    {
+      "count": "共 6 筆 · 1–6",
+      "overflow": false,
+      "panels": 1,
+      "rows": 6,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-management&tab=capabilities"
+    }
+  ],
+  "mobile_library_and_details": [
+    {
+      "overflow": false,
+      "rows": 20,
+      "title": "All problems & research",
+      "url": "http://127.0.0.1:4176/?lang=en&view=library&tab=problems"
+    },
+    {
+      "overflow": false,
+      "rows": 20,
+      "title": "Explore all startup records",
+      "url": "http://127.0.0.1:4176/?lang=en&view=library&tab=startups"
+    },
+    {
+      "overflow": false,
+      "rows": 20,
+      "title": "Explore all capabilities & resources",
+      "url": "http://127.0.0.1:4176/?lang=en&view=library&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "rows": 20,
+      "title": "All problems & research",
+      "url": "http://127.0.0.1:4176/?lang=en&view=library&tab=problems&group=ai"
+    },
+    {
+      "overflow": false,
+      "rows": 7,
+      "title": "All problems & research",
+      "url": "http://127.0.0.1:4176/?lang=en&view=library&tab=problems&group=system"
+    },
+    {
+      "overflow": false,
+      "rows": 20,
+      "title": "Explore all startup records",
+      "url": "http://127.0.0.1:4176/?lang=en&view=library&tab=startups&page=200"
+    },
+    {
+      "overflow": false,
+      "rows": 20,
+      "title": "Explore all startup records",
+      "url": "http://127.0.0.1:4176/?lang=en&view=library&tab=startups&industry=healthcare&solution=voice-conversation"
+    },
+    {
+      "overflow": false,
+      "rows": 20,
+      "title": "Explore all capabilities & resources",
+      "url": "http://127.0.0.1:4176/?lang=en&view=library&tab=capabilities&capview=resources"
+    },
+    {
+      "overflow": false,
+      "rows": 15,
+      "title": "Explore all capabilities & resources",
+      "url": "http://127.0.0.1:4176/?lang=en&view=library&tab=capabilities&capview=trending"
+    },
+    {
+      "overflow": false,
+      "rows": 0,
+      "title": "Consulting agent framework & practice",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&tab=problems&kind=guide&id=practice&origin=showcase"
+    },
+    {
+      "overflow": false,
+      "rows": 0,
+      "title": "Problem research methodology",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&tab=problems&kind=guide&id=methodology&origin=showcase"
+    },
+    {
+      "overflow": false,
+      "rows": 0,
+      "title": "Governance, validation & research roadmap",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&tab=problems&kind=guide&id=roadmap&origin=showcase"
+    },
+    {
+      "overflow": false,
+      "rows": 0,
+      "title": "mikan-atomoki/text-to-model",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&tab=capabilities&capview=resources&kind=resource&id=cap-001c3e04d3a800&origin=library"
+    },
+    {
+      "overflow": false,
+      "rows": 0,
+      "title": "thedotmack/claude-mem",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&tab=capabilities&capview=trending&kind=trend&id=github%3Athedotmack%2Fclaude-mem&origin=library"
+    },
+    {
+      "overflow": false,
+      "rows": 0,
+      "title": "Manufacturing cost is up. Is it material, yield, labor, or process?",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&tab=problems&kind=problem&id=F03&origin=library"
+    },
+    {
+      "overflow": false,
+      "rows": 0,
+      "title": "How much demand should we expect next?",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&tab=problems&kind=problem&id=S01&origin=library"
+    },
+    {
+      "overflow": false,
+      "rows": 0,
+      "title": "Customer fit assessment",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&tab=capabilities&kind=capability&id=idea-sales-fit&origin=library"
+    },
+    {
+      "overflow": false,
+      "rows": 0,
+      "title": "If ten AIs give the same answer, is that really ten independent judgments?",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&tab=problems&group=system&kind=problem&id=E93&origin=library"
+    },
+    {
+      "overflow": false,
+      "rows": 0,
+      "title": "Flyr",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&tab=startups&kind=startup&id=upstream-20666&origin=library"
+    }
+  ],
+  "pagination_return_verified": true,
+  "filter_coverage": "healthcare AND voice-conversation = 24 display records",
+  "language_filter_return_verified": true,
+  "flyr_group_records": 2,
+  "guide_script_count": 0,
+  "console_errors": []
+}

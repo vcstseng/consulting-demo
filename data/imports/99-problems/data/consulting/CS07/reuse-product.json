@@ -1,0 +1,485 @@
+{
+  "id": "cs07-product-reuse-20261027",
+  "synthetic": true,
+  "blind": false,
+  "formal_Problem_X_used": false,
+  "same_assistant_author_and_review": true,
+  "engine_changed": false,
+  "external_model_calls": 0,
+  "real_user_approval": false,
+  "operational_action_performed": false,
+  "frozen_implementation_unchanged": true,
+  "direct_reuse": {
+    "passed": 2,
+    "total": 2
+  },
+  "limits": [
+    "One context with related conditions, not independent transfer trials.",
+    "Correct denials/stops are not solved problems.",
+    "Deterministic adapters and Mock Lead; no autonomous-agent validation.",
+    "Not complete seven-gate or production security validation."
+  ],
+  "conditions": {
+    "current_on_last_valid_day": {
+      "synthetic_inputs_and_expectations": {
+        "docs": [
+          {
+            "id": "SYNC-current-v3",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "Save the current task, reconnect in Settings, and contact support with the diagnostic ID if E31 remains."
+          },
+          {
+            "id": "SYNC-current-v2",
+            "version": 2,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "2",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "For product version 2, export settings and ask support to review the connection configuration."
+          },
+          {
+            "id": "SYNC-internal",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "support_admin"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "SYNTHETIC_INTERNAL_SUPPORT_CANARY"
+          }
+        ],
+        "access": {
+          "new-customer": {
+            "active": true,
+            "product": "SyncDesk",
+            "plans": [
+              "basic"
+            ]
+          }
+        },
+        "role": "customer",
+        "version": "3",
+        "date": "2026-10-27",
+        "status": "delivered",
+        "document_id": "SYNC-current-v3",
+        "document_version": 4,
+        "answer": "Save the current task, reconnect in Settings, and contact support with the diagnostic ID if E31 remains."
+      },
+      "actual_status": "delivered",
+      "expectation_met": true,
+      "attempts": 1,
+      "actual_answer": "Save the current task, reconnect in Settings, and contact support with the diagnostic ID if E31 remains.",
+      "actual_claims": [
+        {
+          "document_id": "SYNC-current-v3",
+          "version": 4
+        }
+      ],
+      "restricted_content_absent": true,
+      "lookup_calls": 1
+    },
+    "different_product_version": {
+      "synthetic_inputs_and_expectations": {
+        "docs": [
+          {
+            "id": "SYNC-current-v3",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "Save the current task, reconnect in Settings, and contact support with the diagnostic ID if E31 remains."
+          },
+          {
+            "id": "SYNC-current-v2",
+            "version": 2,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "2",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "For product version 2, export settings and ask support to review the connection configuration."
+          },
+          {
+            "id": "SYNC-internal",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "support_admin"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "SYNTHETIC_INTERNAL_SUPPORT_CANARY"
+          }
+        ],
+        "access": {
+          "new-customer": {
+            "active": true,
+            "product": "SyncDesk",
+            "plans": [
+              "basic"
+            ]
+          }
+        },
+        "role": "customer",
+        "version": "2",
+        "date": "2026-10-27",
+        "status": "delivered",
+        "document_id": "SYNC-current-v2",
+        "document_version": 2,
+        "answer": "For product version 2, export settings and ask support to review the connection configuration."
+      },
+      "actual_status": "delivered",
+      "expectation_met": true,
+      "attempts": 1,
+      "actual_answer": "For product version 2, export settings and ask support to review the connection configuration.",
+      "actual_claims": [
+        {
+          "document_id": "SYNC-current-v2",
+          "version": 2
+        }
+      ],
+      "restricted_content_absent": true,
+      "lookup_calls": 1
+    },
+    "inactive_account": {
+      "synthetic_inputs_and_expectations": {
+        "docs": [
+          {
+            "id": "SYNC-current-v3",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "Save the current task, reconnect in Settings, and contact support with the diagnostic ID if E31 remains."
+          },
+          {
+            "id": "SYNC-current-v2",
+            "version": 2,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "2",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "For product version 2, export settings and ask support to review the connection configuration."
+          },
+          {
+            "id": "SYNC-internal",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "support_admin"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "SYNTHETIC_INTERNAL_SUPPORT_CANARY"
+          }
+        ],
+        "access": {
+          "new-customer": {
+            "active": false,
+            "product": "SyncDesk",
+            "plans": [
+              "basic"
+            ]
+          }
+        },
+        "role": "customer",
+        "version": "3",
+        "date": "2026-10-27",
+        "status": "blocked"
+      },
+      "actual_status": "blocked",
+      "expectation_met": true,
+      "attempts": 1,
+      "actual_answer": null,
+      "actual_claims": [],
+      "restricted_content_absent": true,
+      "lookup_calls": 1
+    },
+    "day_after_expiry": {
+      "synthetic_inputs_and_expectations": {
+        "docs": [
+          {
+            "id": "SYNC-current-v3",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "Save the current task, reconnect in Settings, and contact support with the diagnostic ID if E31 remains."
+          },
+          {
+            "id": "SYNC-current-v2",
+            "version": 2,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "2",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "For product version 2, export settings and ask support to review the connection configuration."
+          },
+          {
+            "id": "SYNC-internal",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "support_admin"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "SYNTHETIC_INTERNAL_SUPPORT_CANARY"
+          }
+        ],
+        "access": {
+          "new-customer": {
+            "active": true,
+            "product": "SyncDesk",
+            "plans": [
+              "basic"
+            ]
+          }
+        },
+        "role": "customer",
+        "version": "3",
+        "date": "2026-10-28",
+        "status": "blocked"
+      },
+      "actual_status": "blocked",
+      "expectation_met": true,
+      "attempts": 1,
+      "actual_answer": null,
+      "actual_claims": [],
+      "restricted_content_absent": true,
+      "lookup_calls": 1
+    },
+    "ambiguous_current_documents": {
+      "synthetic_inputs_and_expectations": {
+        "docs": [
+          {
+            "id": "SYNC-current-v3",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "Save the current task, reconnect in Settings, and contact support with the diagnostic ID if E31 remains."
+          },
+          {
+            "id": "SYNC-current-v2",
+            "version": 2,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "2",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "For product version 2, export settings and ask support to review the connection configuration."
+          },
+          {
+            "id": "SYNC-internal",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "support_admin"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "SYNTHETIC_INTERNAL_SUPPORT_CANARY"
+          },
+          {
+            "id": "SYNC-unresolved-duplicate",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "Save the current task, reconnect in Settings, and contact support with the diagnostic ID if E31 remains."
+          }
+        ],
+        "access": {
+          "new-customer": {
+            "active": true,
+            "product": "SyncDesk",
+            "plans": [
+              "basic"
+            ]
+          }
+        },
+        "role": "customer",
+        "version": "3",
+        "date": "2026-10-27",
+        "status": "blocked"
+      },
+      "actual_status": "blocked",
+      "expectation_met": true,
+      "attempts": 1,
+      "actual_answer": null,
+      "actual_claims": [],
+      "restricted_content_absent": true,
+      "lookup_calls": 1
+    },
+    "unapproved_role": {
+      "synthetic_inputs_and_expectations": {
+        "docs": [
+          {
+            "id": "SYNC-current-v3",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "Save the current task, reconnect in Settings, and contact support with the diagnostic ID if E31 remains."
+          },
+          {
+            "id": "SYNC-current-v2",
+            "version": 2,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "2",
+            "status": "current",
+            "roles": [
+              "customer"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "For product version 2, export settings and ask support to review the connection configuration."
+          },
+          {
+            "id": "SYNC-internal",
+            "version": 4,
+            "issue": "E31",
+            "product": "SyncDesk",
+            "product_version": "3",
+            "status": "current",
+            "roles": [
+              "support_admin"
+            ],
+            "plan": "basic",
+            "valid_from": "2026-10-01",
+            "valid_to": "2026-10-27",
+            "body": "SYNTHETIC_INTERNAL_SUPPORT_CANARY"
+          }
+        ],
+        "access": {
+          "new-customer": {
+            "active": true,
+            "product": "SyncDesk",
+            "plans": [
+              "basic"
+            ]
+          }
+        },
+        "role": "partner",
+        "version": "3",
+        "date": "2026-10-27",
+        "status": "blocked"
+      },
+      "actual_status": "blocked",
+      "expectation_met": true,
+      "attempts": 1,
+      "actual_answer": null,
+      "actual_claims": [],
+      "restricted_content_absent": true,
+      "lookup_calls": 1
+    }
+  },
+  "boundary_expectations": {
+    "met": 4,
+    "total": 4
+  }
+}

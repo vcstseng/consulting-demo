@@ -1,0 +1,5 @@
+product,period,units,material_per_unit,material_price,hours_per_unit,hourly_rate,overhead_per_unit
+驅動馬達 X,baseline,500,2,50,1,100,20
+驅動馬達 X,actual,600,1.9,45,1.6,105,20
+定位器 Y,baseline,400,1,80,.5,100,10
+定位器 Y,actual,400,1,80,.6,105,10

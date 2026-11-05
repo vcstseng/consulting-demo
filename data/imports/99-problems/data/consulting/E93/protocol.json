@@ -1,0 +1,11 @@
+{
+  "id": "e93-process-v1",
+  "process": "docs/CONSULTING_PROCESS_V1.md",
+  "mode": "synthetic_shared_context_rehearsal",
+  "max_capability_versions": 3,
+  "frozen_gates": ["charter", "readiness", "analysis", "review", "reverification", "management", "delivery"],
+  "must_pass": ["shared_root_not_independent_votes", "transitive_dependency", "separate_roots_not_statistical_independence", "missing_source_stops", "cycles_stop", "source_instructions_are_data", "contradictory_positions_not_majority", "fabricated_verification_rejected", "stale_decision_rejected", "stop_survives_restart", "changed_source_blocks_resume", "criteria_change_invalidates_run"],
+  "evidence_requirements": ["source_sha256", "claim_id", "report_count", "roots_by_report", "shared_sources", "positions", "limitations"],
+  "publication_scope": "bounded_source_dependency_audit_only",
+  "not_established": ["independent_agent_reasoning", "blind_generalization", "statistical_independence", "human_usability", "production_security", "all_E93_scenarios_solved"]
+}

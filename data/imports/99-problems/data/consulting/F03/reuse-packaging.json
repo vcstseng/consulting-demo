@@ -1,0 +1,300 @@
+{
+  "id": "f03-packaging-reuse-20261027",
+  "synthetic": true,
+  "blind": false,
+  "formal_Problem_X_used": false,
+  "engine_changed": false,
+  "external_model_calls": 0,
+  "real_user_approval": false,
+  "operational_action_performed": false,
+  "frozen_implementation_unchanged": true,
+  "direct_reuse": {
+    "passed": 2,
+    "total": 2
+  },
+  "boundary_expectations": {
+    "met": 2,
+    "total": 2
+  },
+  "predeclared_arithmetic": "100*(2*10+0.5*20+5)=3500; 120*(2*12+0.5*20+5)=4680; volume=20*35=700; price=120*2*2=480; delta=1180.",
+  "units": "Unspecified synthetic demonstration monetary units.",
+  "limits": [
+    "One context with row-order invariance, not independent transfer trials.",
+    "Same assistant authored and reviewed; no blind or autonomous-agent validation.",
+    "Accounting attribution is not causal diagnosis or achieved savings.",
+    "Correct stopping is not business problem resolution; no full seven-gate run."
+  ],
+  "conditions": {
+    "volume_and_price": {
+      "synthetic_inputs_and_expectations": {
+        "csv": "product,period,units,material_per_unit,material_price,hours_per_unit,hourly_rate,overhead_per_unit\nPackaging-A,baseline,100,2,10,0.5,20,5\nPackaging-A,actual,120,2,12,0.5,20,5\n",
+        "status": "delivered",
+        "attempts": 1,
+        "values": {
+          "baseline": "3500",
+          "actual": "4680",
+          "volume": "700",
+          "material_price": "480",
+          "material_usage": "0",
+          "labor_rate": "0",
+          "labor_efficiency": "0",
+          "overhead": "0"
+        },
+        "source_change": true
+      },
+      "actual_status": "delivered",
+      "actual_claims": [
+        {
+          "metric": "baseline",
+          "value": "3500.0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "actual",
+          "value": "4680.0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "volume",
+          "value": "700.0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "material_price",
+          "value": "480",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "material_usage",
+          "value": "0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "labor_rate",
+          "value": "0.0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "labor_efficiency",
+          "value": "0.0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "overhead",
+          "value": "0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        }
+      ],
+      "verification": {
+        "passed": true,
+        "failure_reasons": [],
+        "checks": [
+          "source_hash",
+          "claim_coverage",
+          "independent_recalculation",
+          "evidence_values"
+        ]
+      },
+      "expectation_met": true,
+      "attempts": 1,
+      "source_change_control": {
+        "expectation_met": true,
+        "verification": {
+          "passed": false,
+          "failure_reasons": [
+            "Source evidence changed or missing"
+          ]
+        },
+        "changed_source_retained": true
+      }
+    },
+    "row_order_reversed": {
+      "synthetic_inputs_and_expectations": {
+        "csv": "product,period,units,material_per_unit,material_price,hours_per_unit,hourly_rate,overhead_per_unit\nPackaging-A,actual,120,2,12,0.5,20,5\nPackaging-A,baseline,100,2,10,0.5,20,5\n",
+        "status": "delivered",
+        "attempts": 1,
+        "values": {
+          "baseline": "3500",
+          "actual": "4680",
+          "volume": "700",
+          "material_price": "480",
+          "material_usage": "0",
+          "labor_rate": "0",
+          "labor_efficiency": "0",
+          "overhead": "0"
+        },
+        "source_change": false
+      },
+      "actual_status": "delivered",
+      "actual_claims": [
+        {
+          "metric": "baseline",
+          "value": "3500.0",
+          "evidence_ref": "eff42b1365fee631725b2c2c6c90e55d2afd05c32e4308cbf2f10a375e34be2a",
+          "basis": "calculation"
+        },
+        {
+          "metric": "actual",
+          "value": "4680.0",
+          "evidence_ref": "eff42b1365fee631725b2c2c6c90e55d2afd05c32e4308cbf2f10a375e34be2a",
+          "basis": "calculation"
+        },
+        {
+          "metric": "volume",
+          "value": "700.0",
+          "evidence_ref": "eff42b1365fee631725b2c2c6c90e55d2afd05c32e4308cbf2f10a375e34be2a",
+          "basis": "calculation"
+        },
+        {
+          "metric": "material_price",
+          "value": "480",
+          "evidence_ref": "eff42b1365fee631725b2c2c6c90e55d2afd05c32e4308cbf2f10a375e34be2a",
+          "basis": "calculation"
+        },
+        {
+          "metric": "material_usage",
+          "value": "0",
+          "evidence_ref": "eff42b1365fee631725b2c2c6c90e55d2afd05c32e4308cbf2f10a375e34be2a",
+          "basis": "calculation"
+        },
+        {
+          "metric": "labor_rate",
+          "value": "0.0",
+          "evidence_ref": "eff42b1365fee631725b2c2c6c90e55d2afd05c32e4308cbf2f10a375e34be2a",
+          "basis": "calculation"
+        },
+        {
+          "metric": "labor_efficiency",
+          "value": "0.0",
+          "evidence_ref": "eff42b1365fee631725b2c2c6c90e55d2afd05c32e4308cbf2f10a375e34be2a",
+          "basis": "calculation"
+        },
+        {
+          "metric": "overhead",
+          "value": "0",
+          "evidence_ref": "eff42b1365fee631725b2c2c6c90e55d2afd05c32e4308cbf2f10a375e34be2a",
+          "basis": "calculation"
+        }
+      ],
+      "verification": {
+        "passed": true,
+        "failure_reasons": [],
+        "checks": [
+          "source_hash",
+          "claim_coverage",
+          "independent_recalculation",
+          "evidence_values"
+        ]
+      },
+      "expectation_met": true,
+      "attempts": 1,
+      "source_change_control": {
+        "expectation_met": true,
+        "not_exercised": true
+      }
+    },
+    "missing_price": {
+      "synthetic_inputs_and_expectations": {
+        "csv": "product,period,units,material_per_unit,material_price,hours_per_unit,hourly_rate,overhead_per_unit\nPackaging-A,baseline,100,2,10,0.5,20,5\nPackaging-A,actual,120,2,,0.5,20,5\n",
+        "status": "needs_evidence",
+        "attempts": 1,
+        "values": null,
+        "source_change": false
+      },
+      "actual_status": "needs_evidence",
+      "actual_claims": [],
+      "verification": {
+        "passed": false,
+        "failure_reasons": [
+          "Packaging-A/actual: missing or invalid material_price"
+        ]
+      },
+      "expectation_met": true,
+      "attempts": 1,
+      "source_change_control": {
+        "expectation_met": true,
+        "not_exercised": true
+      }
+    },
+    "corrupted_total_claim": {
+      "synthetic_inputs_and_expectations": {
+        "csv": "product,period,units,material_per_unit,material_price,hours_per_unit,hourly_rate,overhead_per_unit\nPackaging-A,baseline,100,2,10,0.5,20,5\nPackaging-A,actual,120,2,12,0.5,20,5\n",
+        "status": "blocked",
+        "attempts": 2,
+        "values": null,
+        "source_change": false
+      },
+      "actual_status": "blocked",
+      "actual_claims": [
+        {
+          "metric": "baseline",
+          "value": "3500.0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "actual",
+          "value": "1",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "volume",
+          "value": "700.0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "material_price",
+          "value": "480",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "material_usage",
+          "value": "0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "labor_rate",
+          "value": "0.0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "labor_efficiency",
+          "value": "0.0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        },
+        {
+          "metric": "overhead",
+          "value": "0",
+          "evidence_ref": "239b2f4a26aa61744394d6cbdc6020a70c374d3a7b92fbd0468a64201716e5be",
+          "basis": "calculation"
+        }
+      ],
+      "verification": {
+        "passed": false,
+        "failure_reasons": [
+          "Independent recalculation mismatch: actual"
+        ]
+      },
+      "expectation_met": true,
+      "attempts": 2,
+      "source_change_control": {
+        "expectation_met": true,
+        "not_exercised": true
+      }
+    }
+  }
+}

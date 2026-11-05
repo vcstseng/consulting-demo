@@ -1,0 +1,2 @@
+* text=auto eol=lf
+data/imports/** -text whitespace=cr-at-eol

@@ -1,11 +1,13 @@
-import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
+import {readFile,mkdir,copyFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
+import {execFileSync} from 'node:child_process';
 import path from 'node:path';
 import {validate} from '../src/engine.js';
 const web=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const data=JSON.parse(await readFile(path.resolve(web,'../data/samples/round-one.json'),'utf8'));
-validate(data);
+const root=path.dirname(web),out=path.join(web,'dist/data');
+execFileSync(process.platform==='win32'?'python':'python3',[path.join(root,'scripts/build_integration.py'),'--out',out],{cwd:root,stdio:'inherit'});
+const data=JSON.parse(await readFile(path.join(out,'catalog.json'),'utf8'));
+const startups=JSON.parse(await readFile(path.join(out,'startups.json'),'utf8'));validate(data,startups);
 for(const folder of ['','src','data'])await mkdir(path.join(web,'dist',folder),{recursive:true});
 for(const file of ['index.html','src/app.js','src/styles.css','src/engine.js'])await copyFile(path.join(web,file),path.join(web,'dist',file));
-await writeFile(path.join(web,'dist/data/catalog.json'),JSON.stringify(data)+'\n');
-console.log('Built round-one shell: 10 domains, 1 problem, 1 startup, 6 capabilities.');
+console.log('Built integrated prototype: 99 problems, 4085 startup records / 4000 display groups, 60 concepts, 84 resources, 15 trending entries.');

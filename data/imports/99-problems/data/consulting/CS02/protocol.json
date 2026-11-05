@@ -1,0 +1,13 @@
+{
+  "id": "cs02-process-v1",
+  "process": "docs/CONSULTING_PROCESS_V1.md",
+  "mode": "synthetic_structured_ticket_routing",
+  "max_capability_versions": 3,
+  "frozen_gates": ["charter", "readiness", "analysis", "review", "reverification", "management", "delivery"],
+  "role_bindings": {"charter":"A01","readiness":"A02","analysis":"A05","review":"A15","reverification":"verifier","management":"simulated_manager","delivery":"A01"},
+  "must_pass": ["existing_process_and_roles_preflight", "critical_risk_overrides_customer_value", "policy_sla_deadline_and_overdue", "qualified_available_assignee_only", "missing_or_unknown_fields_escalate", "expired_policy_stops", "ticket_text_not_authority", "separate_verifier_rejects_wrong_priority_or_deadline", "review_requires_evidence", "stale_decision_and_restart_stop", "frozen_criteria_and_role_binding", "all_previous_case_regressions"],
+  "public_scenarios": ["normal","no_staff","unknown_category","unknown_risk","invalid_time","expired_policy","critical_unknown_category","text_injection"],
+  "expected_main": {"T-critical":{"priority":"P0","queue":"incident","assignee":"incident-1","response_due_at":"2026-10-26T11:45:00+00:00","overdue":true},"T-outage":{"priority":"P1","queue":"technical","assignee":"tech-1","response_due_at":"2026-10-26T12:30:00+00:00","overdue":false},"T-vip":{"priority":"P2","queue":"billing","assignee":"billing-1","response_due_at":"2026-10-26T15:45:00+00:00","overdue":false}},
+  "publication_scope": "synthetic_structured_triage_recommendations_only",
+  "not_established": ["free_text_understanding","live_dispatch","customer_promises","independent_models","blind_generalization","real_sla_improvement"]
+}

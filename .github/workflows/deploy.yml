@@ -2,7 +2,7 @@ name: Deploy Consulting Demo
 on:
   push:
     branches: [main]
-    paths: ['web/**', 'data/samples/**', '.github/workflows/deploy.yml']
+    paths: ['web/**', 'data/imports/**', 'scripts/**', '.github/workflows/deploy.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -22,8 +22,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --test web/tests/engine.test.mjs
       - run: node web/scripts/build.mjs
+      - run: node --test web/tests/engine.test.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

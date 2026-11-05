@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Future Roadmap — 99 Problems</title><meta name="description" content="From fixed consulting teams to problem-driven processes and evolving capabilities: current evidence, seven research phases, security and governance."><link rel="stylesheet" href="../../assets/css/site.css"><link rel="stylesheet" href="../../../assets/css/roadmap.css"><link rel="stylesheet" href="../../../assets/css/presentation.css?v=freeze-20261027"></head>
+<body>
+<header class="site-header site-shell"><a class="brand" href="../../index.html"><span class="brand-mark">99</span><span class="brand-copy">Problems<small>From Jobs to Real Business Problems</small></span></a>
+<nav class="site-nav" aria-label="Primary"><a href="../../pages/problem-map/index.html">Problem Map</a><a href="../../pages/methodology/index.html">Methodology</a><a href="../practice/index.html" data-solving-practice>Practice</a> <a href="../roadmap/index.html" data-future-roadmap aria-current="page">Future Roadmap</a> <a class="lang" href="#" data-lang-toggle>中 / EN</a>
+</nav>
+</header>
+<main class="problem-detail" id="roadmap-content">
+<section class="page-head">
+<h1>Future Roadmap</h1>
+<p class="subtitle">From Fixed Teams to Problem-driven, Evolving Capabilities</p>
+<p class="intro">Starting with predefined consulting teams, we want to investigate how a system could design processes around a specific problem, organize the capabilities it needs, and turn verifiable execution experience into better approaches to future problems.</p>
+<p>This roadmap sets out a research direction and the evidence required to move forward. It does not claim autonomous evolution or promise delivery dates. The phases describe research dependencies; progress depends on demonstrated need and experimental results.</p>
+<p>Updated 2026-10-27 · Test existing capabilities; let evidence guide the next step</p>
+</section>
+<section class="presentation-overview" aria-labelledby="roadmap-overview"><h2 id="roadmap-overview">The roadmap at a glance</h2><ul><li><strong>Current evidence</strong>Bounded demonstrations and similar-context reuse checks. No demonstrated autonomous evolution.</li><li><strong>Next step</strong>Resume only when there is a concrete need or a gap worth testing.</li><li><strong>Dynamic planning</strong>Phase two is deferred pending evidence of need. Other phases remain research directions.</li></ul></section>
+<nav class="roadmap-toc" aria-label="On this page">
+<h2>On this page</h2>
+<ul>
+<li><a href="#position">Where we are</a>
+</li>
+<li><a href="#why">Why investigate</a>
+</li>
+<li><a href="#principles">Stable rules, variable solutions</a>
+</li>
+<li><a href="#stages">Seven research phases</a>
+</li>
+<li><a href="#planning-status">Current planning decision</a>
+</li>
+<li><a href="#restart">When to restart</a>
+</li>
+<li><a href="#evaluation">Progress and stopping</a>
+</li>
+</ul>
+</nav><div class="detail-stack">
+<section class="detail-section" id="position"><div class="detail-title">
+<h2>Where we are: extensible, not yet evolving</h2></div><div class="detail-body solution-detail">
+<p>Predefined agents, skills, tools and workflows currently handle bounded cases. People set the direction and work with an AI assistant to implement improvements, then verify them through code and tests. Autonomous process design, capability generation and evolution across cases have not been demonstrated.</p>
+<p><a href="../problems/CS02/index.html#cs02-experiment">CS02</a> packages synthetic policy, risk signals and routing rules inside a worker/tool, followed by a separately implemented verifier. <a href="../problems/E93/index.html#e93-experiment">E93</a> packages source tracing and dependency checks as a dedicated capability. These implementations check bounded outputs and controls; they do not establish that a team can independently devise new methods. Role reviews remain simulations by the same assistant, rather than independent reviews by isolated models.</p>
+<p>99 Problems provides the research problem space; it does not mean the system can solve every problem. See <a href="../practice/index.html">Practice</a> for current cases and results. This page describes what we may investigate next and the evidence needed to proceed.</p><div class="data-box" id="current-evidence">
+<h3>Current work: test the process in simple, similar contexts</h3>
+<p>On 2026-10-27, similar-context probes were completed for CS02 ticket triage, E93 source-dependency auditing, CS07 authorized support lookup and F03 cost analysis. Each probe freezes existing capabilities, records acceptance criteria, then checks outputs and relevant controls. Failures are retained, with repairs and retests recorded separately. We do not deliberately make problems harder or add roles and tools first.</p>
+<p>These probes support bounded reuse. They do not establish four newly solved problems, independent blind evaluation or autonomous learning. Correct stopping, escalation and denial are not problem resolution. Further tests depend on a concrete need or an observed gap.</p>
+<p><a href="../practice/index.html#f03-reuse-milestone">See the reuse milestones and their limits →</a>
+</p></div></div>
+</section>
+<section class="detail-section" id="why"><div class="detail-title">
+<h2>Why research this, rather than simply add more agents?</h2></div><div class="detail-body solution-detail">
+<p>Different problems may need different evidence strategies, responsibilities and execution orders. Fixed roles may constrain decomposition. Repeatedly adding specialist tools by hand may create a difficult-to-maintain collection, while lessons trapped in individual cases may not improve the next one.</p>
+<p>These are hypotheses to test, not proof that fixed systems fail. For clear, stable tasks, a fixed workflow may be cheaper and more reliable. Dynamic systems must show that extra freedom offsets planning, verification, maintenance and risk costs.</p></div>
+</section>
+<section class="detail-section" id="principles"><div class="detail-title">
+<h2>Core principle: stable rules, variable solutions</h2></div><div class="detail-body solution-detail"><div class="data-split"><div class="data-box">
+<h3>What research may allow to vary</h3>
+<ul>
+<li>Problem decomposition, workflow and evidence-gathering order.</li>
+<li>Role participation, responsibilities and collaboration.</li>
+<li>Skill selection and composition; later research may modify or generate skills.</li>
+<li>Tool selection; controlled generation is a later research topic.</li>
+<li>Strategy adjustments in response to new evidence.</li>
+</ul></div><div class="data-box">
+<h3>Must remain controlled</h3>
+<ul>
+<li>Security and data/tool permissions.</li>
+<li>Governance, authority and accountability.</li>
+<li>Procedures for setting, changing and approving objectives and acceptance criteria.</li>
+<li>Evidence and quality requirements.</li>
+<li>Interface contracts and version management.</li>
+<li>Memory provenance, versions and traceability.</li>
+<li>Cost, time, stop conditions and resource ceilings.</li>
+<li>Change review, result invalidation and recovery rules.</li>
+</ul></div></div>
+<p>These possible changes belong to different research phases; they are not all implemented today. Stable rules can be formally revised, but agents working on a case cannot relax them during execution. Governance itself may be revised through a separate controlled change process. A generated plan grants no permissions, and a change proposer cannot rewrite its own scoring. Enforce governance before execution, at runtime and before delivery; do not require every case to follow the same seven-step sequence.</p></div>
+</section>
+<section id="stages">
+<h2>Phased research: evidence before expansion</h2>
+<p>The order describes research dependencies, not a delivery schedule. Phase one continues to build baseline evidence. Phase two awaits evidence of a practical need. Phases three to seven remain long-term research directions.</p><div class="detail-stack">
+<section class="detail-section roadmap-stage" id="phase-1" data-research-phase="1"><div class="detail-title"><span class="detail-num">01</span>
+<h3>Establish an empirical fixed-team baseline</h3></div>
+<p class="roadmap-status" data-phase-status="1"><span class="meta-pill">Ongoing baseline research</span>
+</p>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
+<dt>Research question</dt>
+<dd>Where does the current system work, and which failures come from data, capability or process limits? Understand the baseline before assuming it should become dynamic.</dd></div><div>
+<dt>Expected behavior</dt>
+<dd>Use the existing system while recording versions, evidence, quality, cost, human intervention, failures and capability gaps. Stop or escalate when support is insufficient.</dd></div><div>
+<dt>Validation</dt>
+<dd>Use reproducible cases and predeclared criteria; distinguish software tests, domain quality, human review and business outcomes.</dd></div><div>
+<dt>Condition for advancing</dt>
+<dd>A reproducible baseline and an observed process limitation worth comparing—not simply a desire for a more advanced-looking architecture.</dd></div><div>
+<dt>Main failure risk</dt>
+<dd>Easy synthetic cases, shared-context bias, or reporting only successes and test counts without costs or human effort.</dd></div><div>
+<dt>Concrete example</dt>
+<dd>A CS02 reuse probe found that the tool and verifier used different dates. The failure was retained, the host was changed to supply the same time explicitly, and the case was retested. A later similar context checked reuse. This was human-led improvement, not autonomous learning.</dd></div>
+</dl></details>
+</section>
+<section class="detail-section roadmap-stage" id="phase-2" data-research-phase="2"><div class="detail-title"><span class="detail-num">02</span>
+<h3>Problem-driven Process</h3></div>
+<p class="roadmap-status" data-phase-status="2"><span class="meta-pill">Deferred — pending evidence of need</span>
+</p>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
+<dt>Research question</dt>
+<dd>With the same problem, data, capability pool and resource limits, can system-generated processes outperform a fair fixed workflow?</dd></div><div>
+<dt>Expected behavior</dt>
+<dd>Use existing agents, skills and tools to choose participants, order, dependencies and branches. New evidence may prompt a controlled, versioned adjustment with a recorded reason.</dd></div><div>
+<dt>Validation</dt>
+<dd>Plans must be checkable and executable, not just prose. Compare with the fixed baseline without weakening it and include planning, validation, failures, retries and replanning costs. Case-specific human templates do not count as autonomous planning.</dd></div><div>
+<dt>Condition for advancing</dt>
+<dd>First find a meaningful workflow choice; then show benefits that offset overhead without worsening quality or controls. More diverse plans or fewer steps alone are not success.</dd></div><div>
+<dt>Main failure risk</dt>
+<dd>A planner repeats branches already inside tools, depends on case-specific templates, weakens the baseline or hides planning costs.</dd></div><div>
+<dt>Concrete example</dt>
+<dd>Choosing source checks before calculations could matter if evidence conditions materially change later cost or quality. No such need has yet been established in the inspected cases.</dd></div>
+</dl></details>
+</section>
+<section class="detail-section roadmap-stage" id="phase-3" data-research-phase="3"><div class="detail-title"><span class="detail-num">03</span>
+<h3>Adaptive Roles &amp; Skills</h3></div>
+<p class="roadmap-status" data-phase-status="3"><span class="meta-pill">Long-term exploration</span>
+</p>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
+<dt>Research question</dt>
+<dd>When process changes cannot meet recurring needs, does modifying or generating roles and skills create a verifiable new capability?</dd></div><div>
+<dt>Expected behavior</dt>
+<dd>Compose existing capabilities first. Where justified, create task-specific roles or skills as temporary, versioned assets with provenance. A role description does not grant new access.</dd></div><div>
+<dt>Validation</dt>
+<dd>Hold other conditions fixed and compare accomplished work, evidence quality and failures. Distinguish a renamed role or rewritten prompt from a capability that performs better.</dd></div><div>
+<dt>Condition for advancing</dt>
+<dd>Confirm that process changes alone are insufficient, demonstrate repeatable benefits from the new capability, and define its scope and permissions before investigating higher-risk tool generation.</dd></div><div>
+<dt>Main failure risk</dt>
+<dd>Unbounded role proliferation, treating personas of one model as independent experts, or improving presentation without improving judgment.</dd></div><div>
+<dt>Concrete example</dt>
+<dd>A temporary policy-conflict review skill must find conflicts previously missed, not merely produce another policy summary.</dd></div>
+</dl></details>
+</section>
+<section class="detail-section roadmap-stage" id="phase-4" data-research-phase="4"><div class="detail-title"><span class="detail-num">04</span>
+<h3>Controlled Tool Generation</h3></div>
+<p class="roadmap-status" data-phase-status="4"><span class="meta-pill">Long-term exploration</span>
+</p>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
+<dt>Research question</dt>
+<dd>When existing tools are demonstrably insufficient, can generating a narrow calculator, checker or simulator be safe and worthwhile?</dd></div><div>
+<dt>Expected behavior</dt>
+<dd>Separate generation, testing, approval and execution. Bound interfaces, dependencies, permissions and resources; retain versions. Unapproved executable code is not an execution capability.</dd></div><div>
+<dt>Validation</dt>
+<dd>Use appropriate isolation, independent tests, malformed inputs, permission and dependency checks. Include maintenance costs and existing-tool alternatives.</dd></div><div>
+<dt>Condition for advancing</dt>
+<dd>Functional and safety requirements pass, with an owner and retirement conditions; then assess whether retention and reuse are justified.</dd></div><div>
+<dt>Main failure risk</dt>
+<dd>Treating executable code as trustworthy, shared assumptions between code and tests, dependency or access expansion, and long-lived maintenance for one-off scripts.</dd></div><div>
+<dt>Concrete example</dt>
+<dd>An unsupported cost formula may justify a narrow calculator, but it cannot validate itself or acquire permission to write to enterprise systems.</dd></div>
+</dl></details>
+</section>
+<section class="detail-section roadmap-stage" id="phase-5" data-research-phase="5"><div class="detail-title"><span class="detail-num">05</span>
+<h3>Institutional Memory &amp; Capability Lifecycle</h3></div>
+<p class="roadmap-status" data-phase-status="5"><span class="meta-pill">Long-term exploration</span>
+</p>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
+<dt>Research question</dt>
+<dd>Which experiences and temporary capabilities should be retained, retrieved and reused, and when should they be retired?</dd></div><div>
+<dt>Expected behavior</dt>
+<dd>Record provenance, authorization, applicability, versions, successes and failures. Separate temporary task assets from reviewed library capabilities and manage promotion, retrieval, retirement and dependencies.</dd></div><div>
+<dt>Validation</dt>
+<dd>Compare later performance with and without relevant experience. Test rejection and recovery for wrong, outdated or inapplicable memories, not just storage volume.</dd></div><div>
+<dt>Condition for advancing</dt>
+<dd>Show why capabilities are retained, when reuse helps and when retirement is warranted. Prevent incorrect memories from spreading unchecked before investigating systematic evolution.</dd></div><div>
+<dt>Main failure risk</dt>
+<dd>Contaminated or stale memories, unauthorized cross-client data reuse, and a growing library that makes selection harder rather than better.</dd></div><div>
+<dt>Concrete example</dt>
+<dd>The lesson that reposts do not constitute independent evidence can become a sourced verification rule. One client’s private policy must not automatically become a global rule.</dd></div>
+</dl></details>
+</section>
+<section class="detail-section roadmap-stage" id="phase-6" data-research-phase="6"><div class="detail-title"><span class="detail-num">06</span>
+<h3>Evidence-driven Evolution</h3></div>
+<p class="roadmap-status" data-phase-status="6"><span class="meta-pill">Long-term exploration</span>
+</p>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
+<dt>Research question</dt>
+<dd>Can past execution results lead to verified changes that improve later cases excluded from the adjustment process?</dd></div><div>
+<dt>Expected behavior</dt>
+<dd>Propose changes, retain candidates and prior versions, evaluate under fixed procedures, and keep effective changes or reject ineffective ones. Dynamic generation configures each task; evolution additionally requires past outcomes to improve future performance.</dd></div><div>
+<dt>Validation</dt>
+<dd>Compare with an unchanged baseline using cases excluded from development and tuning, cross-capability regression and repeated observations. Include proposal, failure and maintenance costs. Proposers cannot modify the scoring.</dd></div><div>
+<dt>Condition for advancing</dt>
+<dd>Demonstrate repeatable benefits on cases not used for tuning, without degrading other capabilities or controls, before broader transfer research.</dd></div><div>
+<dt>Main failure risk</dt>
+<dd>Overfitting evaluation sets, retaining only favorable results, moving the goalposts, or improving one domain while damaging another.</dd></div><div>
+<dt>Concrete example</dt>
+<dd>An adjustment prompted by a service failure should help later tickets not used to design it while preserving E93 source checks. Passing only the original ticket is not evolution.</dd></div>
+</dl></details>
+</section>
+<section class="detail-section roadmap-stage" id="phase-7" data-research-phase="7"><div class="detail-title"><span class="detail-num">07</span>
+<h3>Problem X — Transfer Beyond the Known Set</h3></div>
+<p class="roadmap-status" data-phase-status="7"><span class="meta-pill">Long-term exploration · formal Problem X reserved</span>
+</p>
+<details class="roadmap-phase-details"><summary>Read the research question, checks and risks</summary><dl><div>
+<dt>Research question</dt>
+<dd>Can accumulated methods and capabilities transfer to problems excluded from development, planner tuning and capability-selection design?</dd></div><div>
+<dt>Expected behavior</dt>
+<dd>Keep formal Problem X out of early process development. Retain version and exposure records during evaluation, and permit honest evidence requests or capability-gap findings.</dd></div><div>
+<dt>Validation</dt>
+<dd>Assess outcomes, evidence, controls, cost and human intervention. Distinguish process failure, missing data and missing tools. A case used to adjust the system is no longer unseen.</dd></div><div>
+<dt>Condition for advancing</dt>
+<dd>Sustained evidence across different new problems and explicit applicability limits before broader claims. One successful Problem X does not establish generalization.</dd></div><div>
+<dt>Main failure risk</dt>
+<dd>Test contamination, indirect prior exposure, claiming original-system transfer after adding a new tool, or counting an appropriate stop as a solved problem.</dd></div><div>
+<dt>Concrete example</dt>
+<dd>For a new operations problem with sufficient data and existing capabilities, test recomposition. If essential data is absent, explain the gap rather than force a success narrative.</dd></div>
+</dl></details>
+</section></div>
+</section>
+<section class="detail-section" id="planning-status"><div class="detail-title">
+<h2>Why dynamic planning is not starting yet</h2></div><div class="detail-body solution-detail">
+<p>In the inspected CS02 and E93 cases, most important branches are already handled inside the worker and tool, then checked by a verifier. We have not found a meaningful workflow choice that justifies a new planner. Adding one now may increase cost while repeating existing logic. Today’s similar-context probes did not provide new evidence for starting dynamic planning.</p>
+<p><strong>Only phase two is currently Deferred — pending evidence of need.</strong> The whole roadmap is not paused: baseline evidence can continue to grow, and the other phases remain research directions. This finding applies only to the inspected cases and capabilities, not all 99 Problems. It is not an implementation commitment.</p></div>
+</section>
+<section class="detail-section" id="restart"><div class="detail-title">
+<h2>What evidence would restart the investigation?</h2></div><div class="detail-body solution-detail">
+<ul>
+<li>The same capability pool supports multiple evidence or solution strategies whose selection changes quality, cost or time.</li>
+<li>People repeatedly need to change workflows or role assignments, beyond occasional exceptions.</li>
+<li>Similar capability gaps recur across different cases.</li>
+<li>Fixed workflows produce observable wasted work or unnecessary human intervention.</li>
+</ul>
+<p>Do not split tools artificially, add steps, make problems harder or weaken the baseline to justify research. Restart by identifying the smallest worthwhile change, not by unlocking every capability at once. If existing capabilities cannot support a fair comparison, state that gap first.</p></div>
+</section>
+<section class="detail-section" id="evaluation"><div class="detail-title">
+<h2>How to recognize progress—and when to stop</h2></div><div class="detail-body solution-detail">
+<ul>
+<li>Result correctness, completeness and evidence quality.</li>
+<li>Continued effectiveness of permissions, verification, versioning, stopping and recovery controls.</li>
+<li>Total cost and time, including planning, validation, failure and replanning.</li>
+<li>Necessary versus unnecessary human intervention.</li>
+<li>Performance on cases excluded from development, including contamination checks.</li>
+<li>Repeatability and regressions in other capabilities.</li>
+</ul>
+<p>Valid findings include: the fixed workflow is sufficient; dynamic configuration helps only certain problems; extra freedom does not offset cost and risk; or evidence is still insufficient. Retain these findings honestly. Adding features is not a substitute for research success.</p>
+<p>Predeclare pass, fail and inconclusive rules. Where numerical thresholds lack support, calibrate on development cases, then freeze them before reserved evaluation. Do not invent completion dates, percentages or benefit figures. Let the evidence determine further investment.</p></div>
+</section></div>
+<p class="roadmap-return"><a href="../practice/index.html">See current practice and cases →</a>
+</p>
+</main>
+<script src="../../assets/js/site.js?v=roadmap-20261027">
+</script></body></html>

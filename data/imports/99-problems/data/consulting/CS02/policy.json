@@ -1,0 +1,11 @@
+{
+  "id": "synthetic-triage-policy",
+  "version": 1,
+  "effective_from": "2026-10-01T00:00:00+00:00",
+  "effective_until": "2026-12-01T00:00:00+00:00",
+  "risk_priority": {"safety":"P0","data_exposure":"P0","service_down":"P1"},
+  "sla_minutes": {"P0":15,"P1":60,"P2":240},
+  "priority_queues": {"P0":"incident","P1":"technical"},
+  "category_queues": {"billing":"billing","product":"technical","access":"technical"},
+  "queue_skills": {"incident":["incident_response"],"technical":["technical_support"],"billing":["billing_support"]}
+}

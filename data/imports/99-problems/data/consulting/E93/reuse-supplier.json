@@ -1,0 +1,329 @@
+{
+  "id": "e93-supplier-reuse-20261027",
+  "synthetic": true,
+  "blind": false,
+  "formal_Problem_X_used": false,
+  "same_assistant_author_and_review": true,
+  "engine_changed": false,
+  "external_model_calls": 0,
+  "real_user_approval": false,
+  "operational_action_performed": false,
+  "frozen_implementation_unchanged": true,
+  "direct_reuse": {
+    "passed": 2,
+    "total": 2
+  },
+  "limits": [
+    "One context with related conditions, not independent transfer trials.",
+    "Correct denials/stops are not solved problems.",
+    "Deterministic adapters and Mock Lead; no autonomous-agent validation.",
+    "Not complete seven-gate or production security validation."
+  ],
+  "conditions": {
+    "shared_source_and_disagreement": {
+      "synthetic_inputs_and_expectations": {
+        "input": {
+          "claim_id": "supplier-ready-for-pilot",
+          "sources": [
+            {
+              "id": "supplier-log",
+              "parents": [],
+              "position": "support"
+            },
+            {
+              "id": "sales-summary",
+              "parents": [
+                "supplier-log"
+              ],
+              "position": "support"
+            },
+            {
+              "id": "customer-check",
+              "parents": [],
+              "position": "oppose"
+            }
+          ],
+          "reports": [
+            {
+              "id": "procurement-note",
+              "source_ids": [
+                "sales-summary"
+              ],
+              "model_family": "family-a"
+            },
+            {
+              "id": "operations-note",
+              "source_ids": [],
+              "upstream_reports": [
+                "procurement-note"
+              ],
+              "model_family": "family-b"
+            },
+            {
+              "id": "risk-note",
+              "source_ids": [
+                "customer-check"
+              ],
+              "model_family": "family-a"
+            }
+          ]
+        },
+        "status": "delivered",
+        "expected": {
+          "claim_id": "supplier-ready-for-pilot",
+          "report_count": 3,
+          "roots_by_report": {
+            "procurement-note": [
+              "supplier-log"
+            ],
+            "operations-note": [
+              "supplier-log"
+            ],
+            "risk-note": [
+              "customer-check"
+            ]
+          },
+          "shared_sources": {
+            "supplier-log": [
+              "operations-note",
+              "procurement-note"
+            ]
+          },
+          "positions": {
+            "supplier-log": "support",
+            "customer-check": "oppose"
+          },
+          "has_conflicting_positions": true,
+          "judgment_independence": "not_established"
+        },
+        "source_change_probe": true
+      },
+      "actual_status": "delivered",
+      "expectation_met": true,
+      "attempts": 1,
+      "actual_observations": {
+        "source_sha256": "5da2e5d35e98ae0788503890b28702ccd9ae2148595d65aa65d5511f70eaa672",
+        "claim_id": "supplier-ready-for-pilot",
+        "report_count": 3,
+        "roots_by_report": {
+          "procurement-note": [
+            "supplier-log"
+          ],
+          "operations-note": [
+            "supplier-log"
+          ],
+          "risk-note": [
+            "customer-check"
+          ]
+        },
+        "shared_sources": {
+          "supplier-log": [
+            "operations-note",
+            "procurement-note"
+          ]
+        },
+        "positions": {
+          "supplier-log": "support",
+          "customer-check": "oppose"
+        },
+        "has_conflicting_positions": true,
+        "model_families": {
+          "procurement-note": "family-a",
+          "operations-note": "family-b",
+          "risk-note": "family-a"
+        },
+        "judgment_independence": "not_established",
+        "limitations": [
+          "Declared lineage only; missing hidden dependencies remain possible.",
+          "Source identity and position labels do not prove truth or statistical independence."
+        ]
+      },
+      "management": {
+        "expectation_met": true,
+        "reason": "journal_or_source_changed",
+        "changed_source_retained": true,
+        "real_user_approval": false
+      }
+    },
+    "positions_not_provided": {
+      "synthetic_inputs_and_expectations": {
+        "input": {
+          "claim_id": "supplier-ready-for-pilot",
+          "sources": [
+            {
+              "id": "supplier-log",
+              "parents": []
+            },
+            {
+              "id": "sales-summary",
+              "parents": [
+                "supplier-log"
+              ]
+            },
+            {
+              "id": "customer-check",
+              "parents": []
+            }
+          ],
+          "reports": [
+            {
+              "id": "procurement-note",
+              "source_ids": [
+                "sales-summary"
+              ],
+              "model_family": "family-a"
+            },
+            {
+              "id": "operations-note",
+              "source_ids": [],
+              "upstream_reports": [
+                "procurement-note"
+              ],
+              "model_family": "family-b"
+            },
+            {
+              "id": "risk-note",
+              "source_ids": [
+                "customer-check"
+              ],
+              "model_family": "family-a"
+            }
+          ]
+        },
+        "status": "delivered",
+        "expected": {
+          "claim_id": "supplier-ready-for-pilot",
+          "report_count": 3,
+          "roots_by_report": {
+            "procurement-note": [
+              "supplier-log"
+            ],
+            "operations-note": [
+              "supplier-log"
+            ],
+            "risk-note": [
+              "customer-check"
+            ]
+          },
+          "shared_sources": {
+            "supplier-log": [
+              "operations-note",
+              "procurement-note"
+            ]
+          },
+          "positions": {
+            "supplier-log": "unknown",
+            "customer-check": "unknown"
+          },
+          "has_conflicting_positions": false,
+          "judgment_independence": "not_established"
+        },
+        "source_change_probe": false
+      },
+      "actual_status": "delivered",
+      "expectation_met": true,
+      "attempts": 1,
+      "actual_observations": {
+        "source_sha256": "06cb5e25997ae3b7e819670a6025c6c2836ed094c3f1d704a5be7b76293255f7",
+        "claim_id": "supplier-ready-for-pilot",
+        "report_count": 3,
+        "roots_by_report": {
+          "procurement-note": [
+            "supplier-log"
+          ],
+          "operations-note": [
+            "supplier-log"
+          ],
+          "risk-note": [
+            "customer-check"
+          ]
+        },
+        "shared_sources": {
+          "supplier-log": [
+            "operations-note",
+            "procurement-note"
+          ]
+        },
+        "positions": {
+          "supplier-log": "unknown",
+          "customer-check": "unknown"
+        },
+        "has_conflicting_positions": false,
+        "model_families": {
+          "procurement-note": "family-a",
+          "operations-note": "family-b",
+          "risk-note": "family-a"
+        },
+        "judgment_independence": "not_established",
+        "limitations": [
+          "Declared lineage only; missing hidden dependencies remain possible.",
+          "Source identity and position labels do not prove truth or statistical independence."
+        ]
+      },
+      "management": {
+        "expectation_met": true,
+        "not_exercised": true
+      }
+    },
+    "missing_underlying_source": {
+      "synthetic_inputs_and_expectations": {
+        "input": {
+          "claim_id": "supplier-ready-for-pilot",
+          "sources": [
+            {
+              "id": "sales-summary",
+              "parents": [
+                "supplier-log"
+              ],
+              "position": "support"
+            },
+            {
+              "id": "customer-check",
+              "parents": [],
+              "position": "oppose"
+            }
+          ],
+          "reports": [
+            {
+              "id": "procurement-note",
+              "source_ids": [
+                "sales-summary"
+              ],
+              "model_family": "family-a"
+            },
+            {
+              "id": "operations-note",
+              "source_ids": [],
+              "upstream_reports": [
+                "procurement-note"
+              ],
+              "model_family": "family-b"
+            },
+            {
+              "id": "risk-note",
+              "source_ids": [
+                "customer-check"
+              ],
+              "model_family": "family-a"
+            }
+          ]
+        },
+        "status": "needs_evidence",
+        "expected": null,
+        "source_change_probe": false
+      },
+      "actual_status": "needs_evidence",
+      "expectation_met": true,
+      "attempts": 1,
+      "actual_observations": null,
+      "management": {
+        "expectation_met": true,
+        "not_exercised": true
+      }
+    }
+  },
+  "boundary_expectations": {
+    "met": 1,
+    "total": 1
+  }
+}

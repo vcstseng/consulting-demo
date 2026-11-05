@@ -1,0 +1,75 @@
+{
+  "counts": {
+    "problems": 99,
+    "business_problems": 57,
+    "capabilities": 60,
+    "resources": 84,
+    "trending": 15,
+    "startup_records": 4085,
+    "startup_display": 4000
+  },
+  "problem_ids": 99,
+  "startup_ids": 4085,
+  "details_batches": 21,
+  "synthetic_evidence_files": 15,
+  "source_files_verified": 71,
+  "guide_documents": 6,
+  "case_documents": 8,
+  "input_commits": {
+    "99-problems": "95dd4ffb7ee669465b8700ef313fa4761ade7358",
+    "startup-radar": "fe001851befcec4ad8ae12d127a8e477804bee37",
+    "capability-store": "26b3d0c8d1d43ce7509770b82f8fa635b2873a11"
+  },
+  "domain_counts": {
+    "business-sales": {
+      "problems": 7,
+      "capabilities": 6,
+      "startup_records": 280
+    },
+    "business-marketing": {
+      "problems": 4,
+      "capabilities": 6,
+      "startup_records": 280
+    },
+    "business-finance": {
+      "problems": 6,
+      "capabilities": 6,
+      "startup_records": 392
+    },
+    "business-hr": {
+      "problems": 7,
+      "capabilities": 6,
+      "startup_records": 126
+    },
+    "business-procurement": {
+      "problems": 5,
+      "capabilities": 6,
+      "startup_records": 150
+    },
+    "business-operations": {
+      "problems": 5,
+      "capabilities": 6,
+      "startup_records": 754
+    },
+    "business-customer-service": {
+      "problems": 7,
+      "capabilities": 6,
+      "startup_records": 165
+    },
+    "business-supply-chain": {
+      "problems": 6,
+      "capabilities": 6,
+      "startup_records": 150
+    },
+    "business-legal": {
+      "problems": 6,
+      "capabilities": 6,
+      "startup_records": 194
+    },
+    "business-management": {
+      "problems": 4,
+      "capabilities": 6,
+      "startup_records": 595
+    }
+  }
+}
