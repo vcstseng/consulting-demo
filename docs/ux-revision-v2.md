@@ -30,3 +30,5 @@ URL 新增 tab=problems／startups／capabilities。語言切換、重新整理�
 ## 下一步
 
 本輪交付這一版後停止。先討論，再優先接完整資料；不用先把所有 UI 視覺定案。來源分類不一致仍需保留依據，不硬配資料。公開發布結果見 docs/progress.md。
+
+發布結果：功能 commit 2d8b775，Pages run 42043459075 成功；瀏覽器確認正式站分頁正常。
