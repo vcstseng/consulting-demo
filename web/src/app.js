@@ -14,6 +14,14 @@ function external(href,text){let safe;try{safe=new URL(href);if(!['http:','https
 const kindName=kind=>({problem:t('企業問題','Business problem'),startup:t('外部做法','External approach'),capability:t('能力構想','Capability concept'),resource:t('資源參考','Resource reference'),trend:t('熱門快照','Trending snapshot'),guide:t('方法與治理','Methods & governance')})[kind];
 const tabLabel=tab=>({problems:t('企業問題','Business problems'),startups:t('新創參考','Startup references'),capabilities:t('能力構想','Capability concepts')})[tab];
 const currentDomain=()=>data?.domains.find(d=>d.id===state.domain);
+const tabRoutes=new Map();
+const tabKey=(route,tab=route.tab)=>`${route.view}:${route.view==='domain'?route.domain:''}:${tab}`;
+function switchTab(tab){
+ if(tab===state.tab)return;
+ tabRoutes.set(tabKey(state),state);
+ const next=tabRoutes.get(tabKey(state,tab))??{...state,tab,page:1,group:'all',category:'',capview:'concepts',topic:'',resourceWork:'',filters:emptyFilters()};
+ navigate({...next,lang:state.lang},{tabFocus:true});
+}
 function save(){positions[routeKey(state)]=scrollY;try{sessionStorage.setItem('consulting-demo-scroll',JSON.stringify(positions));}catch{}history.replaceState({...history.state,top:scrollY},'',location.href);}
 function navigate(next,{back=false,hash='',tabFocus=false,keepTop=false,filterFocus=null}={}){
  save();const from=state;state=next;const top=back?positions[routeKey(state)]||0:keepTop?scrollY:0;
@@ -108,7 +116,11 @@ function fullDomainPage(){
  const d=currentDomain();if(!d)return missing();const tab=state.tab;
  const blocks={problems:{kind:'problem',source:'99 Problems'},startups:{kind:'startup',source:'Startup Radar'},capabilities:{kind:'capability',source:'Capability Store'}};
  const items=tab==='startups'?startupLoaded?startupMatches(data.startups,state):null:domainItems(data,d.id)[tab];
- return `${crumbs(null,v(d.label))}<section class="domain-intro compact-intro"><div><p class="eyebrow">${t('企業領域','BUSINESS DOMAIN')}</p><h1 id="page-title" tabindex="-1">${v(d.label)}</h1></div><label class="domain-picker">${t('切換領域','Change domain')}<select id="domain-picker">${data.domains.map(x=>`<option value="${e(x.id)}" ${x.id===d.id?'selected':''}>${v(x.label)}</option>`).join('')}</select></label></section>${contentTabs()}<section class="domain-results" role="tabpanel" id="panel-${tab}" aria-labelledby="tab-${tab}"><div class="results-heading"><p class="source-label">${blocks[tab].source}</p>${link(t('探索完整資料','Explore the full module')+' →',{view:'library',domain:null,page:1,category:'',group:'all',filters:emptyFilters()},'text-link')}</div>${items?listing(items,blocks[tab].kind,tab==='startups'?startupControls():''):partBlock('startups.json')}</section><details class="scope-disclosure"><summary>${t('分類與資料口徑','Categories & data scope')}</summary><p>${tab==='startups'?t('依既有工作大類提供領域參考；銷售／行銷、採購／供應鏈等領域可能共用較廣的原分類。未進行逐題 matching。全部資料仍可由完整新創入口探索。','Domain references use existing work categories. Sales/marketing and procurement/supply chain may share broader original categories. No problem-level matching is performed; every record remains available in full exploration.'):t('沿用原問題與能力的企業分類；同領域不代表已驗證可互相解決。','Original problem and capability business categories are retained. A shared domain does not establish a validated solution match.')}</p></details>`;
+ const workLabels=tab==='startups'&&startupLoaded?data.startupData.taxonomy.dimensions.problem_workflow.categories
+  .filter(c=>data.startupData.domain_mapping[d.id]?.includes(c.id))
+  .map(c=>e(state.lang==='zh'?c.label_zh:c.label_en)).join(t('、',', ')):'';
+ const scope=workLabels?`<p class="mini-note">${t('Startup Radar 工作分類：','Startup Radar work categories: ')}${workLabels}</p>`:'';
+ return `${crumbs(null,v(d.label))}<section class="domain-intro compact-intro"><div><p class="eyebrow">${t('企業領域','BUSINESS DOMAIN')}</p><h1 id="page-title" tabindex="-1">${v(d.label)}</h1></div><label class="domain-picker">${t('切換領域','Change domain')}<select id="domain-picker">${data.domains.map(x=>`<option value="${e(x.id)}" ${x.id===d.id?'selected':''}>${v(x.label)}</option>`).join('')}</select></label></section>${contentTabs()}<section class="domain-results" role="tabpanel" id="panel-${tab}" aria-labelledby="tab-${tab}"><div class="results-heading"><p class="source-label">${blocks[tab].source}</p>${link(t('探索完整資料','Explore the full module')+' →',{view:'library',domain:null,page:1,category:'',group:'all',filters:emptyFilters()},'text-link')}</div>${scope}${items?listing(items,blocks[tab].kind,tab==='startups'?startupControls():''):partBlock('startups.json')}</section><details class="scope-disclosure"><summary>${t('分類與資料口徑','Categories & data scope')}</summary><p>${tab==='startups'?t('依既有工作大類提供領域參考；銷售／行銷、採購／供應鏈等領域可能共用較廣的原分類。未進行逐題 matching。全部資料仍可由完整新創入口探索。','Domain references use existing work categories. Sales/marketing and procurement/supply chain may share broader original categories. No problem-level matching is performed; every record remains available in full exploration.'):t('沿用原問題與能力的企業分類；同領域不代表已驗證可互相解決。','Original problem and capability business categories are retained. A shared domain does not establish a validated solution match.')}</p></details>`;
 }
 function fullStartupBody(x){
  const file='startup/'+x.detail_file,body=parts.get(file)?.records_by_id[x.id];if(!body)return partBlock(file);
@@ -155,7 +167,7 @@ function render(){const d=currentDomain();const x=data&&state.view==='detail'?de
  ensureData();
 }
 app.addEventListener('click',event=>{const target=event.target.closest('a,button');if(!target)return;
- if(target.hasAttribute('data-tab')){navigate({...state,view:state.view==='library'?'library':'domain',tab:target.dataset.tab,page:1,group:'all',category:'',capview:'concepts',topic:'',resourceWork:'',filters:emptyFilters()},{tabFocus:true});}
+ if(target.hasAttribute('data-tab')){switchTab(target.dataset.tab);}
  else if(target.hasAttribute('data-lang')){save();state={...state,lang:target.dataset.lang};try{localStorage.setItem('consulting-demo-lang',state.lang);}catch{}history.replaceState({...history.state,top:scrollY},'',routeUrl(state,location.hash));pending={top:scrollY};render();document.querySelector(`[data-lang="${state.lang}"]`)?.focus({preventScroll:true});}
  else if(target.hasAttribute('data-route')&&!event.ctrlKey&&!event.metaKey&&!event.shiftKey&&!event.altKey&&event.button===0){event.preventDefault();const nextUrl=new URL(target.href);navigate(readRoute(nextUrl.search,state.lang,nextUrl.hash),{back:target.hasAttribute('data-return'),hash:nextUrl.hash});}
  else if(target.hasAttribute('data-part-retry')){partErrors.delete(target.dataset.partRetry);render();}
@@ -166,11 +178,11 @@ app.addEventListener('click',event=>{const target=event.target.closest('a,button
 app.addEventListener('keydown',event=>{
  const tab=event.target.closest('[data-tab]');if(!tab||!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
  event.preventDefault();const i=TABS.indexOf(tab.dataset.tab);const next=event.key==='Home'?0:event.key==='End'?2:(i+(event.key==='ArrowRight'?1:2))%3;
- navigate({...state,view:state.view==='library'?'library':'domain',tab:TABS[next],page:1,group:'all',category:'',capview:'concepts',topic:'',resourceWork:'',filters:emptyFilters()},{tabFocus:true});
+ switchTab(TABS[next]);
 });
 app.addEventListener('change',event=>{
  const target=event.target;
- if(target.id==='domain-picker')navigate({...state,view:'domain',domain:target.value,page:1});
+ if(target.id==='domain-picker')navigate({...state,view:'domain',domain:target.value,page:1,filters:emptyFilters()});
  const fields={'problem-group':'group','problem-category':'category','concept-domain':'category','capview':'capview','resource-topic':'topic','resource-work':'resourceWork'};
  if(fields[target.id])navigate({...state,page:1,[fields[target.id]]:target.value,...(target.id==='problem-group'?{category:''}:{}),...(target.id==='capview'?{category:'',topic:'',resourceWork:''}:{})});
  if(target.dataset.axis){const axis=target.dataset.axis,id=target.value;filterOpen=true;openFilterAxes.add(axis);const selected=state.filters[axis];navigate({...state,page:1,filters:{...state.filters,[axis]:selected.includes(id)?selected.filter(x=>x!==id):[...selected,id]}},{keepTop:true,filterFocus:{axis,id}});}
