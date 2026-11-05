@@ -13,3 +13,5 @@
 @media(max-width:720px){.full-module-grid{grid-template-columns:1fr;gap:12px}.full-module-card{padding:18px}.library-controls{display:block}.library-select{margin-bottom:14px;max-width:none}.filter-columns{grid-template-columns:1fr}.startup-filters{padding:10px 14px}.filter-option{min-height:40px}.primary-nav{gap:20px}.primary-nav a{font-size:11px}.pagination{font-size:12px}.results-heading{flex-wrap:wrap}.source-document h2{font-size:21px}.source-document td,.source-document th{min-width:90px}}
 
 .detail-page,.item-main h3,.item-meta,.reference-row{overflow-wrap:anywhere}.filter-option span{min-width:0}.source-document table{width:100%}
+
+.results-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 20px}.pagination-top{padding:8px 0}.filter-axis>summary{font-weight:550}.filter-axis fieldset{padding-bottom:8px}.proposal-heading{margin-bottom:12px}.case-links{padding-inline-start:20px}#source-methods{scroll-margin-top:20px}
