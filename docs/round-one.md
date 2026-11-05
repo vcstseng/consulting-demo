@@ -34,3 +34,7 @@
 - 圖片與逐頁紀錄：screenshots/round-one-home.jpg、reviews/round-one-browser-qa.json。
 
 發布狀態與本輪 commit 見 docs/progress.md。完成此輪後停止，下一輪按使用者 review 決定。
+
+## 發布完成
+
+GitHub：https://github.com/vcstseng/consulting-demo 。網站：https://vcstseng.github.io/consulting-demo/ 。功能 commit 74d5caf，Pages run 42040349666 成功，公開主要路徑已在瀏覽器驗證。此輪完成後停止，不自動開始第二輪。
