@@ -60,3 +60,7 @@ data/imports/manifest.json 記錄 71 份匯入快照的 SHA-256；每次離線 b
 ## 完成後
 
 先交付整合 prototype 供使用者 review，不自行開始 matching、同步或產品化。公開發布結果記在 docs/progress.md。
+
+## 公開發布
+
+功能 commit 17199c8，GitHub Pages run 42069891211 成功。正式站 https://vcstseng.github.io/consulting-demo/ 已確認首頁三個完整模組、99 問題、4,000 新創展示（每頁 20）、60 能力、84 資源、15 熱門與按需公司詳情。
