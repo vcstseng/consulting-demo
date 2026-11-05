@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {readRoute,routeUrl,routeKey,domainItems,detailItem,validate} from '../src/engine.js';
+import {readRoute,routeUrl,routeKey,domainItems,detailItem,validate,tabForKind} from '../src/engine.js';
 const data=JSON.parse(await readFile(new URL('../../data/samples/round-one.json',import.meta.url),'utf8'));
 test('shell has ten domains and only the declared selected samples',()=>{validate(data);assert.equal(data.problems.length,1);assert.equal(data.startups.length,1);assert.equal(data.capabilities.length,6);assert.equal(data.problems[0].id,'S02');assert.equal(data.startups[0].id,'upstream-10109');});
 test('unconnected domains stay empty, without claiming there is no source content',()=>{const x=domainItems(data,'business-finance');assert.deepEqual(x,{problems:[],startups:[],capabilities:[]});assert.equal(domainItems(data,'business-sales').capabilities.length,6);});
@@ -11,3 +11,17 @@ test('sample provenance and concept limits remain explicit',()=>{assert.match(da
 test('duplicate records and unsupported execution claims fail the build',()=>{const bad=structuredClone(data);bad.problems.push(bad.problems[0]);assert.throws(()=>validate(bad));const execution=structuredClone(data);execution.matching_status='implemented';assert.throws(()=>validate(execution));});
 
 test('missing bilingual content is rejected before publication',()=>{const bad=structuredClone(data);delete bad.capabilities[0].detail.example.output.en;assert.throws(()=>validate(bad));});
+
+test('content tabs round-trip and have independent scroll keys',()=>{
+ const base={lang:'en',view:'domain',domain:'business-sales',tab:'startups'};
+ assert.equal(readRoute(routeUrl(base)).tab,'startups');
+ assert.notEqual(routeKey(base),routeKey({...base,tab:'capabilities'}));
+ assert.equal(routeKey(base),routeKey({...base,lang:'zh'}));
+ assert.equal(readRoute('?view=domain&tab=invalid').tab,'problems');
+ assert.equal(readRoute('?view=domain','zh','#capabilities').tab,'capabilities');
+});
+test('old detail links infer the correct return tab',()=>{
+ for(const [kind,tab] of [['problem','problems'],['startup','startups'],['capability','capabilities']]){
+  assert.equal(readRoute('?view=detail&kind='+kind).tab,tab);assert.equal(tabForKind(kind),tab);
+ }
+});

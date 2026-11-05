@@ -1,0 +1,380 @@
+{
+  "desktop": [
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-sales&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-sales&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-sales&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-marketing&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-marketing&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-marketing&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-finance&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-finance&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-finance&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-hr&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-hr&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-hr&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-procurement&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-procurement&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-procurement&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-operations&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-operations&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-operations&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-customer-service&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-customer-service&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-customer-service&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-supply-chain&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-supply-chain&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-supply-chain&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-legal&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-legal&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-legal&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-management&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-management&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-management&tab=capabilities"
+    }
+  ],
+  "mobile": [
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-sales&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-sales&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-sales&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-marketing&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-marketing&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-marketing&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-finance&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-finance&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-finance&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-hr&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-hr&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-hr&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-procurement&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-procurement&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-procurement&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-operations&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-operations&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-operations&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-customer-service&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-customer-service&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-customer-service&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-supply-chain&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-supply-chain&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-supply-chain&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-legal&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-legal&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-legal&tab=capabilities"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-management&tab=problems"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-management&tab=startups"
+    },
+    {
+      "overflow": false,
+      "panels": 1,
+      "url": "http://127.0.0.1:4176/?lang=en&view=domain&domain=business-management&tab=capabilities"
+    }
+  ],
+  "details": [
+    {
+      "overflow": false,
+      "returnLink": "?lang=en&view=domain&domain=business-sales&tab=problems",
+      "title": "Sales time is limited. Which accounts should we go after first?",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&tab=problems&kind=problem&id=S02"
+    },
+    {
+      "overflow": false,
+      "returnLink": "?lang=en&view=domain&domain=business-sales&tab=startups",
+      "title": "10x",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&tab=startups&kind=startup&id=upstream-10109"
+    },
+    {
+      "overflow": false,
+      "returnLink": "?lang=en&view=domain&domain=business-sales&tab=capabilities",
+      "title": "Customer fit assessment",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&tab=capabilities&kind=capability&id=idea-sales-fit"
+    },
+    {
+      "overflow": false,
+      "returnLink": "?lang=en&view=domain&domain=business-sales&tab=capabilities",
+      "title": "Prospect priority calculator",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&tab=capabilities&kind=capability&id=idea-sales-priority"
+    },
+    {
+      "overflow": false,
+      "returnLink": "?lang=en&view=domain&domain=business-sales&tab=capabilities",
+      "title": "Discovery notes and commitments",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&tab=capabilities&kind=capability&id=idea-sales-discovery"
+    },
+    {
+      "overflow": false,
+      "returnLink": "?lang=en&view=domain&domain=business-sales&tab=capabilities",
+      "title": "Quote margin and discount simulator",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&tab=capabilities&kind=capability&id=idea-sales-margin"
+    },
+    {
+      "overflow": false,
+      "returnLink": "?lang=en&view=domain&domain=business-sales&tab=capabilities",
+      "title": "Deal stall investigator",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&tab=capabilities&kind=capability&id=idea-sales-risk"
+    },
+    {
+      "overflow": false,
+      "returnLink": "?lang=en&view=domain&domain=business-sales&tab=capabilities",
+      "title": "Weekly pipeline review",
+      "url": "http://127.0.0.1:4176/?lang=en&view=detail&domain=business-sales&tab=capabilities&kind=capability&id=idea-sales-review"
+    }
+  ],
+  "tab_switching": [
+    {
+      "items": 1,
+      "panels": 1,
+      "selected": "企業問題",
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-sales&tab=problems"
+    },
+    {
+      "items": 1,
+      "panels": 1,
+      "selected": "新創參考",
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-sales&tab=startups"
+    },
+    {
+      "items": 6,
+      "panels": 1,
+      "selected": "能力構想",
+      "url": "http://127.0.0.1:4176/?lang=zh&view=domain&domain=business-sales&tab=capabilities"
+    }
+  ],
+  "keyboard_verified": true,
+  "return_focus": "idea-sales-risk",
+  "reload_and_language_preserved": true,
+  "console_errors": []
+}

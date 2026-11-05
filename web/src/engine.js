@@ -1,16 +1,21 @@
-export function readRoute(search, preferred='zh') {
+export const TABS=['problems','startups','capabilities'];
+export function tabForKind(kind){return {problem:'problems',startup:'startups',capability:'capabilities'}[kind]||'problems';}
+export function readRoute(search, preferred='zh', hash='') {
   const p=new URLSearchParams(search);
   const language=p.get('lang');
-  return {lang:['zh','en'].includes(language)?language:preferred==='en'?'en':'zh',view:['domain','detail','showcase'].includes(p.get('view'))?p.get('view'):'home',domain:p.get('domain')||null,kind:p.get('kind')||null,id:p.get('id')||null};
+  const candidate=p.get('tab')||hash.replace(/^#/,'');
+  const tab=p.get('view')==='detail'?tabForKind(p.get('kind')):TABS.includes(candidate)?candidate:'problems';
+  return {tab,lang:['zh','en'].includes(language)?language:preferred==='en'?'en':'zh',view:['domain','detail','showcase'].includes(p.get('view'))?p.get('view'):'home',domain:p.get('domain')||null,kind:p.get('kind')||null,id:p.get('id')||null};
 }
 export function routeUrl(r,hash='') {
   const p=new URLSearchParams({lang:r.lang});
   if(r.view!=='home')p.set('view',r.view);
   if(['domain','detail'].includes(r.view)&&r.domain)p.set('domain',r.domain);
+  if(['domain','detail'].includes(r.view))p.set('tab',r.view==='detail'?tabForKind(r.kind):TABS.includes(r.tab)?r.tab:'problems');
   if(r.view==='detail'){if(r.kind)p.set('kind',r.kind);if(r.id)p.set('id',r.id);}
   return '?'+p.toString()+hash;
 }
-export function routeKey(r){return JSON.stringify([r.view,r.domain,r.view==='detail'?r.kind:null,r.view==='detail'?r.id:null]);}
+export function routeKey(r){return JSON.stringify([r.view,r.domain,r.view==='domain'?(r.tab||'problems'):null,r.view==='detail'?r.kind:null,r.view==='detail'?r.id:null]);}
 export function domainItems(data,domain){return {problems:data.problems.filter(x=>x.domain===domain),startups:data.startups.filter(x=>x.domain===domain),capabilities:data.capabilities.filter(x=>x.domain===domain)};}
 export function detailItem(data,r){const key={problem:'problems',startup:'startups',capability:'capabilities'}[r.kind];return key?data[key].find(x=>x.id===r.id&&x.domain===r.domain):null;}
 export function validate(data){

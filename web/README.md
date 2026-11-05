@@ -7,3 +7,6 @@ Node.js 22+，不需安裝依賴。npm test、npm run build、npm run dev。預�
 網址保留 domain、kind、id、lang；返回以領域與頁型保留捲動，語言不造成重新選擇。所有詳情須同時符合 ID、模組與領域；未知連結顯示未提供，不回填別的資料。
 
 build 讀取 data/samples/round-one.json，沒有網路同步、資料庫、matching 或執行端點。未來產品化可替換資料讀取層，不能把目前概念界線當成已實作權限。
+
+
+UI v2：領域以 tab=problems／startups／capabilities 決定唯一可見分頁；網址、位置記錄、語言與返回均保留 tab。詳情由 kind 推導來源分頁；舊 hash 導覽可相容。
