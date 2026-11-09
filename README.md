@@ -1,6 +1,6 @@
-# 企業解題探索 / Consulting Demo
+# 企業 AI 導入與治理 / Consulting Demo
 
-Consulting Demo 是企業解題探索的中英文概念展示。領域頁整合 99 Problems、Startup Radar 與 Capability Store 的固定版本；AI 方法庫提供六個導入主題與原站連結。
+Consulting Demo 是 Who Manages the AI That Manages AI? 的中英文總站入口，介紹四個研究作品與顧問案例。工作領域頁整合 99 Problems、Capability Store 與 Startup Radar 的固定版本；AI 方法庫提供六個主題的站內雙語總覽，完整條目連回原站。
 
 - [開啟網站](https://vcstseng.github.io/consulting-demo/)
 - [AI 方法庫](https://vcstseng.github.io/consulting-demo/?lang=zh&view=methodology)
