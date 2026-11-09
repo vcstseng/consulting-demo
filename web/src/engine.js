@@ -3,7 +3,7 @@ export const AXES=['industry_customer','problem_workflow','solution'];
 const QUERY={industry_customer:'industry',problem_workflow:'work',solution:'solution'};
 export function tabForKind(kind){return {problem:'problems',guide:'problems',startup:'startups',capability:'capabilities',resource:'capabilities',trend:'capabilities'}[kind]||'problems';}
 export function readRoute(search,preferred='zh',hash=''){
- const p=new URLSearchParams(search),kind=p.get('kind')||null,view=['domain','library','detail','showcase'].includes(p.get('view'))?p.get('view'):'home';
+ const p=new URLSearchParams(search),kind=p.get('kind')||null,view=['domain','library','detail','showcase','methodology'].includes(p.get('view'))?p.get('view'):'home';
  const candidate=p.get('tab')||hash.replace(/^#/,'');
  return {view,lang:['zh','en'].includes(p.get('lang'))?p.get('lang'):preferred==='en'?'en':'zh',domain:p.get('domain')||null,kind,id:p.get('id')||null,
  tab:view==='detail'?tabForKind(kind):TABS.includes(candidate)?candidate:'problems',origin:['library','showcase'].includes(p.get('origin'))?p.get('origin'):'domain',
