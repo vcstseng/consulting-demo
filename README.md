@@ -1,9 +1,9 @@
 # 企業 AI 導入與治理 / Consulting Demo
 
-Consulting Demo 是 Who Manages the AI That Manages AI? 的中英文總站入口，介紹四個研究作品與顧問案例。工作領域頁整合 99 Problems、Capability Store 與 Startup Radar 的固定版本；AI 方法庫提供六個主題的站內雙語總覽，完整條目連回原站。
+Consulting Demo 是 Who Manages the AI That Manages AI? 的中英文總站入口，整合四個研究庫與顧問案例。工作領域頁與完整研究庫共用企業問題、導入方法、能力構想、新創參考四個分頁；方法庫六個主題和 35 題可在站內中英文查閱，完整方法與來源回查原站。
 
 - [開啟網站](https://vcstseng.github.io/consulting-demo/)
-- [AI 方法庫](https://vcstseng.github.io/consulting-demo/?lang=zh&view=methodology)
+- [AI 方法庫](https://vcstseng.github.io/consulting-demo/?lang=zh&view=library&tab=methods)
 - [完整新創探索](https://vcstseng.github.io/consulting-demo/?lang=zh&view=library&tab=startups)
 - [本輪整合與限制](docs/full-integration.md) · [進度](docs/progress.md) · [來源版本](data/references/modules.json)
 
@@ -14,8 +14,10 @@ Consulting Demo 是 Who Manages the AI That Manages AI? 的中英文總站入口
 | 99 Problems | 全部 99 個問題：57 企業工作、35 AI 風險／治理、7 系統性問題；保留雙語原欄位 |
 | Startup Radar | 4,085 筆原始紀錄，沿用明確重複群組展示 4,000 筆；三維交叉篩選、每頁 20 筆、詳情按需讀取 |
 | Capability Store | 60 個雙語能力詳情、84 個原有資源參考、15 個既有 GitHub 熱門快照 |
-| AI 方法庫 | 站內提供中英文導覽，六個導入主題各自連到繁體中文原站；CS02 客訴分流附部署情境重驗參考 |
+| AI 方法庫 | 六個主題及 35 個問題的中英文目錄接入領域頁和完整研究庫；完整方法與來源回查原站 |
 | 原有顧問內容 | 方法、顧問框架／治理／路線圖，以及 F03、CS02、CS07、E93 的原合成案例頁與 15 份證據檔 |
+
+從問題詳情可切到四個研究分頁，並保留目前問題。返回問題或原清單時保留起點、篩選和頁次。手機上的問題列可展開查看完整題目。
 
 十個領域是共同閱讀脈絡，不是全部資料的唯一入口。「完整資料」保留各模組的原分類。新創領域依既有工作大類關聯，部分領域共用較廣分類，不代表已逐題配對。
 

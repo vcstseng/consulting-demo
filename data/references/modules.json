@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1-reference-registry",
-  "recorded_at": "2026-11-05",
-  "status": "full_fixed_snapshot_integrated",
+  "recorded_at": "2026-11-11",
+  "status": "three_full_snapshots_and_methodology_index",
   "modules": [
     {
       "id": "99-problems",
@@ -39,6 +39,18 @@
       },
       "note": "完整 prototype 展示內容的固定快照；不自動同步，不修改原專案。",
       "snapshot_path": "data/imports/capability-store"
+    },
+    {
+      "id": "ai-methodology-library",
+      "role": "adoption_methods",
+      "repository": "https://github.com/vcstseng/ai-methodology-library",
+      "website": "https://vcstseng.github.io/ai-methodology-library/",
+      "local_path": "D:/ai-methodology-library",
+      "version": {
+        "commit": "cbf43ce8c81f59e4c39783d91a2c495b3eff14a6"
+      },
+      "note": "六主題、35題雙語索引與55個方法ID引用；完整方法連回原站。",
+      "index_path": "web/data/methodology.json"
     }
   ]
 }

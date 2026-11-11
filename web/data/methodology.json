@@ -1,0 +1,784 @@
+{
+  "source": {
+    "repository": "https://github.com/vcstseng/ai-methodology-library",
+    "website": "https://vcstseng.github.io/ai-methodology-library/",
+    "commit": "cbf43ce8c81f59e4c39783d91a2c495b3eff14a6",
+    "imported_at": "2026-11-11"
+  },
+  "topics": [
+    {
+      "id": "feasibility",
+      "title": {
+        "zh": "選題與可行性",
+        "en": "Use case selection and feasibility"
+      },
+      "summary": {
+        "zh": "確認業務價值、資料準備度和負責人，估算整合、人工審查與維護的總成本。",
+        "en": "Compare value, data readiness, integration and costs before choosing work to try."
+      },
+      "question_ids": [
+        "ai-use-case-prioritization",
+        "data-and-knowledge-readiness",
+        "legacy-integration-feasibility",
+        "estimate-ai-total-cost",
+        "build-buy-or-compose",
+        "funding-and-ownership"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/topics/feasibility.html"
+    },
+    {
+      "id": "workflow",
+      "title": {
+        "zh": "流程與分工",
+        "en": "Workflow and responsibilities"
+      },
+      "summary": {
+        "zh": "決定人機分工、交接方式，以及需要哪些工具和資料。",
+        "en": "Define tasks, handoffs, tools and human responsibilities."
+      },
+      "question_ids": [
+        "task-decomposition",
+        "autonomy-and-human-handoff",
+        "task-specification",
+        "agent-roles-skills-and-tools",
+        "knowledge-and-system-writeback",
+        "multi-agent-coordination"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/topics/workflow.html"
+    },
+    {
+      "id": "pilot",
+      "title": {
+        "zh": "試行與交付",
+        "en": "Pilots and delivery"
+      },
+      "summary": {
+        "zh": "試行前先記錄現有表現，訂好試行範圍、交付成果和停止條件。",
+        "en": "Plan a small trial with a baseline, clear deliverables and stopping conditions."
+      },
+      "question_ids": [
+        "pilot-scope",
+        "pilot-baseline-and-success",
+        "pilot-delivery-and-review",
+        "pilot-stop-and-rollback",
+        "pilot-staff-briefing-and-feedback"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/topics/pilot.html"
+    },
+    {
+      "id": "measurement",
+      "title": {
+        "zh": "驗證與衡量",
+        "en": "Validation and measurement"
+      },
+      "summary": {
+        "zh": "驗收成果，和原本的品質、工時及返工量比較，再核對實際總成本。",
+        "en": "Check acceptance, quality, time, rework and cost."
+      },
+      "question_ids": [
+        "acceptance-criteria",
+        "detect-plausible-errors",
+        "independent-acceptance-review",
+        "compare-ai-workflow-impact",
+        "cost-per-accepted-outcome"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/topics/measurement.html"
+    },
+    {
+      "id": "operations",
+      "title": {
+        "zh": "營運與演進",
+        "en": "Operations and evolution"
+      },
+      "summary": {
+        "zh": "安排培訓、維護和擴大使用，並規劃流程調整與工具替換。",
+        "en": "Plan everyday support, handover, expansion and changes."
+      },
+      "question_ids": [
+        "pilot-to-daily-work",
+        "ownership-and-handover",
+        "adoption-and-human-review",
+        "token-usage-monitoring",
+        "phased-expansion",
+        "workflow-redesign",
+        "supplier-exit-and-fallback"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/topics/operations.html"
+    },
+    {
+      "id": "governance",
+      "title": {
+        "zh": "治理與管理",
+        "en": "Governance and management"
+      },
+      "summary": {
+        "zh": "訂清資料使用與權限、法規和合約要求，以及事件應變與對外責任。",
+        "en": "Define data access, approvals, accountability and incident response throughout adoption."
+      },
+      "question_ids": [
+        "ai-access-and-authorization",
+        "human-approval-and-exceptions",
+        "shadow-ai-governance",
+        "customer-data-and-ai-outputs",
+        "ai-incident-response",
+        "ai-change-reassessment"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/topics/governance.html"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ai-use-case-prioritization",
+      "topic_id": "feasibility",
+      "title": {
+        "zh": "哪些工作值得先用 AI？",
+        "en": "Which work should we try AI on first?"
+      },
+      "summary": {
+        "zh": "從工作頻率、業務價值、成果能否驗收，以及出錯的影響來比較場景。",
+        "en": "Compare frequency, business value, how results can be checked, and the consequences of errors."
+      },
+      "method_ids": [
+        "govuk-ai-fit-and-options",
+        "jagged-frontier-task-tests"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/ai-use-case-prioritization.html"
+    },
+    {
+      "id": "data-and-knowledge-readiness",
+      "topic_id": "feasibility",
+      "title": {
+        "zh": "現有的資料和知識夠用嗎？",
+        "en": "Do we have enough usable data and knowledge?"
+      },
+      "summary": {
+        "zh": "盤點資料是否找得到、能否取得，以及有哪些關鍵知識只掌握在少數人手上。",
+        "en": "Check what can be found and accessed, and which knowledge is held by only a few people."
+      },
+      "method_ids": [
+        "odi-ai-ready-data",
+        "kcs-knowledge-maintenance"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/data-and-knowledge-readiness.html"
+    },
+    {
+      "id": "legacy-integration-feasibility",
+      "topic_id": "feasibility",
+      "title": {
+        "zh": "既有系統接得上嗎？有哪些技術限制？",
+        "en": "Can AI connect to our existing systems? What are the technical limits?"
+      },
+      "summary": {
+        "zh": "確認資料能否讀取和回寫，以及舊系統、權限或介面可能造成的限制。",
+        "en": "Check how data can be read and written, and identify constraints in legacy systems, permissions and interfaces."
+      },
+      "method_ids": [
+        "govuk-technology-integration",
+        "microsoft-integration-poc"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/legacy-integration-feasibility.html"
+    },
+    {
+      "id": "estimate-ai-total-cost",
+      "topic_id": "feasibility",
+      "title": {
+        "zh": "導入、人工審查和長期維護，總共要花多少錢？",
+        "en": "What will setup, human review and ongoing maintenance cost?"
+      },
+      "summary": {
+        "zh": "試行前把工具、整合、培訓、審查和維護都列入成本估算。",
+        "en": "Estimate tools, integration, staff training, review and maintenance before the pilot."
+      },
+      "method_ids": [
+        "aga-ai-lifecycle-costs",
+        "finops-ai-cost-estimation"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/estimate-ai-total-cost.html"
+    },
+    {
+      "id": "build-buy-or-compose",
+      "topic_id": "feasibility",
+      "title": {
+        "zh": "該買現成產品、組合既有工具，還是自己開發？",
+        "en": "Should we buy a product, combine existing tools or build our own?"
+      },
+      "summary": {
+        "zh": "用同一個工作情境比較上手時間、成本、控制程度與未來換工具的難度。",
+        "en": "Compare time to use, cost, control and ease of switching using the same workflow."
+      },
+      "method_ids": [
+        "imda-genai-buy-or-build",
+        "govuk-ai-fit-and-options"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/build-buy-or-compose.html"
+    },
+    {
+      "id": "funding-and-ownership",
+      "topic_id": "feasibility",
+      "title": {
+        "zh": "誰出資、誰對成果負責？相關團隊有共識嗎？",
+        "en": "Who funds the work and owns the results? Are the teams aligned?"
+      },
+      "summary": {
+        "zh": "確認預算、成果和後續維護各由誰負責，以及哪些團隊需要一起決定。",
+        "en": "Name the owners of budget, outcomes and ongoing maintenance, and identify who needs to agree."
+      },
+      "method_ids": [
+        "deloitte-responsible-ai-charter",
+        "agent-operations-roles"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/funding-and-ownership.html"
+    },
+    {
+      "id": "task-decomposition",
+      "topic_id": "workflow",
+      "title": {
+        "zh": "這份工作怎麼拆？人和 AI 各負責哪一段？",
+        "en": "How should we divide the work between people and AI?"
+      },
+      "summary": {
+        "zh": "把工作拆成可交接的步驟，標出執行、判斷和驗收各由誰負責。",
+        "en": "Break work into steps with clear handoffs and owners for execution, judgment and acceptance."
+      },
+      "method_ids": [
+        "aws-ai-dlc",
+        "jagged-frontier-task-tests"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/task-decomposition.html"
+    },
+    {
+      "id": "autonomy-and-human-handoff",
+      "topic_id": "workflow",
+      "title": {
+        "zh": "哪些工作可以讓 AI 自己完成？何時要交回人處理？",
+        "en": "What can AI complete on its own, and when should a person take over?"
+      },
+      "summary": {
+        "zh": "界定 AI 能獨立完成的任務，以及遇到資訊不足、超出範圍或失敗時如何交接。",
+        "en": "Define independent tasks and handoffs when information is missing, scope is exceeded or execution fails."
+      },
+      "method_ids": [
+        "openai-agent-escalation",
+        "meaningful-human-oversight"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/autonomy-and-human-handoff.html"
+    },
+    {
+      "id": "task-specification",
+      "topic_id": "workflow",
+      "title": {
+        "zh": "怎麼把任務、限制和交付要求說清楚？",
+        "en": "How do we explain the task, constraints and required deliverables?"
+      },
+      "summary": {
+        "zh": "寫明任務的輸入、限制、預期成果和可檢查的驗收例子。",
+        "en": "Specify inputs, limits, expected outputs and examples that can be used for acceptance."
+      },
+      "method_ids": [
+        "github-spec-kit-sdd",
+        "pstack-verifiable-units"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/task-specification.html"
+    },
+    {
+      "id": "agent-roles-skills-and-tools",
+      "topic_id": "workflow",
+      "title": {
+        "zh": "需要哪些 AI 角色、技能和工具？",
+        "en": "Which AI roles, skills and tools do we need?"
+      },
+      "summary": {
+        "zh": "依各個工作步驟找出需要的能力，再選擇合適的 agents、skills 和 tools。",
+        "en": "Identify the capabilities each step requires before choosing agents, skills and tools."
+      },
+      "method_ids": [
+        "gstack-workflow-roles",
+        "anthropic-agent-tool-design"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/agent-roles-skills-and-tools.html"
+    },
+    {
+      "id": "knowledge-and-system-writeback",
+      "topic_id": "workflow",
+      "title": {
+        "zh": "怎麼整理工作知識，讓 AI 用到正確的資料，並把結果送回既有系統？",
+        "en": "How do we give AI the right knowledge and send results back to our systems?"
+      },
+      "summary": {
+        "zh": "決定哪些資料可作為依據、由誰更新，以及結果如何回寫和處理失敗。",
+        "en": "Define approved knowledge sources, who updates them, and how results and write failures are handled."
+      },
+      "method_ids": [
+        "kcs-knowledge-maintenance",
+        "aws-idempotent-writeback"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/knowledge-and-system-writeback.html"
+    },
+    {
+      "id": "multi-agent-coordination",
+      "topic_id": "workflow",
+      "title": {
+        "zh": "多個 AI 一起做事時，怎麼分工、共享資訊和交接？",
+        "en": "How should multiple AI agents divide work, share information and hand off results?"
+      },
+      "summary": {
+        "zh": "釐清每個角色讀取與交付的內容，以及誰負責處理彼此的衝突。",
+        "en": "Specify each role's inputs and outputs, and who resolves conflicts between results."
+      },
+      "method_ids": [
+        "azure-agent-orchestration",
+        "anthropic-multi-agent-research"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/multi-agent-coordination.html"
+    },
+    {
+      "id": "pilot-scope",
+      "topic_id": "pilot",
+      "title": {
+        "zh": "第一輪要試哪一段工作？範圍多大才看得出效果？",
+        "en": "Which part of the work should the first pilot cover, and how large should it be?"
+      },
+      "summary": {
+        "zh": "選定一類代表性工作、一組參與者和一段試行期間。",
+        "en": "Choose a representative type of work, a set of participants and a pilot period."
+      },
+      "method_ids": [
+        "dta-ai-pilot-design",
+        "pg-real-work-experiment"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/pilot-scope.html"
+    },
+    {
+      "id": "pilot-baseline-and-success",
+      "topic_id": "pilot",
+      "title": {
+        "zh": "試行前要記錄哪些基線、訂哪些成功條件？",
+        "en": "What baseline and success criteria should we record before a pilot?"
+      },
+      "summary": {
+        "zh": "先記錄現有品質、工時、錯誤和返工，再定義什麼結果值得繼續。",
+        "en": "Record existing quality, time, errors and rework, then agree what results would justify continuing."
+      },
+      "method_ids": [
+        "customer-support-baseline",
+        "magenta-ai-impact-evaluation"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/pilot-baseline-and-success.html"
+    },
+    {
+      "id": "pilot-delivery-and-review",
+      "topic_id": "pilot",
+      "title": {
+        "zh": "試行成果怎麼交付、審查並接回原有流程？",
+        "en": "How should pilot outputs be delivered, reviewed and added to the existing workflow?"
+      },
+      "summary": {
+        "zh": "說清成果格式、所需佐證、審查責任及審查未通過時如何退回。",
+        "en": "Specify output format, supporting evidence, review responsibility and how rejected work is returned."
+      },
+      "method_ids": [
+        "github-agentic-handoff",
+        "nhs-scribe-draft-review"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/pilot-delivery-and-review.html"
+    },
+    {
+      "id": "pilot-stop-and-rollback",
+      "topic_id": "pilot",
+      "title": {
+        "zh": "遇到什麼情況要停止試行，退回原本的做法？",
+        "en": "When should we stop a pilot and return to the previous workflow?"
+      },
+      "summary": {
+        "zh": "先約定停止條件、誰有權停止，以及怎麼恢復原有工作。",
+        "en": "Agree stopping criteria, who can stop the pilot and how normal work will resume."
+      },
+      "method_ids": [
+        "nist-ai-deactivation",
+        "google-canary-rollback"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/pilot-stop-and-rollback.html"
+    },
+    {
+      "id": "pilot-staff-briefing-and-feedback",
+      "topic_id": "pilot",
+      "title": {
+        "zh": "怎麼讓參與試行的員工知道要做什麼、去哪裡回報問題？",
+        "en": "How will pilot participants know what to do and where to report problems?"
+      },
+      "summary": {
+        "zh": "說清試行期間工作會怎麼變、誰能提供協助、回報後由誰處理。",
+        "en": "Explain changes to the work, available help and who handles reported problems."
+      },
+      "method_ids": [
+        "australian-copilot-trial-support",
+        "google-incident-command"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/pilot-staff-briefing-and-feedback.html"
+    },
+    {
+      "id": "acceptance-criteria",
+      "topic_id": "measurement",
+      "title": {
+        "zh": "怎麼驗收 AI 的成果？什麼算通過？",
+        "en": "How do we check AI outputs, and what counts as a pass?"
+      },
+      "summary": {
+        "zh": "訂出可判定的通過條件，用代表性案例檢查實際交付的結果。",
+        "en": "Set clear acceptance criteria and test actual deliverables with representative cases."
+      },
+      "method_ids": [
+        "anthropic-agent-evals",
+        "nist-deployment-context"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/acceptance-criteria.html"
+    },
+    {
+      "id": "detect-plausible-errors",
+      "topic_id": "measurement",
+      "title": {
+        "zh": "怎麼抓出看起來正確、其實有錯的結果？",
+        "en": "How do we catch results that look correct but contain errors?"
+      },
+      "summary": {
+        "zh": "查證關鍵來源、重算重要數字，並測試容易被表面答案掩蓋的錯誤。",
+        "en": "Check key sources, recalculate important numbers and test for errors hidden by convincing answers."
+      },
+      "method_ids": [
+        "nist-genai-source-verification",
+        "aqua-analytical-assurance"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/detect-plausible-errors.html"
+    },
+    {
+      "id": "independent-acceptance-review",
+      "topic_id": "measurement",
+      "title": {
+        "zh": "誰來驗收？什麼時候需要獨立覆核？",
+        "en": "Who accepts the results, and when is independent review needed?"
+      },
+      "summary": {
+        "zh": "依成果出錯的影響決定誰驗收，以及何時需要由另一位合格的人覆核。",
+        "en": "Use the consequences of an error to decide who reviews the work and when another qualified person should check it."
+      },
+      "method_ids": [
+        "aqua-analytical-assurance",
+        "nist-independent-assessment"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/independent-acceptance-review.html"
+    },
+    {
+      "id": "compare-ai-workflow-impact",
+      "topic_id": "measurement",
+      "title": {
+        "zh": "和原本的做法相比，品質、工時和返工有沒有改善？",
+        "en": "Has quality, time or rework improved compared with our previous process?"
+      },
+      "summary": {
+        "zh": "和試行前的同類工作比較，把人工審查和修正時間也算進去。",
+        "en": "Compare similar work with the baseline and include the time spent reviewing and correcting outputs."
+      },
+      "method_ids": [
+        "magenta-ai-impact-evaluation",
+        "metr-task-randomization"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/compare-ai-workflow-impact.html"
+    },
+    {
+      "id": "cost-per-accepted-outcome",
+      "topic_id": "measurement",
+      "title": {
+        "zh": "每件通過驗收的工作用了多少 token、花了多少錢？換一種做法會更有效率嗎？",
+        "en": "How many tokens and how much money does each accepted result cost? Could another approach be more efficient?"
+      },
+      "summary": {
+        "zh": "在相同驗收標準下，比較每件合格成果的 token 和費用，把失敗與重試也算進去。",
+        "en": "Compare tokens and costs per accepted result under the same acceptance criteria, including failures and retries."
+      },
+      "method_ids": [
+        "finops-cost-per-outcome",
+        "opentelemetry-genai"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/cost-per-accepted-outcome.html"
+    },
+    {
+      "id": "pilot-to-daily-work",
+      "topic_id": "operations",
+      "title": {
+        "zh": "試行成功後，怎麼變成團隊的日常工作？",
+        "en": "How do we turn a successful pilot into the team's everyday work?"
+      },
+      "summary": {
+        "zh": "把已驗證的做法接入團隊例行流程，指定負責人、支援管道和回顧時間。",
+        "en": "Add the verified approach to routine work, name an owner and support channel, and schedule reviews."
+      },
+      "method_ids": [
+        "lga-agentic-ai-operations",
+        "copilot-champions",
+        "govuk-beta-to-live"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/pilot-to-daily-work.html"
+    },
+    {
+      "id": "ownership-and-handover",
+      "topic_id": "operations",
+      "title": {
+        "zh": "誰負責維護、培訓和交接？關鍵人員離開時，誰能接手？",
+        "en": "Who maintains the workflow, trains people and handles handover? Who can take over if a key person leaves?"
+      },
+      "summary": {
+        "zh": "把流程寫成可交接的操作說明，並讓備援人員實際走一次。",
+        "en": "Document the operating steps and have a backup owner actually work through them."
+      },
+      "method_ids": [
+        "agent-operations-roles",
+        "runbooks-and-handover"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/ownership-and-handover.html"
+    },
+    {
+      "id": "adoption-and-human-review",
+      "topic_id": "operations",
+      "title": {
+        "zh": "員工不願意用，或用了以後不再檢查，該怎麼處理？",
+        "en": "What if staff do not want to use AI, or stop checking its results?"
+      },
+      "summary": {
+        "zh": "找出採用障礙，並確認必要的人工判斷和抽查仍然有效。",
+        "en": "Find the barriers to adoption and check whether required human judgment and spot checks still work."
+      },
+      "method_ids": [
+        "copilot-champions",
+        "meaningful-human-oversight"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/adoption-and-human-review.html"
+    },
+    {
+      "id": "token-usage-monitoring",
+      "topic_id": "operations",
+      "title": {
+        "zh": "怎麼監控日常 token 用量和費用，發現異常時誰來查？",
+        "en": "How do we monitor daily token usage and costs, and who investigates anomalies?"
+      },
+      "summary": {
+        "zh": "按流程追蹤用量與費用，分辨是工作量增加、單件變貴，還是反覆重試。",
+        "en": "Track usage and cost by workflow to distinguish more work from higher cost per task or repeated retries."
+      },
+      "method_ids": [
+        "finops-anomaly-management",
+        "opentelemetry-genai"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/token-usage-monitoring.html"
+    },
+    {
+      "id": "phased-expansion",
+      "topic_id": "operations",
+      "title": {
+        "zh": "什麼時候該擴大使用？換一個團隊前要重驗哪些條件？",
+        "en": "When should we expand use, and what must we retest for a new team?"
+      },
+      "summary": {
+        "zh": "確認新團隊的資料、工作量、審查能力和適用情境，再分批擴大。",
+        "en": "Check the next team's data, workload, review capacity and use cases before expanding in stages."
+      },
+      "method_ids": [
+        "microsoft-phased-expansion",
+        "nist-deployment-context"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/phased-expansion.html"
+    },
+    {
+      "id": "workflow-redesign",
+      "topic_id": "operations",
+      "title": {
+        "zh": "AI 能力或工具變了，什麼時候該重新設計流程？",
+        "en": "When should changes in AI capabilities or tools lead us to redesign the workflow?"
+      },
+      "summary": {
+        "zh": "用原有案例和基準重驗，判斷新的能力是否值得改變人機分工。",
+        "en": "Retest existing cases and baselines to decide whether new capabilities justify changing responsibilities."
+      },
+      "method_ids": [
+        "anthropic-agent-evals",
+        "anthropic-workflows-and-agents"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/workflow-redesign.html"
+    },
+    {
+      "id": "supplier-exit-and-fallback",
+      "topic_id": "operations",
+      "title": {
+        "zh": "供應商漲價、停服或改條款時，怎麼切換工具或退回原本的做法？",
+        "en": "How do we switch tools or restore the previous process if a supplier raises prices, stops service or changes terms?"
+      },
+      "summary": {
+        "zh": "先確認資料能否匯出、替代工具能否接手，以及切換期間如何維持工作。",
+        "en": "Check data export, replacement tools and how work will continue during the transition."
+      },
+      "method_ids": [
+        "govuk-supplier-exit",
+        "govuk-ai-continuity"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/supplier-exit-and-fallback.html"
+    },
+    {
+      "id": "ai-access-and-authorization",
+      "topic_id": "governance",
+      "title": {
+        "zh": "AI 可以讀取哪些資料、執行哪些操作？誰能授權？",
+        "en": "What data may AI read and what actions may it take? Who can authorize access?"
+      },
+      "summary": {
+        "zh": "分開定義可讀、可寫與可執行的範圍，並指定各項權限的授權人。",
+        "en": "Define separate read, write and execution permissions, with an authorizer for each."
+      },
+      "method_ids": [
+        "owasp-excessive-agency",
+        "agent-operations-roles"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/ai-access-and-authorization.html"
+    },
+    {
+      "id": "human-approval-and-exceptions",
+      "topic_id": "governance",
+      "title": {
+        "zh": "哪些 AI 操作或決定要先由人核准？誰能核准政策例外？",
+        "en": "Which AI actions or decisions need human approval, and who can approve policy exceptions?"
+      },
+      "summary": {
+        "zh": "依影響程度設核准點，為例外指定負責人、理由和期限。",
+        "en": "Set approval points according to impact and record the owner, reason and expiry for exceptions."
+      },
+      "method_ids": [
+        "meaningful-human-oversight",
+        "wharton-security-exceptions"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/human-approval-and-exceptions.html"
+    },
+    {
+      "id": "shadow-ai-governance",
+      "topic_id": "governance",
+      "title": {
+        "zh": "員工已經在用未經核准的 AI 工具，該怎麼納入管理？",
+        "en": "How do we manage AI tools that staff are already using without approval?"
+      },
+      "summary": {
+        "zh": "先掌握實際用途與資料流向，再安排審查、核准或替代做法。",
+        "en": "Understand actual uses and data flows, then arrange review, approval or a suitable alternative."
+      },
+      "method_ids": [
+        "shadow-ai-discovery",
+        "ncsc-shadow-it"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/shadow-ai-governance.html"
+    },
+    {
+      "id": "customer-data-and-ai-outputs",
+      "topic_id": "governance",
+      "title": {
+        "zh": "使用客戶資料或 AI 產出時，要確認哪些法規、合約和智慧財產要求？",
+        "en": "What legal, contractual and intellectual property requirements apply to customer data and AI outputs?"
+      },
+      "summary": {
+        "zh": "整理資料來源、使用目的與工具條款，交由相關負責人確認限制。",
+        "en": "Document sources, intended use and tool terms so responsible specialists can check the restrictions."
+      },
+      "method_ids": [
+        "ico-ai-data-contracts",
+        "us-copyright-ai-outputs"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/customer-data-and-ai-outputs.html"
+    },
+    {
+      "id": "ai-incident-response",
+      "topic_id": "governance",
+      "title": {
+        "zh": "出事時誰能暫停、復原和通知受影響的人？誰對外負責？",
+        "en": "Who can pause AI, restore work and notify affected people? Who is accountable externally?"
+      },
+      "summary": {
+        "zh": "分配停用、復原、通知與對外說明的責任，並用情境演練確認交接。",
+        "en": "Assign responsibility for shutdown, recovery, notifications and external communication, then rehearse handoffs."
+      },
+      "method_ids": [
+        "nist-ai-deactivation",
+        "google-incident-command"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/ai-incident-response.html"
+    },
+    {
+      "id": "ai-change-reassessment",
+      "topic_id": "governance",
+      "title": {
+        "zh": "哪些變化會觸發重新審查權限、風險和管理規則？",
+        "en": "What changes should trigger another review of permissions, risks and management rules?"
+      },
+      "summary": {
+        "zh": "在模型、資料、操作權限或使用情境改變時，指定誰重新檢查哪些條件。",
+        "en": "Assign who rechecks which conditions when models, data, permissions or use cases change."
+      },
+      "method_ids": [
+        "govuk-ai-risk-reassessment",
+        "anthropic-agent-evals"
+      ],
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/questions/ai-change-reassessment.html"
+    }
+  ],
+  "method_ids": [
+    "aga-ai-lifecycle-costs",
+    "agent-operations-roles",
+    "anthropic-agent-evals",
+    "anthropic-agent-tool-design",
+    "anthropic-multi-agent-research",
+    "anthropic-workflows-and-agents",
+    "aqua-analytical-assurance",
+    "australian-copilot-trial-support",
+    "aws-ai-dlc",
+    "aws-idempotent-writeback",
+    "azure-agent-orchestration",
+    "copilot-champions",
+    "customer-support-baseline",
+    "deloitte-responsible-ai-charter",
+    "dta-ai-pilot-design",
+    "finops-ai-cost-estimation",
+    "finops-anomaly-management",
+    "finops-cost-per-outcome",
+    "github-agentic-handoff",
+    "github-spec-kit-sdd",
+    "google-canary-rollback",
+    "google-incident-command",
+    "govuk-ai-continuity",
+    "govuk-ai-fit-and-options",
+    "govuk-ai-risk-reassessment",
+    "govuk-beta-to-live",
+    "govuk-supplier-exit",
+    "govuk-technology-integration",
+    "gstack-workflow-roles",
+    "ico-ai-data-contracts",
+    "imda-genai-buy-or-build",
+    "jagged-frontier-task-tests",
+    "kcs-knowledge-maintenance",
+    "lga-agentic-ai-operations",
+    "magenta-ai-impact-evaluation",
+    "meaningful-human-oversight",
+    "metr-task-randomization",
+    "microsoft-integration-poc",
+    "microsoft-phased-expansion",
+    "ncsc-shadow-it",
+    "nhs-scribe-draft-review",
+    "nist-ai-deactivation",
+    "nist-deployment-context",
+    "nist-genai-source-verification",
+    "nist-independent-assessment",
+    "odi-ai-ready-data",
+    "openai-agent-escalation",
+    "opentelemetry-genai",
+    "owasp-excessive-agency",
+    "pg-real-work-experiment",
+    "pstack-verifiable-units",
+    "runbooks-and-handover",
+    "shadow-ai-discovery",
+    "us-copyright-ai-outputs",
+    "wharton-security-exceptions"
+  ]
+}

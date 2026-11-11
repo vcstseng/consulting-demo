@@ -23,3 +23,22 @@ test('original documents are passive and synthetic evidence files remain availab
 test('all imported snapshot hashes remain stable',async()=>{const base=new URL('../../data/imports/',import.meta.url);const manifest=JSON.parse(await readFile(new URL('manifest.json',base)));for(const [f,hash] of Object.entries(manifest.files)){const bytes=await readFile(new URL(f,base));assert.equal(createHash('sha256').update(bytes).digest('hex'),hash,f);}});
 
 test('startup names, categories and full batch content remain unchanged',async()=>{const base=new URL('../../data/imports/startup-radar/catalog/',import.meta.url);const source=JSON.parse(await readFile(new URL('records.json',base)));const byId=new Map(startup.records.map(x=>[x.id,x]));for(const raw of source.records){const x=byId.get(raw.id);for(const k of ['name','summary_zh','website','source','categories','detail_file'])assert.deepEqual(x[k],raw[k]);}for(const f of await readdir(new URL('startup/details/',output))){assert.deepEqual(JSON.parse(await readFile(new URL('startup/details/'+f,output))),JSON.parse(await readFile(new URL('details/'+f,base))));}});
+
+test('cross-library problem returns retain the original filters, page and case origin',()=>{
+ for(const query of ['?lang=zh&view=library&tab=problems&group=ai&category=Governance','?lang=zh&view=library&tab=problems&group=ai&page=2']){
+ const list=readRoute(query);
+ const problem=readRoute(routeUrl({...list,view:'detail',kind:'problem',id:'GOV02',origin:'library',from:routeUrl(list)}));
+ const methods=readRoute(routeUrl({...problem,view:'library',kind:null,id:null,tab:'methods',group:'all',category:'',page:1,from:null,returnTo:routeUrl(problem)}));
+ const restoredProblem=readRoute(methods.returnTo);
+ const restoredList=readRoute(restoredProblem.from);
+ assert.equal(restoredList.group,'ai');
+ assert.equal(restoredList.category,list.category);
+ assert.equal(restoredList.page,list.page);
+ assert.equal(restoredProblem.origin,'library');
+ }
+ const caseRoute=readRoute('?lang=zh&view=detail&kind=problem&id=CS02&origin=showcase');
+ const capabilities=readRoute(routeUrl({...caseRoute,view:'domain',domain:'business-customer-service',kind:null,id:null,tab:'capabilities',returnTo:routeUrl(caseRoute)}));
+ const caseReturn=readRoute(capabilities.returnTo,'en');
+ assert.equal(caseReturn.origin,'showcase');
+ assert.equal(caseReturn.id,'CS02');
+});
