@@ -60,3 +60,8 @@ export function validate(data,startup){
  for(const c of data.capabilities)if(!domains.has(c.domain)||!bi(c.name)||c.status!=='concept_only'||c.implementation!==null||c.detail.example.status!=='illustrative_not_executed'||!bi(c.detail.example.input)||!bi(c.detail.example.output)||c.detail.related_ids.some(id=>!data.capabilities.some(x=>x.id===id)))throw Error('Invalid concept detail');
  if(startup){const records=startup.records;if(records.length!==4085||new Set(records.map(x=>x.id)).size!==4085||collapseStartups(records).length!==4000)throw Error('Startup totals changed');for(const r of records)if(!r.detail_file||!r.categories||!r.duplicate_ids.includes(r.id))throw Error('Startup detail references missing');}
 }
+
+export function detailLibraryRoute(current,back,tab){
+ const domain=back.view==='domain'?back.domain:back.view==='detail'?current.domain:null;
+ return {...current,view:domain?'domain':'library',domain,tab,kind:null,id:null,from:null,origin:domain?'domain':'library',page:1,group:'all',category:'',capview:'concepts',topic:'',resourceWork:'',filters:Object.fromEntries(AXES.map(a=>[a,[]]))};
+}

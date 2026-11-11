@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile,readdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {readRoute,routeUrl,routeKey,domainItems,detailItem,validate,tabForKind,startupMatches,collapseStartups,candidateCounts,paginate,libraryItems} from '../src/engine.js';
+import {readRoute,routeUrl,routeKey,detailLibraryRoute,domainItems,detailItem,validate,tabForKind,startupMatches,collapseStartups,candidateCounts,paginate,libraryItems} from '../src/engine.js';
 const output=new URL('../dist/data/',import.meta.url);
 const data=JSON.parse(await readFile(new URL('catalog.json',output)));
 const startup=JSON.parse(await readFile(new URL('startups.json',output)));data.startups=startup.records;
@@ -58,4 +58,15 @@ test('native method shells resolve all source IDs and preserve the question retu
  const method=readRoute(routeUrl({...question,kind:'method',id:'anthropic-agent-evals',from:routeUrl(question)}));
  assert.equal(readRoute(method.from).kind,'methodQuestion');
  assert.equal(readRoute(method.from).id,'acceptance-criteria');
+});
+
+test('method detail footer opens actual libraries and retains business context',()=>{
+ for(const domain of [null,'sales']){
+ const current=readRoute('?lang=en&view=detail&kind=method&id=example&context=S02'+(domain?'&domain='+domain:''));
+ const parent={...current,kind:'methodQuestion',id:'acceptance-criteria'};
+ for(const tab of ['problems','capabilities','startups']){
+ const next=readRoute(routeUrl(detailLibraryRoute(current,parent,tab)));
+ assert.equal(next.view,domain?'domain':'library');assert.equal(next.tab,tab);assert.equal(next.kind,null);assert.equal(next.id,null);assert.equal(next.context,'S02');assert.equal(next.lang,'en');assert.equal(next.domain,domain);
+ }
+ }
 });

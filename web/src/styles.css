@@ -80,3 +80,12 @@
 .content-placeholder p{margin:0 0 8px}
 .evidence-file summary small{display:block;color:var(--muted);font-size:12px;font-weight:400;margin-top:4px;overflow-wrap:anywhere}
 @media(max-width:560px){.detail-toc ul{display:block}.detail-source-note{line-height:1.8}}
+
+/* Final shell: accessible controls and predictable small-screen reading. */
+summary:focus-visible,input:focus-visible,[tabindex="-1"]:focus-visible{outline:2px solid var(--green);outline-offset:4px}
+summary{cursor:pointer}
+.detail-return>div{min-width:0}.detail-return .button{max-width:100%;overflow-wrap:anywhere}
+.breadcrumbs{overflow-wrap:anywhere}.breadcrumbs a{display:inline-flex;align-items:center;min-height:44px}
+@media(max-width:720px){.primary-nav a{min-height:44px}.primary-nav{flex-wrap:wrap;gap:0 18px}.filter-chips button{min-height:44px}.method-question h3 a{display:block;min-height:44px}.detail-return .button{width:100%}.brand{min-width:0}.brand-dot{flex-shrink:0}}
+
+@media(max-width:720px){.masthead{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px}.brand{font-size:16px;line-height:1.5;margin:0}.language{align-self:center}.language button{min-width:36px;padding-inline:5px}.primary-nav{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.primary-nav a{font-size:11px;line-height:1.5;align-items:center}.brand-dot{width:6px;height:6px}}
