@@ -57,7 +57,7 @@ function home(){
     ${[
      ['problems',t('企業問題','Business problems'),t('哪些工作值得改善？問題背後有哪些資料與流程限制？','Which work is worth improving? What data and process constraints shape the problem?')],
      ['methods',t('導入方法','Adoption methods'),t('人和 AI 怎麼分工？如何試行、驗收與持續管理？','How should people and AI share the work? How can you pilot, evaluate and manage it?')],
-     ['capabilities',t('能力構想','Capability concepts'),t('解決這類工作，需要哪些技能、工具、Agent 與流程？','What skills, tools, agents and workflows would this work require?')],
+     ['capabilities',t('能力構想','Capability concepts'),t('解決這類工作，需要哪些技能、工具、AI 代理與流程？','What skills, tools, agents and workflows would this work require?')],
      ['startups',t('新創參考','Startup references'),t('市場上有哪些產品與做法，值得進一步比較？','Which products and approaches in the market are worth comparing?')]
     ].map(([tab,title,description])=>`<li>${link(`<strong>${title}<span aria-hidden="true"> →</span></strong><small>${description}</small>`,{view:'library',tab,domain:null,page:1,group:'all',category:'',capview:'concepts',filters:emptyFilters()},'direction-link')}</li>`).join('')}
    </ul>

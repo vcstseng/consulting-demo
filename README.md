@@ -1,4 +1,4 @@
-# 企業 AI 導入與治理 / Consulting Demo
+# 企業 AI 應用與管理 / Consulting Demo
 
 Consulting Demo 是 Who Manages the AI That Manages AI? 的中英文總站入口，整合四個研究庫與顧問案例。工作領域頁與完整研究庫共用企業問題、導入方法、能力構想、新創參考四個分頁；方法庫六個主題和 35 題可在站內中英文查閱，完整方法與來源回查原站。
 
