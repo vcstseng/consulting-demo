@@ -42,23 +42,25 @@ function home(){
  ];
  return `<section class="home-intro">
   <div>
-   <p class="eyebrow">${t('WHO MANAGES THE AI THAT MANAGES AI?','ENTERPRISE AI ADOPTION')}</p>
-   <h1 id="page-title" tabindex="-1">${t('當 AI 開始管理工作，<wbr><span class="hero-question-tail">誰來管理 AI？</span>','Who Manages the AI That Manages AI?')}</h1>
-   <p class="lead">${t('從一個企業問題出發，查怎麼試用 AI、需要哪些工具與人力，以及市面上有哪些方案。四個庫各有用途，也可以單獨查閱。','Start with a business problem. Find ways to test AI, the tools and people you would need, and the options available in the market. Each of the four libraries is also available to browse on its own.')}</p>
+   <p class="eyebrow">WHO MANAGES THE AI THAT MANAGES AI?</p>
+   <h1 id="page-title" tabindex="-1">${t('從企業問題出發，探索 AI 的做法、能力與導入方法','Explore AI approaches, capabilities and adoption methods, starting with a business problem')}</h1>
+   <p class="lead">${t('整合企業問題研究、AI 新創參考、能力構想與導入方法，協助你理解工作情境、比較可行方向，並思考如何分工、試行、驗收與管理。','Explore business problem research, AI startup references, capability concepts and adoption methods. Understand the work, compare possible approaches, and consider responsibilities, pilots, acceptance criteria and ongoing management.')}</p>
    <div class="actions">
-    ${link(t('看客訴分流示例','See the complaint routing example'),{view:'detail',kind:'problem',id:'CS02',domain:null,origin:'showcase'},'button primary')}
-    ${link(t('直接瀏覽四個庫','Browse the four libraries'),{view:'home'},'text-link','#source-libraries')}
+    ${link(t('按企業領域探索','Explore by business domain'),{view:'home'},'button primary','#domains')}
+    ${link(t('瀏覽四個研究庫','Browse the four libraries'),{view:'home'},'text-link','#source-libraries')}
    </div>
+   <p class="home-case-link">${link(t('看一個模擬案例如何分析與驗證','See how a simulated case is analysed and tested')+' →',{view:'detail',kind:'problem',id:'CS02',domain:null,origin:'showcase'},'text-link')}</p>
   </div>
-  <aside class="concept-map" aria-label="${t('四個庫怎麼一起用','How the four libraries work together')}">
-   <p class="eyebrow">${t('同一個問題，四個查找方向','FOUR WAYS TO EXPLORE ONE PROBLEM')}</p>
-   <ol class="journey-flow">
-    <li><span>01</span><div><strong>${t('先看工作卡在哪裡','Find where the work gets stuck')}</strong><small>99 Problems</small></div></li>
-    <li><span>02</span><div><strong>${t('查怎麼試、怎麼驗收','Find ways to run and evaluate a pilot')}</strong><small>${t('AI 方法庫','AI Methodology Library')}</small></div></li>
-    <li><span>03</span><div><strong>${t('看需要哪些工具、技能和流程','Identify the tools, skills and workflows needed')}</strong><small>Capability Store</small></div></li>
-    <li><span>04</span><div><strong>${t('需要外部方案時，比較市場選項','Compare market options when you need an outside solution')}</strong><small>Startup Radar</small></div></li>
-   </ol>
-   <p class="map-note">${t('用下面的四個入口查資料，也可以先看一個用模擬工單做驗證的案例。','Explore the libraries below or start with a case that uses simulated tickets to test a workflow.')}</p>
+  <aside class="concept-map" aria-label="${t('你想先了解什麼？','What would you like to explore?')}">
+   <h2 class="map-heading">${t('你想先了解什麼？','What would you like to explore?')}</h2>
+   <ul class="explore-directions">
+    ${[
+     ['problems',t('企業問題','Business problems'),t('哪些工作值得改善？問題背後有哪些資料與流程限制？','Which work is worth improving? What data and process constraints shape the problem?')],
+     ['methods',t('導入方法','Adoption methods'),t('人和 AI 怎麼分工？如何試行、驗收與持續管理？','How should people and AI share the work? How can you pilot, evaluate and manage it?')],
+     ['capabilities',t('能力構想','Capability concepts'),t('解決這類工作，需要哪些技能、工具、Agent 與流程？','What skills, tools, agents and workflows would this work require?')],
+     ['startups',t('新創參考','Startup references'),t('市場上有哪些產品與做法，值得進一步比較？','Which products and approaches in the market are worth comparing?')]
+    ].map(([tab,title,description])=>`<li>${link(`<strong>${title}<span aria-hidden="true"> →</span></strong><small>${description}</small>`,{view:'library',tab,domain:null,page:1,group:'all',category:'',capview:'concepts',filters:emptyFilters()},'direction-link')}</li>`).join('')}
+   </ul>
   </aside>
  </section>
  <section class="full-module-entry" id="source-libraries">
@@ -66,7 +68,7 @@ function home(){
   <div class="full-module-grid">${libraries.map(([title,purpose,meta,route])=>link(`<strong>${title}</strong><span>${purpose}</span><small>${meta} · ${t('開啟','Explore')} →</small>`,{domain:null,page:1,group:'all',category:'',capview:'concepts',filters:emptyFilters(),...route},'full-module-card')).join('')}</div>
  </section>
  <section class="domains-section" id="domains">
-  ${sectionHead('',t('按工作領域瀏覽','Browse by business domain'),t('在銷售、財務、客服等十個領域中，切換查閱企業問題、導入方法、能力構想與新創參考。','Across ten domains, including sales, finance and customer service, switch between business problems, adoption methods, capability concepts and startup references.'))}
+  ${sectionHead('',t('按企業領域瀏覽','Browse by business domain'),t('在銷售、財務、客服等十個領域中，切換查閱企業問題、導入方法、能力構想與新創參考。','Across ten domains, including sales, finance and customer service, switch between business problems, adoption methods, capability concepts and startup references.'))}
   <div class="domain-grid">${data.domains.map((d,i)=>link(`<span class="domain-num">${String(i+1).padStart(2,'0')}</span><span><strong>${v(d.label)}</strong><small>${data.problems.filter(x=>x.domain===d.id).length} ${t('個問題','problems')} · ${data.capabilities.filter(x=>x.domain===d.id).length} ${t('個能力','concepts')}</small></span><span aria-hidden="true">→</span>`,{view:'domain',domain:d.id},'domain-card')).join('')}</div>
  </section>
  <section class="about-section" id="about">
@@ -360,7 +362,7 @@ function detailDataReady(){
  return true;
 }
 
-function render(){const d=currentDomain();const x=data&&state.view==='detail'?detailItem(data,state):null;const pageTitle=x?fullTitle(x,state.kind):state.view==='library'?t('完整探索','Full exploration'):state.view==='domain'?d?.label[state.lang]:state.view==='showcase'?t('顧問方法與案例','Consulting methods and cases'):state.view==='methodology'?t('AI 方法庫','AI Methodology Library'):t('企業 AI 導入與治理','Enterprise AI Adoption & Governance');document.title=(pageTitle||t('頁面未提供','Page unavailable'))+' · Consulting Demo';document.documentElement.lang=state.lang==='zh'?'zh-Hant':'en';app.innerHTML=`<div class="shell"><a class="skip" href="#page-title">${t('跳到主要內容','Skip to main content')}</a><header class="masthead">${link(`<span class="brand-dot" aria-hidden="true"></span>${t('企業 AI 導入與治理','Enterprise AI Adoption & Governance')}`,{view:'home'},'brand')}<nav class="primary-nav" aria-label="${t('主要導覽','Main navigation')}">${link(t('四個研究庫','Research libraries'),{view:'home'},'','#source-libraries',(['library','methodology'].includes(state.view)||(state.view==='detail'&&fromLibrary()&&state.origin!=='showcase'))?'aria-current="page"':'')}${link(t('按工作領域瀏覽','By business domain'),{view:'home'},'','#domains',(state.view==='domain'||(state.view==='detail'&&state.domain&&state.origin!=='showcase'))?'aria-current="page"':'')}${link(t('顧問案例','Consulting cases'),{view:'showcase'},'','',(state.view==='showcase'||(state.view==='detail'&&state.origin==='showcase'))?'aria-current="page"':'')}</nav><div class="language" role="group" aria-label="Language"><button data-lang="zh" lang="zh-Hant" aria-pressed="${state.lang==='zh'}">中文</button><button data-lang="en" lang="en" aria-pressed="${state.lang==='en'}">EN<span class="sr-only"> English</span></button></div></header><main aria-busy="${!data&&!error}">${!data?`<section class="detail-intro"><h1 id="page-title" tabindex="-1">${error?t('資料暫時無法載入','Unable to load content'):t('正在讀取展示內容…','Loading the demonstration…')}</h1>${error?`<button class="button" data-retry>${t('重新載入','Retry')}</button>`:''}</section>`:state.view==='domain'?domainPage():state.view==='library'?libraryPage():state.view==='detail'?detailPage():state.view==='showcase'?completeShowcase():state.view==='methodology'?methodologyPage():home()}</main><footer><p>CONSULTING DEMO · ${t('概念展示，非已實作服務','Concept prototype, not an implemented service')}</p><span>${t('資料來源與驗證紀錄可查','Source references and validation records available')}</span></footer></div>`;
+function render(){const d=currentDomain();const x=data&&state.view==='detail'?detailItem(data,state):null;const pageTitle=x?fullTitle(x,state.kind):state.view==='library'?t('完整探索','Full exploration'):state.view==='domain'?d?.label[state.lang]:state.view==='showcase'?t('顧問方法與案例','Consulting methods and cases'):state.view==='methodology'?t('AI 方法庫','AI Methodology Library'):t('企業 AI 應用與管理','Enterprise AI Applications & Management');document.title=(pageTitle||t('頁面未提供','Page unavailable'))+' · Consulting Demo';document.documentElement.lang=state.lang==='zh'?'zh-Hant':'en';app.innerHTML=`<div class="shell"><a class="skip" href="#page-title">${t('跳到主要內容','Skip to main content')}</a><header class="masthead">${link(`<span class="brand-dot" aria-hidden="true"></span>${t('企業 AI 應用與管理','Enterprise AI Applications & Management')}`,{view:'home'},'brand')}<nav class="primary-nav" aria-label="${t('主要導覽','Main navigation')}">${link(t('探索四個研究庫','Explore the libraries'),{view:'home'},'','#source-libraries',(['library','methodology'].includes(state.view)||(state.view==='detail'&&fromLibrary()&&state.origin!=='showcase'))?'aria-current="page"':'')}${link(t('按企業領域瀏覽','By business domain'),{view:'home'},'','#domains',(state.view==='domain'||(state.view==='detail'&&state.domain&&state.origin!=='showcase'))?'aria-current="page"':'')}${link(t('顧問案例','Consulting cases'),{view:'showcase'},'','',(state.view==='showcase'||(state.view==='detail'&&state.origin==='showcase'))?'aria-current="page"':'')}</nav><div class="language" role="group" aria-label="Language"><button data-lang="zh" lang="zh-Hant" aria-pressed="${state.lang==='zh'}">中文</button><button data-lang="en" lang="en" aria-pressed="${state.lang==='en'}">EN<span class="sr-only"> English</span></button></div></header><main aria-busy="${!data&&!error}">${!data?`<section class="detail-intro"><h1 id="page-title" tabindex="-1">${error?t('資料暫時無法載入','Unable to load content'):t('正在讀取展示內容…','Loading the demonstration…')}</h1>${error?`<button class="button" data-retry>${t('重新載入','Retry')}</button>`:''}</section>`:state.view==='domain'?domainPage():state.view==='library'?libraryPage():state.view==='detail'?detailPage():state.view==='showcase'?completeShowcase():state.view==='methodology'?methodologyPage():home()}</main><footer><p>CONSULTING DEMO · ${t('概念展示，非已實作服務','Concept prototype, not an implemented service')}</p><span>${t('資料來源與驗證紀錄可查','Source references and validation records available')}</span></footer></div>`;
  if(data&&pending&&detailDataReady()){const p=pending;pending=null;const anchor=p.hash?document.getElementById(p.hash.slice(1)):null;if(anchor)anchor.scrollIntoView();else window.scrollTo(0,p.top);if(p.filterFocus)document.querySelector(`input[data-axis="${p.filterFocus.axis}"][value="${p.filterFocus.id}"]`)?.focus({preventScroll:true});else if(p.focusTab)document.querySelector(`[data-tab="${p.focusTab}"]`)?.focus({preventScroll:true});else if(p.focusId)document.querySelector(`[data-item="${p.focusId}"]`)?.focus({preventScroll:true});else if(p.focus)(anchor?.hasAttribute('tabindex')?anchor:document.querySelector('#page-title'))?.focus({preventScroll:true});}
  ensureData();
 }
