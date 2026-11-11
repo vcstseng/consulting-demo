@@ -1,7 +1,7 @@
 export const TABS=['problems','methods','capabilities','startups'];
 export const AXES=['industry_customer','problem_workflow','solution'];
 const QUERY={industry_customer:'industry',problem_workflow:'work',solution:'solution'};
-export function tabForKind(kind){return {problem:'problems',guide:'problems',startup:'startups',capability:'capabilities',resource:'capabilities',trend:'capabilities'}[kind]||'problems';}
+export function tabForKind(kind){return {problem:'problems',guide:'problems',methodQuestion:'methods',method:'methods',startup:'startups',capability:'capabilities',resource:'capabilities',trend:'capabilities'}[kind]||'problems';}
 export function readRoute(search,preferred='zh',hash=''){
  const p=new URLSearchParams(search),kind=p.get('kind')||null,view=['domain','library','detail','showcase','methodology'].includes(p.get('view'))?p.get('view'):'home';
  const candidate=p.get('tab')||hash.replace(/^#/,'');
@@ -29,7 +29,10 @@ export function routeUrl(r,hash=''){
 export function routeKey(r){const q={...r,lang:'zh'};return routeUrl(q);}
 export function inDomain(x,domain){return x.domain===domain||x.domains?.includes(domain);}
 export function domainItems(data,domain){return {problems:data.problems.filter(x=>inDomain(x,domain)),startups:data.startups.filter(x=>inDomain(x,domain)),capabilities:data.capabilities.filter(x=>inDomain(x,domain))};}
-export function detailItem(data,r){const key={problem:'problems',startup:'startups',capability:'capabilities',resource:'resources',trend:'trending',guide:'guides'}[r.kind];return key?data[key]?.find(x=>x.id===r.id&&(r.origin==='library'||r.origin==='showcase'||!r.domain||inDomain(x,r.domain))):null;}
+export function detailItem(data,r){
+ if(r.kind==='methodQuestion')return data.methodology?.questions.find(x=>x.id===r.id);
+ if(r.kind==='method')return data.methodology?.methods.find(x=>x.id===r.id);
+const key={problem:'problems',startup:'startups',capability:'capabilities',resource:'resources',trend:'trending',guide:'guides'}[r.kind];return key?data[key]?.find(x=>x.id===r.id&&(r.origin==='library'||r.origin==='showcase'||!r.domain||inDomain(x,r.domain))):null;}
 export function rawStartupMatches(records,r,omit){
  const scope=r.view==='domain'||(r.view==='detail'&&r.origin==='domain');
  return records.filter(x=>(!scope||!r.domain||inDomain(x,r.domain))&&AXES.every(a=>a===omit||!r.filters?.[a]?.length||r.filters[a].some(id=>x.categories[a].includes(id))));

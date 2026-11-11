@@ -780,5 +780,282 @@
     "shadow-ai-discovery",
     "us-copyright-ai-outputs",
     "wharton-security-exceptions"
+  ],
+  "methods": [
+    {
+      "id": "aga-ai-lifecycle-costs",
+      "title": "澳洲政府架構的 AI 生命週期成本估算",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/aga-ai-lifecycle-costs.html"
+    },
+    {
+      "id": "agent-operations-roles",
+      "title": "Microsoft Agent CoE 的角色與責任",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/agent-operations-roles.html"
+    },
+    {
+      "id": "anthropic-agent-evals",
+      "title": "Anthropic 的能力測試與回歸測試",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/anthropic-agent-evals.html"
+    },
+    {
+      "id": "anthropic-agent-tool-design",
+      "title": "Anthropic 的 agent 工具設計",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/anthropic-agent-tool-design.html"
+    },
+    {
+      "id": "anthropic-multi-agent-research",
+      "title": "Anthropic 的多 agent 研究系統",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/anthropic-multi-agent-research.html"
+    },
+    {
+      "id": "anthropic-workflows-and-agents",
+      "title": "Anthropic 的 Workflow／Agent 選擇原則",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/anthropic-workflows-and-agents.html"
+    },
+    {
+      "id": "aqua-analytical-assurance",
+      "title": "GOV.UK AQuA Book 的分析覆核",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/aqua-analytical-assurance.html"
+    },
+    {
+      "id": "australian-copilot-trial-support",
+      "title": "澳洲 DTA Copilot 試行的培訓與回饋",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/australian-copilot-trial-support.html"
+    },
+    {
+      "id": "aws-ai-dlc",
+      "title": "AWS AI-DLC 的人機分工",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/aws-ai-dlc.html"
+    },
+    {
+      "id": "aws-idempotent-writeback",
+      "title": "AWS 的安全重試與回寫",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/aws-idempotent-writeback.html"
+    },
+    {
+      "id": "azure-agent-orchestration",
+      "title": "Azure 的多 agent 協作模式",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/azure-agent-orchestration.html"
+    },
+    {
+      "id": "copilot-champions",
+      "title": "Microsoft Copilot Champions",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/copilot-champions.html"
+    },
+    {
+      "id": "customer-support-baseline",
+      "title": "《Generative AI at Work》的客服衡量設計",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/customer-support-baseline.html"
+    },
+    {
+      "id": "deloitte-responsible-ai-charter",
+      "title": "Deloitte 的負責任 AI 章程與決策分工",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/deloitte-responsible-ai-charter.html"
+    },
+    {
+      "id": "dta-ai-pilot-design",
+      "title": "澳洲 DTA 的 AI 試行設計",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/dta-ai-pilot-design.html"
+    },
+    {
+      "id": "finops-ai-cost-estimation",
+      "title": "FinOps Foundation 的 AI 工作負載成本估算",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/finops-ai-cost-estimation.html"
+    },
+    {
+      "id": "finops-anomaly-management",
+      "title": "FinOps Anomaly Management",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/finops-anomaly-management.html"
+    },
+    {
+      "id": "finops-cost-per-outcome",
+      "title": "FinOps 每件成功結果的成本",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/finops-cost-per-outcome.html"
+    },
+    {
+      "id": "github-agentic-handoff",
+      "title": "GitHub Agentic Workflows 的人工審查與合併",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/github-agentic-handoff.html"
+    },
+    {
+      "id": "github-spec-kit-sdd",
+      "title": "GitHub Spec Kit 的 Spec-Driven Development",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/github-spec-kit-sdd.html"
+    },
+    {
+      "id": "google-canary-rollback",
+      "title": "Google SRE 的小流量試放與回退",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/google-canary-rollback.html"
+    },
+    {
+      "id": "google-incident-command",
+      "title": "Google SRE 的事件指揮分工",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/google-incident-command.html"
+    },
+    {
+      "id": "govuk-ai-continuity",
+      "title": "GOV.UK AI Risk Management Toolkit 的備援做法",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/govuk-ai-continuity.html"
+    },
+    {
+      "id": "govuk-ai-fit-and-options",
+      "title": "GOV.UK 的 AI 適用性與取得方式評估",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/govuk-ai-fit-and-options.html"
+    },
+    {
+      "id": "govuk-ai-risk-reassessment",
+      "title": "GOV.UK AI Risk Management Toolkit 的風險重評",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/govuk-ai-risk-reassessment.html"
+    },
+    {
+      "id": "govuk-beta-to-live",
+      "title": "GOV.UK Beta → Live 交接",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/govuk-beta-to-live.html"
+    },
+    {
+      "id": "govuk-supplier-exit",
+      "title": "GOV.UK 的供應商退場計畫",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/govuk-supplier-exit.html"
+    },
+    {
+      "id": "govuk-technology-integration",
+      "title": "GOV.UK 的既有技術整合檢查",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/govuk-technology-integration.html"
+    },
+    {
+      "id": "gstack-workflow-roles",
+      "title": "gstack 的開發工作角色",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/gstack-workflow-roles.html"
+    },
+    {
+      "id": "ico-ai-data-contracts",
+      "title": "英國 ICO 的 AI 資料與第三方合約審查",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/ico-ai-data-contracts.html"
+    },
+    {
+      "id": "imda-genai-buy-or-build",
+      "title": "新加坡 IMDA 的生成式 AI 採購與自建比較",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/imda-genai-buy-or-build.html"
+    },
+    {
+      "id": "jagged-frontier-task-tests",
+      "title": "Jagged Technological Frontier 的任務對照",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/jagged-frontier-task-tests.html"
+    },
+    {
+      "id": "kcs-knowledge-maintenance",
+      "title": "KCS v6 的知識重用與維護",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/kcs-knowledge-maintenance.html"
+    },
+    {
+      "id": "lga-agentic-ai-operations",
+      "title": "LGA Agentic AI Playbook",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/lga-agentic-ai-operations.html"
+    },
+    {
+      "id": "magenta-ai-impact-evaluation",
+      "title": "英國 Magenta Book 的 AI 影響評估",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/magenta-ai-impact-evaluation.html"
+    },
+    {
+      "id": "meaningful-human-oversight",
+      "title": "GOV.UK 的實質人工監督",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/meaningful-human-oversight.html"
+    },
+    {
+      "id": "metr-task-randomization",
+      "title": "METR 的任務隨機分派實例",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/metr-task-randomization.html"
+    },
+    {
+      "id": "microsoft-integration-poc",
+      "title": "Microsoft Azure 的概念驗證",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/microsoft-integration-poc.html"
+    },
+    {
+      "id": "microsoft-phased-expansion",
+      "title": "Microsoft 的分批擴大做法",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/microsoft-phased-expansion.html"
+    },
+    {
+      "id": "ncsc-shadow-it",
+      "title": "英國 NCSC 的 Shadow IT 指引",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/ncsc-shadow-it.html"
+    },
+    {
+      "id": "nhs-scribe-draft-review",
+      "title": "NHS 的 AI 草稿覆核與入檔",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/nhs-scribe-draft-review.html"
+    },
+    {
+      "id": "nist-ai-deactivation",
+      "title": "NIST 的 AI 停用與恢復條件",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/nist-ai-deactivation.html"
+    },
+    {
+      "id": "nist-deployment-context",
+      "title": "NIST Measure 2.3 的部署情境重驗",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/nist-deployment-context.html"
+    },
+    {
+      "id": "nist-genai-source-verification",
+      "title": "NIST 的生成式 AI 來源查證",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/nist-genai-source-verification.html"
+    },
+    {
+      "id": "nist-independent-assessment",
+      "title": "NIST Measure 1.3 的獨立評估",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/nist-independent-assessment.html"
+    },
+    {
+      "id": "odi-ai-ready-data",
+      "title": "Open Data Institute 的 AI 資料準備度框架",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/odi-ai-ready-data.html"
+    },
+    {
+      "id": "openai-agent-escalation",
+      "title": "OpenAI 的人工接手觸發條件",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/openai-agent-escalation.html"
+    },
+    {
+      "id": "opentelemetry-genai",
+      "title": "OpenTelemetry GenAI 調用追蹤",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/opentelemetry-genai.html"
+    },
+    {
+      "id": "owasp-excessive-agency",
+      "title": "OWASP：防止 AI 權限過大",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/owasp-excessive-agency.html"
+    },
+    {
+      "id": "pg-real-work-experiment",
+      "title": "P&G 實地實驗的真實任務設計",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/pg-real-work-experiment.html"
+    },
+    {
+      "id": "pstack-verifiable-units",
+      "title": "pstack 的可驗證工作單位",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/pstack-verifiable-units.html"
+    },
+    {
+      "id": "runbooks-and-handover",
+      "title": "AWS Runbooks",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/runbooks-and-handover.html"
+    },
+    {
+      "id": "shadow-ai-discovery",
+      "title": "Microsoft 的 Shadow AI Discovery",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/shadow-ai-discovery.html"
+    },
+    {
+      "id": "us-copyright-ai-outputs",
+      "title": "美國著作權局的 AI 產出判斷",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/us-copyright-ai-outputs.html"
+    },
+    {
+      "id": "wharton-security-exceptions",
+      "title": "Wharton 的限期例外流程",
+      "source_url": "https://vcstseng.github.io/ai-methodology-library/methods/wharton-security-exceptions.html"
+    }
   ]
 }

@@ -42,3 +42,20 @@ test('cross-library problem returns retain the original filters, page and case o
  assert.equal(caseReturn.origin,'showcase');
  assert.equal(caseReturn.id,'CS02');
 });
+
+test('native method shells resolve all source IDs and preserve the question return route',async()=>{
+ const methodology=JSON.parse(await readFile(new URL('methodology.json',output)));
+ const combined={...data,methodology};
+ assert.equal(methodology.questions.length,35);
+ assert.equal(methodology.methods.length,55);
+ for(const question of methodology.questions){
+  assert.equal(detailItem(combined,{kind:'methodQuestion',id:question.id})?.id,question.id);
+  for(const id of question.method_ids)assert.equal(detailItem(combined,{kind:'method',id})?.id,id);
+ }
+ assert.equal(tabForKind('methodQuestion'),'methods');
+ assert.equal(tabForKind('method'),'methods');
+ const question=readRoute('?lang=en&view=detail&tab=methods&kind=methodQuestion&id=acceptance-criteria&origin=library');
+ const method=readRoute(routeUrl({...question,kind:'method',id:'anthropic-agent-evals',from:routeUrl(question)}));
+ assert.equal(readRoute(method.from).kind,'methodQuestion');
+ assert.equal(readRoute(method.from).id,'acceptance-criteria');
+});

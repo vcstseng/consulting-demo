@@ -10,9 +10,9 @@
 - scripts/build_integration.py：離線核對快照，轉成統一版展示資料。
 - web/src/engine.js：共用 URL、原分類、OR／AND、先篩後去重及分頁。
 - web/src/app.js、styles.css：沿用 v2 外框與分頁，完整模組／領域／詳情閱讀。
-- web/data/methodology.json：六個主題、35 個問題的中英文索引，含方法引用與來源版本。
+- web/data/methodology.json：六個主題、35 個問題的中英文索引、55 個原站方法名稱與網址，含引用及來源版本。
 - web/scripts/build.mjs：驗證來源快照與方法庫索引，產生展示資料並複製前端。
-- web/tests：17 項完整性與行為測試，包含跨庫返回狀態的回歸檢查。
+- web/tests：18 項完整性與行為測試，包含跨庫返回狀態的回歸檢查。
 - web/dist：執行建置時產生，由 Git 忽略。catalog.json 約 0.7 MiB，startups.json 約 3.5 MiB；startup/details、guides、case-pages、evidence 按需讀取。
 - docs：目前規格、進度與驗證；round-one／ux-v2 文件保留歷史，不當作目前資料數量。
 

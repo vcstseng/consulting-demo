@@ -11,7 +11,7 @@ const v=x=>e(x?.[state.lang]||'');
 const url=(patch={},hash='')=>routeUrl({...state,...patch},hash);
 const link=(text,patch={},cls='',hash='',extra='')=>`<a class="${cls}" data-route href="${e(extra.includes('data-return-route')?routeUrl({...patch,lang:state.lang},hash):url(patch,hash))}" ${extra}>${text}</a>`;
 function external(href,text){let safe;try{safe=new URL(href);if(!['http:','https:'].includes(safe.protocol))return '';}catch{return '';}return `<a href="${e(safe.href)}" target="_blank" rel="noopener noreferrer">${e(text)} <span aria-hidden="true">↗</span><span class="sr-only">${t('（新分頁）',' (new tab)')}</span></a>`;}
-const kindName=kind=>({problem:t('企業問題','Business problem'),startup:t('外部做法','External approach'),capability:t('能力構想','Capability concept'),resource:t('資源參考','Resource reference'),trend:t('熱門快照','Trending snapshot'),guide:t('方法與治理','Methods & governance')})[kind];
+const kindName=kind=>({problem:t('企業問題','Business problem'),methodQuestion:t('導入問題','Adoption question'),method:t('方法參考','Method reference'),startup:t('外部做法','External approach'),capability:t('能力構想','Capability concept'),resource:t('資源參考','Resource reference'),trend:t('熱門快照','Trending snapshot'),guide:t('方法與治理','Methods & governance')})[kind];
 const tabLabel=tab=>({problems:t('企業問題','Business problems'),methods:t('導入方法','Adoption methods'),startups:t('新創參考','Startup references'),capabilities:t('能力構想','Capability concepts')})[tab];
 const currentDomain=()=>data?.domains.find(d=>d.id===state.domain);
 const tabRoutes=new Map();
@@ -81,15 +81,15 @@ function methodologyContent(){
  const catalog=data.methodology;
  if(!catalog)return partBlock('methodology.json');
  return `<div class="methods-directory">
-  <p class="mini-note">${t('這些導入問題適用於不同工作領域。展開主題查看問題與簡介，完整方法及來源可回查原站。','These adoption questions apply across business domains. Expand a topic to read the questions and summaries. Full approaches and references are available on the source site in Traditional Chinese.')}</p>
+  <p class="mini-note">${t('這些導入問題適用於不同工作領域。展開主題，再選一題查看可參考的方法。','These adoption questions apply across business domains. Expand a topic and choose a question to explore its approaches.')}</p>
   <p class="source-label">${catalog.topics.length} ${t('個主題','topics')} · ${catalog.questions.length} ${t('個問題','questions')}</p>
   ${catalog.topics.map(topic=>`<details class="method-topic" data-method-topic="${e(topic.id)}" ${openMethodTopics.has(topic.id)?'open':''}>
    <summary><span>${v(topic.title)}</span><small>${topic.question_ids.length} ${t('個問題','questions')}</small></summary>
    <p>${v(topic.summary)}</p>
    <div class="item-list">${catalog.questions.filter(question=>question.topic_id===topic.id).map(question=>`<article class="method-question" id="method-${e(question.id)}">
-    <h3>${v(question.title)}</h3>
+    <h3>${link(v(question.title),{view:'detail',kind:'methodQuestion',id:question.id,origin:state.view==='domain'?'domain':'library'},'text-link')}</h3>
     <p>${v(question.summary)}</p>
-    <p>${external(question.source_url,t('查看可參考方法與來源','Read approaches and sources (Traditional Chinese)'))}</p>
+    <p>${link(t('查看可參考方法','Explore the approaches')+' →',{view:'detail',kind:'methodQuestion',id:question.id,origin:state.view==='domain'?'domain':'library'},'text-link')}</p>
    </article>`).join('')}</div>
   </details>`).join('')}
  </div>`;
@@ -114,6 +114,42 @@ function card(item,kind){
 
 function domainPage(){return fullDomainPage();}
 
+function detailReading(body){
+ const sections=[];
+ let count=0;
+ const html=body.replace(/<section class="detail-section"><h2>([^<]+)<\/h2>/g,(_,title)=>{
+  const id='detail-part-'+ ++count;sections.push({id,title});
+  return `<section class="detail-section" id="${id}" tabindex="-1"><h2>${title}</h2>`;
+ });
+ if(!sections.length)return html;
+ const navigation=`<nav class="detail-toc" aria-label="${t('本頁內容','On this page')}"><details><summary>${t('本頁內容','On this page')}</summary><ul>${sections.map(item=>`<li><a href="#${item.id}">${item.title}</a></li>`).join('')}<li><a href="#detail-sources">${t('資料來源','Sources')}</a></li></ul></details></nav>`;
+ return navigation+html;
+}
+function methodQuestionBody(x){
+ return section(t('可參考的方法','Approaches to explore'),`<p class="mini-note">${t('先選一個方法查看。這裡沿用原站的中文方法名稱。','Choose an approach to open it. Method names retain the Chinese wording from the original library.')}</p><div class="item-list">${x.method_ids.map(id=>data.methodology.methods.find(method=>method.id===id)).filter(Boolean).map(method=>`<article class="item-card">${link(`<h3>${e(method.title)}</h3><span>${t('查看方法','Open approach')} →</span>`,{view:'detail',kind:'method',id:method.id,from:routeUrl(state)},'item-main')}</article>`).join('')}</div>`);
+}
+function methodBody(x){
+ return section(t('做法與步驟','Approach and steps'),`<div class="content-placeholder"><p>${t('站內內容待整理。可先查看原站的完整做法。','The in-site content is being prepared. You can read the full approach on the original site.')}</p><p>${external(x.source_url,t('閱讀原站做法','Read the original approach (Traditional Chinese)'))}</p></div>`)
+  +section(t('適用情況與限制','When it applies and its limits'),`<div class="content-placeholder">${t('待補。','To be added.')}</div>`);
+}
+function evidenceLabel(name){
+ const labels={
+  'experiment.json':t('測試紀錄','Test record'),
+  'policy.json':t('分流與升級政策','Routing and escalation policy'),
+  'protocol.json':t('測試規則與條件','Test rules and conditions'),
+  'tickets.json':t('測試工單與人員資料','Test tickets and staff data'),
+  'reuse-shift.json':t('換班情境重測','Shift-change retest'),
+  'reuse-product.json':t('產品情境重測','Product-scenario retest'),
+  'reuse-supplier.json':t('供應商情境重測','Supplier-scenario retest'),
+  'reuse-packaging.json':t('包裝情境重測','Packaging-scenario retest'),
+  'evidence.json':t('佐證資料','Supporting evidence'),
+  'source.json':t('原始資料','Source data'),
+  'source.csv':t('原始資料表','Source data table'),
+  'review.md':t('審查紀錄','Review notes'),
+  'solution.md':t('方案說明','Solution notes')
+ };
+ return labels[name]||name;
+}
 function section(title,body){return `<section class="detail-section"><h2>${title}</h2>${body}</section>`;}
 function problemBody(x){const p=x[state.lang];return section(t('先理解問題','Understand the problem'),`<p>${e(p['Business Problem'])}</p>`)+section(t('需要知道什麼？','What do we need to know?'),`<p>${e(p['Context Explanation'])}</p><div class="callout"><h3>${t('資料與既有系統','Data & existing systems')}</h3><p>${e(p['Data Needed / Existing Systems'])}</p></div>`)+section(t('可能的處理方向','A possible approach'),`<p>${e(p['Solution Explanation'])}</p>${p['Solution Core']?`<details><summary>${t('原研究的解法核心','Solution core in the source research')}</summary><p>${e(p['Solution Core'])}</p></details>`:''}<details><summary>${t('AI 可以提供什麼協助？','What might AI contribute?')}</summary><p>${e(p['AI Leverage'])}</p><p>${e(p['How AI Helps'])}</p></details>`)+section(t('人仍需要決定什麼？','What do people still decide?'),`<p>${e(p['Human Role'])}</p>`)+section(t('原研究的預期改善','Expected improvement in the source research'),`<p class="mini-note">${t('以下是研究方向，並非本展示已驗證的成果。','This is an intended direction, not a validated result of this demo.')}</p><p>${e(p['Expected Outcome'])}</p>`);}
 function capabilityBody(x){const d=x.detail;const companions=d.related_ids.map(id=>data.capabilities.find(c=>c.id===id)).filter(Boolean);return section(t('什麼時候用？','When to use it'),`<p>${v(d.scenario)}</p>`)+section(t('輸入 → 處理 → 產出','Input → Process → Output'),`<div class="ability-flow"><div><h3>${t('輸入','Input')}</h3><p>${v(x.input)}</p></div><div><h3>${t('處理','Process')}</h3><ol>${d.steps.map(s=>`<li>${v(s)}</li>`).join('')}</ol></div><div><h3>${t('產出','Output')}</h3><p>${v(x.output)}</p></div></div>`)+section(t('看一個示例','An illustrative example'),`<p class="mini-note">${t('虛構編寫 · 非實際執行結果','Authored illustration · Not an execution result')}</p><div class="example-grid"><div><h3>${t('提供的資料','Provided information')}</h3><p>${v(d.example.input)}</p></div><div><h3>${t('示範產出','Illustrative output')}</h3><p>${v(d.example.output)}</p></div></div>`)+section(t('人工判斷與使用界線','Human decisions & boundaries'),`<dl class="facts"><div><dt>${t('人工確認','Human confirmation')}</dt><dd>${v(x.human_decision)}</dd></div><div><dt>${t('資料與權限','Data & permissions')}</dt><dd>${v(d.permissions)}</dd></div><div><dt>${t('停止與交回','Stop & hand back')}</dt><dd>${v(d.stop)}</dd></div></dl>`)+section(t('可搭配的能力','Possible companion capabilities'),`<p class="mini-note">${t('沿用原能力頁的組合構想，並非已建立的整合。','These are combinations suggested by the original capability page, not implemented integrations.')}</p><div class="related-list">${companions.map(c=>link(`${v(c.name)} →`,{view:'detail',kind:'capability',id:c.id,domain:state.domain})).join('')}</div>`)+section(t('實現參考','Implementation references'),d.references.length?d.references.map(r=>`<div class="reference-row">${external(r.url,r.name)}<p class="mini-note">${t('待評估','Unverified reference')}</p><p>${v(r.scope)}</p></div>`).join(''):`<p>${t('此能力尚未指定實作參考。','No implementation reference is assigned to this capability.')}</p>`);}
@@ -191,7 +227,7 @@ async function loadPart(file,assign){
 }
 function ensureData(){
  if(!data)return;
- if((['domain','library'].includes(state.view)&&state.tab==='methods')||state.view==='methodology')loadPart('methodology.json',body=>{data.methodology=body;});
+ if((['domain','library'].includes(state.view)&&state.tab==='methods')||state.view==='methodology'||(state.view==='detail'&&['methodQuestion','method'].includes(state.kind)))loadPart('methodology.json',body=>{data.methodology=body;});
  if((['domain','library'].includes(state.view)&&state.tab==='startups')||(state.view==='detail'&&state.kind==='startup')){
   if(!startupLoaded){loadPart('startups.json',body=>{data.startups=body.records;data.startupData=body;startupLoaded=true;});return;}
  }
@@ -284,29 +320,36 @@ function evidenceBody(x){
   <p>${t('用接近實際工作條件的工單重驗分流與升級，特別確認高風險或資訊不全的案件是否會交回人工。','Recheck routing and escalation with tickets representative of actual working conditions. Check whether high-risk or incomplete tickets are handed back to staff.')}</p>
   <p>${external(methodologyUrl+'methods/nist-deployment-context.html',t('AI 方法庫：部署情境重驗','AI Methodology Library: retest in the deployment context (Traditional Chinese)'))}</p>
  </div>`:'';
- return section(t('原有案例與驗證紀錄','Existing synthetic scenarios & validation records'),`<p class="mini-note">${t('以下沿用 99 Problems 既有內容，不是本次整合新增的客戶成果，也不是三個模組的新 matching 結果。','The following comes from the existing 99 Problems prototype. It is not a new client outcome or a new cross-module matching result.')}</p>${casePage?`<details class="original-case"><summary>${t('閱讀原有案例頁的完整內容（靜態）','Read the full original case page (static)')}</summary><div class="source-document">${casePage.html}</div></details>`:partBlock(caseFile)}${body?body.files.map(f=>`<details class="evidence-file"><summary>${e(f.name)}</summary><p class="mini-note">${e(f.source_path)}</p><pre>${e(f.content)}</pre></details>`).join(''):partBlock(file)}${nextStep}`);
+ return section(t('原有案例與驗證紀錄','Existing synthetic scenarios & validation records'),`<p class="mini-note">${t('以下沿用 99 Problems 既有內容，不是本次整合新增的客戶成果，也不是三個模組的新 matching 結果。','The following comes from the existing 99 Problems prototype. It is not a new client outcome or a new cross-module matching result.')}</p>${casePage?`<details class="original-case"><summary>${t('閱讀原有案例頁的完整內容（靜態）','Read the full original case page (static)')}</summary><div class="source-document">${casePage.html}</div></details>`:partBlock(caseFile)}${body?body.files.map(f=>`<details class="evidence-file"><summary>${e(evidenceLabel(f.name))} <small>${e(f.name)}</small></summary><p class="mini-note">${e(f.source_path)}</p><pre>${e(f.content)}</pre></details>`).join(''):partBlock(file)}${nextStep}`);
 }
 function guideBody(x){const file=x.files[state.lang],body=parts.get(file);return body?`<p class="mini-note">${t('原文件的靜態閱讀版；原站的互動執行不在此重跑。','A static reading of the original document; original interactive execution is not rerun here.')}</p><div class="source-document">${body.html}</div>`:partBlock(file);}
-function fullTitle(x,kind){return kind==='problem'?x[state.lang]['Plain Language']:['startup','resource','trend'].includes(kind)?x.name:x.name[state.lang];}
+function fullTitle(x,kind){if(kind==='methodQuestion')return x.title[state.lang];if(kind==='method')return x.title;return kind==='problem'?x[state.lang]['Plain Language']:['startup','resource','trend'].includes(kind)?x.name:x.name[state.lang];}
 function fullDetailPage(){
  if(state.kind==='startup'&&!startupLoaded)return partBlock('startups.json');
+ if(['methodQuestion','method'].includes(state.kind)&&!data.methodology)return partBlock('methodology.json');
  const x=detailItem(data,state);if(!x)return missing();const d=currentDomain();
- const body={problem:()=>problemBody(x)+evidenceBody(x),startup:()=>fullStartupBody(x),capability:()=>capabilityBody(x),resource:()=>resourceBody(x),trend:()=>trendBody(x),guide:()=>guideBody(x)}[state.kind];
- const source=state.kind==='problem'?x.source:x,original=source.original_url?.[state.lang],commit=state.kind==='problem'?x.source.commit:x.source_commit;
+ const body={problem:()=>problemBody(x)+evidenceBody(x),methodQuestion:()=>methodQuestionBody(x),method:()=>methodBody(x),startup:()=>fullStartupBody(x),capability:()=>capabilityBody(x),resource:()=>resourceBody(x),trend:()=>trendBody(x),guide:()=>guideBody(x)}[state.kind];
+ const isMethod=['methodQuestion','method'].includes(state.kind);
+ const source=state.kind==='problem'?x.source:x;
+ const original=isMethod?x.source_url:source.original_url?.[state.lang];
+ const commit=isMethod?data.methodology.source.commit:state.kind==='problem'?x.source.commit:x.source_commit;
+ const sourceName=isMethod?t('AI 方法庫','AI Methodology Library'):({problem:'99 Problems',capability:'Capability Store',startup:'Startup Radar',resource:'Capability Store',trend:'Capability Store',guide:'99 Problems'})[state.kind];
+ const importedAt=isMethod?data.methodology.source.imported_at:null;
  const savedBack=state.from?readRoute(state.from,state.lang):null;
- const back=savedBack&&['domain','library','showcase'].includes(savedBack.view)
+ const back=savedBack&&(['domain','library','showcase'].includes(savedBack.view)||(savedBack.view==='detail'&&['methodQuestion','method'].includes(savedBack.kind)))
   ?{...savedBack,lang:state.lang}
   :{...state,view:returnView(),tab:tabForKind(state.kind),domain:d?.id||null,kind:null,id:null,from:null,returnTo:state.kind==='problem'?null:state.returnTo,context:state.kind==='problem'?null:state.context};
  const fromShowcase=back.view==='showcase';
  const showcaseLabel=t('顧問案例','Consulting cases');
- const summary=state.kind==='capability'?v(x.purpose):['startup','resource','trend'].includes(state.kind)?v(x.summary):'';
- return `${crumbs(null,`${link(fromShowcase?showcaseLabel:fromLibrary()?t('完整探索','Full exploration'):d?v(d.label):t('顧問方法','Consulting methods'),back,'','','data-return data-return-route')} / ${e(fullTitle(x,state.kind))}`)}<article class="detail-page"><header class="detail-intro"><p class="eyebrow">${kindName(state.kind)}${state.kind==='problem'?' · '+e(x.id):state.kind==='capability'?' · '+e(capabilityType(x.kind)):''}</p><h1 id="page-title" tabindex="-1">${e(fullTitle(x,state.kind))}</h1>${summary?`<p class="lead">${summary}</p>`:''}${state.kind==='capability'?`<p class="detail-status">${t('能力構想，尚未實作；例子為虛構示範。','Capability concept, not implemented; examples are fictional illustrations.')}</p>`:''}</header>${state.kind==='problem'?explorationContext(x):explorationContext()}${body()}<section class="source-section"><h2>${t('回查原模組','View original module')}</h2>${original?external(original,t('查看原站','View original site')):''}<p class="mini-note">${t('固定來源版本','Pinned version')} · ${e(commit?.slice(0,8))}</p></section></article><nav class="detail-return" aria-label="${t('返回探索','Return to exploration')}">${link('← '+t('返回','Back to')+' '+(fromShowcase?showcaseLabel:tabLabel(tabForKind(state.kind))),back,'button','','data-return data-return-route')}${!fromShowcase&&state.kind!=='guide'?`<div><span>${d?v(d.label):t('完整探索','Full exploration')}</span>${TABS.filter(tab=>tab!==tabForKind(state.kind)).map(tab=>link(tabLabel(tab),{...back,tab,page:1,group:'all',category:'',topic:'',resourceWork:'',filters:emptyFilters()},'text-link','','data-return')).join('')}</div>`:''}</nav>`;
+ const backLabel=back.view==='detail'?t('導入問題','Adoption question'):fromShowcase?showcaseLabel:tabLabel(tabForKind(state.kind));
+ const summary=state.kind==='methodQuestion'?x.summary[state.lang]:state.kind==='capability'?x.purpose[state.lang]:['startup','resource','trend'].includes(state.kind)?x.summary?.[state.lang]||'':'';
+ return `${crumbs(null,`${link(back.view==='detail'?backLabel:fromShowcase?showcaseLabel:fromLibrary()?t('完整探索','Full exploration'):d?v(d.label):t('顧問方法','Consulting methods'),back,'','','data-return data-return-route')} / ${e(fullTitle(x,state.kind))}`)}<article class="detail-page"><header class="detail-intro"><p class="eyebrow">${kindName(state.kind)}${state.kind==='problem'?' · '+e(x.id):state.kind==='capability'?' · '+e(capabilityType(x.kind)):''}</p><h1 id="page-title" tabindex="-1">${e(fullTitle(x,state.kind))}</h1>${summary?`<p class="lead">${summary}</p>`:''}${state.kind==='capability'?`<p class="detail-status">${t('能力構想，尚未實作；例子為虛構示範。','Capability concept, not implemented; examples are fictional illustrations.')}</p>`:''}<p class="detail-source-note">${t('資料來源','Source')} · ${e(sourceName)} · <a href="#detail-sources">${t('查看來源資訊','View source information')}</a></p>${state.kind==='method'?`<p class="mini-note">${t('方法名稱沿用原站。','The method title retains the Chinese wording of the original library.')}</p>`:''}</header>${state.kind==='problem'?explorationContext(x):explorationContext()}${detailReading(body())}<section class="source-section" id="detail-sources" tabindex="-1"><h2>${t('資料來源','Sources')}</h2>${original?external(original,t('查看原站','View original site')):''}<p class="mini-note">${t('資料來源','Source')} · ${e(sourceName)} · ${t('來源版本','Source version')} ${e(commit?.slice(0,8))}</p>${importedAt?`<p class="mini-note">${t('目錄更新日期','Index updated')} · ${e(importedAt)}</p>`:''}</section></article><nav class="detail-return" aria-label="${t('返回探索','Return to exploration')}">${link('← '+t('返回','Back to')+' '+backLabel,back,'button','','data-return data-return-route')}${!fromShowcase&&state.kind!=='guide'?`<div><span>${d?v(d.label):t('完整探索','Full exploration')}</span>${TABS.filter(tab=>tab!==tabForKind(state.kind)).map(tab=>link(tabLabel(tab),{...back,tab,page:1,group:'all',category:'',topic:'',resourceWork:'',filters:emptyFilters()},'text-link','','data-return')).join('')}</div>`:''}</nav>`;
 }
 function completeShowcase(){return showcase(`<section class="module-section" id="source-methods">${sectionHead(t('既有顧問方法與實踐','EXISTING METHODS & PRACTICE'),t('原有顧問方法與案例','Original frameworks & validation content'),t('案例使用模擬資料，可從問題詳情查看原始案例與驗證紀錄。','These cases use simulated data. Open a case to see the original write-up and validation records.'))}<ul class="case-links">${data.problems.filter(p=>data.evidence_ids.includes(p.id)).map(p=>`<li>${link(e(p.id+' · '+fullTitle(p,'problem')),{view:'detail',kind:'problem',id:p.id,domain:null,origin:'showcase'},'text-link')}</li>`).join('')}</ul><div class="item-list">${data.guides.map(g=>`<article class="item-card"><a class="item-main" data-route href="${e(url({view:'detail',domain:null,kind:'guide',id:g.id,origin:'showcase'}))}"><h3>${v(g.name)}</h3><span>${t('閱讀原文件','Read original document')} →</span></a></article>`).join('')}</div></section>`);}
 
 function detailDataReady(){
  if(!data)return false;
- if((['domain','library'].includes(state.view)&&state.tab==='methods')||state.view==='methodology')if(!data.methodology&&!partErrors.has('methodology.json'))return false;
+ if((['domain','library'].includes(state.view)&&state.tab==='methods')||state.view==='methodology'||(state.view==='detail'&&['methodQuestion','method'].includes(state.kind)))if(!data.methodology&&!partErrors.has('methodology.json'))return false;
  if((['domain','library'].includes(state.view)&&state.tab==='startups')||(state.view==='detail'&&state.kind==='startup'))if(!startupLoaded&&!partErrors.has('startups.json'))return false;
  if(state.view==='detail'){
   const x=detailItem(data,state);if(!x)return true;

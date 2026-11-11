@@ -25,6 +25,10 @@ for(const question of methodology.questions){
  if(!question.method_ids.length||question.method_ids.some(id=>!methodIds.has(id)))throw Error('Invalid method reference');
  if(question.source_url!==methodology.source.website+'questions/'+question.id+'.html')throw Error('Invalid question source');
 }
+if(methodology.methods.length!==55||new Set(methodology.methods.map(method=>method.id)).size!==55)throw Error('Invalid method metadata');
+for(const method of methodology.methods){
+ if(!methodIds.has(method.id)||!method.title||method.source_url!==methodology.source.website+'methods/'+method.id+'.html')throw Error('Invalid method metadata reference');
+}
 if(!/^[0-9a-f]{40}$/.test(methodology.source.commit))throw Error('Missing methodology source version');
 await copyFile(path.join(web,'data/methodology.json'),path.join(out,'methodology.json'));
 for(const folder of ['','src','data'])await mkdir(path.join(web,'dist',folder),{recursive:true});
