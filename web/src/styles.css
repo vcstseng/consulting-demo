@@ -102,3 +102,5 @@ summary{cursor:pointer}
 .direction-link small{display:block;font-size:12px;line-height:1.8;color:var(--muted);margin-top:5px}
 .direction-link:hover strong{text-decoration:underline;text-underline-offset:4px}
 @media(max-width:720px){.home-intro{grid-template-columns:1fr;gap:26px}.home-intro h1,html[lang=en] .home-intro h1{font-size:30px}.map-heading{font-size:19px}}
+
+.full-module-card .module-project-name{font-size:11px;letter-spacing:.3px;color:var(--muted);margin-top:-4px}

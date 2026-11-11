@@ -35,10 +35,10 @@ function sectionHead(n,title,description){return `<header class="section-head"><
 const methodologyUrl='https://vcstseng.github.io/ai-methodology-library/';
 function home(){
  const libraries=[
-  ['99 Problems',t('找出值得處理的工作問題','Identify a business problem worth solving'),t('99 個企業與 AI 問題','99 business and AI questions'),{view:'library',tab:'problems'}],
-  [t('AI 方法庫','AI Methodology Library'),t('查找導入、試行、驗收與治理的做法','Find approaches to adoption, pilots, validation and governance'),t('6 個主題 · 35 個問題','6 topics · 35 questions'),{view:'library',tab:'methods'}],
-  ['Capability Store',t('找出流程需要的技能、工具、Agent 與工作方式','Explore the skills, tools, agents and workflows a solution needs'),t('60 個能力構想','60 capability concepts'),{view:'library',tab:'capabilities'}],
-  ['Startup Radar',t('查看市場上有哪些解法可以比較','Compare approaches and products in the market'),t('4,000 筆展示紀錄','4,000 displayed records'),{view:'library',tab:'startups'}],
+  [t('企業問題庫','Business Problems'),'99 Problems',t('了解值得改善的工作，以及背後的資料與流程限制。','Explore work worth improving and the data and process constraints behind it.'),t('99 個企業與 AI 問題','99 business and AI questions'),{view:'library',tab:'problems'}],
+  [t('AI 方法庫','AI Methodology Library'),'AI Methodology Library',t('查找人機分工、試行、驗收與持續管理的方法。','Explore methods for human–AI collaboration, pilots, evaluation and ongoing management.'),t('6 個主題 · 35 個問題','6 topics · 35 questions'),{view:'library',tab:'methods'}],
+  [t('AI 能力庫','AI Capabilities'),'Capability Store',t('探索工作需要的技能、工具、AI 代理與流程構想。','Explore concepts for the skills, tools, AI agents and workflows the work requires.'),t('60 個能力構想','60 capability concepts'),{view:'library',tab:'capabilities'}],
+  [t('AI 新創雷達','AI Startup Radar'),'Startup Radar',t('了解市場上的產品與做法，尋找可比較的方案。','Explore products and approaches in the market to identify options to compare.'),t('4,000 筆新創紀錄','4,000 startup records'),{view:'library',tab:'startups'}],
  ];
  return `<section class="home-intro">
   <div>
@@ -65,7 +65,7 @@ function home(){
  </section>
  <section class="full-module-entry" id="source-libraries">
   ${sectionHead('',t('四個研究庫','Four research libraries'),t('選一個入口，查你現在需要的資料。','Choose the library that answers your current question.'))}
-  <div class="full-module-grid">${libraries.map(([title,purpose,meta,route])=>link(`<strong>${title}</strong><span>${purpose}</span><small>${meta} · ${t('開啟','Explore')} →</small>`,{domain:null,page:1,group:'all',category:'',capview:'concepts',filters:emptyFilters(),...route},'full-module-card')).join('')}</div>
+  <div class="full-module-grid">${libraries.map(([title,project,purpose,meta,route])=>link(`<strong>${title}</strong>${title!==project?`<span class="module-project-name">${project}</span>`:''}<span>${purpose}</span><small>${meta} · ${t('進入研究庫','Explore library')} →</small>`,{domain:null,page:1,group:'all',category:'',capview:'concepts',filters:emptyFilters(),...route},'full-module-card')).join('')}</div>
  </section>
  <section class="domains-section" id="domains">
   ${sectionHead('',t('按企業領域瀏覽','Browse by business domain'),t('在銷售、財務、客服等十個領域中，切換查閱企業問題、導入方法、能力構想與新創參考。','Across ten domains, including sales, finance and customer service, switch between business problems, adoption methods, capability concepts and startup references.'))}
